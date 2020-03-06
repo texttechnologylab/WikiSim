@@ -6,4 +6,9 @@
 * => erstellt GML und BF files im Ordner graphs
 
 ### Compute Graph Similarities
+
+```
+pip install NetComp
+```
+
 Relevante Scripts liegen im Ordner Python
