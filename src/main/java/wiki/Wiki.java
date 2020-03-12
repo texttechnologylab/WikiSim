@@ -270,6 +270,26 @@ public class Wiki {
 		}
 	}
 	
+	public static HashSet<String>getStudies(String qid) throws JSONException, IOException{
+		String query = 
+				"SELECT ?studies ?studiesLabel WHERE {wd:" + qid + " wdt:P2578 ?studies SERVICE wikibase:label {bd:serviceParam wikibase:language \"en\" }} " ;
+		String url = "https://query.wikidata.org/sparql?query="+query+"&format=json";
+		JSONArray wikidataId = new JSONObject(Jsoup.connect(url) 
+			     .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
+				.maxBodySize(0)
+				.timeout(0)
+				.ignoreContentType(true).execute().body()).getJSONObject("results").getJSONArray("bindings");
+		HashSet<String>output = new HashSet<>();
+		for (Object object : wikidataId) {
+			JSONObject current = (JSONObject)object;
+			String wikidata = current.getJSONObject("studies").getString("value").replaceAll(".*/", "");
+			String studiesLabel = current.getJSONObject("studiesLabel").getString("value").replaceAll(".*/", "");
+			
+			output.add(wikidata+"\t"+studiesLabel);
+		}
+		return output;
+	}
+	
 	public static HashMap<String, List<WikipeidaWikidata>> getWikipediaLinksByLanguagesForWikidataScienceCategory(String qid) throws SQLException, JSONException, IOException{
 		try{
 			HashMap<String, List<WikipeidaWikidata>>linksByLanguage = new HashMap<>();
