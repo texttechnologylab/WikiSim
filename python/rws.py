@@ -305,3 +305,6 @@ def main_otherSim(data_folder='../graphs/gml/fussballligaGML', output_folder='..
 
 if __name__ == '__main__':
     main_otherSim(similarity=ged_similarity)
+    main_otherSim(similarity=vertex_edge_jaccard_similarity)
+    main_deltaCon(affinities=personalized_rw_affinities)
+    main_deltaCon(affinities=shortest_path_affinities)
