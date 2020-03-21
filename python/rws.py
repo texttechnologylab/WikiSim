@@ -206,7 +206,9 @@ def load_multilayer_graph(data_folder):
 
 
 def main_deltaCon(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
-
+    # TODO compute and output computation time
+    # TODO add documentation
+    
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     out_csv = open(os.path.join(output_folder, f'deltaCON_{affinities.__name__}.csv'), 'w')
@@ -289,6 +291,8 @@ def vertex_edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
 
 
 def main_otherSim(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
+    # TODO compute and output computation time
+    # TODO add documentation
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
