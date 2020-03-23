@@ -273,8 +273,14 @@ def computeGED(G1: igraph.Graph, G2: igraph.Graph):
     v_intersection = v1.intersection(v2)
     e_intersection = e1.intersection(e2)
 
-    V = (len(v1) + len(v2) - 2 * len(v_intersection)) / (len(v1) + len(v2))
-    E = (len(e1) + len(e2) - 2 * len(e_intersection)) / (len(e1) + len(e2))
+    try:
+        V = (len(v1) + len(v2) - 2 * len(v_intersection)) / (len(v1) + len(v2))
+    except ZeroDivisionError:
+        V = 0.0
+    try:
+        E = (len(e1) + len(e2) - 2 * len(e_intersection)) / (len(e1) + len(e2))
+    except ZeroDivisionError:
+        E = 0.0
 
     return 0.5 * (V + E)
 
@@ -296,8 +302,14 @@ def vertex_edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
     v_intersection = v1.intersection(v2)
     e_intersection = e1.intersection(e2)
 
-    v_jaccard = len(v_intersection) / (len(v1) + len(v2) - len(v_intersection))
-    e_jaccard = len(e_intersection) / (len(e1) + len(e2) - len(e_intersection))
+    try:
+        v_jaccard = len(v_intersection) / (len(v1) + len(v2) - len(v_intersection))
+    except ZeroDivisionError:
+        v_jaccard = 0.0
+    try:
+        e_jaccard = len(e_intersection) / (len(e1) + len(e2) - len(e_intersection))
+    except ZeroDivisionError:
+        e_jaccard = 0.0
 
     return 0.5 * (v_jaccard + e_jaccard)
 
@@ -390,7 +402,14 @@ if __name__ == '__main__':
             print('Processing', in_folder)
             print('Writing to', out_folder)
 
+            print('ged_similarity')
             main_otherSim(similarity=ged_similarity, data_folder=in_folder, output_folder=out_folder)
+
+            print('vertex_edge_jaccard_similarity')
             main_otherSim(similarity=vertex_edge_jaccard_similarity, data_folder=in_folder, output_folder=out_folder)
+
+            print('personalized_rw_affinities')
             main_deltaCon(affinities=personalized_rw_affinities, data_folder=in_folder, output_folder=out_folder)
+
+            print('shortest_path_affinities')
             main_deltaCon(affinities=shortest_path_affinities, data_folder=in_folder, output_folder=out_folder)
