@@ -5,7 +5,7 @@ import numpy as np
 import igraph
 import os
 import itertools
-
+import time
 
 def rootED(S1: np.array, S2: np.array):
     """
@@ -68,15 +68,25 @@ def shortest_path_dists(g: igraph.Graph, weights: np.array=None):
 def shortest_path_affinities(g: igraph.Graph, weights: np.array=None):
     """
     Shortest Path distances are great. But DeltaCON expect affinities,
-    which are high if similarity is high. Hence we fix this by subtracting
-    the distance matrix from the matrix that has diameter in every entry.
+    which are high if similarity is high. Hence we fix this as follows:
+
+    1) We find the `diameter` d  of the graph, that is, the largest finite distance in g.
+    2) We set each finite distance pq to (d + 1) - pq and each infinite distance to 0
+    3) we divide this result by d+1 to get values between 0 and 1
+
+    Thus, each vertex has affinity between 0 and 1 to all other vertices and affinity equal to
+    1 exactly to itself (assuming positive edge lengths).
+
     :param g: some graph
     :param weights: edge weights, if necessary (higher means more expensive, i.e., less important)
     :return: affinity matrix
     """
     dists = shortest_path_dists(g, weights)
-    diameter = np.max(dists)
-    return diameter - dists
+    finite_filter = np.isfinite(dists)
+    diameter = np.max(dists[finite_filter])
+    affinities = (diameter + 1) - dists
+    affinities[~finite_filter] = 0.0
+    return affinities / (diameter+1)
 
 
 def deltaCon(G1: igraph.Graph, G2: igraph.Graph, affinities=personalized_rw_affinities):
@@ -208,18 +218,20 @@ def load_multilayer_graph(data_folder):
 def main_deltaCon(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
     # TODO compute and output computation time
     # TODO add documentation
-    
+
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     out_csv = open(os.path.join(output_folder, f'deltaCON_{affinities.__name__}.csv'), 'w')
-    out_csv.write('Language1, Language2, SimilarityScore\n')
+    out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
     unaligned_graphs = load_multilayer_graph(data_folder)
     graphs = vertex_set_union(unaligned_graphs)
     for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+        tic = time.time()
         sim = deltaCon(graphs[l1], graphs[l2], affinities=affinities)
-        print(l1, l2, sim)
-        out_csv.write(f'{l1}, {l2}, {sim}\n')
+        toc = time.time()
+        print(l1, l2, sim, toc-tic)
+        out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
 
 
 def vertex_edge_set_on_labels(g: igraph.Graph):
@@ -291,24 +303,94 @@ def vertex_edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
 
 
 def main_otherSim(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
-    # TODO compute and output computation time
     # TODO add documentation
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     out_csv = open(os.path.join(output_folder, f'otherSim_{similarity.__name__}.csv'), 'w')
-    out_csv.write('Language1, Language2, SimilarityScore\n')
+    out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
     unaligned_graphs = load_multilayer_graph(data_folder)
     graphs = vertex_set_union(unaligned_graphs)
     for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+        tic = time.time()
         sim = similarity(graphs[l1], graphs[l2])
-        print(l1, l2, sim)
-        out_csv.write(f'{l1}, {l2}, {sim}\n')
+        toc = time.time()
+        print(l1, l2, sim, toc-tic)
+        out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
 
+
+def test_deltaCon_edgeAddition(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities, lang='de'):
+    """
+    Test how the deltaCon based mehtods behave when adding random edges.
+
+    It seems that adding random edges dramatically decreases the similarity between a graph and its
+    perturbed copy.
+
+    :param data_folder:
+    :param output_folder:
+    :param affinities:
+    :param lang:
+    :return:
+    """
+
+    import numpy.random as rnd
+
+    unaligned_graphs = load_multilayer_graph(data_folder)
+    graphs = vertex_set_union(unaligned_graphs)
+
+    g = graphs[lang]
+    h = g.copy()
+
+    print('n =', g.vcount())
+    print('e =', g.ecount())
+    print(0,deltaCon(g, h, affinities=affinities))
+    for i in range(1, g.vcount()):
+        h.add_edge(rnd.randint(0, g.vcount()), rnd.randint(0, g.vcount()))
+        sim = deltaCon(g, h, affinities=affinities)
+        print(i, sim)
+
+def test_deltaCon_edgeRemoval(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities, lang='de'):
+        """
+        Test how the deltaCon based methods behave when removing random edges from a graph.
+
+        It seems that removing edges behaves as expected, with a slow drop in similarity..
+
+        :param data_folder:
+        :param output_folder:
+        :param affinities:
+        :param lang:
+        :return:
+        """
+
+        import numpy.random as rnd
+
+        unaligned_graphs = load_multilayer_graph(data_folder)
+        graphs = vertex_set_union(unaligned_graphs)
+
+        g = graphs[lang]
+        h = g.copy()
+
+        print('n =', g.vcount())
+        print('e =', g.ecount())
+
+        print(0, deltaCon(g, h, affinities=affinities))
+        for i in range(1, g.ecount()):
+            h.delete_edges(rnd.randint(0, g.ecount()))
+            sim = deltaCon(g, h, affinities=affinities)
+            print(i, sim)
 
 if __name__ == '__main__':
-    main_otherSim(similarity=ged_similarity)
-    main_otherSim(similarity=vertex_edge_jaccard_similarity)
-    main_deltaCon(affinities=personalized_rw_affinities)
-    main_deltaCon(affinities=shortest_path_affinities)
+
+    for root in ['gml', 'fullgml']:
+        datasets = os.listdir(os.path.join('..', 'graphs', root))
+        for d in datasets:
+            in_folder = os.path.join('..', 'graphs', root, d)
+            out_folder = os.path.join('..', 'output', root, d)
+            print('Processing', in_folder)
+            print('Writing to', out_folder)
+
+            main_otherSim(similarity=ged_similarity, data_folder=in_folder, output_folder=out_folder)
+            main_otherSim(similarity=vertex_edge_jaccard_similarity, data_folder=in_folder, output_folder=out_folder)
+            main_deltaCon(affinities=personalized_rw_affinities, data_folder=in_folder, output_folder=out_folder)
+            main_deltaCon(affinities=shortest_path_affinities, data_folder=in_folder, output_folder=out_folder)
