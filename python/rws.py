@@ -143,8 +143,7 @@ def load_multilayer_graph(data_folder):
     return graphs
 
 
-def main_deltaCon(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
-    # TODO compute and output computation time
+def main_deltaCon(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
     # TODO add documentation
 
     if not os.path.exists(output_folder):
@@ -152,8 +151,6 @@ def main_deltaCon(data_folder='../graphs/gml/fussballligaGML', output_folder='..
     out_csv = open(os.path.join(output_folder, f'deltaCON_{affinities.__name__}.csv'), 'w')
     out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
-    unaligned_graphs = load_multilayer_graph(data_folder)
-    graphs = vertex_set_union(unaligned_graphs)
     for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
         tic = time.time()
         sim = deltaCon(graphs[l1], graphs[l2], affinities=affinities)
@@ -242,7 +239,7 @@ def vertex_edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
     return 0.5 * (v_jaccard + e_jaccard)
 
 
-def main_otherSim(data_folder='../graphs/gml/fussballligaGML', output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
+def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
     # TODO add documentation
 
     if not os.path.exists(output_folder):
@@ -250,8 +247,6 @@ def main_otherSim(data_folder='../graphs/gml/fussballligaGML', output_folder='..
     out_csv = open(os.path.join(output_folder, f'otherSim_{similarity.__name__}.csv'), 'w')
     out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
-    unaligned_graphs = load_multilayer_graph(data_folder)
-    graphs = vertex_set_union(unaligned_graphs)
     for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
         tic = time.time()
         sim = similarity(graphs[l1], graphs[l2])
@@ -268,16 +263,26 @@ if __name__ == '__main__':
             in_folder = os.path.join('..', 'graphs', root, d)
             out_folder = os.path.join('..', 'output', root, d)
             print('Processing', in_folder)
+            tic = time.time()
+            unaligned_graphs = load_multilayer_graph(in_folder)
+            toc = time.time()
+            print('load', toc - tic)
+
+            tic = time.time()
+            graphs = vertex_set_union(unaligned_graphs)
+            toc = time.time()
+            print('union', toc - tic)
+
             print('Writing to', out_folder)
 
             print('ged_similarity')
-            main_otherSim(similarity=ged_similarity, data_folder=in_folder, output_folder=out_folder)
+            main_otherSim(similarity=ged_similarity, output_folder=out_folder)
 
             print('vertex_edge_jaccard_similarity')
-            main_otherSim(similarity=vertex_edge_jaccard_similarity, data_folder=in_folder, output_folder=out_folder)
+            main_otherSim(similarity=vertex_edge_jaccard_similarity, output_folder=out_folder)
 
             print('personalized_rw_affinities')
-            main_deltaCon(affinities=personalized_rw_affinities, data_folder=in_folder, output_folder=out_folder)
+            main_deltaCon(affinities=personalized_rw_affinities, output_folder=out_folder)
 
             print('shortest_path_affinities')
-            main_deltaCon(affinities=shortest_path_affinities, data_folder=in_folder, output_folder=out_folder)
+            main_deltaCon(affinities=shortest_path_affinities, output_folder=out_folder)
