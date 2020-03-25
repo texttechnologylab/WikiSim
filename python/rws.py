@@ -256,7 +256,6 @@ def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similar
 
 
 if __name__ == '__main__':
-
     for root in ['gml', 'fullgml']:
         datasets = os.listdir(os.path.join('..', 'graphs', root))
         for d in datasets:
@@ -276,13 +275,13 @@ if __name__ == '__main__':
             print('Writing to', out_folder)
 
             print('ged_similarity')
-            main_otherSim(similarity=ged_similarity, output_folder=out_folder)
+            main_otherSim(graphs, similarity=ged_similarity, output_folder=out_folder)
 
             print('vertex_edge_jaccard_similarity')
-            main_otherSim(similarity=vertex_edge_jaccard_similarity, output_folder=out_folder)
+            main_otherSim(graphs, similarity=vertex_edge_jaccard_similarity, output_folder=out_folder)
 
             print('personalized_rw_affinities')
-            main_deltaCon(affinities=personalized_rw_affinities, output_folder=out_folder)
+            main_deltaCon(graphs, affinities=personalized_rw_affinities, output_folder=out_folder)
 
             print('shortest_path_affinities')
-            main_deltaCon(affinities=shortest_path_affinities, output_folder=out_folder)
+            main_deltaCon(graphs, affinities=shortest_path_affinities, output_folder=out_folder)
