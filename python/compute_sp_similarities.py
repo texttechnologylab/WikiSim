@@ -20,7 +20,7 @@ if __name__ == '__main__':
             print('union', toc - tic)
 
             tic = time.time()
-            affinities = {lang: shortest_path_affinities(graphs[lang]) for lang in graphs.keys()}
+            affinities = {lang: shortest_path_affinities(graphs[lang], verbose=lang) for lang in graphs.keys()}
             toc = time.time()
             print('affinities', toc - tic)
 
