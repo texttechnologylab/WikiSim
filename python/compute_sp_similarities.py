@@ -19,6 +19,9 @@ if __name__ == '__main__':
             toc = time.time()
             print('union', toc - tic)
 
+            # compute the union of all language graphs, for comparison
+            graphs['union'] = union(graphs)
+
             tic = time.time()
             affinities = {lang: shortest_path_affinities(graphs[lang], verbose=lang) for lang in graphs.keys()}
             toc = time.time()
@@ -27,7 +30,7 @@ if __name__ == '__main__':
             print('Writing to', out_folder)
 
             print('shortest_path_affinities')
-            main_deltaCon_cached(affinities, name=shortest_path_affinities, output_folder=out_folder)
+            main_deltaCon_cached(affinities, name=shortest_path_affinities.__name__, output_folder=out_folder)
 
             # print('ged_similarity')
             # main_otherSim(graphs, similarity=ged_similarity, output_folder=out_folder)

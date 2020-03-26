@@ -19,5 +19,8 @@ if __name__ == '__main__':
             toc = time.time()
             print('union', toc - tic)
 
+            # compute the union of all language graphs, for comparison
+            graphs['union'] = union(graphs)
+
             print('vertex_edge_jaccard_similarity')
             main_otherSim(graphs, similarity=vertex_edge_jaccard_similarity, output_folder=out_folder)
