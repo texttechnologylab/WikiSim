@@ -25,13 +25,16 @@ def rootED(S1: np.array, S2: np.array):
     return np.sqrt(sqared_sum)
 
 
-def personalized_rw_affinities(g: igraph.Graph, weights: np.array=None):
+def personalized_rw_affinities(g: igraph.Graph, weights: np.array=None, verbose: str=None):
     """
     Compute node affinities using personalized_pagerank for each node.
     :param g: a graph
     :param weights: edge weights, if necessary (higher means more important)
     :return: affinity matrix
     """
+    if verbose is not None:
+        print(f'Computing Personalized RW affinities for {verbose}')
+
     return np.vstack([g.personalized_pagerank(vertices=None, reset_vertices=v, weights=weights) for v in range(g.vcount())])
 
 
@@ -46,7 +49,7 @@ def shortest_path_dists(g: igraph.Graph, weights: np.array=None):
     return dists
 
 
-def shortest_path_affinities(g: igraph.Graph, weights: np.array=None):
+def shortest_path_affinities(g: igraph.Graph, weights: np.array=None, verbose: str=None):
     """
     Shortest Path distances are great. But DeltaCON expect affinities,
     which are high if similarity is high. Hence we fix this as follows:
@@ -62,6 +65,9 @@ def shortest_path_affinities(g: igraph.Graph, weights: np.array=None):
     :param weights: edge weights, if necessary (higher means more expensive, i.e., less important)
     :return: affinity matrix
     """
+    if verbose is not None:
+        print(f'Computing Shortest Path affinities for {verbose}')
+
     dists = shortest_path_dists(g, weights)
     finite_filter = np.isfinite(dists)
     diameter = np.max(dists[finite_filter])
@@ -91,6 +97,29 @@ def deltaCon(G1: igraph.Graph, G2: igraph.Graph, affinities=personalized_rw_affi
 
     S1 = affinities(G1)
     S2 = affinities(G2)
+
+    d = rootED(S1, S2)
+    return 1.0 / (1.0 + d)
+
+
+def deltaCon_cached(S1: np.ndarray, S2: np.ndarray):
+    """
+    A similarity measure for two graphs on the same vertex set. That is, we assume that
+    G1 and G2 have the same vertex set but may have different edge sets. The implementation
+    expects the vertex sets of G1 and G2 to be ordered in the same way, i.e.
+    the ith vertex in G1 is also the ith vertex in G2.
+
+    See Algorithm 1 of
+    Koutra, Vogelstein, and Faloutsos (2012)
+    DELTACON A principled Massive-Graph Similarity Function
+
+    :param G1: first graph
+    :param G2: second graph
+    :param affinities: some function that returns a numpy array of node affinities
+    :return: a similarity of G1 and G2
+    """
+    if S1.shape != S2.shape:
+        raise ValueError('Graphs must have same vertex sets.')
 
     d = rootED(S1, S2)
     return 1.0 / (1.0 + d)
@@ -154,6 +183,22 @@ def main_deltaCon(graphs, output_folder='../output/gml/fussballligaGML', affinit
     for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
         tic = time.time()
         sim = deltaCon(graphs[l1], graphs[l2], affinities=affinities)
+        toc = time.time()
+        print(l1, l2, sim, toc-tic)
+        out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+
+
+def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
+    # TODO add documentation
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    out_csv = open(os.path.join(output_folder, f'deltaCON_{name}.csv'), 'w')
+    out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+
+    for l1, l2 in itertools.combinations_with_replacement(affinities.keys(), 2):
+        tic = time.time()
+        sim = deltaCon_cached(affinities[l1], affinities[l2])
         toc = time.time()
         print(l1, l2, sim, toc-tic)
         out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
@@ -253,35 +298,3 @@ def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similar
         toc = time.time()
         print(l1, l2, sim, toc-tic)
         out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
-
-
-if __name__ == '__main__':
-    for root in ['gml', 'fullgml']:
-        datasets = os.listdir(os.path.join('..', 'graphs', root))
-        for d in datasets:
-            in_folder = os.path.join('..', 'graphs', root, d)
-            out_folder = os.path.join('..', 'output', root, d)
-            print('Processing', in_folder)
-            tic = time.time()
-            unaligned_graphs = load_multilayer_graph(in_folder)
-            toc = time.time()
-            print('load', toc - tic)
-
-            tic = time.time()
-            graphs = vertex_set_union(unaligned_graphs)
-            toc = time.time()
-            print('union', toc - tic)
-
-            print('Writing to', out_folder)
-
-            print('ged_similarity')
-            main_otherSim(graphs, similarity=ged_similarity, output_folder=out_folder)
-
-            print('vertex_edge_jaccard_similarity')
-            main_otherSim(graphs, similarity=vertex_edge_jaccard_similarity, output_folder=out_folder)
-
-            print('personalized_rw_affinities')
-            main_deltaCon(graphs, affinities=personalized_rw_affinities, output_folder=out_folder)
-
-            print('shortest_path_affinities')
-            main_deltaCon(graphs, affinities=shortest_path_affinities, output_folder=out_folder)
