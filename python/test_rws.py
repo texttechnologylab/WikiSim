@@ -1,5 +1,7 @@
 from rws import *
 
+from joblib import delayed, Parallel, cpu_count
+
 def test_vertex_set_union():
     l1 = ['a', 'b', 'c', 'd']
     g1 = igraph.Graph()
@@ -129,3 +131,60 @@ def test_deltaCon_edgeRemoval(data_folder='../graphs/gml/fussballligaGML', outpu
             h.delete_edges(rnd.randint(0, g.ecount()))
             sim = deltaCon(g, h, affinities=affinities)
             print(i, sim)
+
+
+
+def personalized_rw_affinities_parallel(g: igraph.Graph, weights: np.array=None):
+    """
+    Compute node affinities using personalized_pagerank for each node.
+    Attempt to parallelize, but did not work (i.e., is much slower). maybe igraph locks internally?
+    :param g: a graph
+    :param weights: edge weights, if necessary (higher means more important)
+    :return: affinity matrix
+    """
+    # affinities = np.zeros([g.vcount(), g.vcount()])
+    # for v in range(g.vcount()):
+
+    def apply(v):
+        return g.personalized_pagerank(vertices=None, reset_vertices=v, weights=weights)
+
+    sub_arrays = Parallel(n_jobs=cpu_count())(
+        delayed(apply)(v)  # Apply my_function
+        for v in range(g.vcount()))  # For each 3rd dimension
+
+    # ... Concatenate the list of returned arrays
+    parallel_results = np.stack(sub_arrays, axis=1)
+
+    return parallel_results
+    # return affinities
+
+
+def test_personalized_rw_affinities_parallel():
+    for root in ['gml']:
+        datasets = os.listdir(os.path.join('..', 'graphs', root))
+        for d in datasets[:1]:
+            in_folder = os.path.join('..', 'graphs', root, d)
+            out_folder = os.path.join('..', 'output', root, d)
+            print('Processing', in_folder)
+            tic = time.time()
+            unaligned_graphs = load_multilayer_graph(in_folder)
+            toc = time.time()
+            print('load', toc - tic)
+
+            tic = time.time()
+            graphs = vertex_set_union(unaligned_graphs)
+            toc = time.time()
+            print('union', toc - tic)
+            print('Writing to', out_folder)
+
+            print('personalized_rw_affinities')
+            tic = time.time()
+            main_deltaCon(graphs, affinities=personalized_rw_affinities, output_folder=out_folder)
+            toc = time.time()
+            print('sequential', toc - tic)
+            tic = time.time()
+            main_deltaCon(graphs, affinities=personalized_rw_affinities_parallel, output_folder=out_folder)
+            toc = time.time()
+            print('parallel', toc - tic)
+
+            # np.equal(serial_result, parallel_results).all()
