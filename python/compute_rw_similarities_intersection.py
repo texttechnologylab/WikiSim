@@ -14,10 +14,7 @@ if __name__ == '__main__':
             toc = time.time()
             print('load', toc - tic)
 
-            # compute the union of all language graphs, for comparison
-            unaligned_graphs['union'] = union(unaligned_graphs)
+            print('Writing to', out_folder)
 
-            print('ged_similarity')
-            # it is important to compute this function on unaligned graphs, as otherwise the
-            # vertex set similarity will always be 1.0
-            main_otherSim(unaligned_graphs, similarity=ged_similarity, output_folder=out_folder)
+            print('personalized_rw_affinities')
+            main_deltaCon_intersection(unaligned_graphs, affinities=personalized_rw_affinities, output_folder=out_folder)

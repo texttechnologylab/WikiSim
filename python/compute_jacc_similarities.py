@@ -14,13 +14,10 @@ if __name__ == '__main__':
             toc = time.time()
             print('load', toc - tic)
 
-            tic = time.time()
-            graphs = vertex_set_union(unaligned_graphs)
-            toc = time.time()
-            print('union', toc - tic)
-
             # compute the union of all language graphs, for comparison
-            graphs['union'] = union(graphs)
+            unaligned_graphs['union'] = union(unaligned_graphs)
 
             print('vertex_edge_jaccard_similarity')
-            main_otherSim(graphs, similarity=vertex_edge_jaccard_similarity, output_folder=out_folder)
+            # it is important to compute this function on unaligned graphs, as otherwise the
+            # vertex set similarity will always be 1.0
+            main_otherSim(unaligned_graphs, similarity=vertex_edge_jaccard_similarity, output_folder=out_folder)

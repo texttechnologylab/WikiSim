@@ -17,7 +17,7 @@ if __name__ == '__main__':
             # compute the union of all language graphs, for comparison
             unaligned_graphs['union'] = union(unaligned_graphs)
 
-            print('ged_similarity')
+            print('vertex_jaccard_similarity')
             # it is important to compute this function on unaligned graphs, as otherwise the
             # vertex set similarity will always be 1.0
-            main_otherSim(unaligned_graphs, similarity=ged_similarity, output_folder=out_folder)
+            main_otherSim(unaligned_graphs, similarity=vertex_jaccard_similarity, output_folder=out_folder)
