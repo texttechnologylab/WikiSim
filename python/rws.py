@@ -11,6 +11,8 @@ def rootED(S1: np.array, S2: np.array):
     """
     RootED distance function.
 
+    Assumes that all entries in S1 and S2 are nonnegative.
+
     See Equation 3.3 of
     Koutra, Vogelstein, and Faloutsos (2012)
     DELTACON A principled Massive-Graph Similarity Function
@@ -28,6 +30,7 @@ def rootED(S1: np.array, S2: np.array):
 def personalized_rw_affinities(g: igraph.Graph, weights: np.array=None, verbose: str=None):
     """
     Compute node affinities using personalized_pagerank for each node.
+    Guarantees that all entries in the result are nonnegative.
     :param g: a graph
     :param weights: edge weights, if necessary (higher means more important)
     :return: affinity matrix
@@ -35,7 +38,9 @@ def personalized_rw_affinities(g: igraph.Graph, weights: np.array=None, verbose:
     if verbose is not None:
         print(f'Computing Personalized RW affinities for {verbose}')
 
-    return np.vstack([g.personalized_pagerank(vertices=None, reset_vertices=v, weights=weights) for v in range(g.vcount())])
+    affinities = np.vstack([g.personalized_pagerank(vertices=None, reset_vertices=v, weights=weights) for v in range(g.vcount())])
+    affinities[affinities < 0.0] = 0.0
+    return affinities
 
 
 def shortest_path_dists(g: igraph.Graph, weights: np.array=None):
@@ -125,7 +130,7 @@ def deltaCon_cached(S1: np.ndarray, S2: np.ndarray):
     return 1.0 / (1.0 + d)
 
 
-def vertex_set_union(graphs):
+def vertex_set_union(graphs, directed=True):
     """
     We want the different wikipedias to be on the same vertex sets.
     That is, for each label (i.e., an article) the vertex ids in the different graphs must be identical
@@ -146,7 +151,7 @@ def vertex_set_union(graphs):
 
     for k in graphs.keys():
         g = graphs[k]
-        g_new = igraph.Graph()
+        g_new = igraph.Graph(directed=directed)
         g_new.add_vertices(len(labels))
         for i, v in enumerate(g_new.vs):
             v['label'] = id_labels[i]
@@ -155,6 +160,64 @@ def vertex_set_union(graphs):
         new_graphs[k] = g_new
 
     return new_graphs
+
+
+def union(graphs, directed=True):
+    """
+    Compute a graph union of all graphs in the dict.
+    :param graphs:
+    :return:
+    """
+
+    labels = set()
+    for k in graphs.keys():
+        g = graphs[k]
+        for v in g.vs:
+            labels.add(v['label'])
+
+    # new unique vertex ids in the large graph
+    label_ids = {l: i for i, l in enumerate(labels)}
+    id_labels = {i: l for i, l in enumerate(labels)}
+
+    g_new = igraph.Graph(directed=directed)
+    g_new.add_vertices(len(labels))
+    for k in graphs.keys():
+        g = graphs[k]
+        for i, v in enumerate(g_new.vs):
+            v['label'] = id_labels[i]
+        edges = [(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']]) for e in g.es]
+        g_new.add_edges(edges)
+
+    return g_new
+
+
+def intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
+    """
+    - Compute the intersection V' of the vertex sets of g1 and g2 (based on their labels, not ids).
+    - compute g1[V'] and g2[V'], i.e. the induced subgraphs of V' of both graphs.
+    :param g1, g2 graphs
+    :return: g1_new, g2_new
+    """
+
+    labels = {v['label'] for v in g1.vs}
+    labels.intersection_update({v['label'] for v in g2.vs})
+    labels = list(labels)
+
+    # new unique vertex ids in the large graph
+    label_ids = {l: i for i, l in enumerate(labels)}
+
+    def restrict_to_intersection(g):
+        g_new = igraph.Graph(directed=directed)
+        g_new.add_vertices(len(labels))
+        g_new.vs['label'] = labels
+        for e in g.es:
+            try:
+                g_new.add_edge(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']])
+            except KeyError:
+                pass
+        return g_new
+
+    return restrict_to_intersection(g1), restrict_to_intersection(g2)
 
 
 def load_multilayer_graph(data_folder):
@@ -173,35 +236,74 @@ def load_multilayer_graph(data_folder):
 
 
 def main_deltaCon(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
-    # TODO add documentation
+    """
+    Generic, rather agnostic variant of deltacon. computes a similarity score based on the affinity
+    function provided for each pair of graphs in the graphs dict.
+    :param graphs:
+    :param output_folder:
+    :param affinities:
+    :return:
+    """
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    out_csv = open(os.path.join(output_folder, f'deltaCON_{affinities.__name__}.csv'), 'w')
-    out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+    with open(os.path.join(output_folder, f'deltaCON_{affinities.__name__}.csv'), 'w') as out_csv:
+        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
-    for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-        tic = time.time()
-        sim = deltaCon(graphs[l1], graphs[l2], affinities=affinities)
-        toc = time.time()
-        print(l1, l2, sim, toc-tic)
-        out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+            tic = time.time()
+            sim = deltaCon(graphs[l1], graphs[l2], affinities=affinities)
+            toc = time.time()
+            print(l1, l2, sim, toc-tic)
+            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+
+
+def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
+    """
+    Intersection variant of deltacon: For each pair of graphs, compute the induced subgraphs on the vertex set
+    intersection and then proceed with the affinity computation.
+
+    :param graphs:
+    :param output_folder:
+    :param affinities:
+    :return:
+    """
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    with open(os.path.join(output_folder, f'deltaCON_intersection_{affinities.__name__}.csv'), 'w') as out_csv:
+        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+
+        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+            g1, g2 = intersection(graphs[l1], graphs[l2])
+            tic = time.time()
+            sim = deltaCon(g1, g2, affinities=affinities)
+            toc = time.time()
+            print(l1, l2, sim, toc-tic)
+            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
 
 
 def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
-    # TODO add documentation
+    """
+    Faster variant of DeltaCon that precomputes affinities for all graphs, instead of recomputing them for each pair.
+    May be used for union, but not for intersection, as here graphs change based on the current pair.
+    :param affinities:
+    :param name:
+    :param output_folder:
+    :return:
+    """
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    out_csv = open(os.path.join(output_folder, f'deltaCON_{name}.csv'), 'w')
-    out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+    with open(os.path.join(output_folder, f'deltaCON_{name}.csv'), 'w') as out_csv:
+        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
-    for l1, l2 in itertools.combinations_with_replacement(affinities.keys(), 2):
-        tic = time.time()
-        sim = deltaCon_cached(affinities[l1], affinities[l2])
-        toc = time.time()
-        print(l1, l2, sim, toc-tic)
-        out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+        for l1, l2 in itertools.combinations_with_replacement(affinities.keys(), 2):
+            tic = time.time()
+            sim = deltaCon_cached(affinities[l1], affinities[l2])
+            toc = time.time()
+            print(l1, l2, sim, toc-tic)
+            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
 
 
 def vertex_edge_set_on_labels(g: igraph.Graph):
@@ -284,17 +386,87 @@ def vertex_edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
     return 0.5 * (v_jaccard + e_jaccard)
 
 
+def vertex_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
+    """
+    Compute Jaccard Similarity between vertex sets.
+    :param G1: a graph
+    :param G2: a graph
+    :return: jaccard_similarity(V(G1), V(G2))
+    """
+    v1, e1 = vertex_edge_set_on_labels(G1)
+    v2, e2 = vertex_edge_set_on_labels(G2)
+
+    v_intersection = v1.intersection(v2)
+
+    try:
+        v_jaccard = len(v_intersection) / (len(v1) + len(v2) - len(v_intersection))
+    except ZeroDivisionError:
+        v_jaccard = 0.0
+
+    return v_jaccard
+
+
+def edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
+    """
+    Compute Jaccard Similarity between edge sets and vertex sets and return their average.
+    :param G1: a graph
+    :param G2: a graph
+    :return: 0.5 * (jaccard_similarity(V(G1), V(G2)) + jaccard_similarity(E(G1), E(G2)))
+    """
+    v1, e1 = vertex_edge_set_on_labels(G1)
+    v2, e2 = vertex_edge_set_on_labels(G2)
+
+    e_intersection = e1.intersection(e2)
+
+    try:
+        e_jaccard = len(e_intersection) / (len(e1) + len(e2) - len(e_intersection))
+    except ZeroDivisionError:
+        e_jaccard = 0.0
+
+    return e_jaccard
+
+
 def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
-    # TODO add documentation
+    """
+    Nice and general similarity computation for all pairs of graphs in the graphs dict.
+    :param graphs:
+    :param output_folder:
+    :param similarity:
+    :return:
+    """
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    out_csv = open(os.path.join(output_folder, f'otherSim_{similarity.__name__}.csv'), 'w')
-    out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+    with open(os.path.join(output_folder, f'otherSim_{similarity.__name__}.csv'), 'w') as out_csv:
+        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
-    for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-        tic = time.time()
-        sim = similarity(graphs[l1], graphs[l2])
-        toc = time.time()
-        print(l1, l2, sim, toc-tic)
-        out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+            tic = time.time()
+            sim = similarity(graphs[l1], graphs[l2])
+            toc = time.time()
+            print(l1, l2, sim, toc-tic)
+            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+
+
+def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
+    """
+    Compute specified similarity on pairs of graphs in graphs dict. However, before computing the similarity of a pair
+    of graphs, compute the induced graphs on the vertex set intersection before proceeding.
+    :param graphs:
+    :param output_folder:
+    :param similarity:
+    :return:
+    """
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    with open(os.path.join(output_folder, f'otherSim_intersection_{similarity.__name__}.csv'), 'w') as out_csv:
+        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+
+        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+            g1, g2 = intersection(graphs[l1], graphs[l2])
+            tic = time.time()
+            sim = similarity(g1, g2)
+            toc = time.time()
+            print(l1, l2, sim, toc-tic)
+            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
