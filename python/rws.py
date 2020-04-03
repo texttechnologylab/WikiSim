@@ -135,15 +135,17 @@ def deltaCon_rw_lowmem(G1: igraph.Graph, G2: igraph.Graph):
         return affinities
 
     dist = 0.0
+    kern = 0.0
     for v in range(G1.vcount()):
         S1 = rw(G1, v)
         S2 = rw(G2, v)
         sqrt_diff = np.sqrt(S1) - np.sqrt(S2)
         flat = sqrt_diff.flatten()
         dist += np.dot(flat, flat)
+        kern += np.dot(S1, S2)
 
     d = np.sqrt(dist)
-    return 1.0 / (1.0 + d)
+    return 1.0 / (1.0 + d), kern
 
 
 def deltaCon_cached(S1: np.ndarray, S2: np.ndarray):
@@ -338,17 +340,17 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     with open(os.path.join(output_folder, f'deltaCON_intersection_{personalized_rw_affinities.__name__}_lowmem.csv'), 'w') as out_csv:
-        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+        out_csv.write('Language1, Language2, SimilarityScore, Kernel, Time\n')
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
             g1, g2 = intersection(graphs[l1], graphs[l2])
             if g1.vcount() != 0:
                 tic = time.time()
-                sim = deltaCon_rw_lowmem(g1, g2)
+                sim1, sim2 = deltaCon_rw_lowmem(g1, g2)
                 toc = time.time()
             else:
                 sim = 0.0 # no vertex overlap!
-            print(l1, l2, sim, toc-tic)
+            print(l1, l2, sim1, sim2, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
 
 def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
