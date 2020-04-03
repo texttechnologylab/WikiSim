@@ -107,6 +107,45 @@ def deltaCon(G1: igraph.Graph, G2: igraph.Graph, affinities=personalized_rw_affi
     return 1.0 / (1.0 + d)
 
 
+def deltaCon_rw_lowmem(G1: igraph.Graph, G2: igraph.Graph):
+    """
+    A similarity measure for two graphs on the same vertex set. That is, we assume that
+    G1 and G2 have the same vertex set but may have different edge sets. The implementation
+    expects the vertex sets of G1 and G2 to be ordered in the same way, i.e.
+    the ith vertex in G1 is also the ith vertex in G2.
+
+    This variant uses less memory by processing aligned vertices individually and is restricted to
+    random_walk similarities right now.
+
+    See Algorithm 1 of
+    Koutra, Vogelstein, and Faloutsos (2012)
+    DELTACON A principled Massive-Graph Similarity Function
+
+    :param G1: first graph
+    :param G2: second graph
+    :param affinities: some function that returns a numpy array of node affinities
+    :return: a similarity of G1 and G2
+    """
+    if G1.vcount() != G2.vcount():
+        raise ValueError('Graphs must have same vertex sets.')
+
+    def rw(g: igraph.Graph, v: int, weights=None):
+        affinities = np.array(g.personalized_pagerank(vertices=None, reset_vertices=v, weights=weights))
+        affinities[affinities < 0.0] = 0.0
+        return affinities
+
+    dist = 0.0
+    for v in range(G1.vcount()):
+        S1 = rw(G1, v)
+        S2 = rw(G2, v)
+        sqrt_diff = np.sqrt(S1) - np.sqrt(S2)
+        flat = sqrt_diff.flatten()
+        dist += np.dot(flat, flat)
+
+    d = np.sqrt(dist)
+    return 1.0 / (1.0 + d)
+
+
 def deltaCon_cached(S1: np.ndarray, S2: np.ndarray):
     """
     A similarity measure for two graphs on the same vertex set. That is, we assume that
@@ -276,12 +315,41 @@ def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballliga
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
             g1, g2 = intersection(graphs[l1], graphs[l2])
-            tic = time.time()
-            sim = deltaCon(g1, g2, affinities=affinities)
-            toc = time.time()
+            if g1.vcount() != 0:
+                tic = time.time()
+                sim = deltaCon(g1, g2, affinities=affinities)
+                toc = time.time()
+            else:
+                sim = 0.0 # no vertex overlap!
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
 
+
+def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussballligaGML'):
+    """
+    Intersection variant of deltacon: For each pair of graphs, compute the induced subgraphs on the vertex set
+    intersection and then proceed with the affinity computation.
+
+    :param graphs:
+    :param output_folder:
+    :return:
+    """
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    with open(os.path.join(output_folder, f'deltaCON_intersection_{personalized_rw_affinities.__name__}_lowmem.csv'), 'w') as out_csv:
+        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+
+        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+            g1, g2 = intersection(graphs[l1], graphs[l2])
+            if g1.vcount() != 0:
+                tic = time.time()
+                sim = deltaCon_rw_lowmem(g1, g2)
+                toc = time.time()
+            else:
+                sim = 0.0 # no vertex overlap!
+            print(l1, l2, sim, toc-tic)
+            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
 
 def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
     """

@@ -18,6 +18,6 @@ if __name__ == '__main__':
 
             print('personalized_rw_affinities')
             tic = time.time()
-            main_deltaCon_intersection(unaligned_graphs, affinities=personalized_rw_affinities, output_folder=out_folder)
+            main_deltaCon_intersection_lowmem(unaligned_graphs, output_folder=out_folder)
             toc = time.time()
             print('proc', toc - tic)
