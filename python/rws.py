@@ -349,9 +349,10 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
                 sim1, sim2 = deltaCon_rw_lowmem(g1, g2)
                 toc = time.time()
             else:
-                sim = 0.0 # no vertex overlap!
+                sim1 = 0.0 # no vertex overlap!
+                sim2 = 0.0  # no vertex overlap!
             print(l1, l2, sim1, sim2, toc-tic)
-            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+            out_csv.write(f'{l1}, {l2}, {sim1}, {sim2}, {toc-tic}\n')
 
 def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
     """
