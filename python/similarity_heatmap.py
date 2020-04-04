@@ -8,8 +8,16 @@ parser = optparse.OptionParser()
 parser.add_option('-i', '--input', metavar="FILE", dest="input",
     help="Path to input matrix file")
 
+parser.add_option('-m', '--modus', dest="modus",
+    help="Input matrix is distance or similarity",
+    choices=['distance', 'similarity'], default='distance')
+
+
+
 parser.add_option('-o', '--output', metavar="FILE", dest="output",
     help="Path to output tex file")
+
+
 
 options, args = parser.parse_args()
 
@@ -41,7 +49,10 @@ for line in fo.readlines():
             if(i == 0):
                 tikzpicture += "\\mchori{" + split[0] + "} "
             else:
-                tikzpicture += " " + str(round(float(split[i]),2)) + " " 
+                value = round(float(split[i]),2)
+                if(options.modus == "distance"):
+                    value = 1 - value
+                tikzpicture += " " + str(value) + " " 
             if(i < len(split)-1):
                 tikzpicture += " & " 
         tikzpicture += "\\\\\n"
