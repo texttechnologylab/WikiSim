@@ -1,0 +1,2033 @@
+[
+    {
+        "name": "Mathematics",
+        "studies": [
+            {
+                "instanceCounts": 4,
+                "name": "mathematical object",
+                "qid": "Q246672"
+            },
+            {
+                "instanceCounts": 142,
+                "name": "mathematical concept",
+                "qid": "Q24034552"
+            }
+        ],
+        "qid": "Q395",
+        "subclasses": [
+            {
+                "name": "statistics",
+                "studies": [
+                    {
+                        "instanceCounts": 11,
+                        "name": "data",
+                        "qid": "Q42848"
+                    },
+                    {
+                        "instanceCounts": 14,
+                        "name": "probability distribution",
+                        "qid": "Q200726"
+                    }
+                ],
+                "qid": "Q12483"
+            },
+            {
+                "name": "applied mathematics",
+                "studies": [],
+                "qid": "Q33521"
+            },
+            {
+                "name": "pure mathematics",
+                "studies": [],
+                "qid": "Q837863"
+            }
+        ]
+    },
+    {
+        "name": "Computer and information sciences",
+        "studies": [
+            {
+                "instanceCounts": 139,
+                "name": "computer",
+                "qid": "Q68"
+            },
+            {
+                "instanceCounts": 4,
+                "name": "computing",
+                "qid": "Q179310"
+            }
+        ],
+        "qid": "Q21198",
+        "subclasses": [
+            {
+                "name": "artificial intelligence",
+                "studies": [],
+                "qid": "Q11660"
+            },
+            {
+                "name": "human\u2013computer interaction",
+                "studies": [],
+                "qid": "Q207434"
+            },
+            {
+                "name": "web engineering",
+                "studies": [],
+                "qid": "Q1196135"
+            },
+            {
+                "name": "media informatics",
+                "studies": [],
+                "qid": "Q1212747"
+            },
+            {
+                "name": "data science",
+                "studies": [],
+                "qid": "Q2374463"
+            },
+            {
+                "name": "computational sustainability",
+                "studies": [],
+                "qid": "Q5157299"
+            },
+            {
+                "name": "ecological informatics",
+                "studies": [],
+                "qid": "Q56754593"
+            }
+        ]
+    },
+    {
+        "name": "Physical sciences",
+        "studies": [],
+        "qid": "Q413",
+        "subclasses": [
+            {
+                "name": "cosmology",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "dark energy",
+                        "qid": "Q18343"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "dark fluid",
+                        "qid": "Q5223514"
+                    }
+                ],
+                "qid": "Q338"
+            },
+            {
+                "name": "thermodynamics",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "energy",
+                        "qid": "Q11379"
+                    },
+                    {
+                        "instanceCounts": 15,
+                        "name": "temperature",
+                        "qid": "Q11466"
+                    },
+                    {
+                        "instanceCounts": 4,
+                        "name": "pressure",
+                        "qid": "Q39552"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "heat",
+                        "qid": "Q44432"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "entropy",
+                        "qid": "Q45003"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "enthalpy",
+                        "qid": "Q161064"
+                    },
+                    {
+                        "instanceCounts": 9,
+                        "name": "thermodynamic process",
+                        "qid": "Q213016"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "thermodynamic state",
+                        "qid": "Q230875"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "thermodynamic system",
+                        "qid": "Q503327"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "work",
+                        "qid": "Q900231"
+                    },
+                    {
+                        "instanceCounts": 1,
+                        "name": "intensive or extensive property",
+                        "qid": "Q911916"
+                    }
+                ],
+                "qid": "Q11473"
+            },
+            {
+                "name": "experimental physics",
+                "studies": [],
+                "qid": "Q18366"
+            },
+            {
+                "name": "astrophysics",
+                "studies": [
+                    {
+                        "instanceCounts": 2,
+                        "name": "black hole",
+                        "qid": "Q589"
+                    },
+                    {
+                        "instanceCounts": 11,
+                        "name": "neutron star",
+                        "qid": "Q4202"
+                    },
+                    {
+                        "instanceCounts": 1,
+                        "name": "stellar magnetic field",
+                        "qid": "Q6449"
+                    },
+                    {
+                        "instanceCounts": 12,
+                        "name": "stellar evolution",
+                        "qid": "Q6472"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "dark energy",
+                        "qid": "Q18343"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "dark matter",
+                        "qid": "Q79925"
+                    },
+                    {
+                        "instanceCounts": 2,
+                        "name": "planetary magnetic field",
+                        "qid": "Q4274059"
+                    }
+                ],
+                "qid": "Q37547"
+            },
+            {
+                "name": "mechanics",
+                "studies": [],
+                "qid": "Q41217"
+            },
+            {
+                "name": "acoustics",
+                "studies": [],
+                "qid": "Q82811"
+            },
+            {
+                "name": "social physics",
+                "studies": [],
+                "qid": "Q2306124"
+            },
+            {
+                "name": "heliophysics",
+                "studies": [],
+                "qid": "Q2740627"
+            }
+        ]
+    },
+    {
+        "name": "Chemical sciences",
+        "studies": [
+            {
+                "instanceCounts": 1015816,
+                "name": "chemical compound",
+                "qid": "Q11173"
+            },
+            {
+                "instanceCounts": 160,
+                "name": "chemical element",
+                "qid": "Q11344"
+            },
+            {
+                "instanceCounts": 439,
+                "name": "chemical substance",
+                "qid": "Q79529"
+            },
+            {
+                "instanceCounts": 533,
+                "name": "group or class of chemical substances",
+                "qid": "Q17339814"
+            }
+        ],
+        "qid": "Q2329",
+        "subclasses": [
+            {
+                "name": "analytical chemistry",
+                "studies": [],
+                "qid": "Q2346"
+            },
+            {
+                "name": "inorganic chemistry",
+                "studies": [{
+                    "instanceCounts": 11,
+                    "name": "inorganic compound",
+                    "qid": "Q190065"
+                }],
+                "qid": "Q11165"
+            },
+            {
+                "name": "organic chemistry",
+                "studies": [{
+                    "instanceCounts": 41,
+                    "name": "organic compound",
+                    "qid": "Q174211"
+                }],
+                "qid": "Q11351"
+            }
+        ]
+    },
+    {
+        "name": "Earth and related environmental sciences",
+        "studies": [
+            {
+                "instanceCounts": 15,
+                "name": "ecosystem",
+                "qid": "Q37813"
+            },
+            {
+                "instanceCounts": 1,
+                "name": "ecological concept",
+                "qid": "Q56575300"
+            }
+        ],
+        "qid": "Q7150",
+        "subclasses": [
+            {
+                "name": "ethnoecology",
+                "studies": [],
+                "qid": "Q1371429"
+            },
+            {
+                "name": "plant ecology",
+                "studies": [],
+                "qid": "Q1387972"
+            },
+            {
+                "name": "restoration ecology",
+                "studies": [],
+                "qid": "Q2428433"
+            },
+            {
+                "name": "theoretical ecology",
+                "studies": [],
+                "qid": "Q7782365"
+            },
+            {
+                "name": "ecological informatics",
+                "studies": [],
+                "qid": "Q56754593"
+            },
+            {
+                "name": "Mediterranean Landscape Ecology",
+                "studies": [],
+                "qid": "Q66689386"
+            }
+        ]
+    },
+    {
+        "name": "Biological sciences",
+        "studies": [
+            {
+                "instanceCounts": 1,
+                "name": "life",
+                "qid": "Q3"
+            },
+            {
+                "instanceCounts": 13,
+                "name": "organism",
+                "qid": "Q7239"
+            }
+        ],
+        "qid": "Q420",
+        "subclasses": [
+            {
+                "name": "astrobiology",
+                "studies": [],
+                "qid": "Q411"
+            },
+            {
+                "name": "zoology",
+                "studies": [{
+                    "instanceCounts": 5,
+                    "name": "animal",
+                    "qid": "Q729"
+                }],
+                "qid": "Q431"
+            },
+            {
+                "name": "botany",
+                "studies": [{
+                    "instanceCounts": 5,
+                    "name": "plant organ",
+                    "qid": "Q24060707"
+                }],
+                "qid": "Q441"
+            },
+            {
+                "name": "physiology",
+                "studies": [],
+                "qid": "Q521"
+            },
+            {
+                "name": "biochemistry",
+                "studies": [],
+                "qid": "Q7094"
+            },
+            {
+                "name": "cell biology",
+                "studies": [{
+                    "instanceCounts": 26,
+                    "name": "cell",
+                    "qid": "Q7868"
+                }],
+                "qid": "Q7141"
+            },
+            {
+                "name": "ecology",
+                "studies": [
+                    {
+                        "instanceCounts": 15,
+                        "name": "ecosystem",
+                        "qid": "Q37813"
+                    },
+                    {
+                        "instanceCounts": 1,
+                        "name": "ecological concept",
+                        "qid": "Q56575300"
+                    }
+                ],
+                "qid": "Q7150"
+            },
+            {
+                "name": "genetics",
+                "studies": [{
+                    "instanceCounts": 2,
+                    "name": "genome",
+                    "qid": "Q7020"
+                }],
+                "qid": "Q7162"
+            },
+            {
+                "name": "microbiology",
+                "studies": [],
+                "qid": "Q7193"
+            },
+            {
+                "name": "paleontology",
+                "studies": [],
+                "qid": "Q7205"
+            },
+            {
+                "name": "immunology",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "immune system",
+                        "qid": "Q1059"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "immunity",
+                        "qid": "Q182581"
+                    },
+                    {
+                        "instanceCounts": 2,
+                        "name": "Immune disorder",
+                        "qid": "Q3843811"
+                    }
+                ],
+                "qid": "Q101929"
+            },
+            {
+                "name": "computational biology",
+                "studies": [],
+                "qid": "Q177005"
+            },
+            {
+                "name": "mathematical biology",
+                "studies": [{
+                    "instanceCounts": 1,
+                    "name": "biological model",
+                    "qid": "Q66909187"
+                }],
+                "qid": "Q751611"
+            },
+            {
+                "name": "biodiversity informatics",
+                "studies": [],
+                "qid": "Q864269"
+            },
+            {
+                "name": "protistology",
+                "studies": [{
+                    "instanceCounts": 2,
+                    "name": "protist",
+                    "qid": "Q10892"
+                }],
+                "qid": "Q2467781"
+            },
+            {
+                "name": "agricultural science",
+                "studies": [],
+                "qid": "Q3606845"
+            },
+            {
+                "name": "aquatic biology",
+                "studies": [],
+                "qid": "Q5728861"
+            },
+            {
+                "name": "biological oceanography",
+                "studies": [],
+                "qid": "Q18378619"
+            },
+            {
+                "name": "plant science",
+                "studies": [],
+                "qid": "Q24454422"
+            },
+            {
+                "name": "wildlife biology",
+                "studies": [],
+                "qid": "Q64897756"
+            }
+        ]
+    },
+    {
+        "name": "Civil engineering",
+        "studies": [],
+        "qid": "Q77590",
+        "subclasses": [{
+            "name": "transportation engineering",
+            "studies": [],
+            "qid": "Q775325"
+        }]
+    },
+    {
+        "name": "Electrical engineering, electronic engineering, information engineering",
+        "studies": [],
+        "qid": "Q43035",
+        "subclasses": []
+    },
+    {
+        "name": "Mechanical engineering",
+        "studies": [],
+        "qid": "Q101333",
+        "subclasses": []
+    },
+    {
+        "name": "Chemical engineering",
+        "studies": [],
+        "qid": "Q83588",
+        "subclasses": [{
+            "name": "paper studies",
+            "studies": [{
+                "instanceCounts": 15,
+                "name": "paper",
+                "qid": "Q11472"
+            }],
+            "qid": "Q7132695"
+        }]
+    },
+    {
+        "name": "Materials engineering",
+        "studies": [],
+        "qid": "Q1710723",
+        "subclasses": []
+    },
+    {
+        "name": "Medical engineering",
+        "studies": [],
+        "qid": "Q327092",
+        "subclasses": []
+    },
+    {
+        "name": "Environmental engineering",
+        "studies": [],
+        "qid": "Q146326",
+        "subclasses": [{
+            "name": "environmental engineering and science",
+            "studies": [],
+            "qid": "Q59687311"
+        }]
+    },
+    {
+        "name": "Environmental biotechnology",
+        "studies": []
+    },
+    {
+        "name": "Industrial Biotechnology",
+        "studies": []
+    },
+    {
+        "name": "Nano-technology",
+        "studies": []
+    },
+    {
+        "name": "Basic medicine",
+        "studies": [],
+        "qid": "Q11190",
+        "subclasses": [
+            {
+                "name": "psychiatry",
+                "studies": [],
+                "qid": "Q7867"
+            },
+            {
+                "name": "geriatrics",
+                "studies": [],
+                "qid": "Q10384"
+            },
+            {
+                "name": "internal medicine",
+                "studies": [],
+                "qid": "Q11180"
+            },
+            {
+                "name": "dentistry",
+                "studies": [],
+                "qid": "Q12128"
+            },
+            {
+                "name": "neurology",
+                "studies": [],
+                "qid": "Q83042"
+            },
+            {
+                "name": "pediatrics",
+                "studies": [],
+                "qid": "Q123028"
+            },
+            {
+                "name": "ophthalmology",
+                "studies": [],
+                "qid": "Q161437"
+            },
+            {
+                "name": "oncology",
+                "studies": [{
+                    "instanceCounts": 4,
+                    "name": "cancer",
+                    "qid": "Q12078"
+                }],
+                "qid": "Q162555"
+            },
+            {
+                "name": "veterinary medicine",
+                "studies": [],
+                "qid": "Q170201"
+            },
+            {
+                "name": "neuroscience",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "brain",
+                    "qid": "Q1073"
+                }],
+                "qid": "Q207011"
+            },
+            {
+                "name": "nuclear medicine",
+                "studies": [],
+                "qid": "Q214963"
+            },
+            {
+                "name": "emergency medicine",
+                "studies": [],
+                "qid": "Q2861470"
+            },
+            {
+                "name": "Q3332456",
+                "studies": [],
+                "qid": "Q3332456"
+            },
+            {
+                "name": "symptomatology",
+                "studies": [
+                    {
+                        "instanceCounts": 346,
+                        "name": "symptom",
+                        "qid": "Q169872"
+                    },
+                    {
+                        "instanceCounts": 490,
+                        "name": "clinical sign",
+                        "qid": "Q1441305"
+                    }
+                ],
+                "qid": "Q3510806"
+            },
+            {
+                "name": "molecular medicine",
+                "studies": [],
+                "qid": "Q3523816"
+            },
+            {
+                "name": "cancer biology",
+                "studies": [
+                    {
+                        "instanceCounts": 3,
+                        "name": "biology",
+                        "qid": "Q420"
+                    },
+                    {
+                        "instanceCounts": 4,
+                        "name": "cancer",
+                        "qid": "Q12078"
+                    }
+                ],
+                "qid": "Q85709956"
+            },
+            {
+                "name": "stem cell biology",
+                "studies": [{
+                    "instanceCounts": 2,
+                    "name": "stem cell",
+                    "qid": "Q48196"
+                }],
+                "qid": "Q85711371"
+            }
+        ]
+    },
+    {
+        "name": "Clinical medicine",
+        "studies": []
+    },
+    {
+        "name": "Health sciences",
+        "studies": [],
+        "qid": "Q843601",
+        "subclasses": [
+            {
+                "name": "medicine",
+                "studies": [],
+                "qid": "Q11190"
+            },
+            {
+                "name": "pharmacology",
+                "studies": [
+                    {
+                        "instanceCounts": 40,
+                        "name": "drug",
+                        "qid": "Q8386"
+                    },
+                    {
+                        "instanceCounts": 14,
+                        "name": "biochemical receptor",
+                        "qid": "Q208467"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "indication",
+                        "qid": "Q496997"
+                    },
+                    {
+                        "instanceCounts": 13,
+                        "name": "effect",
+                        "qid": "Q926230"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "contraindication",
+                        "qid": "Q1848900"
+                    }
+                ],
+                "qid": "Q128406"
+            },
+            {
+                "name": "public health",
+                "studies": [],
+                "qid": "Q189603"
+            },
+            {
+                "name": "optometry",
+                "studies": [],
+                "qid": "Q618211"
+            }
+        ]
+    },
+    {
+        "name": "Health biotechnology",
+        "studies": []
+    },
+    {
+        "name": "Agriculture, forestry, and fisheries",
+        "studies": [],
+        "qid": "Q3606845",
+        "subclasses": []
+    },
+    {
+        "name": "Animal and dairy science",
+        "studies": [{
+            "instanceCounts": 5,
+            "name": "animal",
+            "qid": "Q729"
+        }],
+        "qid": "Q431",
+        "subclasses": [
+            {
+                "name": "Soil zoology",
+                "studies": [],
+                "qid": "Q7554969"
+            },
+            {
+                "name": "vertebrate zoology",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "Vertebrata",
+                    "qid": "Q25241"
+                }],
+                "qid": "Q18358830"
+            }
+        ]
+    },
+    {
+        "name": "Veterinary science",
+        "studies": [],
+        "qid": "Q170201",
+        "subclasses": [{
+            "name": "epizootiology",
+            "studies": [],
+            "qid": "Q4115091"
+        }]
+    },
+    {
+        "name": "Agricultural biotechnology",
+        "studies": [],
+        "qid": "Q19595794",
+        "subclasses": []
+    },
+    {
+        "name": "Psychology",
+        "studies": [
+            {
+                "instanceCounts": 16,
+                "name": "human behaviour",
+                "qid": "Q3769299"
+            },
+            {
+                "instanceCounts": 3,
+                "name": "mental state",
+                "qid": "Q3968640"
+            },
+            {
+                "instanceCounts": 0,
+                "name": "psychism",
+                "qid": "Q10355314"
+            }
+        ],
+        "qid": "Q9418",
+        "subclasses": [
+            {
+                "name": "Behavioral economics",
+                "studies": [],
+                "qid": "Q647525"
+            },
+            {
+                "name": "cyberpsychology",
+                "studies": [],
+                "qid": "Q2905785"
+            },
+            {
+                "name": "ecopsychology",
+                "studies": [],
+                "qid": "Q15088481"
+            }
+        ]
+    },
+    {
+        "name": "Economics and business",
+        "studies": [
+            {
+                "instanceCounts": 3,
+                "name": "goods",
+                "qid": "Q28877"
+            },
+            {
+                "instanceCounts": 283,
+                "name": "economy",
+                "qid": "Q159810"
+            },
+            {
+                "instanceCounts": 99,
+                "name": "service",
+                "qid": "Q7406919"
+            }
+        ],
+        "qid": "Q8134",
+        "subclasses": [
+            {
+                "name": "positive economics",
+                "studies": [],
+                "qid": "Q26110"
+            },
+            {
+                "name": "labour economics",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "human capital",
+                        "qid": "Q165687"
+                    },
+                    {
+                        "instanceCounts": 1,
+                        "name": "wage",
+                        "qid": "Q6821213"
+                    },
+                    {
+                        "instanceCounts": 17,
+                        "name": "work",
+                        "qid": "Q6958747"
+                    }
+                ],
+                "qid": "Q28161"
+            },
+            {
+                "name": "health economics",
+                "studies": [],
+                "qid": "Q31218"
+            },
+            {
+                "name": "international economics",
+                "studies": [
+                    {
+                        "instanceCounts": 1,
+                        "name": "international trade",
+                        "qid": "Q178803"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "international finance",
+                        "qid": "Q2048185"
+                    }
+                ],
+                "qid": "Q47417"
+            },
+            {
+                "name": "econometrics",
+                "studies": [],
+                "qid": "Q160039"
+            },
+            {
+                "name": "Behavioral economics",
+                "studies": [],
+                "qid": "Q647525"
+            },
+            {
+                "name": "neuroeconomics",
+                "studies": [],
+                "qid": "Q1045712"
+            },
+            {
+                "name": "production theory",
+                "studies": [],
+                "qid": "Q1080208"
+            },
+            {
+                "name": "information economics",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "information economy",
+                    "qid": "Q871337"
+                }],
+                "qid": "Q1394203"
+            },
+            {
+                "name": "industrial organization",
+                "studies": [],
+                "qid": "Q1411783"
+            },
+            {
+                "name": "Pharmacoeconomics",
+                "studies": [],
+                "qid": "Q1567856"
+            },
+            {
+                "name": "francology",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "France",
+                        "qid": "Q142"
+                    },
+                    {
+                        "instanceCounts": 1,
+                        "name": "francophonie",
+                        "qid": "Q1003588"
+                    }
+                ],
+                "qid": "Q3082422"
+            },
+            {
+                "name": "public health economics",
+                "studies": [],
+                "qid": "Q56453016"
+            }
+        ]
+    },
+    {"name": "Educational sciences"},
+    {
+        "name": "Sociology",
+        "studies": [
+            {
+                "instanceCounts": 171,
+                "name": "society",
+                "qid": "Q8425"
+            },
+            {
+                "instanceCounts": 58,
+                "name": "education",
+                "qid": "Q8434"
+            },
+            {
+                "instanceCounts": 3,
+                "name": "gender",
+                "qid": "Q48277"
+            },
+            {
+                "instanceCounts": 121,
+                "name": "social class",
+                "qid": "Q187588"
+            },
+            {
+                "instanceCounts": 0,
+                "name": "structure",
+                "qid": "Q517966"
+            },
+            {
+                "instanceCounts": 3,
+                "name": "social conflict",
+                "qid": "Q2672648"
+            },
+            {
+                "instanceCounts": 97,
+                "name": "group action",
+                "qid": "Q3533467"
+            },
+            {
+                "instanceCounts": 17,
+                "name": "work",
+                "qid": "Q6958747"
+            }
+        ],
+        "qid": "Q21201",
+        "subclasses": [
+            {
+                "name": "rural sociology",
+                "studies": [],
+                "qid": "Q396246"
+            },
+            {
+                "name": "sociology of religion",
+                "studies": [],
+                "qid": "Q461659"
+            },
+            {
+                "name": "sociology of sport",
+                "studies": [],
+                "qid": "Q594322"
+            },
+            {
+                "name": "sociology of law",
+                "studies": [],
+                "qid": "Q847034"
+            },
+            {
+                "name": "sociology of scientific knowledge",
+                "studies": [],
+                "qid": "Q981008"
+            },
+            {
+                "name": "Military sociology",
+                "studies": [],
+                "qid": "Q1262403"
+            },
+            {
+                "name": "industrial sociology",
+                "studies": [],
+                "qid": "Q1302156"
+            },
+            {
+                "name": "sociology of culture",
+                "studies": [],
+                "qid": "Q1570681"
+            },
+            {
+                "name": "historical sociology",
+                "studies": [],
+                "qid": "Q1620918"
+            },
+            {
+                "name": "gender studies",
+                "studies": [{
+                    "instanceCounts": 3,
+                    "name": "gender",
+                    "qid": "Q48277"
+                }],
+                "qid": "Q1662673"
+            },
+            {
+                "name": "sociology of the Internet",
+                "studies": [],
+                "qid": "Q1668038"
+            },
+            {
+                "name": "sociology of art",
+                "studies": [],
+                "qid": "Q1792635"
+            },
+            {
+                "name": "medical sociology",
+                "studies": [],
+                "qid": "Q1916660"
+            },
+            {
+                "name": "sociomusicology",
+                "studies": [],
+                "qid": "Q1955278"
+            },
+            {
+                "name": "sociology of science",
+                "studies": [],
+                "qid": "Q2747152"
+            },
+            {
+                "name": "Sociotechnology",
+                "studies": [],
+                "qid": "Q3487475"
+            },
+            {
+                "name": "prison sociology",
+                "studies": [{
+                    "instanceCounts": 2536,
+                    "name": "prison",
+                    "qid": "Q40357"
+                }],
+                "qid": "Q3487508"
+            },
+            {
+                "name": "public sociology",
+                "studies": [],
+                "qid": "Q4353946"
+            },
+            {
+                "name": "sociology of peace, war, and social conflict",
+                "studies": [],
+                "qid": "Q7552857"
+            },
+            {
+                "name": "socio-anthropology of adolescence",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "adolescence",
+                    "qid": "Q131774"
+                }],
+                "qid": "Q18415368"
+            },
+            {
+                "name": "Marital compatibility",
+                "studies": [],
+                "qid": "Q50840417"
+            },
+            {
+                "name": "sociodemography",
+                "studies": [],
+                "qid": "Q61791506"
+            }
+        ]
+    },
+    {
+        "name": "Law",
+        "studies": [{
+            "instanceCounts": 885,
+            "name": "law",
+            "qid": "Q7748"
+        }],
+        "qid": "Q382995",
+        "subclasses": [{
+            "name": "legal theory",
+            "studies": [],
+            "qid": "Q1331392"
+        }]
+    },
+    {
+        "name": "Political Science",
+        "studies": [{
+            "instanceCounts": 32,
+            "name": "politics",
+            "qid": "Q7163"
+        }],
+        "qid": "Q36442",
+        "subclasses": [
+            {
+                "name": "Kremlinology",
+                "studies": [],
+                "qid": "Q1263075"
+            },
+            {
+                "name": "science of public administration",
+                "studies": [],
+                "qid": "Q2736989"
+            },
+            {
+                "name": "ethnopolitics",
+                "studies": [],
+                "qid": "Q26237583"
+            }
+        ]
+    },
+    {
+        "name": "Social and economic geography",
+        "studies": [],
+        "qid": "Q187097",
+        "subclasses": []
+    },
+    {
+        "name": "Media and communications",
+        "studies": [],
+        "qid": "Q1078351",
+        "subclasses": [{
+            "name": "Q1709909",
+            "studies": [],
+            "qid": "Q1709909"
+        }]
+    },
+    {
+        "name": "History",
+        "studies": [
+            {
+                "instanceCounts": 135,
+                "name": "history",
+                "qid": "Q309"
+            },
+            {
+                "instanceCounts": 0,
+                "name": "Q9293033",
+                "qid": "Q9293033"
+            },
+            {
+                "instanceCounts": 8354,
+                "name": "aspect of history",
+                "qid": "Q17524420"
+            },
+            {
+                "instanceCounts": 2,
+                "name": "historiography",
+                "qid": "Q30277550"
+            }
+        ],
+        "qid": "Q1066186",
+        "subclasses": [
+            {
+                "name": "archaeology",
+                "studies": [{
+                    "instanceCounts": 29606,
+                    "name": "archaeological site",
+                    "qid": "Q839954"
+                }],
+                "qid": "Q23498"
+            },
+            {
+                "name": "Jewish studies",
+                "studies": [{
+                    "instanceCounts": 35,
+                    "name": "Jewish people",
+                    "qid": "Q7325"
+                }],
+                "qid": "Q42002"
+            },
+            {
+                "name": "media history",
+                "studies": [{
+                    "instanceCounts": 88,
+                    "name": "communication medium",
+                    "qid": "Q340169"
+                }],
+                "qid": "Q50636"
+            },
+            {
+                "name": "medieval studies",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "Middle Ages",
+                    "qid": "Q12554"
+                }],
+                "qid": "Q119190"
+            },
+            {
+                "name": "military history",
+                "studies": [{
+                    "instanceCounts": 1024,
+                    "name": "war",
+                    "qid": "Q198"
+                }],
+                "qid": "Q192781"
+            },
+            {
+                "name": "history of science",
+                "studies": [],
+                "qid": "Q201486"
+            },
+            {
+                "name": "agrarian history",
+                "studies": [{
+                    "instanceCounts": 6,
+                    "name": "agriculture",
+                    "qid": "Q11451"
+                }],
+                "qid": "Q396077"
+            },
+            {
+                "name": "Ancient History",
+                "studies": [
+                    {
+                        "instanceCounts": 2,
+                        "name": "Ancient Greece",
+                        "qid": "Q11772"
+                    },
+                    {
+                        "instanceCounts": 2,
+                        "name": "ancient Rome",
+                        "qid": "Q1747689"
+                    }
+                ],
+                "qid": "Q435608"
+            },
+            {
+                "name": "museology",
+                "studies": [],
+                "qid": "Q460162"
+            },
+            {
+                "name": "history of ideas",
+                "studies": [],
+                "qid": "Q570018"
+            },
+            {
+                "name": "legal history",
+                "studies": [],
+                "qid": "Q680004"
+            },
+            {
+                "name": "auxiliary science of history",
+                "studies": [],
+                "qid": "Q770723"
+            },
+            {
+                "name": "history of geography",
+                "studies": [{
+                    "instanceCounts": 3,
+                    "name": "geography",
+                    "qid": "Q1071"
+                }],
+                "qid": "Q911070"
+            },
+            {
+                "name": "prehistory and early history",
+                "studies": [
+                    {
+                        "instanceCounts": 3,
+                        "name": "prehistory",
+                        "qid": "Q11756"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "protohistory",
+                        "qid": "Q695827"
+                    }
+                ],
+                "qid": "Q2310752"
+            },
+            {
+                "name": "francology",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "France",
+                        "qid": "Q142"
+                    },
+                    {
+                        "instanceCounts": 1,
+                        "name": "francophonie",
+                        "qid": "Q1003588"
+                    }
+                ],
+                "qid": "Q3082422"
+            },
+            {
+                "name": "world history",
+                "studies": [{
+                    "instanceCounts": 1,
+                    "name": "history of the world",
+                    "qid": "Q200325"
+                }],
+                "qid": "Q6457238"
+            },
+            {
+                "name": "medieval history",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "Middle Ages",
+                    "qid": "Q12554"
+                }],
+                "qid": "Q27992545"
+            }
+        ]
+    },
+    {
+        "name": "Archaeology",
+        "studies": [{
+            "instanceCounts": 29606,
+            "name": "archaeological site",
+            "qid": "Q839954"
+        }],
+        "qid": "Q23498",
+        "subclasses": [
+            {
+                "name": "egyptology",
+                "studies": [
+                    {
+                        "instanceCounts": 2,
+                        "name": "Ancient Egypt",
+                        "qid": "Q11768"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "Nubia",
+                        "qid": "Q135028"
+                    }
+                ],
+                "qid": "Q145903"
+            },
+            {
+                "name": "taphonomy",
+                "studies": [],
+                "qid": "Q596086"
+            },
+            {
+                "name": "rescue archaeology",
+                "studies": [],
+                "qid": "Q653838"
+            },
+            {
+                "name": "buildings archaeology",
+                "studies": [],
+                "qid": "Q811338"
+            },
+            {
+                "name": "material culture",
+                "studies": [],
+                "qid": "Q2143054"
+            },
+            {
+                "name": "prehistory and early history",
+                "studies": [
+                    {
+                        "instanceCounts": 3,
+                        "name": "prehistory",
+                        "qid": "Q11756"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "protohistory",
+                        "qid": "Q695827"
+                    }
+                ],
+                "qid": "Q2310752"
+            },
+            {
+                "name": "prehistoric archaeology",
+                "studies": [],
+                "qid": "Q2415966"
+            },
+            {
+                "name": "ceramology",
+                "studies": [{
+                    "instanceCounts": 198,
+                    "name": "ceramic",
+                    "qid": "Q45621"
+                }],
+                "qid": "Q3010315"
+            },
+            {
+                "name": "mycenology",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "Mycenaean Greece",
+                        "qid": "Q181264"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "Mycenaean Greek",
+                        "qid": "Q668366"
+                    }
+                ],
+                "qid": "Q26425130"
+            },
+            {
+                "name": "textile archaeology",
+                "studies": [],
+                "qid": "Q55227852"
+            }
+        ]
+    },
+    {
+        "name": "Languages",
+        "studies": [
+            {
+                "instanceCounts": 43,
+                "name": "language",
+                "qid": "Q315"
+            },
+            {
+                "instanceCounts": 2531,
+                "name": "dialect",
+                "qid": "Q33384"
+            },
+            {
+                "instanceCounts": 10165,
+                "name": "language",
+                "qid": "Q34770"
+            },
+            {
+                "instanceCounts": 12,
+                "name": "languoid",
+                "qid": "Q17376908"
+            },
+            {
+                "instanceCounts": 43,
+                "name": "languoid class",
+                "qid": "Q28923954"
+            }
+        ],
+        "qid": "Q8162",
+        "subclasses": [
+            {
+                "name": "anthropological linguistics",
+                "studies": [],
+                "qid": "Q29407"
+            },
+            {
+                "name": "phonetics",
+                "studies": [],
+                "qid": "Q35395"
+            },
+            {
+                "name": "morphology",
+                "studies": [
+                    {
+                        "instanceCounts": 5,
+                        "name": "morpheme",
+                        "qid": "Q43249"
+                    },
+                    {
+                        "instanceCounts": 9,
+                        "name": "affix",
+                        "qid": "Q62155"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "flexion",
+                        "qid": "Q719278"
+                    }
+                ],
+                "qid": "Q38311"
+            },
+            {
+                "name": "semantics",
+                "studies": [{
+                    "instanceCounts": 2,
+                    "name": "lexeme",
+                    "qid": "Q111352"
+                }],
+                "qid": "Q39645"
+            },
+            {
+                "name": "semiotics",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "semiosis",
+                    "qid": "Q681696"
+                }],
+                "qid": "Q60195"
+            },
+            {
+                "name": "dialectology",
+                "studies": [
+                    {
+                        "instanceCounts": 2531,
+                        "name": "dialect",
+                        "qid": "Q33384"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "linguistic variation",
+                        "qid": "Q1130761"
+                    }
+                ],
+                "qid": "Q146893"
+            },
+            {
+                "name": "sociolinguistics",
+                "studies": [
+                    {
+                        "instanceCounts": 19,
+                        "name": "standard language",
+                        "qid": "Q399495"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "hypercorrection",
+                        "qid": "Q493477"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "hyperadaptation",
+                        "qid": "Q1036601"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "linguistic usus",
+                        "qid": "Q1047050"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "communicative competence",
+                        "qid": "Q1193729"
+                    },
+                    {
+                        "instanceCounts": 4,
+                        "name": "linguistic prescription",
+                        "qid": "Q1321978"
+                    },
+                    {
+                        "instanceCounts": 5,
+                        "name": "linguistic norm",
+                        "qid": "Q1759988"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "language proficiency",
+                        "qid": "Q2390977"
+                    },
+                    {
+                        "instanceCounts": 10,
+                        "name": "language ideology",
+                        "qid": "Q6486741"
+                    },
+                    {
+                        "instanceCounts": 10,
+                        "name": "language attitude",
+                        "qid": "Q11825133"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "codification",
+                        "qid": "Q17141634"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "linguistic insecurity",
+                        "qid": "Q17164913"
+                    }
+                ],
+                "qid": "Q160845"
+            },
+            {
+                "name": "lexicology",
+                "studies": [{
+                    "instanceCounts": 2,
+                    "name": "lexeme",
+                    "qid": "Q111352"
+                }],
+                "qid": "Q178433"
+            },
+            {
+                "name": "historical linguistics",
+                "studies": [
+                    {
+                        "instanceCounts": 79,
+                        "name": "historical language",
+                        "qid": "Q2315359"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "diachrony",
+                        "qid": "Q5270227"
+                    }
+                ],
+                "qid": "Q190375"
+            },
+            {
+                "name": "linguistic typology",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "linguistic typology",
+                    "qid": "Q72775801"
+                }],
+                "qid": "Q192625"
+            },
+            {
+                "name": "study of the Hebrew language",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "Hebrew",
+                    "qid": "Q9288"
+                }],
+                "qid": "Q739465"
+            },
+            {
+                "name": "ethnolinguistics",
+                "studies": [],
+                "qid": "Q853085"
+            },
+            {
+                "name": "comparative linguistics",
+                "studies": [{
+                    "instanceCounts": 79,
+                    "name": "historical language",
+                    "qid": "Q2315359"
+                }],
+                "qid": "Q878226"
+            },
+            {
+                "name": "phraseology",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "Q13409091",
+                    "qid": "Q13409091"
+                }],
+                "qid": "Q1126894"
+            },
+            {
+                "name": "terminology",
+                "studies": [
+                    {
+                        "instanceCounts": 1013,
+                        "name": "term",
+                        "qid": "Q1969448"
+                    },
+                    {
+                        "instanceCounts": 7,
+                        "name": "terminology",
+                        "qid": "Q8380731"
+                    }
+                ],
+                "qid": "Q1725664"
+            },
+            {
+                "name": "metalinguistics",
+                "studies": [],
+                "qid": "Q2918137"
+            },
+            {
+                "name": "francology",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "France",
+                        "qid": "Q142"
+                    },
+                    {
+                        "instanceCounts": 1,
+                        "name": "francophonie",
+                        "qid": "Q1003588"
+                    }
+                ],
+                "qid": "Q3082422"
+            },
+            {
+                "name": "Italian philology",
+                "studies": [
+                    {
+                        "instanceCounts": 0,
+                        "name": "Italian",
+                        "qid": "Q652"
+                    },
+                    {
+                        "instanceCounts": 0,
+                        "name": "Italian literature",
+                        "qid": "Q74217"
+                    }
+                ],
+                "qid": "Q3745495"
+            },
+            {
+                "name": "Russian linguistics",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "Russian",
+                    "qid": "Q7737"
+                }],
+                "qid": "Q4261898"
+            },
+            {
+                "name": "Lavender linguistics",
+                "studies": [],
+                "qid": "Q6502543"
+            },
+            {
+                "name": "linguistic palaeontology",
+                "studies": [],
+                "qid": "Q11697471"
+            },
+            {
+                "name": "Q25447165",
+                "studies": [],
+                "qid": "Q25447165"
+            },
+            {
+                "name": "Demotics",
+                "studies": [],
+                "qid": "Q26234216"
+            },
+            {
+                "name": "Spanish linguistics",
+                "studies": [],
+                "qid": "Q66565628"
+            }
+        ]
+    },
+    {
+        "name": "Literature",
+        "studies": [{
+            "instanceCounts": 88,
+            "name": "literature",
+            "qid": "Q8242"
+        }],
+        "qid": "Q208217",
+        "subclasses": [
+            {
+                "name": "literary theory",
+                "studies": [],
+                "qid": "Q459381"
+            },
+            {
+                "name": "comparative literature",
+                "studies": [],
+                "qid": "Q834903"
+            },
+            {
+                "name": "Q2793219",
+                "studies": [],
+                "qid": "Q2793219"
+            },
+            {
+                "name": "history of literature",
+                "studies": [],
+                "qid": "Q6497044"
+            },
+            {
+                "name": "kagaku",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "Waka (Poetry)",
+                    "qid": "Q737148"
+                }],
+                "qid": "Q11545105"
+            },
+            {
+                "name": "genre theory",
+                "studies": [],
+                "qid": "Q86619995"
+            }
+        ]
+    },
+    {
+        "name": "Philosophy, ethics and religion",
+        "studies": [
+            {
+                "instanceCounts": 4,
+                "name": "knowledge",
+                "qid": "Q9081"
+            },
+            {
+                "instanceCounts": 1,
+                "name": "world",
+                "qid": "Q16502"
+            },
+            {
+                "instanceCounts": 50,
+                "name": "condition",
+                "qid": "Q813912"
+            },
+            {
+                "instanceCounts": 6,
+                "name": "phenomenon",
+                "qid": "Q16722960"
+            }
+        ],
+        "qid": "Q5891",
+        "subclasses": [
+            {
+                "name": "ethics",
+                "studies": [],
+                "qid": "Q9465"
+            },
+            {
+                "name": "philosophy of science",
+                "studies": [],
+                "qid": "Q59115"
+            },
+            {
+                "name": "esotericism",
+                "studies": [],
+                "qid": "Q131505"
+            }
+        ]
+    },
+    {
+        "name": "Art (arts)",
+        "studies": [
+            {
+                "instanceCounts": 67,
+                "name": "art",
+                "qid": "Q735"
+            },
+            {
+                "instanceCounts": 131421,
+                "name": "work of art",
+                "qid": "Q838948"
+            }
+        ],
+        "qid": "Q55336315",
+        "subclasses": []
+    },
+    {
+        "name": "Art (history of arts)",
+        "studies": [
+            {
+                "instanceCounts": 67,
+                "name": "art",
+                "qid": "Q735"
+            },
+            {
+                "instanceCounts": 2,
+                "name": "history of art",
+                "qid": "Q50641"
+            },
+            {
+                "instanceCounts": 131421,
+                "name": "work of art",
+                "qid": "Q838948"
+            }
+        ],
+        "qid": "Q50637",
+        "subclasses": [
+            {
+                "name": "archaeology",
+                "studies": [{
+                    "instanceCounts": 29606,
+                    "name": "archaeological site",
+                    "qid": "Q839954"
+                }],
+                "qid": "Q23498"
+            },
+            {
+                "name": "Art geography",
+                "studies": [],
+                "qid": "Q45741429"
+            }
+        ]
+    },
+    {
+        "name": "Art (performing arts)",
+        "studies": [],
+        "qid": "Q184485",
+        "subclasses": []
+    },
+    {
+        "name": "Art (music)",
+        "studies": [
+            {
+                "instanceCounts": 77,
+                "name": "music",
+                "qid": "Q638"
+            },
+            {
+                "instanceCounts": 76,
+                "name": "music style",
+                "qid": "Q11921029"
+            }
+        ],
+        "qid": "Q164204",
+        "subclasses": [
+            {
+                "name": "campanology",
+                "studies": [{
+                    "instanceCounts": 5537,
+                    "name": "bell",
+                    "qid": "Q101401"
+                }],
+                "qid": "Q168058"
+            },
+            {
+                "name": "ethnomusicology",
+                "studies": [],
+                "qid": "Q208365"
+            },
+            {
+                "name": "hymnology",
+                "studies": [
+                    {
+                        "instanceCounts": 2309,
+                        "name": "Christian hymn",
+                        "qid": "Q856713"
+                    },
+                    {
+                        "instanceCounts": 3,
+                        "name": "religious hymn",
+                        "qid": "Q63203971"
+                    }
+                ],
+                "qid": "Q1640693"
+            },
+            {
+                "name": "sociomusicology",
+                "studies": [],
+                "qid": "Q1955278"
+            },
+            {
+                "name": "zoomusicology",
+                "studies": [],
+                "qid": "Q2755197"
+            },
+            {
+                "name": "systematic musicology",
+                "studies": [],
+                "qid": "Q7663779"
+            },
+            {
+                "name": "music history",
+                "studies": [{
+                    "instanceCounts": 0,
+                    "name": "history of music",
+                    "qid": "Q846047"
+                }],
+                "qid": "Q10590700"
+            }
+        ]
+    }
+]

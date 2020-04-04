@@ -1,0 +1,1005 @@
+\documentclass[preview=true]{standalone}
+
+\usepackage{tabularx}
+\usepackage{booktabs,arydshln}
+
+\makeatletter
+\def\adl@drawiv#1#2#3{%
+	\hskip.5\tabcolsep
+	\xleaders#3{#2.5\@tempdimb #1{1}#2.5\@tempdimb}%
+	#2\z@ plus1fil minus1fil\relax
+	\hskip.5\tabcolsep}
+\newcommand{\cdashlinelr}[1]{%
+	\noalign{\vskip\aboverulesep
+		\global\let\@dashdrawstore\adl@draw
+		\global\let\adl@draw\adl@drawiv}
+	\cdashline{#1}
+	\noalign{\global\let\adl@draw\@dashdrawstore
+		\vskip\belowrulesep}}
+
+\begin{document}
+\begin{table}[ht]
+	\footnotesize
+	\begin{tabularx}{\linewidth}{XXl}%la%
+		\toprule
+		\textbf{Field} &\textbf{Studies}&\textbf{Instances}\\
+		\midrule
+		Mathematics & mathematical object & 591052 \\
+ & mathematical concept & 24741 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ mathematical analysis & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ computational biology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ combinatorial game theory & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ spatial econometrics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ mathematical engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ statistics & data & 575641 \\
+ & probability distribution & 15 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ applied mathematics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ econometrics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ lexicostatistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ particle statistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ pure mathematics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ non-parametric statistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ medical statistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ parametric statistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ demographic statistics & human population & 26 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ data science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ anthropometry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical computation & computational biology & 2 \\
+ & biomedicine & 0 \\
+\midrule
+\midrule
+Computer and information sciences & computer & 19181 \\
+ & computing & 22890 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ robotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Human–robot interaction & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ combinatorial game theory & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cognitive anthropology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ artificial intelligence & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ computational biology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ speech recognition & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ human–computer interaction & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ web engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ media informatics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ data science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Distributed artificial intelligence & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ computational sustainability & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ecological informatics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Soft robotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical computation & computational biology & 2 \\
+ & biomedicine & 0 \\
+\midrule
+\midrule
+Physical sciences & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cosmology & dark energy & 0 \\
+ & dark fluid & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ thermodynamics & energy & 14 \\
+ & temperature & 18 \\
+ & pressure & 6 \\
+ & heat & 0 \\
+ & entropy & 2 \\
+ & enthalpy & 0 \\
+ & thermodynamic process & 56 \\
+ & thermodynamic state & 1064 \\
+ & thermodynamic system & 649 \\
+ & work & 0 \\
+ & intensive or extensive property & 1072 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ experimental physics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ astrophysics & black hole & 8 \\
+ & neutron star & 1863 \\
+ & stellar magnetic field & 1 \\
+ & stellar evolution & 12 \\
+ & dark energy & 0 \\
+ & dark matter & 0 \\
+ & planetary magnetic field & 2 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ mechanics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ acoustics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ galaxy formation and evolution & galaxy & 1922883 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ social physics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ heliophysics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ electronics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ zoomusicology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ computational geophysics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ voice synthesis & $\emptyset$ \\
+\midrule
+\midrule
+Chemical sciences & chemical compound & -1 \\
+ & chemical element & 184 \\
+ & chemical substance & -1 \\
+ & group or class of chemical substances & 52797 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ analytical chemistry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biochemistry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ inorganic chemistry & inorganic compound & 65 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ organic chemistry & organic compound & -1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ crystallography & crystal & 87 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnopharmacology & $\emptyset$ \\
+\midrule
+\midrule
+Earth and related environmental sciences & ecosystem & 96057 \\
+ & ecological concept & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnoecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ plant ecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ restoration ecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ theoretical ecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q48061040 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ecological informatics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Mediterranean Landscape Ecology & $\emptyset$ \\
+\midrule
+\midrule
+Biological sciences & life & 2 \\
+ & organism & -1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ pomology & fruit picking & 46 \\
+ & fruit & 82 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnobotany & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnoecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ plant ecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ geobotany & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of botany & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Soil zoology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ vertebrate zoology & Vertebrata & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ astrobiology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ zoology & animal & 12327 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ botany & plant organ & 199 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ physiology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biochemistry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cell biology & cell & 107597 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ecology & ecosystem & 96057 \\
+ & ecological concept & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ genetics & genome & 5 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ microbiology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ paleontology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ immunology & immune system & 0 \\
+ & immunity & 0 \\
+ & Immune disorder & 8 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ computational biology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ mathematical biology & biological model & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biodiversity informatics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ protistology & protist & 2 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ agricultural science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ aquatic biology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biological oceanography & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ plant science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ astrobotany & plants in space & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ wildlife biology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ population genetics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ malacology & Mollusca & 4 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ serology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ taphonomy & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ genetic genealogy & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ restoration ecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Human evolutionary genetics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ theoretical ecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ spongiology & Porifera & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neurobehavioral genetics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ deep-sea biology & deep sea community & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ecological informatics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ palaeohydrology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Mediterranean Landscape Ecology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ agronomy & vegetable & 20 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ teratology & congenital abnormality & 3065 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ plant morphology & plant structure & 596 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ conchology & mollusc shell & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ regenerative medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnopharmacology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ helminthology & helminth & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ zoomusicology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q2860621 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Philematology & kiss & 2 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ forensic osteology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Hematopathology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q48061040 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ forestry & tree & 9337 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Botanical historiography & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical computation & computational biology & 2 \\
+ & biomedicine & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ child development & $\emptyset$ \\
+\midrule
+\midrule
+Civil engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ transportation engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ railway engineering & $\emptyset$ \\
+\midrule
+\midrule
+Electrical engineering, electronic engineering, information engineering & $\emptyset$ \\
+\midrule
+\midrule
+Mechanical engineering & $\emptyset$ \\
+\midrule
+\midrule
+Chemical engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ paper studies & paper & 19 \\
+\midrule
+\midrule
+Materials engineering & $\emptyset$ \\
+\midrule
+\midrule
+Medical engineering & $\emptyset$ \\
+\midrule
+\midrule
+Environmental engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ environmental engineering and science & $\emptyset$ \\
+\midrule
+\midrule
+Environmental biotechnology & $\emptyset$ \\
+\midrule
+\midrule
+Industrial Biotechnology & $\emptyset$ \\
+\midrule
+\midrule
+Nano-technology & $\emptyset$ \\
+\midrule
+\midrule
+Basic medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ psychiatry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ geriatrics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ internal medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ dentistry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neurology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ pediatrics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ophthalmology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ oncology & cancer & 241 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ endocrinology & hormone & 81 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ veterinary medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuroscience & brain & 11 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ nuclear medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuropsychiatry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ emergency medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q3332456 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ symptomatology & symptom & 1113 \\
+ & clinical sign & 589 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ molecular medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cancer biology & biology & 1162 \\
+ & cancer & 241 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ stem cell biology & stem cell & 21277 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuroeconomics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ regenerative medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ epizootiology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical computation & computational biology & 2 \\
+ & biomedicine & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnopharmacology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cognitive anthropology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Hematopathology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ forensic epidemiology & $\emptyset$ \\
+\midrule
+\midrule
+Clinical medicine & $\emptyset$ \\
+\midrule
+\midrule
+Health sciences & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ endocrinology & hormone & 81 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuroeconomics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuropsychiatry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ psychiatry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ geriatrics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ internal medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ dentistry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neurology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ pediatrics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ pharmacology & drug & 6682 \\
+ & biochemical receptor & 15 \\
+ & indication & 0 \\
+ & effect & 40 \\
+ & contraindication & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ophthalmology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ oncology & cancer & 241 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ veterinary medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ public health & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuroscience & brain & 11 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ nuclear medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ optometry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ public health nutrition & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ tobaccology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q2242794 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ emergency medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ population health & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q3332456 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ symptomatology & symptom & 1113 \\
+ & clinical sign & 589 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ molecular medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ epizootiology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ computational epidemiology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ forensic epidemiology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ public health economics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cancer biology & biology & 1162 \\
+ & cancer & 241 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ stem cell biology & stem cell & 21277 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ regenerative medicine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnopharmacology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biomedical computation & computational biology & 2 \\
+ & biomedicine & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cognitive anthropology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Hematopathology & $\emptyset$ \\
+\midrule
+\midrule
+Health biotechnology & $\emptyset$ \\
+\midrule
+\midrule
+Agriculture, forestry, and fisheries & $\emptyset$ \\
+\midrule
+\midrule
+Animal and dairy science & animal & 12327 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ malacology & Mollusca & 4 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ conchology & mollusc shell & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ helminthology & helminth & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Soil zoology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ vertebrate zoology & Vertebrata & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ spongiology & Porifera & 1 \\
+\midrule
+\midrule
+Veterinary science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ epizootiology & $\emptyset$ \\
+\midrule
+\midrule
+Agricultural biotechnology & $\emptyset$ \\
+\midrule
+\midrule
+Psychology & human behaviour & 869090 \\
+ & mental state & 4 \\
+ & psychism & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Behavioral economics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cyberpsychology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ecopsychology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuropsychology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cognitive anthropology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Philematology & kiss & 2 \\
+\midrule
+\midrule
+Economics and business & goods & -1 \\
+ & economy & 1531 \\
+ & service & 255508 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ positive economics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ labour economics & human capital & 0 \\
+ & wage & 1 \\
+ & work & 342161 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ health economics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ international economics & international trade & 1 \\
+ & international finance & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ econometrics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Behavioral economics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ neuroeconomics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ production theory & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ information economics & information economy & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ industrial organization & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Pharmacoeconomics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ francology & France & 0 \\
+ & francophonie & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ public health economics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ spatial econometrics & $\emptyset$ \\
+\midrule
+\midrule
+Educational sciences & $\emptyset$ \\
+\midrule
+\midrule
+Sociology & society & 444 \\
+ & education & 2650 \\
+ & gender & 35 \\
+ & social class & 8544 \\
+ & structure & -1 \\
+ & social conflict & 668 \\
+ & group action & 25305 \\
+ & work & 342160 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ women's studies & feminism & 8 \\
+ & women's rights & 17 \\
+ & women's history & 4 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ rural sociology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of religion & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of sport & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of law & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of scientific knowledge & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Military sociology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ industrial sociology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of culture & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ historical sociology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ gender studies & gender & 35 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of the Internet & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of art & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ medical sociology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociomusicology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Sociotechnology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ prison sociology & prison & 7410 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ public sociology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociology of peace, war, and social conflict & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ socio-anthropology of adolescence & adolescence & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Marital compatibility & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociodemography & $\emptyset$ \\
+\midrule
+\midrule
+Law & law & 18672 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ legal theory & $\emptyset$ \\
+\midrule
+\midrule
+Political Science & politics & 83 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Kremlinology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ science of public administration & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnopolitics & $\emptyset$ \\
+\midrule
+\midrule
+Social and economic geography & $\emptyset$ \\
+\midrule
+\midrule
+Media and communications & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q1709909 & $\emptyset$ \\
+\midrule
+\midrule
+History & history & 1656 \\
+ & Q9293033 & 0 \\
+ & aspect of history & 166942 \\
+ & historiography & 873 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ archaeology & archaeological site & 123973 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Jewish studies & Jewish people & 40 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ media history & communication medium & 2640319 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ medieval studies & Middle Ages & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ egyptology & Ancient Egypt & 2 \\
+ & Nubia & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ military history & war & 1438 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ agrarian history & agriculture & 88 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Ancient History & Ancient Greece & 2 \\
+ & ancient Rome & 2 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ museology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of ideas & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ taphonomy & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ rescue archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ legal history & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ auxiliary science of history & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ buildings archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of geography & geography & 1011 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ material culture & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ prehistory and early history & prehistory & 3 \\
+ & protohistory & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ prehistoric archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ceramology & ceramic & 348 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ francology & France & 0 \\
+ & francophonie & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ world history & history of the world & 269 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ mycenology & Mycenaean Greece & 0 \\
+ & Mycenaean Greek & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ medieval history & Middle Ages & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ textile archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ heraldry & coat of arms & 13728 \\
+ & blazonry & 1477 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of Palestine & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ biblical studies & Bible & 5 \\
+ & Biblical Literature & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Polish heraldry & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of statistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of the Catholic Church & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of engineering & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q9288997 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of cinema & history of film & 3 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Military history of Portugal & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of the book & book & 28949 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Talmudic studies & Talmud & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Greek inscriptions & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Demotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Bible as literature & $\emptyset$ \\
+\midrule
+\midrule
+Archaeology & archaeological site & 123973 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ egyptology & Ancient Egypt & 2 \\
+ & Nubia & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ taphonomy & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ rescue archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ buildings archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Greek inscriptions & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ material culture & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ prehistory and early history & prehistory & 3 \\
+ & protohistory & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ prehistoric archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ceramology & ceramic & 348 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Demotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ mycenology & Mycenaean Greece & 0 \\
+ & Mycenaean Greek & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ textile archaeology & $\emptyset$ \\
+\midrule
+\midrule
+Languages & language & 8350 \\
+ & dialect & 2996 \\
+ & language & 11668 \\
+ & languoid & 16230 \\
+ & languoid class & 66 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ semiotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cognitive phonology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ historical phonology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ anthropological linguistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ phonetics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ morphology & morpheme & 19123 \\
+ & affix & 19108 \\
+ & flexion & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ semantics & lexeme & 426704 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ semiotics & semiosis & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ dialectology & dialect & 2996 \\
+ & linguistic variation & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociolinguistics & standard language & 22 \\
+ & hypercorrection & 0 \\
+ & hyperadaptation & 0 \\
+ & linguistic usus & 0 \\
+ & communicative competence & 0 \\
+ & linguistic prescription & 12 \\
+ & linguistic norm & 114 \\
+ & language proficiency & 0 \\
+ & language ideology & 10 \\
+ & language attitude & 10 \\
+ & codification & 0 \\
+ & linguistic insecurity & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ lexicology & lexeme & 426704 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ historical linguistics & historical language & 197 \\
+ & diachrony & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ linguistic typology & linguistic typology & 8 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ study of the Hebrew language & Hebrew & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnolinguistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ comparative linguistics & historical language & 197 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ phraseology & Q13409091 & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ terminology & term & 3964 \\
+ & terminology & 773 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ metalinguistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ francology & France & 0 \\
+ & francophonie & 1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Italian philology & Italian & 0 \\
+ & Italian literature & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Russian linguistics & Russian & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Lavender linguistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ linguistic palaeontology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q25447165 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Demotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Spanish linguistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ lexicography & lexicon & 17 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ speech recognition & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ interlinguistics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cognitive anthropology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ military terminology & military term & 22 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ European Union law & $\emptyset$ \\
+\midrule
+\midrule
+Literature & literature & 45700 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ narratology & plot & 12 \\
+ & narrative & 59083 \\
+ & literary theme & 37 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ literary theory & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ comparative literature & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ poetics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Q2793219 & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ history of literature & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ kagaku & Waka (Poetry) & 2 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Brandsics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ genre theory & $\emptyset$ \\
+\midrule
+\midrule
+Philosophy, ethics and religion & knowledge & 1538175 \\
+ & world & 10 \\
+ & condition & 2937204 \\
+ & phenomenon & -1 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ philosophy of science & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ esotericism & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ semiotics & semiosis & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ cognitive anthropology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ semiotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ proof theory & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ inductive logic & inductive reasoning & 0 \\
+\midrule
+\midrule
+Art (arts) & art & 147159 \\
+ & work of art & 1720580 \\
+\midrule
+\midrule
+Art (history of arts) & art & 147161 \\
+ & history of art & 8 \\
+ & work of art & 1720580 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ archaeology & archaeological site & 123973 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ egyptology & Ancient Egypt & 2 \\
+ & Nubia & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ taphonomy & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ rescue archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ buildings archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Greek inscriptions & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ material culture & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ prehistory and early history & prehistory & 3 \\
+ & protohistory & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ prehistoric archaeology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ceramology & ceramic & 348 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Demotics & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ mycenology & Mycenaean Greece & 0 \\
+ & Mycenaean Greek & 0 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ Art geography & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ textile archaeology & $\emptyset$ \\
+\midrule
+\midrule
+Art (performing arts) & $\emptyset$ \\
+\midrule
+\midrule
+Art (music) & music & 78216 \\
+ & music style & 278 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ campanology & bell & 5601 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ ethnomusicology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ hymnology & Christian hymn & 2401 \\
+ & religious hymn & 2404 \\
+\cdashlinelr{2-3}
+$\Leftarrow$ sociomusicology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ zoomusicology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ systematic musicology & $\emptyset$ \\
+\cdashlinelr{2-3}
+$\Leftarrow$ music history & history of music & 0 \\
+\midrule
+\midrule
+
+		\bottomrule
+	\end{tabularx}
+	\caption{Number of annotations per annotation layer.} %\textcolor{cyan}{in the corpus usesd for evaluation}.}
+	\label{tab:annotation}
+\end{table}
+
+
+\end{document}

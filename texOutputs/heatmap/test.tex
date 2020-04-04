@@ -1,0 +1,101 @@
+\RequirePackage{luatex85}
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{collcell}
+\usepackage[no-math]{fontspec}
+\usepackage[lm]{sfmath}
+ \usetikzlibrary{positioning}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\begin{document}%\footnotesize
+ 
+ \definecolor{SeminarRot}{rgb}{0.75,0,0}
+ \definecolor{SeminarGruen}{RGB}{0,128,0}
+ \definecolor{SeminarOrange}{RGB}{237,167,45} % rgb: {0.93,0.65,0.18}
+  \definecolor{SeminarBlau}{RGB}{0,154,224} % rgb: {0.93,0.65,0.18} 
+ \definecolor{Braun}{RGB}{140,86,75} % rgb: {0.93,0.65,0.18}   
+ %%% from http://texblog.org/2013/06/13/latex-heatmap-using-tabular/
+ % provide min and max numbers for coloring mixing
+ \newcommand*{\MinNumber}{1.0}
+ \newcommand*{\MaxNumber}{0}
+ % third value comes from table entry
+ 
+ % color mixing macro:
+ \makeatletter
+ \newcommand{\ApplyGradient}[1]{%
+  \ifdim\dimexpr#1pt=\@ne pt%
+  \pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+  \hspace{-0.33em}\colorbox{SeminarGruen}{}
+  \else
+  \pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+  \hspace{-0.33em}\colorbox{white!\PercentColor!SeminarGruen}{}
+  \fi
+ }
+ \makeatother
+ 
+ % two color mixing macro, distinguishing positive from negative number:
+ % positive: green
+ % negative: red
+ \makeatletter
+ \newcommand{\ApplyTwoGradients}[1]{%
+   \ifdim\dimexpr#1pt=\thr@@ pt
+   \pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+   \hspace{-0.33em}\colorbox{Braun}{}
+   \else
+	\ifdim\dimexpr#1pt=\tw@ pt
+   \pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+   \hspace{-0.33em}\colorbox{SeminarBlau}{}
+   \else
+   \ifdim\dimexpr#1pt=\z@%
+   \pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+   \hspace{-0.33em}\colorbox{white}{}
+   \else
+   \ifdim\dimexpr#1pt>\z@
+   \pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+   \hspace{-0.33em}\colorbox{white!\PercentColor!SeminarGruen}{}
+   \else
+   \pgfmathsetmacro{\PercentColor}{100.0*(-#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+   \hspace{-0.33em}\colorbox{white!\PercentColor!SeminarRot}{}
+   \fi\fi\fi\fi
+ } \makeatother 
+ % attach macro to column type:
+ \newcolumntype{R}{>{\collectcell\ApplyGradient}c<{\endcollectcell}}
+ \newcolumntype{T}{>{\collectcell\ApplyTwoGradients}c<{\endcollectcell}}
+ 
+ % remove spacing in tabular:
+ \renewcommand{\arraystretch}{0}
+ \setlength{\tabcolsep}{0pt}
+ 
+ % set size of color boxes
+ \setlength{\fboxsep}{2.5mm}
+ 
+ \newcommand{\mcvert}[1]{\multicolumn{1}{c}{\rotatebox{90}{\space #1}}}
+ \newcommand{\mchori}[1]{\multicolumn{1}{l}{\raisebox{-4pt}{#1}\rule{1em}{0pt}}}
+\newcounter{colno}
+\setcounter{colno}{100}
+\stepcounter{colno}
+
+\colorlet{colorone}{SeminarGruen}
+\colorlet{colortwo}{SeminarRot}
+
+\begin{tikzpicture}
+\node [inner sep=0pt] (tab) {
+\begin{tabular}{rRRRRRRRRRRRR}
+ &  \mcvert{ceb} & \mcvert{de} & \mcvert{es} & \mcvert{fr} & \mcvert{it} & \mcvert{ja} & \mcvert{nl} & \mcvert{pl} & \mcvert{ru} & \mcvert{sv} & \mcvert{vi} & \mcvert{war} \\
+\mchori{ceb}  &  0.0  &  0.05  &  0.07  &  0.55  &  0.46  &  0.06  &  0.18  &  0.34  &  0.34  &  0.04  &  0.0  &  0.0 \\
+\mchori{de}  &  0.05  &  0.0  &  0.12  &  0.6  &  0.51  &  0.11  &  0.23  &  0.39  &  0.4  &  0.09  &  0.06  &  0.05 \\
+\mchori{es}  &  0.07  &  0.12  &  0.0  &  0.62  &  0.52  &  0.12  &  0.25  &  0.4  &  0.41  &  0.11  &  0.07  &  0.07 \\
+\mchori{fr}  &  0.55  &  0.6  &  0.62  &  0.0  &  1.0  &  0.61  &  0.73  &  0.89  &  0.89  &  0.59  &  0.56  &  0.55 \\
+\mchori{it}  &  0.46  &  0.51  &  0.52  &  1.0  &  0.0  &  0.51  &  0.64  &  0.79  &  0.8  &  0.5  &  0.46  &  0.46 \\
+\mchori{ja}  &  0.06  &  0.11  &  0.12  &  0.61  &  0.51  &  0.0  &  0.24  &  0.39  &  0.4  &  0.1  &  0.06  &  0.06 \\
+\mchori{nl}  &  0.18  &  0.23  &  0.25  &  0.73  &  0.64  &  0.24  &  0.0  &  0.52  &  0.53  &  0.22  &  0.19  &  0.18 \\
+\mchori{pl}  &  0.34  &  0.39  &  0.4  &  0.89  &  0.79  &  0.39  &  0.52  &  0.0  &  0.68  &  0.38  &  0.34  &  0.34 \\
+\mchori{ru}  &  0.34  &  0.4  &  0.41  &  0.89  &  0.8  &  0.4  &  0.53  &  0.68  &  0.0  &  0.39  &  0.35  &  0.34 \\
+\mchori{sv}  &  0.04  &  0.09  &  0.11  &  0.59  &  0.5  &  0.1  &  0.22  &  0.38  &  0.39  &  0.0  &  0.04  &  0.04 \\
+\mchori{vi}  &  0.0  &  0.06  &  0.07  &  0.56  &  0.46  &  0.06  &  0.19  &  0.34  &  0.35  &  0.04  &  0.0  &  0.0 \\
+\mchori{war}  &  0.0  &  0.05  &  0.07  &  0.55  &  0.46  &  0.06  &  0.18  &  0.34  &  0.34  &  0.04  &  0.0  &  0.0 \\
+\end{tabular}
+};
+\end{tikzpicture}
+
+\end{document}

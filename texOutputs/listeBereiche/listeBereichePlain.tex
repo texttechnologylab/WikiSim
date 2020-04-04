@@ -1,0 +1,35 @@
+\documentclass[preview=true]{standalone}
+
+\usepackage{tabularx}
+\usepackage{booktabs,arydshln}
+
+\makeatletter
+\def\adl@drawiv#1#2#3{%
+	\hskip.5\tabcolsep
+	\xleaders#3{#2.5\@tempdimb #1{1}#2.5\@tempdimb}%
+	#2\z@ plus1fil minus1fil\relax
+	\hskip.5\tabcolsep}
+\newcommand{\cdashlinelr}[1]{%
+	\noalign{\vskip\aboverulesep
+		\global\let\@dashdrawstore\adl@draw
+		\global\let\adl@draw\adl@drawiv}
+	\cdashline{#1}
+	\noalign{\global\let\adl@draw\@dashdrawstore
+		\vskip\belowrulesep}}
+
+\begin{document}
+\begin{table}[ht]
+	\footnotesize
+	\begin{tabularx}{\linewidth}{XXl}%la%
+		\toprule
+		\textbf{Field} &\textbf{Studies}&\textbf{Instances}\\
+		\midrule
+		xxxxxx
+		\bottomrule
+	\end{tabularx}
+	\caption{Number of annotations per annotation layer.} %\textcolor{cyan}{in the corpus usesd for evaluation}.}
+	\label{tab:annotation}
+\end{table}
+
+
+\end{document}

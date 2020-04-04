@@ -1,1 +1,6 @@
 /target/
+*.aux
+*.log
+*.out
+*.soc
+*.synctex.gz

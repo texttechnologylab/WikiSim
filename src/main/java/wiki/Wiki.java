@@ -56,6 +56,33 @@ public class Wiki {
 		return getWikidataInstanceOfByJson(wikidataId);
 	}
 
+	public static JSONArray getWikidataSubclassOfInstanceOf(String hypernymId,String itemInstenceOf,boolean recursive) throws JSONException, IOException{
+		JSONArray output = new JSONArray();
+		String query;
+			query = 
+			"PREFIX wd: <http://www.wikidata.org/entity/> "+
+					"PREFIX wdt: <http://www.wikidata.org/prop/direct/> "+
+					"SELECT ?subclass ?subclassLabel " +
+					"WHERE {" +
+					"?subclass wdt:P279"+(recursive?"*":"")+" wd:" + hypernymId + 
+					(itemInstenceOf != null?". ?subclass wdt:P31 wd:" + itemInstenceOf :"")+ 
+					" SERVICE wikibase:label {bd:serviceParam wikibase:language \"en\" }} ";
+	
+		
+		String url = "https://query.wikidata.org/sparql?query="+query+"&format=json";
+		String result = Jsoup.connect(url).ignoreContentType(true).timeout(0).execute().body();
+		JSONArray wikidataId = new JSONObject(result).getJSONObject("results").getJSONArray("bindings");
+		for (Object object : wikidataId) {
+			JSONObject tmp = (JSONObject) object;
+			JSONObject out = new JSONObject();
+			out.put("qid", tmp.getJSONObject("subclass").getString("value").replace("http://www.wikidata.org/entity/", ""));
+			out.put("name", tmp.getJSONObject("subclassLabel").getString("value"));
+			if(!out.getString("qid").equals(hypernymId))
+				output.put(out);
+		}
+		return output;
+	}
+
 
 
 	public static List<String> getWikidataInstanceOf(String hypernymId) throws JSONException, IOException{
@@ -211,10 +238,10 @@ public class Wiki {
 			//		String url = "http://rawindra.hucompute.org:9999/blazegraph/sparql?query="+query+"&format=json";
 			String url = "https://query.wikidata.org/sparql?query="+query+"&format=json";
 			System.out.println(url);
-			
+
 			JSONArray wikidataId = new JSONObject(Jsoup.connect(url)
-				     .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
-				     .timeout(0).maxBodySize(0).ignoreContentType(true).execute().body()).getJSONObject("results").getJSONArray("bindings");
+					.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
+					.timeout(0).maxBodySize(0).ignoreContentType(true).execute().body()).getJSONObject("results").getJSONArray("bindings");
 			for (Object object : wikidataId) {
 				JSONObject current = (JSONObject)object;
 				String wikidata = current.getJSONObject("cid").getString("value").replaceAll(".*/", "");
@@ -238,7 +265,7 @@ public class Wiki {
 			HashMap<String, List<WikipeidaWikidata>>linksByLanguage = new HashMap<>();
 			String query = 
 					"SELECT ?cid ?country ?article WHERE {" +
-//							"?cid wdt:" + pid + " wd:" + id + " . "+
+							//							"?cid wdt:" + pid + " wd:" + id + " . "+
 							(pid.equals("P106")?"?cid wdt:P135 ?p FILTER (?p IN (wd:Q207591, wd:Q17723 ) ).":"?cid wdt:" + pid + " wd:" + id + " . ")+ 
 							"?article schema:about ?cid . "+
 							"filter( regex(str(?article), \"wikipedia.org\" ))"+
@@ -246,7 +273,7 @@ public class Wiki {
 			String url = "https://query.wikidata.org/sparql?query="+query+"&format=json";
 			System.out.println(url);
 			JSONArray wikidataId = new JSONObject(Jsoup.connect(url) 
-				     .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
+					.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
 					.maxBodySize(0).ignoreContentType(true).execute().body()).getJSONObject("results").getJSONArray("bindings");
 			for (Object object : wikidataId) {
 				JSONObject current = (JSONObject)object;
@@ -269,27 +296,54 @@ public class Wiki {
 			return getWikipediaLinksByLanguagesForWikidataHyponym(pid,id);
 		}
 	}
-	
-	public static HashSet<String>getStudies(String qid) throws JSONException, IOException{
+
+	public static JSONArray getStudies(String qid) throws JSONException, IOException{
 		String query = 
 				"SELECT ?studies ?studiesLabel WHERE {wd:" + qid + " wdt:P2578 ?studies SERVICE wikibase:label {bd:serviceParam wikibase:language \"en\" }} " ;
 		String url = "https://query.wikidata.org/sparql?query="+query+"&format=json";
 		JSONArray wikidataId = new JSONObject(Jsoup.connect(url) 
-			     .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
+				.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
 				.maxBodySize(0)
 				.timeout(0)
 				.ignoreContentType(true).execute().body()).getJSONObject("results").getJSONArray("bindings");
-		HashSet<String>output = new HashSet<>();
+		JSONArray output = new JSONArray();
 		for (Object object : wikidataId) {
 			JSONObject current = (JSONObject)object;
 			String wikidata = current.getJSONObject("studies").getString("value").replaceAll(".*/", "");
 			String studiesLabel = current.getJSONObject("studiesLabel").getString("value").replaceAll(".*/", "");
-			
-			output.add(wikidata+"\t"+studiesLabel);
+
+			JSONObject out = new JSONObject();
+			out.put("qid", wikidata);
+			out.put("name", studiesLabel);
+
+			output.put(out);
 		}
 		return output;
 	}
-	
+
+	public static int countInstenceOfs(String qid,boolean recursive) throws IOException{
+		String query = "";
+		if(!recursive)
+			query = "SELECT (count(distinct ?item) as ?count)"
+					+ "WHERE {"
+					+ "    ?item wdt:P31 wd:"+qid
+					+ "}";
+		else{
+			query = "SELECT (count(distinct ?item) as ?count)"
+					+ "WHERE {"
+					+ "    ?hypernym wdt:P279* wd:" + qid + "."
+					+ "    ?item wdt:P31 ?hypernym."
+					+ "}";
+		}
+		String url = "https://query.wikidata.org/sparql?query="+query+"&format=json";
+		String output = Jsoup.connect(url) 
+				.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
+				.maxBodySize(0)
+				.timeout(0)
+				.ignoreContentType(true).execute().body();
+		return Integer.parseInt(new JSONObject(output).getJSONObject("results").getJSONArray("bindings").getJSONObject(0).getJSONObject("count").getString("value"));
+	}
+
 	public static HashMap<String, List<WikipeidaWikidata>> getWikipediaLinksByLanguagesForWikidataScienceCategory(String qid) throws SQLException, JSONException, IOException{
 		try{
 			HashMap<String, List<WikipeidaWikidata>>linksByLanguage = new HashMap<>();
@@ -298,7 +352,7 @@ public class Wiki {
 			String url = "https://query.wikidata.org/sparql?query="+query+"&format=json";
 			System.out.println(url);
 			JSONArray wikidataId = new JSONObject(Jsoup.connect(url) 
-				     .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
+					.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36")
 					.maxBodySize(0)
 					.timeout(0)
 					.ignoreContentType(true).execute().body()).getJSONObject("results").getJSONArray("bindings");

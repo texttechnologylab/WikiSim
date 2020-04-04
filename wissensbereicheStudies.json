@@ -1,0 +1,423 @@
+[
+	{
+		"name": "Mathematics",
+		"qid": "Q395",
+		"studies": [
+			{
+				"name": "mathematical object",
+				"qid": "Q246672"
+			},
+			{
+				"name": "mathematical concept",
+				"qid": "Q24034552"
+			}
+		]
+	},
+	{
+		"name": "Computer and information sciences",
+		"qid": "Q21198",
+		"studies": [
+			{
+				"name": "computing",
+				"qid": "Q179310"
+			},
+			{
+				"name": "computer",
+				"qid": "Q68"
+			}
+		]
+	},
+	{
+		"name": "Physical sciences",
+		"qid": "Q413",
+		"studies": []
+	},
+	{
+		"name": "Chemical sciences",
+		"qid": "Q2329",
+		"studies": [
+			{
+				"name": "chemical element",
+				"qid": "Q11344"
+			},
+			{
+				"name": "group or class of chemical substances",
+				"qid": "Q17339814"
+			},
+			{
+				"name": "chemical compound",
+				"qid": "Q11173"
+			},
+			{
+				"name": "chemical substance",
+				"qid": "Q79529"
+			}
+		]
+	},
+	{
+		"name": "Earth and related environmental sciences",
+		"qid": "Q7150",
+		"studies": [
+			{
+				"name": "ecosystem",
+				"qid": "Q37813"
+			},
+			{
+				"name": "ecological concept",
+				"qid": "Q56575300"
+			}
+		]
+	},
+	{
+		"name": "Biological sciences",
+		"qid": "Q420",
+		"studies": [
+			{
+				"name": "life",
+				"qid": "Q3"
+			},
+			{
+				"name": "organism",
+				"qid": "Q7239"
+			}
+		]
+	},
+	{
+		"name": "Civil engineering",
+		"qid": "Q77590",
+		"studies": []
+	},
+	{
+		"name": "Electrical engineering, electronic engineering, information engineering",
+		"qid": "Q43035",
+		"studies": []
+	},
+	{
+		"name": "Mechanical engineering",
+		"qid": "Q101333",
+		"studies": []
+	},
+	{
+		"name": "Chemical engineering",
+		"qid": "Q83588",
+		"studies": []
+	},
+	{
+		"name": "Materials engineering",
+		"qid": "Q1710723",
+		"studies": []
+	},
+	{
+		"name": "Medical engineering",
+		"qid": "Q327092",
+		"studies": []
+	},
+	{
+		"name": "Environmental engineering",
+		"qid": "Q146326",
+		"studies": []
+	},
+	{
+		"name": "Environmental biotechnology",
+		"studies": []
+	},
+	{
+		"name": "Industrial Biotechnology",
+		"studies": []
+	},
+	{
+		"name": "Nano-technology",
+		"studies": []
+	},
+	{
+		"name": "Basic medicine",
+		"qid": "Q11190",
+		"studies": []
+	},
+	{
+		"name": "Clinical medicine",
+		"studies": []
+	},
+	{
+		"name": "Health sciences",
+		"qid": "Q843601",
+		"studies": []
+	},
+	{
+		"name": "Health biotechnology",
+		"studies": []
+	},
+	{
+		"name": "Agriculture, forestry, and fisheries",
+		"qid": "Q3606845",
+		"studies": []
+	},
+	{
+		"name": "Animal and dairy science",
+		"qid": "Q431",
+		"studies": [
+			{
+				"name": "animal",
+				"qid": "Q729"
+			}
+		]
+	},
+	{
+		"name": "Veterinary science",
+		"qid": "Q170201",
+		"studies": []
+	},
+	{
+		"name": "Agricultural biotechnology",
+		"qid": "Q19595794",
+		"studies": []
+	},
+	{
+		"name": "Psychology",
+		"qid": "Q9418",
+		"studies": [
+			{
+				"name": "human behaviour",
+				"qid": "Q3769299"
+			},
+			{
+				"name": "mental state",
+				"qid": "Q3968640"
+			},
+			{
+				"name": "psychism",
+				"qid": "Q10355314"
+			}
+		]
+	},
+	{
+		"name": "Economics and business",
+		"qid": "Q8134",
+		"studies": [
+			{
+				"name": "economy",
+				"qid": "Q159810"
+			},
+			{
+				"name": "goods",
+				"qid": "Q28877"
+			},
+			{
+				"name": "service",
+				"qid": "Q7406919"
+			}
+		]
+	},
+	{
+		"name": "Educational sciences"
+	},
+	{
+		"name": "Sociology",
+		"qid": "Q21201",
+		"studies": [
+			{
+				"name": "society",
+				"qid": "Q8425"
+			},
+			{
+				"name": "gender",
+				"qid": "Q48277"
+			},
+			{
+				"name": "structure",
+				"qid": "Q517966"
+			},
+			{
+				"name": "social class",
+				"qid": "Q187588"
+			},
+			{
+				"name": "group action",
+				"qid": "Q3533467"
+			},
+			{
+				"name": "education",
+				"qid": "Q8434"
+			},
+			{
+				"name": "work",
+				"qid": "Q6958747"
+			},
+			{
+				"name": "social conflict",
+				"qid": "Q2672648"
+			}
+		]
+	},
+	{
+		"name": "Law",
+		"qid": "Q382995",
+		"studies": [
+			{
+				"name": "law",
+				"qid": "Q7748"
+			}
+		]
+	},
+	{
+		"name": "Political Science",
+		"qid": "Q36442",
+		"studies": [
+			{
+				"name": "politics",
+				"qid": "Q7163"
+			}
+		]
+	},
+	{
+		"name": "Social and economic geography",
+		"qid": "Q187097",
+		"studies": []
+	},
+	{
+		"name": "Media and communications",
+		"qid": "Q1078351",
+		"studies": []
+	},
+	{
+		"name": "History",
+		"qid": "Q1066186",
+		"studies": [
+			{
+				"name": "Q9293033",
+				"qid": "Q9293033"
+			},
+			{
+				"name": "history",
+				"qid": "Q309"
+			},
+			{
+				"name": "historiography",
+				"qid": "Q30277550"
+			},
+			{
+				"name": "aspect of history",
+				"qid": "Q17524420"
+			}
+		]
+	},
+	{
+		"name": "Archaeology",
+		"qid": "Q23498",
+		"studies": [
+			{
+				"name": "archaeological site",
+				"qid": "Q839954"
+			}
+		]
+	},
+	{
+		"name": "Languages",
+		"qid": "Q8162",
+		"studies": [
+			{
+				"name": "language",
+				"qid": "Q315"
+			},
+			{
+				"name": "language",
+				"qid": "Q34770"
+			},
+			{
+				"name": "dialect",
+				"qid": "Q33384"
+			},
+			{
+				"name": "languoid",
+				"qid": "Q17376908"
+			},
+			{
+				"name": "languoid class",
+				"qid": "Q28923954"
+			}
+		]
+	},
+	{
+		"name": "Literature",
+		"qid": "Q208217",
+		"studies": [
+			{
+				"name": "literature",
+				"qid": "Q8242"
+			}
+		]
+	},
+	{
+		"name": "Philosophy, ethics and religion",
+		"qid": "Q5891",
+		"studies": [
+			{
+				"name": "phenomenon",
+				"qid": "Q16722960"
+			},
+			{
+				"name": "world",
+				"qid": "Q16502"
+			},
+			{
+				"name": "knowledge",
+				"qid": "Q9081"
+			},
+			{
+				"name": "condition",
+				"qid": "Q813912"
+			}
+		]
+	},
+	{
+		"name": "Art (arts)",
+		"qid": "Q55336315",
+		"studies": [
+			{
+				"name": "work of art",
+				"qid": "Q838948"
+			},
+			{
+				"name": "art",
+				"qid": "Q735"
+			}
+		]
+	},
+	{
+		"name": "Art (history of arts)",
+		"qid": "Q50637",
+		"studies": [
+			{
+				"name": "history of art",
+				"qid": "Q50641"
+			},
+			{
+				"name": "work of art",
+				"qid": "Q838948"
+			},
+			{
+				"name": "art",
+				"qid": "Q735"
+			}
+		]
+	},
+	{
+		"name": "Art (performing arts)",
+		"qid": "Q184485",
+		"studies": []
+	},
+	{
+		"name": "Art (music)",
+		"qid": "Q164204",
+		"studies": [
+			{
+				"name": "music",
+				"qid": "Q638"
+			},
+			{
+				"name": "music style",
+				"qid": "Q11921029"
+			}
+		]
+	}
+]
