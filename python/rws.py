@@ -232,7 +232,7 @@ def union(graphs, directed=True):
     return g_new
 
 
-def intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
+def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
     """
     - Compute the intersection V' of the vertex sets of g1 and g2 (based on their labels, not ids).
     - compute g1[V'] and g2[V'], i.e. the induced subgraphs of V' of both graphs.
@@ -247,7 +247,7 @@ def intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
     # new unique vertex ids in the large graph
     label_ids = {l: i for i, l in enumerate(labels)}
 
-    def restrict_to_intersection(g):
+    def __restrict_to_intersection(g):
         g_new = igraph.Graph(directed=directed)
         g_new.add_vertices(len(labels))
         g_new.vs['label'] = labels
@@ -258,7 +258,7 @@ def intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
                 pass
         return g_new
 
-    return restrict_to_intersection(g1), restrict_to_intersection(g2)
+    return __restrict_to_intersection(g1), __restrict_to_intersection(g2)
 
 
 def load_multilayer_graph(data_folder):
@@ -316,7 +316,7 @@ def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballliga
         out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            g1, g2 = intersection(graphs[l1], graphs[l2])
+            g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
             if g1.vcount() != 0:
                 tic = time.time()
                 sim = deltaCon(g1, g2, affinities=affinities)
@@ -343,7 +343,7 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
         out_csv.write('Language1, Language2, SimilarityScore, Kernel, Time\n')
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            g1, g2 = intersection(graphs[l1], graphs[l2])
+            g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
             if g1.vcount() != 0:
                 tic = time.time()
                 sim1, sim2 = deltaCon_rw_lowmem(g1, g2)
@@ -396,6 +396,55 @@ def vertex_edge_set_on_labels(g: igraph.Graph):
     edges = {(id_labels[e.source], id_labels[e.target]) for e in g.es}
 
     return vertices, edges
+
+
+def intersection_graph(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
+    """
+    - Compute the intersection V' of the vertex sets of g1 and g2 (based on their labels, not ids).
+    - compute g1[V'] and g2[V'], i.e. the induced subgraphs of V' of both graphs.
+    :param g1, g2 graphs
+    :return: g1_new, g2_new
+    """
+
+    v1, e1 = vertex_edge_set_on_labels(g1)
+    v2, e2 = vertex_edge_set_on_labels(g2)
+
+    v1.intersection_update(v2)
+    e1.intersection_update(e2)
+    v_new = list(v1)
+    e_new = list(e1)
+
+    # new unique vertex ids in the large graph
+    label_ids = {l: i for i, l in enumerate(v1)}
+
+    g_new = igraph.Graph(directed=directed)
+    g_new.add_vertices(len(v1))
+    g_new.vs['label'] = v1
+    for e in e1:
+       g_new.add_edge(label_ids[e[0]], label_ids[e[1]])
+
+    return g_new
+
+
+def intersection_rw_kernel(g1: igraph.Graph, g2: igraph.Graph, lamda=0.1, directed=True):
+    """
+    We compute the similarity of two wikipedias as the number of simultaneous random walks on them,
+    which is the number of random walks on the intersection graph, as both graphs are node aligned
+    :param g1: first graph
+    :param g2: second graph
+    :param lamda: convergence parameter of the random walk kernel. Must be set small enough. See
+    Gärtner, Wrobel, Flach: On graph kernels: Hardness results and efficient alternatives
+    or
+    S. V. N. Vishwanathan and Nicol N. Schraudolph and Risi Kondor and Karsten M. Borgwardt: Graph Kernels
+    :return:
+    """
+    g = intersection_graph(g1, g2, directed=directed)
+    A = g.get_adjacency().data
+    n = g.vcount()
+    S = np.linalg.inv(np.eye(n) - lamda * A)
+    # this computes the kernel for normalized uniform weight vertex weight vectors
+    return S.sum() / (n * n)
+
 
 
 def computeGED(G1: igraph.Graph, G2: igraph.Graph):
@@ -535,7 +584,7 @@ def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballliga
         out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            g1, g2 = intersection(graphs[l1], graphs[l2])
+            g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
             tic = time.time()
             sim = similarity(g1, g2)
             toc = time.time()
