@@ -22,6 +22,30 @@ def test_vertex_set_union():
     return vertex_set_union(graphs)
 
 
+def test_intersection_graph():
+    l1 = ['a', 'b', 'c', 'd']
+    g1 = igraph.Graph(directed=True)
+    print(g1.is_directed())
+    g1.add_vertices(len(l1))
+    for i, v in enumerate(g1.vs):
+        v['label'] = l1[i]
+        g1.add_edge(i, (i + 1) % len(l1))
+        print(i, v, v['label'], l1[i])
+        print(g1.neighbors(v))
+
+    l2 = ['b', 'x', 'c', 'd', 'y']
+    g2 = igraph.Graph(directed=True)
+    g2.add_vertices(len(l2))
+    for i, v in enumerate(g2.vs):
+        v['label'] = l2[i]
+        g2.add_edge(i, (i + 1) % len(l2))
+        print(i, v, v['label'], l2[i])
+        print(g2.neighbors(v))
+
+    print(intersection_graph(g1, g2))
+
+
+
 def test_deltaCon1(affinities=personalized_rw_affinities):
     g1 = igraph.Graph()
     g1.add_vertices(4)
