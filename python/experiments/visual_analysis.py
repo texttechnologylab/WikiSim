@@ -1,8 +1,7 @@
-from rws import *
+from similaritymeasures.deltacon import *
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
-import matplotlib.colors
 
 # similarity_file = 'deltaCON_personalized_rw_affinities.csv'
 similarity_file = 'deltaCON_intersection_personalized_rw_affinities.csv'
@@ -18,7 +17,7 @@ root = 'gml'
 dataset = 'holydayGML'
 
 if __name__ == '__main__':
-    out_folder = os.path.join('..', 'output', root)
+    out_folder = os.path.join('../..', 'output', root)
 
     folders = filter(lambda x: x.endswith(dataset), os.listdir(out_folder))
     graphs = dict()

@@ -1,6 +1,9 @@
-from rws import *
+from similaritymeasures.deltacon import *
 
 from joblib import delayed, Parallel, cpu_count
+
+from similaritymeasures.othersim import intersection_graph
+
 
 def test_vertex_set_union():
     l1 = ['a', 'b', 'c', 'd']
@@ -185,10 +188,10 @@ def personalized_rw_affinities_parallel(g: igraph.Graph, weights: np.array=None)
 
 def test_personalized_rw_affinities_parallel():
     for root in ['gml']:
-        datasets = os.listdir(os.path.join('..', 'graphs', root))
+        datasets = os.listdir(os.path.join('../..', 'graphs', root))
         for d in datasets[:1]:
-            in_folder = os.path.join('..', 'graphs', root, d)
-            out_folder = os.path.join('..', 'output', root, d)
+            in_folder = os.path.join('../..', 'graphs', root, d)
+            out_folder = os.path.join('../..', 'output', root, d)
             print('Processing', in_folder)
             tic = time.time()
             unaligned_graphs = load_multilayer_graph(in_folder)
