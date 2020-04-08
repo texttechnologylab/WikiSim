@@ -1,3 +1,5 @@
+import sys
+sys.path.extend(['../../', '../', './'])
 
 from similaritymeasures.deltacon import *
 from similaritymeasures.othersim import main_otherSim, intersection_rw_kernel

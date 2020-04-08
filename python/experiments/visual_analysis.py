@@ -1,3 +1,6 @@
+import sys
+sys.path.extend(['../../', '../', './'])
+
 from similaritymeasures.deltacon import *
 import numpy as np
 import matplotlib.pyplot as plt
