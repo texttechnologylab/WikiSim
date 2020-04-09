@@ -14,19 +14,14 @@ def vertex_edge_set_on_labels(g: igraph.Graph):
     That is, we assume that each vertex in g has a 'label' attribute and furthermore we assume that these
     labels are unique, that is, they can be used as vertex ids, instead of the integer ids used by igraph.
     :param g: a graph
-    :return: vertices, edges
+    :return: vertices, edges as sets
     """
 
-    vertices = set()
-    for v in g.vs:
-        vertices.add(v['label'])
+    labels = g.vs['label']
 
-    # new unique vertex ids in the large graph
-    id_labels = {i: l for i, l in enumerate(vertices)}
+    edges = {(labels[e.source], labels[e.target]) for e in g.es}
 
-    edges = {(id_labels[e.source], id_labels[e.target]) for e in g.es}
-
-    return vertices, edges
+    return set(labels), edges
 
 
 def intersection_graph(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
@@ -51,13 +46,11 @@ def intersection_graph(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
     g_new = igraph.Graph(directed=directed)
     g_new.add_vertices(len(v1))
     g_new.vs['label'] = v1
-    for e in e1:
-       g_new.add_edge(label_ids[e[0]], label_ids[e[1]])
-
+    g_new.add_edges([(label_ids[e[0]], label_ids[e[1]]) for e in e1])
     return g_new
 
 
-def intersection_rw_kernel(g1: igraph.Graph, g2: igraph.Graph, lamda=0.1, directed=True):
+def intersection_rw_kernel(g1: igraph.Graph, g2: igraph.Graph, lamda=0.001, directed=True):
     """
     We compute the similarity of two wikipedias as the number of simultaneous random walks on them,
     which is the number of random walks on the intersection graph, as both graphs are node aligned
