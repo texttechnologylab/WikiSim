@@ -60,7 +60,7 @@ public class CachedGraph {
 		Set<String> verticies = graph.vertexSet();
 		Set<String>toremove = new HashSet();
 		for (String string : verticies) {
-//			if(graph.outDegreeOf(string)==0 && graph.inDegreeOf(string) > 0)
+			//			if(graph.outDegreeOf(string)==0 && graph.inDegreeOf(string) > 0)
 			if(!filter.contains(string))
 				toremove.add(string);
 		}
@@ -99,10 +99,10 @@ public class CachedGraph {
 	}
 
 	public void saveGraph(String path){
-		saveGraph(this.graph,path);
+		saveGraph(this.graph,path,true);
 	}
 
-	public static void saveGraph(Graph<String, DefaultEdge> graph,String path){
+	public static void saveGraph(Graph<String, DefaultEdge> graph,String path,boolean writeBF){
 		FileWriter w;
 		try {
 			GmlExporter exporter = new GmlExporter<>();
@@ -113,27 +113,28 @@ public class CachedGraph {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		StringBuilder sb = new StringBuilder();
-		sb.append("directed").append("\n");
-		sb.append("SimilarityGraph").append("\n");
-		sb.append("Vertex Attributes:").append("\n");
-		sb.append("Edge Attributes:").append("\n");
-		sb.append("Vertices:").append("\n");
-		
-		for (Object vertex : graph.vertexSet()) {
-			sb.append(vertex.toString()+"¤").append("\n");
-		}
-		sb.append("Edges:").append("\n");
-		for (DefaultEdge edge : graph.edgeSet()) {
-			sb.append(graph.getEdgeSource(edge) + "¤" + graph.getEdgeTarget(edge) + "¤1.0¤").append("\n");
-		} 
-		try {
-			FileUtils.writeStringToFile(new File(path+".bf"), sb.toString());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 
+		if(writeBF){
+			StringBuilder sb = new StringBuilder();
+			sb.append("directed").append("\n");
+			sb.append("SimilarityGraph").append("\n");
+			sb.append("Vertex Attributes:").append("\n");
+			sb.append("Edge Attributes:").append("\n");
+			sb.append("Vertices:").append("\n");
+
+			for (Object vertex : graph.vertexSet()) {
+				sb.append(vertex.toString()+"¤").append("\n");
+			}
+			sb.append("Edges:").append("\n");
+			for (DefaultEdge edge : graph.edgeSet()) {
+				sb.append(graph.getEdgeSource(edge) + "¤" + graph.getEdgeTarget(edge) + "¤1.0¤").append("\n");
+			} 
+			try {
+				FileUtils.writeStringToFile(new File(path+".bf"), sb.toString());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 }

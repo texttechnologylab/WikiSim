@@ -12,7 +12,14 @@ import org.jgrapht.graph.DefaultEdge;
 public class BF2JGraphT {
 
 	public static void main(String[] args) throws IOException {
-		Graph<String, DefaultEdge> graph = readBFGraph(new File("/resources/public/hemati/WikipediaGraphs/onlyLinks/gml/theoremGML/de.gml.bf"));
+		File[]categories = new File("graphs/gml").listFiles();
+		for (File category : categories) {
+			for (File language : category.listFiles()) {
+				Graph<String, DefaultEdge> graph = readBFGraph(language);
+				CachedGraph.saveGraph(graph, language.getAbsolutePath().replace(".bf", ""),false);
+			}
+		}
+		
 		
 	}
 

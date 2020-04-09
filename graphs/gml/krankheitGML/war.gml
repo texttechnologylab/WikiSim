@@ -222,16 +222,11 @@ graph
 	node
 	[
 		id 44
-		label "Q16242752"
-	]
-	node
-	[
-		id 45
 		label "Q671776"
 	]
 	node
 	[
-		id 46
+		id 45
 		label "Q18123741"
 	]
 	edge

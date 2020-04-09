@@ -177,16 +177,11 @@ graph
 	node
 	[
 		id 35
-		label "Q1139536"
-	]
-	node
-	[
-		id 36
 		label "Q1145566"
 	]
 	node
 	[
-		id 37
+		id 36
 		label "Q2936192"
 	]
 	edge

@@ -2,6 +2,8 @@ import netcomp as nc
 import networkx as nx
 import glob, os
 import numpy as np
+from similarity_heatmap import *
+from pathlib import Path
 
 def read_bf(path):
     count = 0
@@ -82,7 +84,7 @@ def analyseCategory(categoryPath):
          
     files = sorted(files)
     
-    del(files[2]) #en
+    #del(files[2]) #en
     
     fileNames = []
     for i in files:
@@ -114,57 +116,27 @@ def analyseCategory(categoryPath):
             
             #output[i][j] = computeGED(G1,G2)
             output[j][i] = output[i][j] 
-            
-            
-            print("asdf" , categoryPath.split("/")[-2])
-            print(os.path.join(
-                        "/resources/public/hemati/WikipediaGraphs/onlyLinks",
-                        os.path.basename(os.path.abspath(os.path.join(categoryPath, os.pardir))),
-                        categoryPath.split("/")[-2],"dcon.matrix"))
-            with open(
-                                os.path.join(
-                        "/resources/public/hemati/WikipediaGraphs/onlyLinks",
-                        os.path.basename(os.path.abspath(os.path.join(categoryPath, os.pardir))),
-                        categoryPath.split("/")[-2],"dcon.matrix"), "w") as text_file:
+            outputDirectory = os.path.abspath(categoryPath).replace("graphs","output/wahed/dcor");
+            if not os.path.exists(outputDirectory):
+                os.makedirs(outputDirectory)
                 
+            with open(os.path.join(outputDirectory,"dcon.matrix"), "w") as text_file:
                 text_file.write(printMatrix(output, fileNames,False))
                 
-            with open(
-                                os.path.join(
-                        "/resources/public/hemati/WikipediaGraphs/onlyLinks",
-                        os.path.basename(os.path.abspath(os.path.join(categoryPath, os.pardir))),
-                        categoryPath.split("/")[-2],"dcon.matrix.normalized"), "w") as text_file_normalized:
+            with open(os.path.join(outputDirectory,"dcon.matrix.normalized"), "w") as text_file_normalized:
                 text_file_normalized.write(printMatrix(output, fileNames))
 
 
-for i in os.listdir("../graphs/gml"):
-    analyseCategory("../graphs/gml/"+i)
+# for i in os.listdir("../graphs/gml"):
+#     #print("../graphs/gml/"+i)
+#      
+#     if(i!="warGML"):
+#         analyseCategory("../graphs/gml/"+i)
 
-for i in os.listdir("../graphs/fullgml"):
-    analyseCategory("../graphs/fullgml/"+i)
+#for i in os.listdir("../graphs/fullgml"):
+#    analyseCategory("../graphs/fullgml/"+i)
     
-    
-# for i in G1.nodes:
-#     G1.nodes[i]["label"] = i
-# 
-# for i in G2.nodes:
-#     G2.nodes[i]["label"] = i
-#     
-# print(len(G1.nodes))
-# print(len(G2.nodes))
-# 
-# 
-# # This is the function which checks for equality of labels
-# def return_eq(node1, node2):
-#     if(node1["label"]==node2["label"]):
-#         print(node1,node2)
-#     return node1["label"]==node2["label"]
-# 
-# print(nx.graph_edit_distance(G1,G2,node_match=return_eq))
 
-
-
-
-# for v in nx.optimize_graph_edit_distance(G1, G2):
-#     minv = v
-# print(minv)
+for path in Path('../output/wahed/').rglob('*.matrix.normalized'):
+    transform(str(path),str(path)+".tex","distance")
+    print(path)

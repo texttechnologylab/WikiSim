@@ -47,16 +47,11 @@ graph
 	node
 	[
 		id 9
-		label "Q2608162"
-	]
-	node
-	[
-		id 10
 		label "Q36697"
 	]
 	node
 	[
-		id 11
+		id 10
 		label "Q21001764"
 	]
 ]
