@@ -1,13 +1,17 @@
+import sys
+sys.path.extend(['../../', '../', './'])
 
-from rws import *
+from similaritymeasures.deltacon import *
+from similaritymeasures.othersim import main_otherSim, intersection_rw_kernel
 
+similarity = intersection_rw_kernel
 
 if __name__ == '__main__':
     for root in ['gml', 'fullgml']:
-        datasets = os.listdir(os.path.join('..', 'graphs', root))
+        datasets = os.listdir(os.path.join('../..', 'graphs', root))
         for d in datasets:
-            in_folder = os.path.join('..', 'graphs', root, d)
-            out_folder = os.path.join('..', 'output', root, d)
+            in_folder = os.path.join('../..', 'graphs', root, d)
+            out_folder = os.path.join('../..', 'output', root, d)
             print('Processing', in_folder)
             tic = time.time()
             unaligned_graphs = load_multilayer_graph(in_folder)
@@ -17,7 +21,7 @@ if __name__ == '__main__':
             # compute the union of all language graphs, for comparison
             unaligned_graphs['union'] = union(unaligned_graphs)
 
-            print('vertex_jaccard_similarity')
+            print(similarity.__name__)
             # it is important to compute this function on unaligned graphs, as otherwise the
             # vertex set similarity will always be 1.0
-            main_otherSim(unaligned_graphs, similarity=vertex_jaccard_similarity, output_folder=out_folder)
+            main_otherSim(unaligned_graphs, similarity=similarity, output_folder=out_folder)

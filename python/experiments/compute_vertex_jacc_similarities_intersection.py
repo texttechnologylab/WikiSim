@@ -1,14 +1,15 @@
+import sys
+sys.path.extend(['../../', '../', './'])
 
-from rws import *
-import itertools
-
+from similaritymeasures.deltacon import *
+from similaritymeasures.othersim import vertex_jaccard_similarity, main_otherSim_intersection
 
 if __name__ == '__main__':
     for root in ['gml', 'fullgml']:
-        datasets = os.listdir(os.path.join('..', 'graphs', root))
+        datasets = os.listdir(os.path.join('../..', 'graphs', root))
         for d in datasets:
-            in_folder = os.path.join('..', 'graphs', root, d)
-            out_folder = os.path.join('..', 'output', root, d)
+            in_folder = os.path.join('../..', 'graphs', root, d)
+            out_folder = os.path.join('../..', 'output', root, d)
             print('Processing', in_folder)
             tic = time.time()
             unaligned_graphs = load_multilayer_graph(in_folder)

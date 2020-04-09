@@ -232,7 +232,7 @@ def union(graphs, directed=True):
     return g_new
 
 
-def intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
+def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
     """
     - Compute the intersection V' of the vertex sets of g1 and g2 (based on their labels, not ids).
     - compute g1[V'] and g2[V'], i.e. the induced subgraphs of V' of both graphs.
@@ -247,7 +247,7 @@ def intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
     # new unique vertex ids in the large graph
     label_ids = {l: i for i, l in enumerate(labels)}
 
-    def restrict_to_intersection(g):
+    def __restrict_to_intersection(g):
         g_new = igraph.Graph(directed=directed)
         g_new.add_vertices(len(labels))
         g_new.vs['label'] = labels
@@ -258,7 +258,7 @@ def intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
                 pass
         return g_new
 
-    return restrict_to_intersection(g1), restrict_to_intersection(g2)
+    return __restrict_to_intersection(g1), __restrict_to_intersection(g2)
 
 
 def load_multilayer_graph(data_folder):
@@ -316,7 +316,7 @@ def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballliga
         out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            g1, g2 = intersection(graphs[l1], graphs[l2])
+            g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
             if g1.vcount() != 0:
                 tic = time.time()
                 sim = deltaCon(g1, g2, affinities=affinities)
@@ -343,7 +343,7 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
         out_csv.write('Language1, Language2, SimilarityScore, Kernel, Time\n')
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            g1, g2 = intersection(graphs[l1], graphs[l2])
+            g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
             if g1.vcount() != 0:
                 tic = time.time()
                 sim1, sim2 = deltaCon_rw_lowmem(g1, g2)
@@ -353,6 +353,7 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
                 sim2 = 0.0  # no vertex overlap!
             print(l1, l2, sim1, sim2, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim1}, {sim2}, {toc-tic}\n')
+
 
 def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
     """
@@ -372,172 +373,6 @@ def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussball
         for l1, l2 in itertools.combinations_with_replacement(affinities.keys(), 2):
             tic = time.time()
             sim = deltaCon_cached(affinities[l1], affinities[l2])
-            toc = time.time()
-            print(l1, l2, sim, toc-tic)
-            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
-
-
-def vertex_edge_set_on_labels(g: igraph.Graph):
-    """
-    Compute a representation of the graph that is based on the 'label' attributes of the vertices in g.
-    That is, we assume that each vertex in g has a 'label' attribute and furthermore we assume that these
-    labels are unique, that is, they can be used as vertex ids, instead of the integer ids used by igraph.
-    :param g: a graph
-    :return: vertices, edges
-    """
-
-    vertices = set()
-    for v in g.vs:
-        vertices.add(v['label'])
-
-    # new unique vertex ids in the large graph
-    id_labels = {i: l for i, l in enumerate(vertices)}
-
-    edges = {(id_labels[e.source], id_labels[e.target]) for e in g.es}
-
-    return vertices, edges
-
-
-def computeGED(G1: igraph.Graph, G2: igraph.Graph):
-    """
-    Symmetric difference, normalized by sum of sizes.
-
-    Distance function. See ged_similarity for accompanying similarity score
-
-    See computeGED in ged.py for a networkx based implementation
-    :param G1:
-    :param G2:
-    :return:
-    """
-
-    v1, e1 = vertex_edge_set_on_labels(G1)
-    v2, e2 = vertex_edge_set_on_labels(G2)
-
-    v_intersection = v1.intersection(v2)
-    e_intersection = e1.intersection(e2)
-
-    try:
-        V = (len(v1) + len(v2) - 2 * len(v_intersection)) / (len(v1) + len(v2))
-    except ZeroDivisionError:
-        V = 0.0
-    try:
-        E = (len(e1) + len(e2) - 2 * len(e_intersection)) / (len(e1) + len(e2))
-    except ZeroDivisionError:
-        E = 0.0
-
-    return 0.5 * (V + E)
-
-
-def ged_similarity(G1: igraph.Graph, G2: igraph.Graph):
-    return 1.0 / (1.0 + computeGED(G1, G2))
-
-
-def vertex_edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
-    """
-    Compute Jaccard Similarity between edge sets and vertex sets and return their average.
-    :param G1: a graph
-    :param G2: a graph
-    :return: 0.5 * (jaccard_similarity(V(G1), V(G2)) + jaccard_similarity(E(G1), E(G2)))
-    """
-    v1, e1 = vertex_edge_set_on_labels(G1)
-    v2, e2 = vertex_edge_set_on_labels(G2)
-
-    v_intersection = v1.intersection(v2)
-    e_intersection = e1.intersection(e2)
-
-    try:
-        v_jaccard = len(v_intersection) / (len(v1) + len(v2) - len(v_intersection))
-    except ZeroDivisionError:
-        v_jaccard = 0.0
-    try:
-        e_jaccard = len(e_intersection) / (len(e1) + len(e2) - len(e_intersection))
-    except ZeroDivisionError:
-        e_jaccard = 0.0
-
-    return 0.5 * (v_jaccard + e_jaccard)
-
-
-def vertex_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
-    """
-    Compute Jaccard Similarity between vertex sets.
-    :param G1: a graph
-    :param G2: a graph
-    :return: jaccard_similarity(V(G1), V(G2))
-    """
-    v1, e1 = vertex_edge_set_on_labels(G1)
-    v2, e2 = vertex_edge_set_on_labels(G2)
-
-    v_intersection = v1.intersection(v2)
-
-    try:
-        v_jaccard = len(v_intersection) / (len(v1) + len(v2) - len(v_intersection))
-    except ZeroDivisionError:
-        v_jaccard = 0.0
-
-    return v_jaccard
-
-
-def edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
-    """
-    Compute Jaccard Similarity between edge sets and vertex sets and return their average.
-    :param G1: a graph
-    :param G2: a graph
-    :return: 0.5 * (jaccard_similarity(V(G1), V(G2)) + jaccard_similarity(E(G1), E(G2)))
-    """
-    v1, e1 = vertex_edge_set_on_labels(G1)
-    v2, e2 = vertex_edge_set_on_labels(G2)
-
-    e_intersection = e1.intersection(e2)
-
-    try:
-        e_jaccard = len(e_intersection) / (len(e1) + len(e2) - len(e_intersection))
-    except ZeroDivisionError:
-        e_jaccard = 0.0
-
-    return e_jaccard
-
-
-def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
-    """
-    Nice and general similarity computation for all pairs of graphs in the graphs dict.
-    :param graphs:
-    :param output_folder:
-    :param similarity:
-    :return:
-    """
-
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-    with open(os.path.join(output_folder, f'otherSim_{similarity.__name__}.csv'), 'w') as out_csv:
-        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
-
-        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            tic = time.time()
-            sim = similarity(graphs[l1], graphs[l2])
-            toc = time.time()
-            print(l1, l2, sim, toc-tic)
-            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
-
-
-def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
-    """
-    Compute specified similarity on pairs of graphs in graphs dict. However, before computing the similarity of a pair
-    of graphs, compute the induced graphs on the vertex set intersection before proceeding.
-    :param graphs:
-    :param output_folder:
-    :param similarity:
-    :return:
-    """
-
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-    with open(os.path.join(output_folder, f'otherSim_intersection_{similarity.__name__}.csv'), 'w') as out_csv:
-        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
-
-        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            g1, g2 = intersection(graphs[l1], graphs[l2])
-            tic = time.time()
-            sim = similarity(g1, g2)
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
