@@ -180,22 +180,21 @@ def vertex_set_union(graphs, directed=True):
     """
     new_graphs = dict()
 
+    # collect vertex labels of all graphs
     labels = set()
     for k in graphs.keys():
         g = graphs[k]
-        for v in g.vs:
-            labels.add(v['label'])
+        labels.update(g.vs['label'])
 
     # new unique vertex ids in the large graph
+    labels = list(labels)
     label_ids = {l: i for i, l in enumerate(labels)}
-    id_labels = {i: l for i, l in enumerate(labels)}
 
     for k in graphs.keys():
         g = graphs[k]
         g_new = igraph.Graph(directed=directed)
         g_new.add_vertices(len(labels))
-        for i, v in enumerate(g_new.vs):
-            v['label'] = id_labels[i]
+        g_new.vs['label'] = labels
         edges = [(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']]) for e in g.es]
         g_new.add_edges(edges)
         new_graphs[k] = g_new
@@ -210,22 +209,21 @@ def union(graphs, directed=True):
     :return:
     """
 
+    # collect vertex labels of all graphs
     labels = set()
     for k in graphs.keys():
         g = graphs[k]
-        for v in g.vs:
-            labels.add(v['label'])
+        labels.update(g.vs['label'])
 
     # new unique vertex ids in the large graph
+    labels = list(labels)
     label_ids = {l: i for i, l in enumerate(labels)}
-    id_labels = {i: l for i, l in enumerate(labels)}
 
     g_new = igraph.Graph(directed=directed)
     g_new.add_vertices(len(labels))
+    g_new.vs['label'] = labels
     for k in graphs.keys():
         g = graphs[k]
-        for i, v in enumerate(g_new.vs):
-            v['label'] = id_labels[i]
         edges = [(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']]) for e in g.es]
         g_new.add_edges(edges)
 
@@ -240,11 +238,11 @@ def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=
     :return: g1_new, g2_new
     """
 
-    labels = {v['label'] for v in g1.vs}
-    labels.intersection_update({v['label'] for v in g2.vs})
-    labels = list(labels)
+    labels = set(g1.vs['label'])
+    labels.intersection_update(g2.vs['label'])
 
-    # new unique vertex ids in the large graph
+    # new unique vertex ids in the small intersection graph
+    labels = list(labels)
     label_ids = {l: i for i, l in enumerate(labels)}
 
     def __restrict_to_intersection(g):
@@ -255,7 +253,7 @@ def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=
             try:
                 g_new.add_edge(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']])
             except KeyError:
-                pass
+                pass # here, we have encountered an edge with at least one endpoint not in the vertex set intersection
         return g_new
 
     return __restrict_to_intersection(g1), __restrict_to_intersection(g2)
