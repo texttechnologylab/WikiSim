@@ -16,12 +16,12 @@ def vertex_edge_set_on_labels(g: igraph.Graph):
     :param g: a graph
     :return: vertices, edges as sets
     """
-
-    labels = g.vs['label']
-
-    edges = {(labels[e.source], labels[e.target]) for e in g.es}
-
-    return set(labels), edges
+    if g.vcount() > 0:
+        labels = g.vs['label'] # throws a KeyError for empty graphs
+        edges = {(labels[e.source], labels[e.target]) for e in g.es}
+        return set(labels), edges
+    else:
+        return set(), set()
 
 
 def intersection_graph(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):

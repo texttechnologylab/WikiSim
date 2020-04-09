@@ -184,7 +184,8 @@ def vertex_set_union(graphs, directed=True):
     labels = set()
     for k in graphs.keys():
         g = graphs[k]
-        labels.update(g.vs['label'])
+        if g.vcount() > 0:
+            labels.update(g.vs['label'])
 
     # new unique vertex ids in the large graph
     labels = list(labels)
@@ -213,7 +214,8 @@ def union(graphs, directed=True):
     labels = set()
     for k in graphs.keys():
         g = graphs[k]
-        labels.update(g.vs['label'])
+        if g.vcount() > 0:
+            labels.update(g.vs['label']) # throws a KeyError for empty graphs
 
     # new unique vertex ids in the large graph
     labels = list(labels)
@@ -238,8 +240,14 @@ def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=
     :return: g1_new, g2_new
     """
 
-    labels = set(g1.vs['label'])
-    labels.intersection_update(g2.vs['label'])
+    if g1.vcount() > 0:
+        labels = set(g1.vs['label'])
+    else:
+        labels = set()
+    if g2.vcount() > 0:
+        labels.intersection_update(g2.vs['label'])
+    else:
+        labels = set() # intersection will be empty
 
     # new unique vertex ids in the small intersection graph
     labels = list(labels)
