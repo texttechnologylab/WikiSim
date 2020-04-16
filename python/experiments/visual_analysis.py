@@ -32,7 +32,7 @@ def visualize(similarity_file, out_folder, dataset=None, show=True):
             languages = np.unique(l1)
             np.sort(languages)
             n_lang = languages.shape[0]
-            sim_matrix = np.zeros([n_lang, n_lang])
+            sim_matrix = np.nan * np.zeros([n_lang, n_lang])
 
             #ugly
             lang_dict = {languages[i]: i for i in range(n_lang)}
@@ -41,12 +41,18 @@ def visualize(similarity_file, out_folder, dataset=None, show=True):
                 sim_matrix[lang_dict[l2[i]], lang_dict[l1[i]]] = sim[i]
 
             # print similarity matrix
-            with open(os.path.join(out_folder, folder, similarity_file[:-4] + addendum + '.matrix'), 'w') as f:
+            with open(os.path.join(out_folder, folder, folder + '_' + similarity_file[:-4] + addendum + '.matrix'), 'w') as f:
                 # header
                 f.write('\t'.join(languages) + '\n')
+
+                # normalization:
+                maxabs = np.max(np.abs(sim_matrix))
+                if maxabs <= 1.0:
+                    maxabs = 1.0 # if similarities are normalized, don't stretch them
+
                 # the lines
                 for i, l in enumerate(languages):
-                    f.write(l + '\t' + '\t'.join([str(x) for x in sim_matrix[i,:]]) + '\n')
+                    f.write(l + '\t' + '\t'.join([str(x / maxabs) for x in sim_matrix[i,:]]) + '\n')
 
             fig, ax = plt.subplots()
             im = ax.imshow(sim_matrix) #, norm=matplotlib.colors.Normalize(vmin=0.001, vmax=0.1, clip=False))
@@ -70,7 +76,7 @@ def visualize(similarity_file, out_folder, dataset=None, show=True):
 
             ax.set_title(f'{similarity_file[:-4]}\n of Wikipedia Topic \n{folder[:-3]} ({out_folder.split(os.path.sep)[-1]})')
             fig.tight_layout()
-            plt.savefig(os.path.join(out_folder, folder, similarity_file[:-4] + addendum + '.png'))
+            plt.savefig(os.path.join(out_folder, folder, folder + '_' + similarity_file[:-4] + addendum + '.png'))
             if show:
                 plt.show()
             plt.close()
@@ -88,6 +94,7 @@ if __name__ == '__main__':
                                 'deltaCON_intersection_personalized_rw_affinities.csv',
                                 'deltaCON_intersection_personalized_rw_affinities_lowmem.csv',
                                 'deltaCON_shortest_path_affinities.csv',
+                                'deltaCON_intersection_shortest_path_affinities.csv',
                                 'otherSim_ged_similarity.csv',
                                 'otherSim_ged_similarity_intersection.csv',
                                 'otherSim_vertex_edge_jaccard_similarity.csv',

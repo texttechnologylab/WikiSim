@@ -4,3 +4,4 @@
 *.out
 *.soc
 *.synctex.gz
+/output/
