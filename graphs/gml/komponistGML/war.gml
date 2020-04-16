@@ -44,9 +44,4 @@ graph
 		id 8
 		label "Q48173"
 	]
-	node
-	[
-		id 9
-		label "Q130759"
-	]
 ]

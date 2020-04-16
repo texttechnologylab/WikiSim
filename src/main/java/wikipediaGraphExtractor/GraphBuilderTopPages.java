@@ -13,7 +13,7 @@ import org.jgrapht.graph.DefaultEdge;
 import org.json.JSONException;
 
 import graph.CachedGraph;
-import wiki.Wiki;
+import wiki.WikidataFetcher;
 import wiki.WikipediaFetcher;
 import wiki.WikipeidaWikidata;
 
@@ -62,7 +62,7 @@ public class GraphBuilderTopPages {
 					directedGraph.addEdge(wikidataId, string2);
 				}
 			}
-			CachedGraph.saveGraph(directedGraph, Paths.get(fullgml.toString(), language + ".gml").toString());
+			CachedGraph.saveGraph(directedGraph, Paths.get(fullgml.toString(), language + ".gml").toString(),true);
 		}
 		
 		
@@ -119,8 +119,8 @@ public static List<String>hyponyms (String root, int level) throws JSONException
 	for (int i = 0; i < level; i++) {
 		List<String> hyponymsTmpTmp = new ArrayList<>();
 		for (String string : hyponymsTmp) {
-			hyponyms.addAll(Wiki.getWikidataSubclassOf(string));
-			hyponymsTmpTmp.addAll(Wiki.getWikidataSubclassOf(string));
+			hyponyms.addAll(WikidataFetcher.getWikidataSubclassOf(string));
+			hyponymsTmpTmp.addAll(WikidataFetcher.getWikidataSubclassOf(string));
 		}
 		hyponymsTmp = hyponymsTmpTmp;
 	}

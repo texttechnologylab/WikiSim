@@ -65,7 +65,6 @@ public class GraphBuilderMitDDC {
 				sb.append(formatProp("InternalLinksCount", "Integer",false)).append(";");
 				for (int i = 0; i < 1000; i=i+10) {
 					sb.append(formatProp("DDC"+i, "Double",false)).append(";");
-
 				}
 				sb.append(System.lineSeparator());
 				sb.append("Edge Attributes:").append(System.lineSeparator());
@@ -104,7 +103,6 @@ public class GraphBuilderMitDDC {
 		for (int i = 9; i < split.length; i++) {
 			sb.append(formatProp("DDC"+((i-9)*10), split[i],true)).append("¤");
 		}
-
 		return sb.toString();
 	}
 

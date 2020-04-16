@@ -87,101 +87,96 @@ graph
 	node
 	[
 		id 17
-		label "Q19290001"
-	]
-	node
-	[
-		id 18
 		label "Q917370"
 	]
 	node
 	[
-		id 19
+		id 18
 		label "Q936364"
 	]
 	node
 	[
-		id 20
+		id 19
 		label "Q1449584"
 	]
 	node
 	[
-		id 21
+		id 20
 		label "Q1458740"
 	]
 	node
 	[
-		id 22
+		id 21
 		label "Q1689539"
 	]
 	node
 	[
-		id 23
+		id 22
 		label "Q1705009"
 	]
 	node
 	[
-		id 24
+		id 23
 		label "Q2526438"
 	]
 	node
 	[
-		id 25
+		id 24
 		label "Q2607045"
 	]
 	node
 	[
-		id 26
+		id 25
 		label "Q312790"
 	]
 	node
 	[
-		id 27
+		id 26
 		label "Q313374"
 	]
 	node
 	[
-		id 28
+		id 27
 		label "Q383853"
 	]
 	node
 	[
-		id 29
+		id 28
 		label "Q440388"
 	]
 	node
 	[
-		id 30
+		id 29
 		label "Q496039"
 	]
 	node
 	[
-		id 31
+		id 30
 		label "Q104919"
 	]
 	node
 	[
-		id 32
+		id 31
 		label "Q693843"
 	]
 	node
 	[
-		id 33
+		id 32
 		label "Q697663"
 	]
 	node
 	[
-		id 34
+		id 33
 		label "Q698047"
 	]
 	node
 	[
-		id 35
+		id 34
 		label "Q712601"
 	]
 	node
 	[
-		id 36
+		id 35
 		label "Q721351"
 	]
 	edge
@@ -361,19 +356,19 @@ graph
 	edge
 	[
 		id 30
-		source 21
+		source 20
 		target 3
 	]
 	edge
 	[
 		id 31
-		source 25
+		source 24
 		target 1
 	]
 	edge
 	[
 		id 32
-		source 25
+		source 24
 		target 3
 	]
 	edge
@@ -433,25 +428,25 @@ graph
 	edge
 	[
 		id 42
-		source 32
+		source 31
 		target 1
 	]
 	edge
 	[
 		id 43
-		source 32
+		source 31
 		target 3
 	]
 	edge
 	[
 		id 44
-		source 34
-		target 32
+		source 33
+		target 31
 	]
 	edge
 	[
 		id 45
-		source 34
+		source 33
 		target 3
 	]
 	edge

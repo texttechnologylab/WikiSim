@@ -672,56 +672,51 @@ graph
 	node
 	[
 		id 134
-		label "Q77040383"
-	]
-	node
-	[
-		id 135
 		label "Q16015825"
 	]
 	node
 	[
-		id 136
+		id 135
 		label "Q6937957"
 	]
 	node
 	[
-		id 137
+		id 136
 		label "Q5247719"
 	]
 	node
 	[
-		id 138
+		id 137
 		label "Q5126347"
 	]
 	node
 	[
-		id 139
+		id 138
 		label "Q30826528"
 	]
 	node
 	[
-		id 140
+		id 139
 		label "Q5677719"
 	]
 	node
 	[
-		id 141
+		id 140
 		label "Q12504379"
 	]
 	node
 	[
-		id 142
+		id 141
 		label "Q17003345"
 	]
 	node
 	[
-		id 143
+		id 142
 		label "Q60755382"
 	]
 	node
 	[
-		id 144
+		id 143
 		label "Q913747"
 	]
 ]
