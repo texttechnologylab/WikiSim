@@ -71,7 +71,7 @@ def deltacon_sp(G1, G2):
 
 if __name__ == '__main__':
     # look for datasets here
-    root_in = os.path.join('..', '..', 'graphs', 'oecd')
+    root_in = os.path.join('..', '..', 'graphs')
 
     # consider these similarity functions
     similarities = [edge_jaccard_similarity, ged_similarity,
