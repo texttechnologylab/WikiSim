@@ -9,9 +9,6 @@ from similaritymeasures.deltacon import deltaCon, personalized_rw_affinities, sh
 from similaritymeasures.othersim import edge_jaccard_similarity, ged_similarity, vertex_edge_jaccard_similarity, vertex_jaccard_similarity, intersection_rw_kernel
 from experiments_assessment_of_similarities.compare_to_random_ER import er_similarities
 
-# look for datasets here
-root_in = os.path.join('..', '..', 'graphs', 'oecd')
-root_out = os.path.join('..', '..', 'graphs', 'oecd')
 
 def has_loops(g: igraph.Graph):
     loops = g.is_loop()
@@ -28,7 +25,7 @@ def make_ER_simulation(g: igraph.Graph, directed=True):
     return erg
 
 
-def er_similarities(similarity, repetitions):
+def er_similarities(similarity, repetitions, root_in):
     with open('ER_similarities_' + similarity.__name__ + '.csv', 'w') as f:
         f.write('Root path: ' + root_in + '\n' + 'Sample Size: ' + str(repetitions) + '\n\n')
         f.write('type; dataset; language; mean; std')
@@ -37,7 +34,6 @@ def er_similarities(similarity, repetitions):
             datasets = os.listdir(os.path.join(root_in, type))
             for d in datasets:
                 in_folder = os.path.join(root_in, type, d)
-                out_folder = os.path.join(root_out, type, d)
 
                 print('Processing', in_folder)
                 unaligned_graphs = load_all_graphs(in_folder)
@@ -62,11 +58,17 @@ def deltacon_sp(G1, G2):
 
 
 if __name__ == '__main__':
+    # look for datasets here
+    root_in = os.path.join('..', '..', 'graphs', 'oecd')
+
+    # consider these similarity functions
     similarities = [edge_jaccard_similarity, ged_similarity,
                     vertex_edge_jaccard_similarity, vertex_jaccard_similarity,
                     intersection_rw_kernel,
                     deltacon_rw, deltacon_sp]
 
+    # create this many er graphs per instance
     repetitions = 20
+
     for similarity in similarities:
-        er_similarities(similarity, repetitions)
+        er_similarities(similarity, repetitions, root_in)
