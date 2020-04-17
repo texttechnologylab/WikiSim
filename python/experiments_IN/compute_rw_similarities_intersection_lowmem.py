@@ -1,8 +1,9 @@
 
 import sys
 sys.path.extend(['../../', '../', './'])
+
 from similaritymeasures.deltacon import *
-from similaritymeasures.othersim import ged_similarity, main_otherSim_intersection
+
 
 if __name__ == '__main__':
     for root in ['gml', 'fullgml']:
@@ -12,11 +13,14 @@ if __name__ == '__main__':
             out_folder = os.path.join('../..', 'output', root, d)
             print('Processing', in_folder)
             tic = time.time()
-            unaligned_graphs = load_multilayer_graph(in_folder)
+            unaligned_graphs = load_all_graphs(in_folder)
             toc = time.time()
             print('load', toc - tic)
 
-            print('ged_similarity')
-            # it is important to compute this function on unaligned graphs, as otherwise the
-            # vertex set similarity will always be 1.0
-            main_otherSim_intersection(unaligned_graphs, similarity=ged_similarity, output_folder=out_folder)
+            print('Writing to', out_folder)
+
+            print('personalized_rw_affinities')
+            tic = time.time()
+            main_deltaCon_intersection_lowmem(unaligned_graphs, output_folder=out_folder)
+            toc = time.time()
+            print('proc', toc - tic)

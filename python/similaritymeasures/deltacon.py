@@ -267,7 +267,7 @@ def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=
     return __restrict_to_intersection(g1), __restrict_to_intersection(g2)
 
 
-def load_multilayer_graph(data_folder):
+def load_all_graphs(data_folder):
     """
     Load the different wikipedias for some topic
     :param data_folder:

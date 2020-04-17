@@ -13,7 +13,7 @@ if __name__ == '__main__':
             out_folder = os.path.join('../..', 'output', root, d)
             # print('Processing', in_folder)
             tic = time.time()
-            unaligned_graphs = load_multilayer_graph(in_folder)
+            unaligned_graphs = load_all_graphs(in_folder)
             for k in unaligned_graphs:
                 allgraphs[d + '_' + k] = unaligned_graphs[k]
             toc = time.time()
