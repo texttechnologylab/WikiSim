@@ -4,13 +4,14 @@ import igraph
 import numpy as np
 
 sys.path.extend(['../', './'])
-
 from similaritymeasures.deltacon import deltaCon, personalized_rw_affinities, shortest_path_affinities, load_all_graphs
 from similaritymeasures.othersim import edge_jaccard_similarity, ged_similarity, vertex_edge_jaccard_similarity, vertex_jaccard_similarity, intersection_rw_kernel
-from experiments_assessment_of_similarities.compare_to_random_ER import er_similarities
 
 
 def has_loops(g: igraph.Graph):
+    '''The interface of igraph is strange here. g.is_loop() returns a list of boolean values, one for each edge.
+    We want to know if the graph has loops, which is true if at least one of the edge values are true.
+    '''
     loops = g.is_loop()
     for is_loop in loops:
         if is_loop:
@@ -26,6 +27,17 @@ def make_ER_simulation(g: igraph.Graph, directed=True):
 
 
 def er_similarities(similarity, repetitions, root_in):
+    """
+    Create repetitions many er graphs on the same vertex set (with identical labels and ids) for each graph
+    in the datasets pointed at by root_in.
+
+    Create a csv file with the mean similarity score among these repetitions and the standard deviation.
+    :param similarity: a similarity function that accepts two graphs
+    :param repetitions: number of er graphs created for each instance
+    :param root_in: folder in which the data resides
+           (expected are, that there are 'gml' and 'fullgml' subfolders present)
+    :return: nothing, but store a csv file in the working directory
+    """
     with open('ER_similarities_' + similarity.__name__ + '.csv', 'w') as f:
         f.write('Root path: ' + root_in + '\n' + 'Sample Size: ' + str(repetitions) + '\n\n')
         f.write('type; dataset; language; mean; std')
