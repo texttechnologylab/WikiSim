@@ -1,9 +1,13 @@
 import sys
+import os
+import igraph
+import numpy as np
 
 sys.path.extend(['../', './'])
 
-from similaritymeasures.deltacon import *
-from similaritymeasures.othersim import edge_jaccard_similarity
+from similaritymeasures.deltacon import deltaCon, personalized_rw_affinities, shortest_path_affinities, load_all_graphs
+from similaritymeasures.othersim import edge_jaccard_similarity, ged_similarity, vertex_edge_jaccard_similarity, vertex_jaccard_similarity, intersection_rw_kernel
+from experiments_assessment_of_similarities.compare_to_random_ER import er_similarities
 
 # look for datasets here
 root_in = os.path.join('..', '..', 'graphs', 'oecd')
@@ -47,7 +51,22 @@ def er_similarities(similarity, repetitions):
                     f.write(f'{type}; {d}; {lang}; {np.mean(similarity_score)}; {np.std(similarity_score)}\n')
 
 
+def deltacon_rw(G1, G2):
+    '''Wrapper function for deltacon with personalized random walk similarities'''
+    return deltaCon(G1, G2, affinities=personalized_rw_affinities)
+
+
+def deltacon_sp(G1, G2):
+    '''Wrapper function for deltacon with shortest path similarities'''
+    return deltaCon(G1, G2, affinities=shortest_path_affinities)
+
+
 if __name__ == '__main__':
-    similarity = edge_jaccard_similarity
-    repetitions = 10
-    er_similarities(similarity, repetitions)
+    similarities = [edge_jaccard_similarity, ged_similarity,
+                    vertex_edge_jaccard_similarity, vertex_jaccard_similarity,
+                    intersection_rw_kernel,
+                    deltacon_rw, deltacon_sp]
+
+    repetitions = 20
+    for similarity in similarities:
+        er_similarities(similarity, repetitions)
