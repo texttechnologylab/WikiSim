@@ -1,0 +1,26 @@
+directed
+SimilarityGraph
+Vertex Attributes:
+Edge Attributes:
+Vertices:
+Q2025¤
+Q116907¤
+Q283¤
+Q2270¤
+Q1997¤
+Q57055¤
+Q170002¤
+Q83320¤
+Q133145¤
+Q163648¤
+Q23767¤
+Q132621¤
+Q407232¤
+Q43656¤
+Q37525¤
+Q50694¤
+Q407158¤
+Q179731¤
+Q179678¤
+Q179724¤
+Edges:

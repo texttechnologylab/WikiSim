@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -19,79 +20,124 @@ import wiki.WikipediaFetcher;
 
 
 public class SiteStatistics {
-
-
+	static HashMap<String, HashMap<String,double[]>>ddcs = new HashMap<>();
+	static ArrayList<String>ddcLanguageOrder = new ArrayList<>();
 
 	public static void main(String[] args) throws IOException {
+		HashSet<String>consideredLanguages = new HashSet<>();
+		consideredLanguages.add("arz");
+		consideredLanguages.add("bs");
+		consideredLanguages.add("ceb");
+		consideredLanguages.add("ckb");
+		consideredLanguages.add("da");
+		consideredLanguages.add("de");
+		consideredLanguages.add("el");
+		consideredLanguages.add("en");
+		consideredLanguages.add("es");
+		consideredLanguages.add("fr");
+		consideredLanguages.add("he");
+		consideredLanguages.add("hi");
+		consideredLanguages.add("hu");
+		consideredLanguages.add("id");
+		consideredLanguages.add("it");
+		consideredLanguages.add("ja");
+		consideredLanguages.add("ko");
+		consideredLanguages.add("lv");
+		consideredLanguages.add("mk");
+		consideredLanguages.add("ml");
+		consideredLanguages.add("mr");
+		consideredLanguages.add("nl");
+		consideredLanguages.add("pl");
+		consideredLanguages.add("pt");
+		consideredLanguages.add("ro");
+		consideredLanguages.add("ru");
+		consideredLanguages.add("sh");
+		consideredLanguages.add("si");
+		consideredLanguages.add("simple");
+		consideredLanguages.add("sr");
+		consideredLanguages.add("sv");
+		consideredLanguages.add("te");
+		consideredLanguages.add("tr");
+		consideredLanguages.add("vi");
+		consideredLanguages.add("war");
+		consideredLanguages.add("zh");
+
 		long start = System.currentTimeMillis();
-		for (File category: new File("graphs/oecd/gml/").listFiles()) {
-			for (File graphFile : category.listFiles()) {
-				if(Paths.get("graphs/oecd/content/",category.getName(),graphFile.getName()).toFile().exists())
-					continue;
-				//			File graphFile = new File("graphs/gml/warGML/en.gml.bf");
-				if(graphFile.getName().endsWith(".gml.bf")){
-					String language = graphFile.getName().replace(".gml.bf", "");
-					if(language.equals("de"))
-						continue;
-					System.out.println(graphFile.getPath());
-
-					Graph<String,DefaultEdge> graph = BF2JGraphT.readBFGraph(graphFile);
-					HashMap<String, String>wikipediaTitles = WikipediaFetcher.getWikipediaFromWikidataList(new ArrayList<String>(graph.vertexSet()), language);
-					List<String> lines = FileUtils.readLines(graphFile);					
-
-					List<String> output = new ArrayList<>();
-					boolean inVertices = false;
-					for (String string : lines) {
-						if(string.trim().equals("Vertex Attributes:")){
-							output.add("Vertex Attributes:[SV1¤IntegerDistribution];[SV2¤IntegerDistribution];");
+		for (String language : consideredLanguages) {
+			for (String path : new String[]{"graphs/oecdTopics","graphs/oecd"}) {
+				for (File category: Paths.get(path,"gml").toFile().listFiles()) {
+					for (File graphFile : category.listFiles()) {
+						if(Paths.get(path, "content",category.getName(),graphFile.getName()).toFile().exists())
 							continue;
-						}
-						if(string.trim().equals("Edges:"))
-							inVertices = false;
-						if(inVertices){
-							String vertex = string.split("¤")[0];
-							if(wikipediaTitles.containsKey(vertex)){
-								PageStatistics currentPage = new PageStatistics(language,wikipediaTitles.get(vertex));
-								if(currentPage.getPageId() > 0){
-									StringBuilder sb = new StringBuilder();
-									sb.append("[SV1¤");
-									sb.append("1").append("¶").append(currentPage.getSize()).append("¤");
-									sb.append("2").append("¶").append(currentPage.getCategories().size()).append("¤");
-									sb.append("3").append("¶").append(currentPage.getImages().size()).append("¤");
-									sb.append("4").append("¶").append(currentPage.getNumberOfTables()).append("¤");
-									sb.append("5").append("¶").append(currentPage.getExtlinks().size()).append("¤");
-									sb.append("6").append("¶").append(currentPage.getLinks().size()).append("¤");
-									sb.append("7").append("¶").append(currentPage.getSections().size()).append("¤");
-									sb.append("8").append("¶").append(currentPage.getBreadthOfTOC()).append("¤");
-									sb.append("9").append("¶").append(currentPage.getDepthOfTOC()).append("¤");
-									sb.append("]¤");
+						//			File graphFile = new File("graphs/gml/warGML/en.gml.bf");
+						if(graphFile.getName().endsWith(".gml.bf")){
+							if(!graphFile.getName().replace(".gml.bf", "").equals(language))
+								continue;
+							System.out.println(graphFile.getPath());
 
-									//							sb.append(formatProp("number of characters", ""+ currentPage.getSize(),true)).append("¤");
-									//							sb.append(formatProp("number of categories", ""+ currentPage.getCategories().size(),true)).append("¤");
-									//							sb.append(formatProp("number of pictures", ""+ currentPage.getImages().size(),true)).append("¤");
-									//							sb.append(formatProp("number of tables", ""+ currentPage.getNumberOfTables(),true)).append("¤");
-									//							sb.append(formatProp("links to pages outside Wikipedia", ""+currentPage.getExtlinks().size(),true)).append("¤");
-									//							sb.append(formatProp("links to pages inside Wikipedia", ""+currentPage.getLinks().size(),true)).append("¤");
-									//							sb.append(formatProp("number of sections", ""+ currentPage.getCategories().size(),true)).append("¤");
-									//							sb.append(formatProp("breadth of table of content", ""+currentPage.getBreadthOfTOC(),true)).append("¤");
-									//							sb.append(formatProp("depth of table of content", ""+currentPage.getDepthOfTOC(),true)).append("¤");
+							Graph<String,DefaultEdge> graph = BF2JGraphT.readBFGraph(graphFile);
+							HashMap<String, String>wikipediaTitles = WikipediaFetcher.getWikipediaFromWikidataList(new ArrayList<String>(graph.vertexSet()), language);
+							List<String> lines = FileUtils.readLines(graphFile);					
 
-									sb.append(formatProp("SV2",formatDDC(getDDC(language, ""+currentPage.getPageId())),false)).append("¤");
-									System.out.println(sb.toString());
-									string+=sb.toString();
+							List<String> output = new ArrayList<>();
+							boolean inVertices = false;
+							for (String string : lines) {
+								if(string.trim().equals("Vertex Attributes:")){
+									output.add("Vertex Attributes:[SV1¤IntegerDistribution];[SV2¤IntegerDistribution];");
+									continue;
 								}
-							}
-						}
-						if(string.trim().equals("Vertices:"))
-							inVertices = true;
+								if(string.trim().equals("Edges:"))
+									inVertices = false;
+								if(inVertices){
+									String vertex = string.split("¤")[0];
+									if(wikipediaTitles.containsKey(vertex)){
+										PageStatistics currentPage = new PageStatistics(language,wikipediaTitles.get(vertex));
+										if(currentPage.getPageId() > 0){
+											StringBuilder sb = new StringBuilder();
+											sb.append("[SV1¤");
+											sb.append("1").append("¶").append(currentPage.getSize()).append("¤");
+											sb.append("2").append("¶").append(currentPage.getCategories().size()).append("¤");
+											sb.append("3").append("¶").append(currentPage.getImages().size()).append("¤");
+											sb.append("4").append("¶").append(currentPage.getNumberOfTables()).append("¤");
+											sb.append("5").append("¶").append(currentPage.getExtlinks().size()).append("¤");
+											sb.append("6").append("¶").append(currentPage.getLinks().size()).append("¤");
+											sb.append("7").append("¶").append(currentPage.getSections().size()).append("¤");
+											sb.append("8").append("¶").append(currentPage.getBreadthOfTOC()).append("¤");
+											sb.append("9").append("¶").append(currentPage.getDepthOfTOC()).append("¤");
+											sb.append("]¤");
 
-						output.add(string);
+											//							sb.append(formatProp("number of characters", ""+ currentPage.getSize(),true)).append("¤");
+											//							sb.append(formatProp("number of categories", ""+ currentPage.getCategories().size(),true)).append("¤");
+											//							sb.append(formatProp("number of pictures", ""+ currentPage.getImages().size(),true)).append("¤");
+											//							sb.append(formatProp("number of tables", ""+ currentPage.getNumberOfTables(),true)).append("¤");
+											//							sb.append(formatProp("links to pages outside Wikipedia", ""+currentPage.getExtlinks().size(),true)).append("¤");
+											//							sb.append(formatProp("links to pages inside Wikipedia", ""+currentPage.getLinks().size(),true)).append("¤");
+											//							sb.append(formatProp("number of sections", ""+ currentPage.getCategories().size(),true)).append("¤");
+											//							sb.append(formatProp("breadth of table of content", ""+currentPage.getBreadthOfTOC(),true)).append("¤");
+											//							sb.append(formatProp("depth of table of content", ""+currentPage.getDepthOfTOC(),true)).append("¤");
+
+											sb.append(formatProp("SV2",formatDDC(getDDC(language, ""+currentPage.getPageId())),false)).append("¤");
+											System.out.println(sb.toString());
+											string+=sb.toString();
+											FileUtils.writeStringToFile(Paths.get(path,"html",category.getName(),language,vertex+"_"+wikipediaTitles.get(vertex)+".xml").toFile(),currentPage.apiOutput,"UTF-8");
+										}
+
+									}
+								}
+								if(string.trim().equals("Vertices:"))
+									inVertices = true;
+
+								output.add(string);
+							}
+							FileUtils.writeLines(Paths.get(path,"content",category.getName(),graphFile.getName()).toFile(), output);
+							//										FileUtils.writeLines(new File("test.bf"), output);
+						}
 					}
-					FileUtils.writeLines(Paths.get("graphs/oecd/content/",category.getName(),graphFile.getName()).toFile(), output);
-					//										FileUtils.writeLines(new File("test.bf"), output);
 				}
 			}
+			ddcs = new HashMap<>();
 		}
+
 		System.out.println("time spend:" + (System.currentTimeMillis() - start));
 	}
 
@@ -114,8 +160,6 @@ public class SiteStatistics {
 		return sb.toString();
 	}
 
-	static HashMap<String, HashMap<String,double[]>>ddcs = new HashMap<>();
-	static ArrayList<String>ddcLanguageOrder = new ArrayList<>();
 
 	public synchronized static double[] getDDC(String language, String pageName){
 		System.out.println(language+"\t"+pageName);

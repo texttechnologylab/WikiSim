@@ -1,0 +1,17 @@
+directed
+SimilarityGraph
+Vertex Attributes:
+Edge Attributes:
+Vertices:
+Q11633¤
+Q735¤
+Q173095¤
+Q9128¤
+Q11629¤
+Q11424¤
+Edges:
+Q11633¤Q735¤1.0¤
+Q11633¤Q173095¤1.0¤
+Q11633¤Q9128¤1.0¤
+Q11633¤Q11629¤1.0¤
+Q11633¤Q11424¤1.0¤
