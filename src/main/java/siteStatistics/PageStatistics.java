@@ -26,7 +26,7 @@ public  class PageStatistics{
 	private long pageId;
 	private int numberOfTables = 0;
 	private int numberOfItemize = 0;
-
+	String apiOutput;
 
 	public PageStatistics(String language,String title){
 		System.out.println(language+"\t"+title);
@@ -249,7 +249,7 @@ public  class PageStatistics{
 	public void initSections(String language, String title){
 
 		try {
-			String url = "https://" + language + ".wikipedia.org/w/api.php?action=parse&page=" + title + "&prop=sections|wikitext&format=xml";
+			String url = "https://" + language + ".wikipedia.org/w/api.php?action=parse&page=" + title + "&prop=sections|wikitext|text&format=xml";
 			Document doc;
 			doc = Jsoup.connect(url).get();
 			getSections().addAll(
@@ -259,9 +259,14 @@ public  class PageStatistics{
 					.collect(Collectors.toList())
 					);
 
-			String wikitext = doc.select("api > parse > wikitext").first().text();
-			setNumberOfTables(StringUtils.countMatches(wikitext, "wikitable"));
-			setNumberOfItemize(StringUtils.countMatches(wikitext, "*"));
+			try{
+				String wikitext = doc.select("api > parse > wikitext").first().text();
+				setNumberOfTables(StringUtils.countMatches(wikitext, "wikitable"));
+				setNumberOfItemize(StringUtils.countMatches(wikitext, "*"));
+			}catch(NullPointerException e){
+				e.printStackTrace();
+			}
+			apiOutput = doc.toString();
 		} catch (IOException e) {
 			e.printStackTrace();
 			try {

@@ -32,79 +32,108 @@ public class GraphBuilderFromOECD {
 		WikipediaFetcher fetcher = new WikipediaFetcher();
 
 		HashSet<String>consideredLanguages = new HashSet<>();
+		consideredLanguages.add("arz");
+		consideredLanguages.add("bs");
 		consideredLanguages.add("ceb");
-		consideredLanguages.add("war");
-		consideredLanguages.add("sv");
-		consideredLanguages.add("vi");
-		consideredLanguages.add("nl");
-		consideredLanguages.add("fr");
-		consideredLanguages.add("pl");
-		consideredLanguages.add("en");
-		consideredLanguages.add("it");
+		consideredLanguages.add("ckb");
+		consideredLanguages.add("da");
 		consideredLanguages.add("de");
-		consideredLanguages.add("ru");
+		consideredLanguages.add("el");
+		consideredLanguages.add("en");
 		consideredLanguages.add("es");
+		consideredLanguages.add("fr");
+		consideredLanguages.add("he");
+		consideredLanguages.add("hi");
+		consideredLanguages.add("hu");
+		consideredLanguages.add("id");
+		consideredLanguages.add("it");
 		consideredLanguages.add("ja");
+		consideredLanguages.add("ko");
+		consideredLanguages.add("lv");
+		consideredLanguages.add("mk");
+		consideredLanguages.add("ml");
+		consideredLanguages.add("mr");
+		consideredLanguages.add("nl");
+		consideredLanguages.add("pl");
+		consideredLanguages.add("pt");
+		consideredLanguages.add("ro");
+		consideredLanguages.add("ru");
+		consideredLanguages.add("sh");
+		consideredLanguages.add("si");
+		consideredLanguages.add("simple");
+		consideredLanguages.add("sr");
+		consideredLanguages.add("sv");
+		consideredLanguages.add("te");
+		consideredLanguages.add("tr");
+		consideredLanguages.add("vi");
+		consideredLanguages.add("war");
+		consideredLanguages.add("zh");
+		
+		System.out.println(consideredLanguages.size());
 
 
 		JSONArray json = new JSONArray(FileUtils.readFileToString(new File("wissensbereicheRecursiveThemen.json")));
 		for (Object object : json) {
 			JSONObject thema = (JSONObject) object;
-			Path fullgml = Paths.get("graphs/oecd/","fullgml",thema.getString("name"));
-			fullgml.toFile().mkdirs();
-
-			Path gmlPath = Paths.get("graphs/oecd/","gml",thema.getString("name"));
-			gmlPath.toFile().mkdirs();
 			
-
 			
-			HashSet<String>studies = new HashSet<>();
+			HashSet<JSONObject>studies = new HashSet<>();
 			if(thema.has("studies"))
 				for (Object study : thema.getJSONArray("studies")) {
 					JSONObject studyJson = (JSONObject) study;
-					studies.add(studyJson.getString("qid"));
+					studies.add(studyJson);
 				}
 			if(thema.has("subclasses"))
-				thema.getJSONArray("subclasses").forEach(x -> ((JSONObject)x).getJSONArray("studies").forEach(y -> studies.add(((JSONObject)y).getString("qid"))));
+				thema.getJSONArray("subclasses").forEach(x -> ((JSONObject)x).getJSONArray("studies").forEach(y -> studies.add(((JSONObject)y))));
 
+			for (JSONObject jsonObject : studies) {
+				Path fullgml = Paths.get("graphs/oecdTopics/","fullgml",jsonObject.getString("name"));
+				fullgml.toFile().mkdirs();
 
-			HashMap<String, List<WikipeidaWikidata>> languageWikidataMap=  WikidataFetcher.getWikipediaLinksByLanguagesForWikidataHyponym(studies,false, 10000);
-			HashSet<String>entities = new HashSet<>();
-			for (Entry<String, List<WikipeidaWikidata>> entry : languageWikidataMap.entrySet()) {
-				for (WikipeidaWikidata item : entry.getValue()) {
-					entities.add(item.wikidataId);
+				Path gmlPath = Paths.get("graphs/oecdTopics/","gml",jsonObject.getString("name"));
+				gmlPath.toFile().mkdirs();
+				HashSet<String> study = new HashSet<>();
+				study.add(jsonObject.getString("qid"));
+				
+				HashMap<String, List<WikipeidaWikidata>> languageWikidataMap=  WikidataFetcher.getWikipediaLinksByLanguagesForWikidataHyponym(study,false, 20000);
+				HashSet<String>entities = new HashSet<>();
+				for (Entry<String, List<WikipeidaWikidata>> entry : languageWikidataMap.entrySet()) {
+					for (WikipeidaWikidata item : entry.getValue()) {
+						entities.add(item.wikidataId);
+					}
 				}
-			}
 
-			FileUtils.writeLines(Paths.get("graphs/oecd/","entities",thema.getString("name")).toFile(), entities);
-			languageWikidataMap.entrySet().forEach(
-					entry->{
-						String language = entry.getKey().replace("wiki", "");
-						if(Paths.get(fullgml.toString(), language + ".gml").toFile().exists() && Paths.get(gmlPath.toString(), language + ".gml").toFile().exists())
-							return;
-						if(!consideredLanguages.contains(language))
-							return;
-						DefaultDirectedGraph<String, DefaultEdge> directedGraph = new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);		
-						current = 0;
+				FileUtils.writeLines(Paths.get("graphs/oecdTopics/","entities",jsonObject.getString("name")).toFile(), entities);
+				languageWikidataMap.entrySet().forEach(
+						entry->{
+							String language = entry.getKey().replace("wiki", "");
+							
+							if(Paths.get(fullgml.toString(), language + ".gml").toFile().exists() && Paths.get(gmlPath.toString(), language + ".gml").toFile().exists())
+								return;
+							if(!consideredLanguages.contains(language))
+								return;
+							DefaultDirectedGraph<String, DefaultEdge> directedGraph = new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);		
+							current = 0;
 
-						entry.getValue().forEach(
-								link -> {
-									System.out.println(current++ + "/" + entry.getValue().size());
-									String wikidataId = link.wikidataId;
-									//										if(wikidataId!=null){
-									directedGraph.addVertex(wikidataId);
-									List<String> wikidataLinks = fetcher.getWikiDataLinks(language, UrlEscapers.urlPathSegmentEscaper().escape(link.wikipediaLink).replace("+", "%2B").replace("&", "%26"));
-									for (String string2 : wikidataLinks) {
-										directedGraph.addVertex(string2);
-										directedGraph.addEdge(wikidataId, string2);
+							entry.getValue().forEach(
+									link -> {
+										System.out.println(language + "\t"+jsonObject.getString("name")+"\t"+current++ + "/" + entry.getValue().size());
+										String wikidataId = link.wikidataId;
+										//										if(wikidataId!=null){
+										directedGraph.addVertex(wikidataId);
+										List<String> wikidataLinks = fetcher.getWikiDataLinks(language, UrlEscapers.urlPathSegmentEscaper().escape(link.wikipediaLink).replace("+", "%2B").replace("&", "%26"));
+										for (String string2 : wikidataLinks) {
+											directedGraph.addVertex(string2);
+											directedGraph.addEdge(wikidataId, string2);
+										}
 									}
-								}
-								);
+									);
 
-						CachedGraph.saveGraph(directedGraph, Paths.get(fullgml.toString(), language + ".gml").toString(),true);
-						CachedGraph.simplifyGraph(directedGraph,entities);
-						CachedGraph.saveGraph(directedGraph, Paths.get(gmlPath.toString(), language + ".gml").toString(),true);
-					});
+							CachedGraph.saveGraph(directedGraph, Paths.get(fullgml.toString(), language + ".gml").toString(),true);
+							CachedGraph.simplifyGraph(directedGraph,entities);
+							CachedGraph.saveGraph(directedGraph, Paths.get(gmlPath.toString(), language + ".gml").toString(),true);
+						});
+			}
 		}
 	}
 
