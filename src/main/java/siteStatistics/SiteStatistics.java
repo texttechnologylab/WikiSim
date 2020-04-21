@@ -57,7 +57,7 @@ public class SiteStatistics {
 		consideredLanguages.add("sr");
 		consideredLanguages.add("sv");
 		consideredLanguages.add("te");
-		consideredLanguages.add("tr");
+//		consideredLanguages.add("tr");
 		consideredLanguages.add("vi");
 		consideredLanguages.add("war");
 		consideredLanguages.add("zh");
