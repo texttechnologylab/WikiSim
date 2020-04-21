@@ -1,0 +1,13 @@
+nohup python3 -u compute_edge_jacc_similarities_intersection.py > compute_edge_jacc_similarities_intersection.out &
+nohup python3 -u compute_ged_similarities.py > compute_ged_similarities.out &
+nohup python3 -u compute_ged_similarities_intersection.py > compute_ged_similarities_intersection.out &
+nohup python3 -u compute_jacc_similarities.py > compute_jacc_similarities.out &
+nohup python3 -u compute_vertex_jacc_similarities.py > compute_vertex_jacc_similarities.out &
+nohup python3 -u compute_vertex_jacc_similarities_intersection.py > compute_vertex_jacc_similarities_intersection.out &
+nohup python3 -u compute_vertex_jacc_similarities_intersection_alldata.py > compute_vertex_jacc_similarities_intersection_alldata.out &
+nohup python3 -u compute_intersection_rw_kernel.py > compute_intersection_rw_kernel.out &
+nohup python3 -u compute_intersection_rw_kernel_unnormalized.py > compute_intersection_rw_kernel_unnormalized.out &
+nohup python3 -u compute_rw_similarities.py > compute_rw_similarities.out &
+nohup python3 -u compute_rw_similarities_intersection_lowmem.py > compute_rw_similarities_intersection_lowmem.out &
+nohup python3 -u compute_sp_similarities.py > compute_sp_similarities.out &
+nohup python3 -u compute_sp_similarities_intersection.py > compute_sp_similarities_intersection.out &

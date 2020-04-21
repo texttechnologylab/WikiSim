@@ -6,11 +6,11 @@ import numpy as np
 import csv
 import random
 
-def compute_sampled_statistics(similarity_file, out_folder, sample_size=0.1, dataset=None, sample_relative=True):
+def compute_sampled_statistics(similarity_file, similarity_folder, sample_size=0.1, dataset=None, sample_relative=True):
     if dataset is not None:
-        folders = filter(lambda x: x.endswith(dataset), os.listdir(out_folder))
+        folders = filter(lambda x: x.endswith(dataset), os.listdir(similarity_folder))
     else:
-        folders = os.listdir(out_folder)
+        folders = os.listdir(similarity_folder)
 
     # collect all similarities
     l1 = list()
@@ -18,7 +18,7 @@ def compute_sampled_statistics(similarity_file, out_folder, sample_size=0.1, dat
     similarity = list()
     kernel = list()
     for folder in folders:
-        data = csv.DictReader(open(os.path.join(out_folder, folder, similarity_file)), skipinitialspace=True)
+        data = csv.DictReader(open(os.path.join(similarity_folder, folder, similarity_file)), skipinitialspace=True)
 
         for x in data:
             l1.append(x['Language1'])
@@ -48,29 +48,31 @@ def compute_sampled_statistics(similarity_file, out_folder, sample_size=0.1, dat
 
 if __name__ == '__main__':
     similarity_files = ['deltaCON_personalized_rw_affinities.csv',
-                                'deltaCON_intersection_personalized_rw_affinities.csv',
-                                'deltaCON_intersection_personalized_rw_affinities_lowmem.csv',
-                                'deltaCON_shortest_path_affinities.csv',
-                                'deltaCON_intersection_shortest_path_affinities.csv',
-                                'otherSim_ged_similarity.csv',
-                                'otherSim_ged_similarity_intersection.csv',
-                                'otherSim_vertex_edge_jaccard_similarity.csv',
-                                'otherSim_vertex_jaccard_similarity.csv',
-                                'otherSim_edge_jaccard_similarity.csv',
-                                'otherSim_intersection_rw_kernel.csv',
-                                'otherSim_intersection_vertex_jaccard_similarity.csv',]
+                        'deltaCON_intersection_personalized_rw_affinities.csv',
+                        'deltaCON_intersection_personalized_rw_affinities_lowmem.csv',
+                        'deltaCON_shortest_path_affinities.csv',
+                        'deltaCON_intersection_shortest_path_affinities.csv',
+                        'otherSim_ged_similarity.csv',
+                        'otherSim_ged_similarity_intersection.csv',
+                        'otherSim_vertex_edge_jaccard_similarity.csv',
+                        'otherSim_vertex_jaccard_similarity.csv',
+                        'otherSim_edge_jaccard_similarity.csv',
+                        'otherSim_intersection_rw_kernel.csv',
+                        'otherSim_intersection_rw_kernel_unnormalized.csv'
+                        'otherSim_intersection_vertex_jaccard_similarity.csv',]
     sample_size = 0.1
 
-    print('Similarity_file, n_pairs, max, mean, median')
+    header = 'Similarity_file, n_pairs, max, mean, median'
+    print(header)
     for similarity_file in similarity_files:
         try:
-            compute_sampled_statistics(similarity_file=similarity_file, out_folder=os.path.join('..', '..', 'output', 'gml'), sample_size=sample_size, sample_relative=True)
+            compute_sampled_statistics(similarity_file=similarity_file, similarity_folder=os.path.join('..', '..', 'output', 'gml'), sample_size=sample_size, sample_relative=True)
         except IOError:
             pass
         # except Exception as e:
         #     print(e)
         try:
-            compute_sampled_statistics(similarity_file=similarity_file, out_folder=os.path.join('..', '..', 'output', 'fullgml'), sample_size=sample_size, sample_relative=True)
+            compute_sampled_statistics(similarity_file=similarity_file, similarity_folder=os.path.join('..', '..', 'output', 'fullgml'), sample_size=sample_size, sample_relative=True)
         except IOError:
             pass
         # except Exception as e:

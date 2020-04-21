@@ -48,17 +48,18 @@ def compute_sampled_statistics(similarity_file, out_folder, sample_size=0.1, dat
 
 if __name__ == '__main__':
     similarity_files = ['deltaCON_personalized_rw_affinities.csv',
-                                'deltaCON_intersection_personalized_rw_affinities.csv',
-                                'deltaCON_intersection_personalized_rw_affinities_lowmem.csv',
-                                'deltaCON_shortest_path_affinities.csv',
-                                'deltaCON_intersection_shortest_path_affinities.csv',
-                                'otherSim_ged_similarity.csv',
-                                'otherSim_ged_similarity_intersection.csv',
-                                'otherSim_vertex_edge_jaccard_similarity.csv',
-                                'otherSim_vertex_jaccard_similarity.csv',
-                                'otherSim_edge_jaccard_similarity.csv',
-                                'otherSim_intersection_rw_kernel.csv',
-                                'otherSim_intersection_vertex_jaccard_similarity.csv',]
+                        'deltaCON_intersection_personalized_rw_affinities.csv',
+                        'deltaCON_intersection_personalized_rw_affinities_lowmem.csv',
+                        'deltaCON_shortest_path_affinities.csv',
+                        'deltaCON_intersection_shortest_path_affinities.csv',
+                        'otherSim_ged_similarity.csv',
+                        'otherSim_ged_similarity_intersection.csv',
+                        'otherSim_vertex_edge_jaccard_similarity.csv',
+                        'otherSim_vertex_jaccard_similarity.csv',
+                        'otherSim_edge_jaccard_similarity.csv',
+                        'otherSim_intersection_rw_kernel.csv',
+                        'otherSim_intersection_rw_kernel_unnormalized.csv'
+                        'otherSim_intersection_vertex_jaccard_similarity.csv',]
     sample_size = 0.1
 
     print('Similarity_file, n_pairs, max, mean, median')

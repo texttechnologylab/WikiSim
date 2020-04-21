@@ -52,11 +52,14 @@ def er_similarities(similarity, repetitions, root_in):
 
                 for lang in unaligned_graphs:
                     g = unaligned_graphs[lang]
-                    similarity_score = np.zeros(repetitions)
-                    for i in range(repetitions):
-                        erg = make_ER_simulation(g)
-                        similarity_score[i] = similarity(erg, g)
-                    f.write(f'{type}; {d}; {lang}; {np.mean(similarity_score)}; {np.std(similarity_score)}\n')
+                    if g.vcount() > 0:
+                        similarity_score = np.zeros(repetitions)
+                        for i in range(repetitions):
+                            erg = make_ER_simulation(g)
+                            similarity_score[i] = similarity(erg, g)
+                        f.write(f'{type}; {d}; {lang}; {np.mean(similarity_score)}; {np.std(similarity_score)}\n')
+                    else:
+                        f.write(f'{type}; {d}; {lang}; nan; graph is empty\n')
 
 
 def deltacon_rw(G1, G2):
