@@ -1,5 +1,6 @@
-infolder=../../graphs/
-outfolder=../../outputComplete/
+infolder=../../graphs/oecdTopics/
+outfolder=../../outputComplete/oecdTopics/
+
 
 nohup python3 -u ../experiments/compute_edge_jacc_similarities_intersection.py ${infolder} ${outfolder} > compute_edge_jacc_similarities_intersection.out &
 nohup python3 -u ../experiments/compute_ged_similarities.py ${infolder} ${outfolder} > compute_ged_similarities.out &

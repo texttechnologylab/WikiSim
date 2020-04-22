@@ -61,18 +61,19 @@ if __name__ == '__main__':
                         'otherSim_intersection_rw_kernel_unnormalized.csv'
                         'otherSim_intersection_vertex_jaccard_similarity.csv',]
     sample_size = 0.1
+    similarity_folder = os.path.join('..', '..', 'output')
 
     header = 'Similarity_file, n_pairs, max, mean, median'
     print(header)
     for similarity_file in similarity_files:
         try:
-            compute_sampled_statistics(similarity_file=similarity_file, similarity_folder=os.path.join('..', '..', 'output', 'gml'), sample_size=sample_size, sample_relative=True)
+            compute_sampled_statistics(similarity_file=similarity_file, similarity_folder=os.path.join(similarity_folder, 'gml'), sample_size=sample_size, sample_relative=True)
         except IOError:
             pass
         # except Exception as e:
         #     print(e)
         try:
-            compute_sampled_statistics(similarity_file=similarity_file, similarity_folder=os.path.join('..', '..', 'output', 'fullgml'), sample_size=sample_size, sample_relative=True)
+            compute_sampled_statistics(similarity_file=similarity_file, similarity_folder=os.path.join(similarity_folder, 'fullgml'), sample_size=sample_size, sample_relative=True)
         except IOError:
             pass
         # except Exception as e:
