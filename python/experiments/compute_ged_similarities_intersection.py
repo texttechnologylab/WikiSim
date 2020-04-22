@@ -21,3 +21,20 @@ def run_experiment(dataset_root, dataset_output, gml_types):
             # it is important to compute this function on unaligned graphs, as otherwise the
             # vertex set similarity will always be 1.0
             main_otherSim_intersection(unaligned_graphs, similarity=ged_similarity, output_folder=out_folder)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) == 1:
+        dataset_root = os.path.join('..', '..', 'graphs')
+        dataset_output = os.path.join('..', '..', 'output')
+    elif len(sys.argv) == 3:
+        dataset_root = sys.argv[1]
+        dataset_output = sys.argv[2]
+    else:
+        sys.stderr.write('either no or two args are required.\n '
+                         'usage: PROG dataset_root output_root\n')
+        sys.exit(1)
+
+    gml_types = ['gml', 'fullgml']
+
+    run_experiment(dataset_root=dataset_root, dataset_output=dataset_output, gml_types=gml_types)
