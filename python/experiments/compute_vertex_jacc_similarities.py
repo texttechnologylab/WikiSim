@@ -1,5 +1,5 @@
 import sys
-sys.path.extend(['../../', '../', './'])
+sys.path.extend([ '../', './'])
 
 from similaritymeasures.deltacon import *
 from similaritymeasures.othersim import vertex_jaccard_similarity, main_otherSim

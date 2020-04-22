@@ -1,5 +1,6 @@
 import sys
-sys.path.extend(['../../', '../', './'])
+sys.path.extend([ '../', './'])
+
 
 from similaritymeasures.deltacon import *
 

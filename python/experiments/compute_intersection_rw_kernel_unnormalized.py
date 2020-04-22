@@ -1,5 +1,6 @@
 import sys
-sys.path.extend(['../../', '../', './'])
+sys.path.extend([ '../', './'])
+
 
 from similaritymeasures.deltacon import *
 from similaritymeasures.othersim import main_otherSim, intersection_rw_kernel_unnormalized
@@ -8,7 +9,6 @@ from similaritymeasures.othersim import main_otherSim, intersection_rw_kernel_un
 def run_experiment(dataset_root, dataset_output, gml_types):
     for type in gml_types:
         datasets = os.listdir(os.path.join(dataset_root, type))
-        allgraphs = dict()
         for d in datasets:
             in_folder = os.path.join(dataset_root, type, d)
             out_folder = os.path.join(dataset_output, type, d)

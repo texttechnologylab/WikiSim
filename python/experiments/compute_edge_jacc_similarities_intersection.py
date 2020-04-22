@@ -1,16 +1,17 @@
 
 import sys
-sys.path.extend(['../../', '../', './'])
+sys.path.extend([ '../', './'])
 
 from similaritymeasures.deltacon import *
 from similaritymeasures.othersim import edge_jaccard_similarity, main_otherSim_intersection
 
-if __name__ == '__main__':
-    for root in ['gml', 'fullgml']:
-        datasets = os.listdir(os.path.join('../..', 'graphs', root))
+def run_experiment(dataset_root, dataset_output, gml_types):
+    for type in gml_types:
+        datasets = os.listdir(os.path.join(dataset_root, type))
+        allgraphs = dict()
         for d in datasets:
-            in_folder = os.path.join('../..', 'graphs', root, d)
-            out_folder = os.path.join('../..', 'output', root, d)
+            in_folder = os.path.join(dataset_root, type, d)
+            out_folder = os.path.join(dataset_output, type, d)
             print('Processing', in_folder)
             tic = time.time()
             unaligned_graphs = load_all_graphs(in_folder)
