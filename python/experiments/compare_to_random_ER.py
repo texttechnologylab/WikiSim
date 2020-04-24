@@ -26,7 +26,7 @@ def make_ER_simulation(g: igraph.Graph, directed=True):
     return erg
 
 
-def er_similarities(similarity, repetitions, root_in):
+def er_similarities(similarity, repetitions, root_in, output_folder, types):
     """
     Create repetitions many er graphs on the same vertex set (with identical labels and ids) for each graph
     in the datasets pointed at by root_in.
@@ -38,11 +38,14 @@ def er_similarities(similarity, repetitions, root_in):
            (expected are, that there are 'gml' and 'fullgml' subfolders present)
     :return: nothing, but store a csv file in the working directory
     """
-    with open('ER_similarities_' + similarity.__name__ + '.csv', 'w') as f:
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    with open(os.path.join(output_folder, 'ER_similarities_' + similarity.__name__ + '.csv'), 'w') as f:
         f.write('Root path: ' + root_in + '\n' + 'Sample Size: ' + str(repetitions) + '\n\n')
         f.write('type; dataset; language; mean; std')
 
-        for type in ['gml', 'fullgml']:
+        for type in types:
             datasets = os.listdir(os.path.join(root_in, type))
             for d in datasets:
                 in_folder = os.path.join(root_in, type, d)
@@ -73,8 +76,18 @@ def deltacon_sp(G1, G2):
 
 
 if __name__ == '__main__':
-    # look for datasets here
-    root_in = os.path.join('..', '..', 'graphs', 'oecd')
+    if len(sys.argv) == 1:
+        dataset_root = os.path.join('..', '..', 'graphs')
+        dataset_output = os.path.join('..', '..', 'output')
+    elif len(sys.argv) == 3:
+        dataset_root = sys.argv[1]
+        dataset_output = sys.argv[2]
+    else:
+        sys.stderr.write('either no or two args are required.\n '
+                         'usage: PROG dataset_root output_root\n')
+        sys.exit(1)
+
+    types = ['gml', 'fullgml']
 
     # consider these similarity functions
     similarities = [edge_jaccard_similarity, ged_similarity,
@@ -86,4 +99,4 @@ if __name__ == '__main__':
     repetitions = 100
 
     for similarity in similarities:
-        er_similarities(similarity, repetitions, root_in)
+        er_similarities(similarity, repetitions, dataset_root, dataset_output, types)
