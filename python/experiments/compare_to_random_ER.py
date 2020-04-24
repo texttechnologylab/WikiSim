@@ -43,7 +43,7 @@ def er_similarities(similarity, repetitions, root_in, output_folder, types):
 
     with open(os.path.join(output_folder, 'ER_similarities_' + similarity.__name__ + '.csv'), 'w') as f:
         f.write('Root path: ' + root_in + '\n' + 'Sample Size: ' + str(repetitions) + '\n\n')
-        f.write('type; dataset; language; mean; std')
+        f.write('type; dataset; language; mean; std\n')
 
         for type in types:
             datasets = os.listdir(os.path.join(root_in, type))
