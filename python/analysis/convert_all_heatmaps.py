@@ -1,10 +1,10 @@
 import sys
 import os
 sys.path.extend(['../'])
-import similarity_heatmap
+import similarity_heatmap_T
 
-similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecdTopics')
-# similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecd')
+# similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecdTopics')
+similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecd')
 # similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'output')
 types = ['gml', 'fullgml']
 
@@ -16,4 +16,4 @@ if __name__ == '__main__':
                 inp = os.path.join(similarity_folder, folder, file)
                 out = os.path.join(similarity_folder, folder, file[:-7] + '.tex')
                 # print(inp, out)
-                similarity_heatmap.transform(inp, out, 'similarity')
+                similarity_heatmap_T.transform(inp, out, 'similarity')
