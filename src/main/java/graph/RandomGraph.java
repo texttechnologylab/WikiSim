@@ -19,38 +19,38 @@ import org.jgrapht.util.SupplierUtil;
 public class RandomGraph {
 
 	public static void main(String[] args) throws IOException {
-		File[]categories = new File("graphsCleaned/content").listFiles();
-		for (File category : categories) {
-			File[]languages = category.listFiles();
-			for (File language : languages) {
-				System.out.println(language);
-				List<String>lines = FileUtils.readLines(language);
-				List<String>output = new ArrayList<String>();
-				for (String string : lines) {
-					output.add(string);
-					if(string.trim().equals("Edges:"))
-						break;
-				}
-				for (int count = 0; count < 100; count++) {
-					ArrayList<String>random = new ArrayList<>(output);
-					Path resultFile = Paths.get("graphsCleaned/randomGml",""+count,category.getName(),language.getName());
-					List<String> randomBF = FileUtils.readLines(resultFile.toFile());
-					boolean inEdges = false;
-					
-					for (String line : randomBF) {
-						if(inEdges)
-							random.add(line);
-						if(line.trim().equals("Edges:"))
-							inEdges = true;
-					}
-					FileUtils.writeLines(Paths.get("graphsCleaned/randomContent",""+count,category.getName(),language.getName()).toFile(), lines);
-				}
-			}
-		}
+//		File[]categories = new File("graphsCleaned/oecdTopics/content").listFiles();
+//		for (File category : categories) {
+//			File[]languages = category.listFiles();
+//			for (File language : languages) {
+//				System.out.println(language);
+//				List<String>lines = FileUtils.readLines(language);
+//				List<String>output = new ArrayList<String>();
+//				for (String string : lines) {
+//					output.add(string);
+//					if(string.trim().equals("Edges:"))
+//						break;
+//				}
+//				for (int count = 0; count < 100; count++) {
+//					ArrayList<String>random = new ArrayList<>(output);
+//					Path resultFile = Paths.get("graphsCleaned/oecdTopics/randomGml",""+count,category.getName(),language.getName());
+//					List<String> randomBF = FileUtils.readLines(resultFile.toFile());
+//					boolean inEdges = false;
+//					
+//					for (String line : randomBF) {
+//						if(inEdges)
+//							random.add(line);
+//						if(line.trim().equals("Edges:"))
+//							inEdges = true;
+//					}
+//					FileUtils.writeLines(Paths.get("graphsCleaned/oecdTopics/randomContent",""+count,category.getName(),language.getName()).toFile(), lines);
+//				}
+//			}
+//		}
+		randomCleandGraphs("graphsCleaned/oecdTopics/gml","graphsCleaned/oecdTopics/randomGml" );
 	}
 
-	public static void randomCleandGraphs() throws IOException{
-		String inputPath = "graphsCleaned/gml";
+	public static void randomCleandGraphs(String inputPath,String outputPath) throws IOException{
 		File[]categories = new File(inputPath).listFiles();
 		for (int count = 0; count < 100; count++) {
 			System.out.println(count);
@@ -71,7 +71,7 @@ public class RandomGraph {
 							replaceVertex(randomGraph, randomVertices.get(i), originalVertices.get(i));
 						}
 
-						Path resultFile = Paths.get("graphsCleaned/randomGml",""+count,category.getName(),language.getName().replace(".bf", ""));
+						Path resultFile = Paths.get(outputPath,""+count,category.getName(),language.getName().replace(".bf", ""));
 						resultFile.toFile().getParentFile().mkdirs();								
 						CachedGraph.saveGraph(randomGraph, resultFile.toString(),true);
 					}

@@ -8,3 +8,5 @@
 *.fls
 *.pyc
 *.xdv
+/graphsCleaned/
+/graphsReduced/html

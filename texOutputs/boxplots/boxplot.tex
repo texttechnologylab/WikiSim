@@ -1,0 +1,105 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+ 
+\usepackage[utf8]{inputenc}
+ 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.3}
+\usepgfplotslibrary{statistics}
+
+\usepackage[active, tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\pagestyle{empty}
+
+\definecolor{GoetheOrangePlakativ}{RGB}{237,167,45} % Pantone 151
+\definecolor{SeminarBlau}{RGB}{0,154,224}
+\definecolor{SeminarRot}{rgb}{0.75,0,0}
+\definecolor{SeminarGruen}{RGB}{0,128,0}
+\definecolor{SeminarOrange}{RGB}{237,167,45} % rgb: {0.93,0.65,0.18}
+\definecolor{SeminarGrau}{rgb}{0.32,0.3,0.38} % RGB: {81.6,76.5,96.6}
+\colorlet{SeminarHellBlau}{SeminarBlau!25!white}
+\colorlet{SeminarHellGruen}{SeminarGruen!25!white}
+\colorlet{SeminarHellRot}{SeminarRot!25!white}
+\colorlet{SeminarHellOrange}{GoetheOrangePlakativ!25!white}
+\colorlet{SeminarHellGrau}{SeminarGrau!35!white}
+
+
+% \pgfplotsset{
+%   boxplot/draw/box/.code={%
+%     \fill[/pgfplots/boxplot/every box/.try]
+%     (boxplot box cs:\pgfplotsboxplotvalue{lower quartile},0)
+%     rectangle
+%     (boxplot box cs:\pgfplotsboxplotvalue{upper quartile},1)
+%     ;
+%   },%
+%   boxplot/draw/median/.code={%
+%     \draw[/pgfplots/boxplot/every median/.try,white]
+%     (boxplot box cs:\pgfplotsboxplotvalue{median},0)
+%     --
+%     (boxplot box cs:\pgfplotsboxplotvalue{median},1)
+%     ;
+%   },%
+%   boxplot/draw direction=y,
+% }
+
+% \pgfplotscreateplotcyclelist{Seminar}{%
+%   {SeminarBlau,mark=*},
+%   {SeminarRot,mark=*},
+%   {SeminarGruen,mark=*},
+%   {SeminarOrange,mark=*},
+%   {SeminarGrau,mark=*}
+%   {SeminarHellBlau,mark=*},
+%   {SeminarHellRot,mark=*},
+%   {SeminarHellGruen,mark=*},
+%   {SeminarHellOrange,mark=*},
+%   {SeminarHellGrau,mark=*},
+% }
+% %% "Parameters":
+
+% \pgfplotsset{
+% every axis/.style={
+% width=11cm,
+% cycle list name=exotic,
+% },
+% every axis plot post/.append style={mark=square*, solid, mark options={mark size=1,draw=none}},
+% every axis label/.append style={font=\sffamily},
+% x tick label style={font=\sffamily},
+% }
+
+%% Customization:
+%\input{customize.cfg}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}
+	[
+	 boxplot/draw direction=y,xmin=0,xmax=xxxmaxxx,ymin=0,
+	  xtick={xxticksxx},
+	  xticklabels={xxlabelsxx
+	  	},
+    width=50cm,
+%%    xlabel=Feature ID according to Table 3,
+    ylabel=Nodes,
+    legend style={font=\sffamily, legend columns=1},
+%    ymin=0,
+%    ymax=0.4,
+%    
+%%    ytick={0,0.1,0.2,0.3,0.4},
+%%    yticklabels={0,0.1,0.2,0.3,0.4},
+%%    %ybar,
+%%    %bar width=0.5,enlargelimits=0.01,
+%%    legend cell align=left,
+%%    legend pos=north east,
+%%    font=\small,
+    tick label style={/pgf/number format/assume math mode=true},
+    xticklabel style={font=\sffamily\footnotesize,rotate=45,anchor=east},
+    yticklabel style={font=\sffamily\footnotesize},
+    label style={font=\sffamily}
+    ]
+    %%%%%%%%%%%%%%%%%%%% 
+    xxboxplotsxx
+  \end{axis}
+\end{tikzpicture}
+\end{document}

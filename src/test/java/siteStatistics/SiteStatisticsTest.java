@@ -43,7 +43,7 @@ public class SiteStatisticsTest {
 
 	@Test
 	public void testOutput() throws IOException{
-		File[]createdFiles = new File("/resources/public/hemati/WikipediaGraphs/V2/content").listFiles();
+		File[]createdFiles = new File("graphsReduced/content").listFiles();
 		for (File category : createdFiles) {
 			File[]languages = category.listFiles();
 			for (File file : languages) {
@@ -60,7 +60,6 @@ public class SiteStatisticsTest {
 						inVertices = false;
 
 					if(inVertices){
-						System.out.println(created.get(i).split("¤")[0]);
 						assertEquals(created.get(i).split("¤")[0], original.get(i).split("¤")[0]);
 						Pattern pattern = Pattern.compile("\\[(.*?)\\]");
 						Matcher matcher = pattern.matcher(created.get(i));

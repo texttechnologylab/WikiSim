@@ -1,0 +1,235 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+ 
+\usepackage[utf8]{inputenc}
+ 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.3}
+\usepgfplotslibrary{statistics}
+
+\usepackage[active, tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\pagestyle{empty}
+
+\definecolor{GoetheOrangePlakativ}{RGB}{237,167,45} % Pantone 151
+\definecolor{SeminarBlau}{RGB}{0,154,224}
+\definecolor{SeminarRot}{rgb}{0.75,0,0}
+\definecolor{SeminarGruen}{RGB}{0,128,0}
+\definecolor{SeminarOrange}{RGB}{237,167,45} % rgb: {0.93,0.65,0.18}
+\definecolor{SeminarGrau}{rgb}{0.32,0.3,0.38} % RGB: {81.6,76.5,96.6}
+\colorlet{SeminarHellBlau}{SeminarBlau!25!white}
+\colorlet{SeminarHellGruen}{SeminarGruen!25!white}
+\colorlet{SeminarHellRot}{SeminarRot!25!white}
+\colorlet{SeminarHellOrange}{GoetheOrangePlakativ!25!white}
+\colorlet{SeminarHellGrau}{SeminarGrau!35!white}
+
+
+% \pgfplotsset{
+%   boxplot/draw/box/.code={%
+%     \fill[/pgfplots/boxplot/every box/.try]
+%     (boxplot box cs:\pgfplotsboxplotvalue{lower quartile},0)
+%     rectangle
+%     (boxplot box cs:\pgfplotsboxplotvalue{upper quartile},1)
+%     ;
+%   },%
+%   boxplot/draw/median/.code={%
+%     \draw[/pgfplots/boxplot/every median/.try,white]
+%     (boxplot box cs:\pgfplotsboxplotvalue{median},0)
+%     --
+%     (boxplot box cs:\pgfplotsboxplotvalue{median},1)
+%     ;
+%   },%
+%   boxplot/draw direction=y,
+% }
+
+% \pgfplotscreateplotcyclelist{Seminar}{%
+%   {SeminarBlau,mark=*},
+%   {SeminarRot,mark=*},
+%   {SeminarGruen,mark=*},
+%   {SeminarOrange,mark=*},
+%   {SeminarGrau,mark=*}
+%   {SeminarHellBlau,mark=*},
+%   {SeminarHellRot,mark=*},
+%   {SeminarHellGruen,mark=*},
+%   {SeminarHellOrange,mark=*},
+%   {SeminarHellGrau,mark=*},
+% }
+% %% "Parameters":
+
+% \pgfplotsset{
+% every axis/.style={
+% width=11cm,
+% cycle list name=exotic,
+% },
+% every axis plot post/.append style={mark=square*, solid, mark options={mark size=1,draw=none}},
+% every axis label/.append style={font=\sffamily},
+% x tick label style={font=\sffamily},
+% }
+
+%% Customization:
+%\input{customize.cfg}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}
+	[
+	 boxplot/draw direction=y,xmin=0,xmax=131,ymin=0,
+	  xtick={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130},
+	  xticklabels={krankheitGML(13),fussballligaGML(11),chemical-element(21),paintingGML(11),theoremGML(11),chemical-compound(23),holydayGML(13),galaxy(22),komponistGML(11),archaeological-site(22),group-or-class-of-chemical-substances(22),symptom(20),war(18),chemical-substance(19),communication-medium(22),aspect-of-history(18),social-class(19),computer(18),drug(19),mathematical-concept(18),education(2),ecosystem(10),history-of-film(0),plant-structure(17),kiss(0),military-term(10),music(2),work-of-art(7),coat-of-arms(12),geography(0),probability-distribution(5),group-action(7),prison(14),knowledge(0),wage(0),language-ideology(3),prehistory(1),morpheme(0),work(0),narrative(5),economy(8),blazonry(0),lexeme(0),bell(7),thermodynamic-process(11),clinical-sign(17),animal(3),congenital-abnormality(0),history-of-music(0),Mollusca(0),neutron-star(0),historical-language(14),ceramic(3),history-of-art(0),gender(2),stellar-evolution(14),Bible(0),intensive-or-extensive-property(0),rural-area(11),phenomenon(0),cell(8),literature(6),vocabulary(0),affix(0),francophonie(0),protist(0),temperature(1),linguistic-prescription(3),term(17),human-behaviour(8),lexicon(2),art(12),inorganic-compound(2),biological-model(0),Ancient-Egypt(0),standard-language(15),languoid-class(17),genome(0),organic-compound(14),Porifera(0),dialect(17),data(1),goods(3),language(13),stellar-magnetic-field(0),killerGML(0),black-hole(0),warGML(0),law(11),organism(4),tree(9),Christian-hymn(9),Jewish-people(1),history(2),pressure(0),ancient-Rome(0),condition(4),language-attitude(1),effect(0),linguistic-norm(0),international-trade(0),mental-state(0),women's-history(0),politics(2),social-conflict(0),fruit(1),book(6),human-population(2),vegetable(2),life(0),hormone(13),music-style(13),agriculture(0),computing(0),society(3),paper(1),stem-cell(1),plot(1),terminology(2),planetary-magnetic-field(3),plant-organ(4),religious-hymn(0),languoid(0),deep-sea-community(0),service(9),biochemical-receptor(6),feminism(1),Ancient-Greece(0),cancer(0),literary-theme(0)
+	  	},
+    width=50cm,
+%%    xlabel=Feature ID according to Table 3,
+    ylabel=Nodes,
+    legend style={font=\sffamily, legend columns=1},
+%    ymin=0,
+%    ymax=0.4,
+%    
+%%    ytick={0,0.1,0.2,0.3,0.4},
+%%    yticklabels={0,0.1,0.2,0.3,0.4},
+%%    %ybar,
+%%    %bar width=0.5,enlargelimits=0.01,
+%%    legend cell align=left,
+%%    legend pos=north east,
+%%    font=\small,
+    tick label style={/pgf/number format/assume math mode=true},
+    xticklabel style={font=\sffamily\footnotesize,rotate=45,anchor=east},
+    yticklabel style={font=\sffamily\footnotesize},
+    label style={font=\sffamily}
+    ]
+    %%%%%%%%%%%%%%%%%%%% 
+    \addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/krankheitGML.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/fussballligaGML.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/chemical-element.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/paintingGML.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/theoremGML.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/chemical-compound.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/holydayGML.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/galaxy.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/komponistGML.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/archaeological-site.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/group-or-class-of-chemical-substances.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/symptom.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/war.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/chemical-substance.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/communication-medium.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/aspect-of-history.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/social-class.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/computer.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/drug.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/mathematical-concept.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/education.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/ecosystem.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/history-of-film.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/plant-structure.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/kiss.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/military-term.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/music.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/work-of-art.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/coat-of-arms.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/geography.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/probability-distribution.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/group-action.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/prison.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/knowledge.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/wage.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/language-ideology.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/prehistory.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/morpheme.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/work.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/narrative.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/economy.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/blazonry.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/lexeme.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/bell.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/thermodynamic-process.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/clinical-sign.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/animal.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/congenital-abnormality.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/history-of-music.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/Mollusca.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/neutron-star.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/historical-language.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/ceramic.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/history-of-art.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/gender.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/stellar-evolution.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/Bible.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/intensive-or-extensive-property.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/rural-area.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/phenomenon.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/cell.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/literature.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/vocabulary.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/affix.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/francophonie.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/protist.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/temperature.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/linguistic-prescription.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/term.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/human-behaviour.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/lexicon.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/art.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/inorganic-compound.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/biological-model.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/Ancient-Egypt.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/standard-language.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/languoid-class.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/genome.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/organic-compound.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/Porifera.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/dialect.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/data.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/goods.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/language.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/stellar-magnetic-field.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/killerGML.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/black-hole.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataEdges/warGML.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/law.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/organism.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/tree.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/Christian-hymn.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/Jewish-people.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/history.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/pressure.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/ancient-Rome.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/condition.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/language-attitude.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/effect.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/linguistic-norm.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/international-trade.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/mental-state.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/women's-history.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/politics.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/social-conflict.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/fruit.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/book.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/human-population.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/vegetable.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/life.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/hormone.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/music-style.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/agriculture.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/computing.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/society.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/paper.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/stem-cell.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/plot.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/terminology.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/planetary-magnetic-field.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/plant-organ.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/religious-hymn.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/languoid.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/deep-sea-community.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/service.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/biochemical-receptor.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/feminism.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/Ancient-Greece.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/cancer.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataEdges/literary-theme.txt};
+
+  \end{axis}
+\end{tikzpicture}
+\end{document}

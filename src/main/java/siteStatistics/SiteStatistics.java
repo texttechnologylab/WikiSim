@@ -64,7 +64,7 @@ public class SiteStatistics {
 
 		long start = System.currentTimeMillis();
 		for (String language : consideredLanguages) {
-			for (String path : new String[]{"graphs/oecdTopics","graphs/oecd"}) {
+			for (String path : new String[]{"graphsReduced"}) {
 				for (File category: Paths.get(path,"gml").toFile().listFiles()) {
 					for (File graphFile : category.listFiles()) {
 						if(Paths.get(path, "content",category.getName(),graphFile.getName()).toFile().exists())
