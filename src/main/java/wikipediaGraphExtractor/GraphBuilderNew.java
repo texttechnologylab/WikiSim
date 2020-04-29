@@ -24,29 +24,50 @@ public class GraphBuilderNew {
 		WikipediaFetcher fetcher = new WikipediaFetcher();
 
 		HashSet<String>consideredLanguages = new HashSet<>();
+		consideredLanguages.add("arz");
+		consideredLanguages.add("bs");
 		consideredLanguages.add("ceb");
-		consideredLanguages.add("war");
-		consideredLanguages.add("sv");
-		consideredLanguages.add("vi");
-		consideredLanguages.add("nl");
-		consideredLanguages.add("fr");
-		consideredLanguages.add("pl");
-		consideredLanguages.add("en");
-		consideredLanguages.add("it");
+		consideredLanguages.add("ckb");
+		consideredLanguages.add("da");
 		consideredLanguages.add("de");
-		consideredLanguages.add("ru");
+		consideredLanguages.add("el");
+		consideredLanguages.add("en");
 		consideredLanguages.add("es");
+		consideredLanguages.add("fr");
+		consideredLanguages.add("he");
+		consideredLanguages.add("hi");
+		consideredLanguages.add("hu");
+		consideredLanguages.add("id");
+		consideredLanguages.add("it");
 		consideredLanguages.add("ja");
+		consideredLanguages.add("ko");
+		consideredLanguages.add("lv");
+		consideredLanguages.add("mk");
+		consideredLanguages.add("ml");
+		consideredLanguages.add("mr");
+		consideredLanguages.add("nl");
+		consideredLanguages.add("pl");
+		consideredLanguages.add("pt");
+		consideredLanguages.add("ro");
+		consideredLanguages.add("ru");
+		consideredLanguages.add("sh");
+		consideredLanguages.add("si");
+		consideredLanguages.add("simple");
+		consideredLanguages.add("sr");
+		consideredLanguages.add("sv");
+		consideredLanguages.add("te");
+		//		consideredLanguages.add("tr");
+		consideredLanguages.add("vi");
+		consideredLanguages.add("war");
+		consideredLanguages.add("zh");
 
 		String[]outputPaths=new String[]{
 				"krankheitGML",
 				"theoremGML",
 				"paintingGML",
 				"holydayGML",
-				"killerGML",
 				"fussballligaGML",
 				"komponistGML",
-				"warGML"
 		};
 
 		String[]pids = new String[]{
@@ -54,10 +75,8 @@ public class GraphBuilderNew {
 				"P31",
 				"P31",
 				"P31",
-				"P1399",
 				"P31",
 				"P106",
-				"P279"
 		};
 
 		String[]qids = new String[]{
@@ -65,10 +84,8 @@ public class GraphBuilderNew {
 				"Q65943",
 				"Q3305213",
 				"Q1197685",
-				"Q132821",
 				"Q15991303",
 				"Q36834",
-				"Q350604",
 		};
 
 		for(int i = 0;i<outputPaths.length;i++){
@@ -81,22 +98,22 @@ public class GraphBuilderNew {
 			System.out.println(outputPath);
 			System.out.println(entities.size());
 
-			Path entityObjects = Paths.get("graphs","entities",outputPath+".txt");
+			Path entityObjects = Paths.get("graphsReduced","entities",outputPath+".txt");
 			entityObjects.toFile().getParentFile().mkdirs();
 			FileUtils.writeLines(entityObjects.toFile(), entities);
 
 
-			Path fullgml = Paths.get("graphs","fullgml",outputPath);
+			Path fullgml = Paths.get("graphsReduced","fullgml",outputPath);
 			fullgml.toFile().mkdirs();
 
 
-			Path gmlPath = Paths.get("graphs","gml",outputPath);
+			Path gmlPath = Paths.get("graphsReduced","gml",outputPath);
 			gmlPath.toFile().mkdirs();
 
 			WikidataFetcher.getWikipediaLinksByLanguagesForWikidataHyponym(pid,qid,-1).entrySet().forEach(
 					entry->{
 						String language = entry.getKey().replace("wiki", "");
-						if(!consideredLanguages.contains(language))
+						if(!consideredLanguages.contains(language) || Paths.get(fullgml.toString(), language + ".gml").toFile().exists())
 							return;
 						System.out.println(language);
 						DefaultDirectedGraph<String, DefaultEdge> directedGraph = new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);		

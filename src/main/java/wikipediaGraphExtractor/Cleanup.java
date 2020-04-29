@@ -15,7 +15,7 @@ import org.apache.commons.io.FileUtils;
 public class Cleanup {
 
 	public static void main(String[] args) throws Exception {
-		File[]createdFiles = new File("graphs/content").listFiles();
+		File[]createdFiles = new File("graphs/oecdTopics/content").listFiles();
 		for (File category : createdFiles) {
 			File[]languages = category.listFiles();
 			for (File file : languages) {

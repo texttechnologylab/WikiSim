@@ -3,6 +3,44 @@ import sys
 import os
 get_path = lambda path: os.path.join(os.path.dirname(__file__), path)
 
+def transformNPArray(matrix,names,output,modus):
+    tikzpicture = "\\begin{tikzpicture}\n\\node [inner sep=0pt] (tab) {\n"
+    tikzpicture += "\\begin{tabular}{r"
+    
+    for i in names:
+        tikzpicture += "R"
+    tikzpicture += "}"
+    tikzpicture += "\n & "
+    
+    for i in range(0,len(names)):
+        tikzpicture += " \\mcvert{" + names[i].strip() +"} "
+        if(i < len(names)-1):
+            tikzpicture += "&"
+    tikzpicture += "\\\\\n"
+    
+    lineCount = 0;
+    for split in matrix:
+        tikzpicture += "\\mchori{" + names[lineCount] + "} &"
+        for i in range(0,len(split)):
+            value = round(float(split[i]),2)
+            if(modus == "distance"):
+                value = 1 - value
+            tikzpicture += " " + str(value) + " " 
+            
+            if(i < len(split)-1):
+                tikzpicture += " & " 
+        tikzpicture += "\\\\\n"
+        lineCount += 1
+    tikzpicture += "\\end{tabular}\n};\n\\end{tikzpicture}"
+    
+    with open(get_path('../texOutputs/base_similarity_heatmap.tex'), 'r') as file:
+        data = file.read()
+        data = data.replace("xxxxxx",tikzpicture)
+        
+    with open(output, "w") as text_file:
+        text_file.write(data)
+        print("Output file created at: " + os.path.abspath(output))
+
 def transform(input,output,modus):
     tikzpicture = "\\begin{tikzpicture}\n\\node [inner sep=0pt] (tab) {\n"
     tikzpicture += "\\begin{tabular}{r"
