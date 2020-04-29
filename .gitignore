@@ -4,3 +4,5 @@
 *.out
 *.soc
 *.synctex.gz
+/graphsCleaned/
+/graphsReduced/html
