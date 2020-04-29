@@ -1,0 +1,4 @@
+Language1, Language2, SimilarityScore, Time
+de, de, 1.0, 1.4543533325195312e-05
+de, sv, 1.0, 8.821487426757812e-06
+sv, sv, 1.0, 7.867813110351562e-06

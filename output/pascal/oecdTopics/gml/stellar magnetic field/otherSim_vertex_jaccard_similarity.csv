@@ -1,0 +1,4 @@
+Language1, Language2, SimilarityScore, Time
+zh, zh, 1.0, 3.8623809814453125e-05
+zh, union, 1.0, 1.430511474609375e-05
+union, union, 1.0, 1.239776611328125e-05

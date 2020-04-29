@@ -1,0 +1,4 @@
+Language1, Language2, SimilarityScore, Kernel, Time
+id, id, 1.0, 1.0, 0.00013709068298339844
+id, fr, 0.0, 0.0, 0.00013709068298339844
+fr, fr, 1.0, 1.0, 6.175041198730469e-05

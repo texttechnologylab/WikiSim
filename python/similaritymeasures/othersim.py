@@ -14,19 +14,14 @@ def vertex_edge_set_on_labels(g: igraph.Graph):
     That is, we assume that each vertex in g has a 'label' attribute and furthermore we assume that these
     labels are unique, that is, they can be used as vertex ids, instead of the integer ids used by igraph.
     :param g: a graph
-    :return: vertices, edges
+    :return: vertices, edges as sets
     """
-
-    vertices = set()
-    for v in g.vs:
-        vertices.add(v['label'])
-
-    # new unique vertex ids in the large graph
-    id_labels = {i: l for i, l in enumerate(vertices)}
-
-    edges = {(id_labels[e.source], id_labels[e.target]) for e in g.es}
-
-    return vertices, edges
+    if g.vcount() > 0:
+        labels = g.vs['label'] # throws a KeyError for empty graphs
+        edges = {(labels[e.source], labels[e.target]) for e in g.es}
+        return set(labels), edges
+    else:
+        return set(), set()
 
 
 def intersection_graph(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
@@ -51,13 +46,11 @@ def intersection_graph(g1: igraph.Graph, g2: igraph.Graph, directed: bool=True):
     g_new = igraph.Graph(directed=directed)
     g_new.add_vertices(len(v1))
     g_new.vs['label'] = v1
-    for e in e1:
-       g_new.add_edge(label_ids[e[0]], label_ids[e[1]])
-
+    g_new.add_edges([(label_ids[e[0]], label_ids[e[1]]) for e in e1])
     return g_new
 
 
-def intersection_rw_kernel(g1: igraph.Graph, g2: igraph.Graph, lamda=0.1, directed=True):
+def intersection_rw_kernel(g1: igraph.Graph, g2: igraph.Graph, lamda=0.001, directed=True):
     """
     We compute the similarity of two wikipedias as the number of simultaneous random walks on them,
     which is the number of random walks on the intersection graph, as both graphs are node aligned
@@ -70,11 +63,62 @@ def intersection_rw_kernel(g1: igraph.Graph, g2: igraph.Graph, lamda=0.1, direct
     :return:
     """
     g = intersection_graph(g1, g2, directed=directed)
-    A = np.array(g.get_adjacency().data)
-    n = g.vcount()
-    S = np.linalg.inv(np.eye(n) - lamda * A)
-    # this computes the kernel for normalized uniform weight vertex weight vectors
-    return S.sum() / (n * n)
+    if g.vcount() > 0:
+        A = np.array(g.get_adjacency().data)
+        n = g.vcount()
+        S = np.linalg.inv(np.eye(n) - lamda * A)
+        # this computes the kernel for normalized uniform weight vertex weight vectors
+        return S.sum() / (n * n)
+    else:
+        return 0.0
+
+
+def intersection_rw_kernel_unnormalized(g1: igraph.Graph, g2: igraph.Graph, lamda=0.001, directed=True):
+    """
+    We compute the similarity of two wikipedias as the number of simultaneous random walks on them,
+    which is the number of random walks on the intersection graph, as both graphs are node aligned
+    :param g1: first graph
+    :param g2: second graph
+    :param lamda: convergence parameter of the random walk kernel. Must be set small enough. See
+    Gärtner, Wrobel, Flach: On graph kernels: Hardness results and efficient alternatives
+    or
+    S. V. N. Vishwanathan and Nicol N. Schraudolph and Risi Kondor and Karsten M. Borgwardt: Graph Kernels
+    :return:
+    """
+    g = intersection_graph(g1, g2, directed=directed)
+    if g.vcount() > 0:
+        A = np.array(g.get_adjacency().data)
+        n = g.vcount()
+        S = np.linalg.inv(np.eye(n) - lamda * A)
+        # this gives an unnormalized version. large intersections with many random walks win.
+        return S.sum()
+    else:
+        return 0.0
+
+
+def intersection_rw_kernel_kiter(g1: igraph.Graph, g2: igraph.Graph, k=10, directed=True):
+    """
+    We compute the similarity of two wikipedias as the number of simultaneous random walks of length k them,
+    which is the number of random walks on the intersection graph, as both graphs are node aligned
+    :param g1: first graph
+    :param g2: second graph
+    :param k: length of the random walk.
+
+    See
+    Gärtner, Wrobel, Flach: On graph kernels: Hardness results and efficient alternatives
+    or
+    S. V. N. Vishwanathan and Nicol N. Schraudolph and Risi Kondor and Karsten M. Borgwardt: Graph Kernels
+    :return:
+    """
+    g = intersection_graph(g1, g2, directed=directed)
+    if g.vcount() > 0:
+        A = np.array(g.get_adjacency().data)
+        n = g.vcount()
+        S = np.power(A, k)
+        # this computes the kernel for normalized uniform weight vertex weight vectors
+        return S.sum() / (n * n)
+    else:
+        return 0.0
 
 
 def computeGED(G1: igraph.Graph, G2: igraph.Graph):

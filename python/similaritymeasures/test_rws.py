@@ -115,7 +115,7 @@ def test_deltaCon_edgeAddition(data_folder='../graphs/gml/fussballligaGML', outp
 
     import numpy.random as rnd
 
-    unaligned_graphs = load_multilayer_graph(data_folder)
+    unaligned_graphs = load_all_graphs(data_folder)
     graphs = vertex_set_union(unaligned_graphs)
 
     g = graphs[lang]
@@ -144,7 +144,7 @@ def test_deltaCon_edgeRemoval(data_folder='../graphs/gml/fussballligaGML', outpu
 
         import numpy.random as rnd
 
-        unaligned_graphs = load_multilayer_graph(data_folder)
+        unaligned_graphs = load_all_graphs(data_folder)
         graphs = vertex_set_union(unaligned_graphs)
 
         g = graphs[lang]
@@ -194,7 +194,7 @@ def test_personalized_rw_affinities_parallel():
             out_folder = os.path.join('../..', 'output', root, d)
             print('Processing', in_folder)
             tic = time.time()
-            unaligned_graphs = load_multilayer_graph(in_folder)
+            unaligned_graphs = load_all_graphs(in_folder)
             toc = time.time()
             print('load', toc - tic)
 
