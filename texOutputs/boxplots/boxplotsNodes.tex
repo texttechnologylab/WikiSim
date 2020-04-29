@@ -77,7 +77,7 @@
 	[
 	 boxplot/draw direction=y,xmin=0,xmax=26,ymin=0,
 	  xtick={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25},
-	  xticklabels={krankheitGML(35),chemical-compound(35),archaeological-site(35),war(35),aspect-of-history(35),paintingGML(35),chemical-element(35),theoremGML(33),galaxy(29),dialect(35),term(35),coat-of-arms(28),group-or-class-of-chemical-substances(35),holydayGML(35),symptom(35),language(34),chemical-substance(34),plant-structure(33),social-class(32),prison(34),clinical-sign(34),historical-language(32),mathematical-concept(34),fussballligaGML(13),komponistGML(13)
+	  xticklabels={krankheitGML(35),chemical-compound(35),archaeological-site(35),war(35),fussballligaGML(32),aspect-of-history(35),paintingGML(35),chemical-element(35),theoremGML(33),galaxy(29),dialect(35),term(35),coat-of-arms(28),group-or-class-of-chemical-substances(35),holydayGML(35),symptom(35),language(34),chemical-substance(34),plant-structure(33),social-class(32),prison(34),clinical-sign(34),historical-language(32),komponistGML(35),mathematical-concept(34)
 	  	},
     width=50cm,
 %%    xlabel=Feature ID according to Table 3,
@@ -103,6 +103,7 @@
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/chemical-compound.txt};
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/archaeological-site.txt};
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/war.txt};
+\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataNodes/fussballligaGML.txt};
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/aspect-of-history.txt};
 \addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataNodes/paintingGML.txt};
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/chemical-element.txt};
@@ -121,9 +122,8 @@
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/prison.txt};
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/clinical-sign.txt};
 \addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/historical-language.txt};
-\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/mathematical-concept.txt};
-\addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataNodes/fussballligaGML.txt};
 \addplot+[SeminarRot, thick, boxplot]  table[y index=0]{dataNodes/komponistGML.txt};
+\addplot+[SeminarBlau, thick, boxplot]  table[y index=0]{dataNodes/mathematical-concept.txt};
 
   \end{axis}
 \end{tikzpicture}
