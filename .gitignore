@@ -4,4 +4,7 @@
 *.out
 *.soc
 *.synctex.gz
-/output/
+*.fdb_latexmk
+*.fls
+*.pyc
+*.xdv
