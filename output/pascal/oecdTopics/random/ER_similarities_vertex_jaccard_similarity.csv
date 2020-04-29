@@ -1,0 +1,4825 @@
+Root path: ../../graphs/oecdTopics/
+Sample Size: 100
+
+type; dataset; language; mean; stdgml; work; fr; 1.0; 0.0
+gml; work; es; 1.0; 0.0
+gml; work; pl; 1.0; 0.0
+gml; work; de; 1.0; 0.0
+gml; work; nl; 1.0; 0.0
+gml; work; pt; 1.0; 0.0
+gml; work; ro; 1.0; 0.0
+gml; work; ja; 1.0; 0.0
+gml; work; it; 1.0; 0.0
+gml; work; he; 1.0; 0.0
+gml; work; da; 1.0; 0.0
+gml; work; en; 1.0; 0.0
+gml; work; sv; 1.0; 0.0
+gml; work; ru; 1.0; 0.0
+gml; work; hi; 1.0; 0.0
+gml; work; zh; 1.0; 0.0
+gml; work; ko; 1.0; 0.0
+gml; data; fr; 1.0; 0.0
+gml; data; es; 1.0; 0.0
+gml; data; pl; 1.0; 0.0
+gml; data; vi; 1.0; 0.0
+gml; data; de; 1.0; 0.0
+gml; data; nl; 1.0; 0.0
+gml; data; pt; 1.0; 0.0
+gml; data; ja; 1.0; 0.0
+gml; data; he; 1.0; 0.0
+gml; data; en; 1.0; 0.0
+gml; data; sr; 1.0; 0.0
+gml; data; ru; 1.0; 0.0
+gml; data; hi; 1.0; 0.0
+gml; data; zh; 1.0; 0.0
+gml; history of art; en; 1.0; 0.0
+gml; prehistory; id; 1.0; 0.0
+gml; prehistory; fr; 1.0; 0.0
+gml; prehistory; mr; 1.0; 0.0
+gml; prehistory; tr; 1.0; 0.0
+gml; prehistory; lv; 1.0; 0.0
+gml; prehistory; el; 1.0; 0.0
+gml; prehistory; es; 1.0; 0.0
+gml; prehistory; pl; 1.0; 0.0
+gml; prehistory; vi; 1.0; 0.0
+gml; prehistory; de; 1.0; 0.0
+gml; prehistory; ml; 1.0; 0.0
+gml; prehistory; sh; 1.0; 0.0
+gml; prehistory; nl; 1.0; 0.0
+gml; prehistory; si; 1.0; 0.0
+gml; prehistory; pt; 1.0; 0.0
+gml; prehistory; ro; 1.0; 0.0
+gml; prehistory; ja; 1.0; 0.0
+gml; prehistory; simple; 1.0; 0.0
+gml; prehistory; it; 1.0; 0.0
+gml; prehistory; ceb; 1.0; 0.0
+gml; prehistory; he; 1.0; 0.0
+gml; prehistory; da; 1.0; 0.0
+gml; prehistory; en; 1.0; 0.0
+gml; prehistory; sr; 1.0; 0.0
+gml; prehistory; sv; 1.0; 0.0
+gml; prehistory; ru; 1.0; 0.0
+gml; prehistory; hi; 1.0; 0.0
+gml; prehistory; bs; 1.0; 0.0
+gml; prehistory; zh; 1.0; 0.0
+gml; prehistory; mk; 1.0; 0.0
+gml; prehistory; hu; 1.0; 0.0
+gml; prehistory; ko; 1.0; 0.0
+gml; prehistory; war; 1.0; 0.0
+gml; chemical element; id; 1.0; 0.0
+gml; chemical element; fr; 1.0; 0.0
+gml; chemical element; mr; 1.0; 0.0
+gml; chemical element; tr; 1.0; 0.0
+gml; chemical element; lv; 1.0; 0.0
+gml; chemical element; el; 1.0; 0.0
+gml; chemical element; es; 1.0; 0.0
+gml; chemical element; pl; 1.0; 0.0
+gml; chemical element; vi; 1.0; 0.0
+gml; chemical element; de; 1.0; 0.0
+gml; chemical element; ml; 1.0; 0.0
+gml; chemical element; sh; 1.0; 0.0
+gml; chemical element; nl; 1.0; 0.0
+gml; chemical element; si; 1.0; 0.0
+gml; chemical element; pt; 1.0; 0.0
+gml; chemical element; ro; 1.0; 0.0
+gml; chemical element; ja; 1.0; 0.0
+gml; chemical element; simple; 1.0; 0.0
+gml; chemical element; it; 1.0; 0.0
+gml; chemical element; ceb; 1.0; 0.0
+gml; chemical element; he; 1.0; 0.0
+gml; chemical element; da; 1.0; 0.0
+gml; chemical element; en; 1.0; 0.0
+gml; chemical element; sr; 1.0; 0.0
+gml; chemical element; sv; 1.0; 0.0
+gml; chemical element; ckb; 1.0; 0.0
+gml; chemical element; ru; 1.0; 0.0
+gml; chemical element; hi; 1.0; 0.0
+gml; chemical element; arz; 1.0; 0.0
+gml; chemical element; bs; 1.0; 0.0
+gml; chemical element; te; 1.0; 0.0
+gml; chemical element; zh; 1.0; 0.0
+gml; chemical element; mk; 1.0; 0.0
+gml; chemical element; hu; 1.0; 0.0
+gml; chemical element; ko; 1.0; 0.0
+gml; chemical element; war; 1.0; 0.0
+gml; dialect; id; 1.0; 0.0
+gml; dialect; fr; 1.0; 0.0
+gml; dialect; mr; 1.0; 0.0
+gml; dialect; tr; 1.0; 0.0
+gml; dialect; lv; 1.0; 0.0
+gml; dialect; el; 1.0; 0.0
+gml; dialect; es; 1.0; 0.0
+gml; dialect; pl; 1.0; 0.0
+gml; dialect; vi; 1.0; 0.0
+gml; dialect; de; 1.0; 0.0
+gml; dialect; ml; 1.0; 0.0
+gml; dialect; sh; 1.0; 0.0
+gml; dialect; nl; 1.0; 0.0
+gml; dialect; si; 1.0; 0.0
+gml; dialect; pt; 1.0; 0.0
+gml; dialect; ro; 1.0; 0.0
+gml; dialect; ja; 1.0; 0.0
+gml; dialect; simple; 1.0; 0.0
+gml; dialect; it; 1.0; 0.0
+gml; dialect; ceb; 1.0; 0.0
+gml; dialect; he; 1.0; 0.0
+gml; dialect; da; 1.0; 0.0
+gml; dialect; en; 1.0; 0.0
+gml; dialect; sr; 1.0; 0.0
+gml; dialect; sv; 1.0; 0.0
+gml; dialect; ckb; 1.0; 0.0
+gml; dialect; ru; 1.0; 0.0
+gml; dialect; hi; 1.0; 0.0
+gml; dialect; arz; 1.0; 0.0
+gml; dialect; bs; 1.0; 0.0
+gml; dialect; te; 1.0; 0.0
+gml; dialect; zh; 1.0; 0.0
+gml; dialect; mk; 1.0; 0.0
+gml; dialect; hu; 1.0; 0.0
+gml; dialect; ko; 1.0; 0.0
+gml; dialect; war; 1.0; 0.0
+gml; coat of arms; id; 1.0; 0.0
+gml; coat of arms; fr; 1.0; 0.0
+gml; coat of arms; tr; 1.0; 0.0
+gml; coat of arms; lv; 1.0; 0.0
+gml; coat of arms; el; 1.0; 0.0
+gml; coat of arms; es; 1.0; 0.0
+gml; coat of arms; pl; 1.0; 0.0
+gml; coat of arms; vi; 1.0; 0.0
+gml; coat of arms; de; 1.0; 0.0
+gml; coat of arms; sh; 1.0; 0.0
+gml; coat of arms; nl; 1.0; 0.0
+gml; coat of arms; pt; 1.0; 0.0
+gml; coat of arms; ro; 1.0; 0.0
+gml; coat of arms; ja; 1.0; 0.0
+gml; coat of arms; simple; 1.0; 0.0
+gml; coat of arms; it; 1.0; 0.0
+gml; coat of arms; he; 1.0; 0.0
+gml; coat of arms; da; 1.0; 0.0
+gml; coat of arms; en; 1.0; 0.0
+gml; coat of arms; sr; 1.0; 0.0
+gml; coat of arms; sv; 1.0; 0.0
+gml; coat of arms; ru; 1.0; 0.0
+gml; coat of arms; hi; 1.0; 0.0
+gml; coat of arms; arz; 1.0; 0.0
+gml; coat of arms; bs; 1.0; 0.0
+gml; coat of arms; zh; 1.0; 0.0
+gml; coat of arms; mk; 1.0; 0.0
+gml; coat of arms; hu; 1.0; 0.0
+gml; coat of arms; ko; 1.0; 0.0
+gml; chemical compound; id; 1.0; 0.0
+gml; chemical compound; fr; 1.0; 0.0
+gml; chemical compound; mr; 1.0; 0.0
+gml; chemical compound; tr; 1.0; 0.0
+gml; chemical compound; lv; 1.0; 0.0
+gml; chemical compound; el; 1.0; 0.0
+gml; chemical compound; es; 1.0; 0.0
+gml; chemical compound; pl; 1.0; 0.0
+gml; chemical compound; vi; 1.0; 0.0
+gml; chemical compound; de; 1.0; 0.0
+gml; chemical compound; ml; 1.0; 0.0
+gml; chemical compound; sh; 1.0; 0.0
+gml; chemical compound; nl; 1.0; 0.0
+gml; chemical compound; si; 1.0; 0.0
+gml; chemical compound; pt; 1.0; 0.0
+gml; chemical compound; ro; 1.0; 0.0
+gml; chemical compound; ja; 1.0; 0.0
+gml; chemical compound; simple; 1.0; 0.0
+gml; chemical compound; it; 1.0; 0.0
+gml; chemical compound; ceb; 1.0; 0.0
+gml; chemical compound; he; 1.0; 0.0
+gml; chemical compound; da; 1.0; 0.0
+gml; chemical compound; en; 1.0; 0.0
+gml; chemical compound; sr; 1.0; 0.0
+gml; chemical compound; sv; 1.0; 0.0
+gml; chemical compound; ckb; 1.0; 0.0
+gml; chemical compound; ru; 1.0; 0.0
+gml; chemical compound; hi; 1.0; 0.0
+gml; chemical compound; arz; 1.0; 0.0
+gml; chemical compound; bs; 1.0; 0.0
+gml; chemical compound; te; 1.0; 0.0
+gml; chemical compound; zh; 1.0; 0.0
+gml; chemical compound; mk; 1.0; 0.0
+gml; chemical compound; hu; 1.0; 0.0
+gml; chemical compound; ko; 1.0; 0.0
+gml; chemical compound; war; 1.0; 0.0
+gml; thermodynamic process; id; 1.0; 0.0
+gml; thermodynamic process; fr; 1.0; 0.0
+gml; thermodynamic process; mr; 1.0; 0.0
+gml; thermodynamic process; tr; 1.0; 0.0
+gml; thermodynamic process; lv; 1.0; 0.0
+gml; thermodynamic process; el; 1.0; 0.0
+gml; thermodynamic process; es; 1.0; 0.0
+gml; thermodynamic process; pl; 1.0; 0.0
+gml; thermodynamic process; vi; 1.0; 0.0
+gml; thermodynamic process; de; 1.0; 0.0
+gml; thermodynamic process; sh; 1.0; 0.0
+gml; thermodynamic process; nl; 1.0; 0.0
+gml; thermodynamic process; si; 1.0; 0.0
+gml; thermodynamic process; pt; 1.0; 0.0
+gml; thermodynamic process; ro; 1.0; 0.0
+gml; thermodynamic process; ja; 1.0; 0.0
+gml; thermodynamic process; simple; 1.0; 0.0
+gml; thermodynamic process; it; 1.0; 0.0
+gml; thermodynamic process; he; 1.0; 0.0
+gml; thermodynamic process; da; 1.0; 0.0
+gml; thermodynamic process; en; 1.0; 0.0
+gml; thermodynamic process; sr; 1.0; 0.0
+gml; thermodynamic process; sv; 1.0; 0.0
+gml; thermodynamic process; ckb; 1.0; 0.0
+gml; thermodynamic process; ru; 1.0; 0.0
+gml; thermodynamic process; hi; 1.0; 0.0
+gml; thermodynamic process; bs; 1.0; 0.0
+gml; thermodynamic process; zh; 1.0; 0.0
+gml; thermodynamic process; mk; 1.0; 0.0
+gml; thermodynamic process; hu; 1.0; 0.0
+gml; thermodynamic process; ko; 1.0; 0.0
+gml; standard language; id; 1.0; 0.0
+gml; standard language; fr; 1.0; 0.0
+gml; standard language; mr; 1.0; 0.0
+gml; standard language; tr; 1.0; 0.0
+gml; standard language; lv; 1.0; 0.0
+gml; standard language; el; 1.0; 0.0
+gml; standard language; es; 1.0; 0.0
+gml; standard language; pl; 1.0; 0.0
+gml; standard language; vi; 1.0; 0.0
+gml; standard language; de; 1.0; 0.0
+gml; standard language; ml; 1.0; 0.0
+gml; standard language; sh; 1.0; 0.0
+gml; standard language; nl; 1.0; 0.0
+gml; standard language; si; 1.0; 0.0
+gml; standard language; pt; 1.0; 0.0
+gml; standard language; ro; 1.0; 0.0
+gml; standard language; ja; 1.0; 0.0
+gml; standard language; simple; 1.0; 0.0
+gml; standard language; it; 1.0; 0.0
+gml; standard language; ceb; 1.0; 0.0
+gml; standard language; he; 1.0; 0.0
+gml; standard language; da; 1.0; 0.0
+gml; standard language; en; 1.0; 0.0
+gml; standard language; sr; 1.0; 0.0
+gml; standard language; sv; 1.0; 0.0
+gml; standard language; ckb; 1.0; 0.0
+gml; standard language; ru; 1.0; 0.0
+gml; standard language; hi; 1.0; 0.0
+gml; standard language; arz; 1.0; 0.0
+gml; standard language; bs; 1.0; 0.0
+gml; standard language; te; 1.0; 0.0
+gml; standard language; zh; 1.0; 0.0
+gml; standard language; mk; 1.0; 0.0
+gml; standard language; hu; 1.0; 0.0
+gml; standard language; ko; 1.0; 0.0
+gml; standard language; war; 1.0; 0.0
+gml; neutron star; fr; 1.0; 0.0
+gml; neutron star; tr; 1.0; 0.0
+gml; neutron star; es; 1.0; 0.0
+gml; neutron star; pl; 1.0; 0.0
+gml; neutron star; vi; 1.0; 0.0
+gml; neutron star; de; 1.0; 0.0
+gml; neutron star; nl; 1.0; 0.0
+gml; neutron star; pt; 1.0; 0.0
+gml; neutron star; ja; 1.0; 0.0
+gml; neutron star; da; 1.0; 0.0
+gml; neutron star; en; 1.0; 0.0
+gml; neutron star; sv; 1.0; 0.0
+gml; neutron star; ru; 1.0; 0.0
+gml; neutron star; bs; 1.0; 0.0
+gml; neutron star; zh; 1.0; 0.0
+gml; neutron star; ko; 1.0; 0.0
+gml; ceramic; id; 1.0; 0.0
+gml; ceramic; fr; 1.0; 0.0
+gml; ceramic; tr; 1.0; 0.0
+gml; ceramic; el; 1.0; 0.0
+gml; ceramic; es; 1.0; 0.0
+gml; ceramic; pl; 1.0; 0.0
+gml; ceramic; de; 1.0; 0.0
+gml; ceramic; nl; 1.0; 0.0
+gml; ceramic; pt; 1.0; 0.0
+gml; ceramic; ja; 1.0; 0.0
+gml; ceramic; it; 1.0; 0.0
+gml; ceramic; he; 1.0; 0.0
+gml; ceramic; da; 1.0; 0.0
+gml; ceramic; en; 1.0; 0.0
+gml; ceramic; sr; 1.0; 0.0
+gml; ceramic; sv; 1.0; 0.0
+gml; ceramic; ru; 1.0; 0.0
+gml; ceramic; zh; 1.0; 0.0
+gml; law; id; 1.0; 0.0
+gml; law; fr; 1.0; 0.0
+gml; law; mr; 1.0; 0.0
+gml; law; tr; 1.0; 0.0
+gml; law; el; 1.0; 0.0
+gml; law; es; 1.0; 0.0
+gml; law; pl; 1.0; 0.0
+gml; law; vi; 1.0; 0.0
+gml; law; de; 1.0; 0.0
+gml; law; ml; 1.0; 0.0
+gml; law; sh; 1.0; 0.0
+gml; law; nl; 1.0; 0.0
+gml; law; si; 1.0; 0.0
+gml; law; pt; 1.0; 0.0
+gml; law; ro; 1.0; 0.0
+gml; law; ja; 1.0; 0.0
+gml; law; simple; 1.0; 0.0
+gml; law; it; 1.0; 0.0
+gml; law; he; 1.0; 0.0
+gml; law; da; 1.0; 0.0
+gml; law; en; 1.0; 0.0
+gml; law; sr; 1.0; 0.0
+gml; law; sv; 1.0; 0.0
+gml; law; ckb; 1.0; 0.0
+gml; law; ru; 1.0; 0.0
+gml; law; hi; 1.0; 0.0
+gml; law; bs; 1.0; 0.0
+gml; law; te; 1.0; 0.0
+gml; law; zh; 1.0; 0.0
+gml; law; mk; 1.0; 0.0
+gml; law; hu; 1.0; 0.0
+gml; law; ko; 1.0; 0.0
+gml; law; war; 1.0; 0.0
+gml; history; id; 1.0; 0.0
+gml; history; fr; 1.0; 0.0
+gml; history; tr; 1.0; 0.0
+gml; history; es; 1.0; 0.0
+gml; history; pl; 1.0; 0.0
+gml; history; vi; 1.0; 0.0
+gml; history; de; 1.0; 0.0
+gml; history; sh; 1.0; 0.0
+gml; history; nl; 1.0; 0.0
+gml; history; pt; 1.0; 0.0
+gml; history; ro; 1.0; 0.0
+gml; history; ja; 1.0; 0.0
+gml; history; simple; 1.0; 0.0
+gml; history; it; 1.0; 0.0
+gml; history; he; 1.0; 0.0
+gml; history; da; 1.0; 0.0
+gml; history; en; 1.0; 0.0
+gml; history; sr; 1.0; 0.0
+gml; history; sv; 1.0; 0.0
+gml; history; ru; 1.0; 0.0
+gml; history; bs; 1.0; 0.0
+gml; history; zh; 1.0; 0.0
+gml; history; mk; 1.0; 0.0
+gml; history; hu; 1.0; 0.0
+gml; history; ko; 1.0; 0.0
+gml; social conflict; es; 1.0; 0.0
+gml; social conflict; en; 1.0; 0.0
+gml; history of music; pl; 1.0; 0.0
+gml; history of music; en; 1.0; 0.0
+gml; term; id; 1.0; 0.0
+gml; term; fr; 1.0; 0.0
+gml; term; mr; 1.0; 0.0
+gml; term; tr; 1.0; 0.0
+gml; term; lv; 1.0; 0.0
+gml; term; el; 1.0; 0.0
+gml; term; es; 1.0; 0.0
+gml; term; pl; 1.0; 0.0
+gml; term; vi; 1.0; 0.0
+gml; term; de; 1.0; 0.0
+gml; term; ml; 1.0; 0.0
+gml; term; sh; 1.0; 0.0
+gml; term; nl; 1.0; 0.0
+gml; term; si; 1.0; 0.0
+gml; term; pt; 1.0; 0.0
+gml; term; ro; 1.0; 0.0
+gml; term; ja; 1.0; 0.0
+gml; term; simple; 1.0; 0.0
+gml; term; it; 1.0; 0.0
+gml; term; ceb; 1.0; 0.0
+gml; term; he; 1.0; 0.0
+gml; term; da; 1.0; 0.0
+gml; term; en; 1.0; 0.0
+gml; term; sr; 1.0; 0.0
+gml; term; sv; 1.0; 0.0
+gml; term; ckb; 1.0; 0.0
+gml; term; ru; 1.0; 0.0
+gml; term; hi; 1.0; 0.0
+gml; term; arz; 1.0; 0.0
+gml; term; bs; 1.0; 0.0
+gml; term; te; 1.0; 0.0
+gml; term; zh; 1.0; 0.0
+gml; term; mk; 1.0; 0.0
+gml; term; hu; 1.0; 0.0
+gml; term; ko; 1.0; 0.0
+gml; term; war; 1.0; 0.0
+gml; gender; fr; 1.0; 0.0
+gml; gender; es; 1.0; 0.0
+gml; gender; pl; 1.0; 0.0
+gml; gender; de; 1.0; 0.0
+gml; gender; pt; 1.0; 0.0
+gml; gender; ro; 1.0; 0.0
+gml; gender; ja; 1.0; 0.0
+gml; gender; simple; 1.0; 0.0
+gml; gender; it; 1.0; 0.0
+gml; gender; he; 1.0; 0.0
+gml; gender; en; 1.0; 0.0
+gml; gender; sr; 1.0; 0.0
+gml; gender; zh; 1.0; 0.0
+gml; gender; ko; 1.0; 0.0
+gml; symptom; id; 1.0; 0.0
+gml; symptom; fr; 1.0; 0.0
+gml; symptom; mr; 1.0; 0.0
+gml; symptom; tr; 1.0; 0.0
+gml; symptom; lv; 1.0; 0.0
+gml; symptom; el; 1.0; 0.0
+gml; symptom; es; 1.0; 0.0
+gml; symptom; pl; 1.0; 0.0
+gml; symptom; vi; 1.0; 0.0
+gml; symptom; de; 1.0; 0.0
+gml; symptom; ml; 1.0; 0.0
+gml; symptom; sh; 1.0; 0.0
+gml; symptom; nl; 1.0; 0.0
+gml; symptom; si; 1.0; 0.0
+gml; symptom; pt; 1.0; 0.0
+gml; symptom; ro; 1.0; 0.0
+gml; symptom; ja; 1.0; 0.0
+gml; symptom; simple; 1.0; 0.0
+gml; symptom; it; 1.0; 0.0
+gml; symptom; ceb; 1.0; 0.0
+gml; symptom; he; 1.0; 0.0
+gml; symptom; da; 1.0; 0.0
+gml; symptom; en; 1.0; 0.0
+gml; symptom; sr; 1.0; 0.0
+gml; symptom; sv; 1.0; 0.0
+gml; symptom; ckb; 1.0; 0.0
+gml; symptom; ru; 1.0; 0.0
+gml; symptom; hi; 1.0; 0.0
+gml; symptom; arz; 1.0; 0.0
+gml; symptom; bs; 1.0; 0.0
+gml; symptom; te; 1.0; 0.0
+gml; symptom; zh; 1.0; 0.0
+gml; symptom; mk; 1.0; 0.0
+gml; symptom; hu; 1.0; 0.0
+gml; symptom; ko; 1.0; 0.0
+gml; symptom; war; 1.0; 0.0
+gml; cancer; fr; 1.0; 0.0
+gml; cancer; de; 1.0; 0.0
+gml; cancer; it; 1.0; 0.0
+gml; cancer; en; 1.0; 0.0
+gml; Jewish people; fr; 1.0; 0.0
+gml; Jewish people; tr; 1.0; 0.0
+gml; Jewish people; es; 1.0; 0.0
+gml; Jewish people; pl; 1.0; 0.0
+gml; Jewish people; de; 1.0; 0.0
+gml; Jewish people; nl; 1.0; 0.0
+gml; Jewish people; pt; 1.0; 0.0
+gml; Jewish people; ja; 1.0; 0.0
+gml; Jewish people; it; 1.0; 0.0
+gml; Jewish people; he; 1.0; 0.0
+gml; Jewish people; en; 1.0; 0.0
+gml; Jewish people; sv; 1.0; 0.0
+gml; Jewish people; ru; 1.0; 0.0
+gml; archaeological site; id; 1.0; 0.0
+gml; archaeological site; fr; 1.0; 0.0
+gml; archaeological site; mr; 1.0; 0.0
+gml; archaeological site; tr; 1.0; 0.0
+gml; archaeological site; lv; 1.0; 0.0
+gml; archaeological site; el; 1.0; 0.0
+gml; archaeological site; es; 1.0; 0.0
+gml; archaeological site; pl; 1.0; 0.0
+gml; archaeological site; vi; 1.0; 0.0
+gml; archaeological site; de; 1.0; 0.0
+gml; archaeological site; ml; 1.0; 0.0
+gml; archaeological site; sh; 1.0; 0.0
+gml; archaeological site; nl; 1.0; 0.0
+gml; archaeological site; si; 1.0; 0.0
+gml; archaeological site; pt; 1.0; 0.0
+gml; archaeological site; ro; 1.0; 0.0
+gml; archaeological site; ja; 1.0; 0.0
+gml; archaeological site; simple; 1.0; 0.0
+gml; archaeological site; it; 1.0; 0.0
+gml; archaeological site; ceb; 1.0; 0.0
+gml; archaeological site; he; 1.0; 0.0
+gml; archaeological site; da; 1.0; 0.0
+gml; archaeological site; en; 1.0; 0.0
+gml; archaeological site; sr; 1.0; 0.0
+gml; archaeological site; sv; 1.0; 0.0
+gml; archaeological site; ckb; 1.0; 0.0
+gml; archaeological site; ru; 1.0; 0.0
+gml; archaeological site; hi; 1.0; 0.0
+gml; archaeological site; arz; 1.0; 0.0
+gml; archaeological site; bs; 1.0; 0.0
+gml; archaeological site; te; 1.0; 0.0
+gml; archaeological site; zh; 1.0; 0.0
+gml; archaeological site; mk; 1.0; 0.0
+gml; archaeological site; hu; 1.0; 0.0
+gml; archaeological site; ko; 1.0; 0.0
+gml; archaeological site; war; 1.0; 0.0
+gml; animal; id; 1.0; 0.0
+gml; animal; fr; 1.0; 0.0
+gml; animal; mr; 1.0; 0.0
+gml; animal; tr; 1.0; 0.0
+gml; animal; lv; 1.0; 0.0
+gml; animal; el; 1.0; 0.0
+gml; animal; es; 1.0; 0.0
+gml; animal; pl; 1.0; 0.0
+gml; animal; vi; 1.0; 0.0
+gml; animal; de; 1.0; 0.0
+gml; animal; ml; 1.0; 0.0
+gml; animal; sh; 1.0; 0.0
+gml; animal; nl; 1.0; 0.0
+gml; animal; pt; 1.0; 0.0
+gml; animal; ro; 1.0; 0.0
+gml; animal; ja; 1.0; 0.0
+gml; animal; simple; 1.0; 0.0
+gml; animal; it; 1.0; 0.0
+gml; animal; he; 1.0; 0.0
+gml; animal; da; 1.0; 0.0
+gml; animal; en; 1.0; 0.0
+gml; animal; sr; 1.0; 0.0
+gml; animal; sv; 1.0; 0.0
+gml; animal; ru; 1.0; 0.0
+gml; animal; hi; 1.0; 0.0
+gml; animal; arz; 1.0; 0.0
+gml; animal; bs; 1.0; 0.0
+gml; animal; te; 1.0; 0.0
+gml; animal; zh; 1.0; 0.0
+gml; animal; mk; 1.0; 0.0
+gml; animal; hu; 1.0; 0.0
+gml; animal; ko; 1.0; 0.0
+gml; vocabulary; fr; 1.0; 0.0
+gml; vocabulary; es; 1.0; 0.0
+gml; vocabulary; de; 1.0; 0.0
+gml; vocabulary; ro; 1.0; 0.0
+gml; vocabulary; ja; 1.0; 0.0
+gml; vocabulary; en; 1.0; 0.0
+gml; vocabulary; ru; 1.0; 0.0
+gml; vocabulary; zh; 1.0; 0.0
+gml; vocabulary; hu; 1.0; 0.0
+gml; Ancient Greece; es; 1.0; 0.0
+gml; Ancient Greece; en; 1.0; 0.0
+gml; stellar magnetic field; zh; 1.0; 0.0
+gml; human behaviour; id; 1.0; 0.0
+gml; human behaviour; fr; 1.0; 0.0
+gml; human behaviour; mr; 1.0; 0.0
+gml; human behaviour; tr; 1.0; 0.0
+gml; human behaviour; lv; 1.0; 0.0
+gml; human behaviour; el; 1.0; 0.0
+gml; human behaviour; es; 1.0; 0.0
+gml; human behaviour; pl; 1.0; 0.0
+gml; human behaviour; vi; 1.0; 0.0
+gml; human behaviour; de; 1.0; 0.0
+gml; human behaviour; ml; 1.0; 0.0
+gml; human behaviour; sh; 1.0; 0.0
+gml; human behaviour; nl; 1.0; 0.0
+gml; human behaviour; pt; 1.0; 0.0
+gml; human behaviour; ro; 1.0; 0.0
+gml; human behaviour; ja; 1.0; 0.0
+gml; human behaviour; simple; 1.0; 0.0
+gml; human behaviour; it; 1.0; 0.0
+gml; human behaviour; he; 1.0; 0.0
+gml; human behaviour; da; 1.0; 0.0
+gml; human behaviour; en; 1.0; 0.0
+gml; human behaviour; sr; 1.0; 0.0
+gml; human behaviour; sv; 1.0; 0.0
+gml; human behaviour; ru; 1.0; 0.0
+gml; human behaviour; hi; 1.0; 0.0
+gml; human behaviour; arz; 1.0; 0.0
+gml; human behaviour; bs; 1.0; 0.0
+gml; human behaviour; te; 1.0; 0.0
+gml; human behaviour; zh; 1.0; 0.0
+gml; human behaviour; mk; 1.0; 0.0
+gml; human behaviour; hu; 1.0; 0.0
+gml; human behaviour; ko; 1.0; 0.0
+gml; plant structure; id; 1.0; 0.0
+gml; plant structure; fr; 1.0; 0.0
+gml; plant structure; mr; 1.0; 0.0
+gml; plant structure; tr; 1.0; 0.0
+gml; plant structure; lv; 1.0; 0.0
+gml; plant structure; el; 1.0; 0.0
+gml; plant structure; es; 1.0; 0.0
+gml; plant structure; pl; 1.0; 0.0
+gml; plant structure; vi; 1.0; 0.0
+gml; plant structure; de; 1.0; 0.0
+gml; plant structure; ml; 1.0; 0.0
+gml; plant structure; sh; 1.0; 0.0
+gml; plant structure; nl; 1.0; 0.0
+gml; plant structure; si; 1.0; 0.0
+gml; plant structure; pt; 1.0; 0.0
+gml; plant structure; ro; 1.0; 0.0
+gml; plant structure; ja; 1.0; 0.0
+gml; plant structure; simple; 1.0; 0.0
+gml; plant structure; it; 1.0; 0.0
+gml; plant structure; he; 1.0; 0.0
+gml; plant structure; da; 1.0; 0.0
+gml; plant structure; en; 1.0; 0.0
+gml; plant structure; sr; 1.0; 0.0
+gml; plant structure; sv; 1.0; 0.0
+gml; plant structure; ckb; 1.0; 0.0
+gml; plant structure; ru; 1.0; 0.0
+gml; plant structure; hi; 1.0; 0.0
+gml; plant structure; bs; 1.0; 0.0
+gml; plant structure; te; 1.0; 0.0
+gml; plant structure; zh; 1.0; 0.0
+gml; plant structure; mk; 1.0; 0.0
+gml; plant structure; hu; 1.0; 0.0
+gml; plant structure; ko; 1.0; 0.0
+gml; plant structure; war; 1.0; 0.0
+gml; group action; id; 1.0; 0.0
+gml; group action; fr; 1.0; 0.0
+gml; group action; mr; 1.0; 0.0
+gml; group action; tr; 1.0; 0.0
+gml; group action; lv; 1.0; 0.0
+gml; group action; el; 1.0; 0.0
+gml; group action; es; 1.0; 0.0
+gml; group action; pl; 1.0; 0.0
+gml; group action; vi; 1.0; 0.0
+gml; group action; de; 1.0; 0.0
+gml; group action; ml; 1.0; 0.0
+gml; group action; sh; 1.0; 0.0
+gml; group action; nl; 1.0; 0.0
+gml; group action; pt; 1.0; 0.0
+gml; group action; ro; 1.0; 0.0
+gml; group action; ja; 1.0; 0.0
+gml; group action; simple; 1.0; 0.0
+gml; group action; it; 1.0; 0.0
+gml; group action; he; 1.0; 0.0
+gml; group action; da; 1.0; 0.0
+gml; group action; en; 1.0; 0.0
+gml; group action; sr; 1.0; 0.0
+gml; group action; sv; 1.0; 0.0
+gml; group action; ru; 1.0; 0.0
+gml; group action; hi; 1.0; 0.0
+gml; group action; arz; 1.0; 0.0
+gml; group action; bs; 1.0; 0.0
+gml; group action; zh; 1.0; 0.0
+gml; group action; mk; 1.0; 0.0
+gml; group action; hu; 1.0; 0.0
+gml; group action; ko; 1.0; 0.0
+gml; work of art; id; 1.0; 0.0
+gml; work of art; fr; 1.0; 0.0
+gml; work of art; tr; 1.0; 0.0
+gml; work of art; lv; 1.0; 0.0
+gml; work of art; el; 1.0; 0.0
+gml; work of art; es; 1.0; 0.0
+gml; work of art; pl; 1.0; 0.0
+gml; work of art; vi; 1.0; 0.0
+gml; work of art; de; 1.0; 0.0
+gml; work of art; ml; 1.0; 0.0
+gml; work of art; sh; 1.0; 0.0
+gml; work of art; nl; 1.0; 0.0
+gml; work of art; pt; 1.0; 0.0
+gml; work of art; ro; 1.0; 0.0
+gml; work of art; ja; 1.0; 0.0
+gml; work of art; simple; 1.0; 0.0
+gml; work of art; it; 1.0; 0.0
+gml; work of art; ceb; 1.0; 0.0
+gml; work of art; he; 1.0; 0.0
+gml; work of art; da; 1.0; 0.0
+gml; work of art; en; 1.0; 0.0
+gml; work of art; sr; 1.0; 0.0
+gml; work of art; sv; 1.0; 0.0
+gml; work of art; ru; 1.0; 0.0
+gml; work of art; hi; 1.0; 0.0
+gml; work of art; te; 1.0; 0.0
+gml; work of art; zh; 1.0; 0.0
+gml; work of art; mk; 1.0; 0.0
+gml; work of art; hu; 1.0; 0.0
+gml; work of art; ko; 1.0; 0.0
+gml; kiss; es; 1.0; 0.0
+gml; kiss; de; 1.0; 0.0
+gml; kiss; it; 1.0; 0.0
+gml; kiss; he; 1.0; 0.0
+gml; kiss; en; 1.0; 0.0
+gml; kiss; ru; 1.0; 0.0
+gml; temperature; id; 1.0; 0.0
+gml; temperature; fr; 1.0; 0.0
+gml; temperature; es; 1.0; 0.0
+gml; temperature; pl; 1.0; 0.0
+gml; temperature; de; 1.0; 0.0
+gml; temperature; sh; 1.0; 0.0
+gml; temperature; nl; 1.0; 0.0
+gml; temperature; si; 1.0; 0.0
+gml; temperature; pt; 1.0; 0.0
+gml; temperature; ro; 1.0; 0.0
+gml; temperature; simple; 1.0; 0.0
+gml; temperature; he; 1.0; 0.0
+gml; temperature; da; 1.0; 0.0
+gml; temperature; en; 1.0; 0.0
+gml; temperature; sv; 1.0; 0.0
+gml; temperature; ckb; 1.0; 0.0
+gml; temperature; ru; 1.0; 0.0
+gml; temperature; te; 1.0; 0.0
+gml; temperature; zh; 1.0; 0.0
+gml; temperature; ko; 1.0; 0.0
+gml; Bible; en; 1.0; 0.0
+gml; blazonry; id; 1.0; 0.0
+gml; blazonry; fr; 1.0; 0.0
+gml; terminology; id; 1.0; 0.0
+gml; terminology; fr; 1.0; 0.0
+gml; terminology; tr; 1.0; 0.0
+gml; terminology; es; 1.0; 0.0
+gml; terminology; pl; 1.0; 0.0
+gml; terminology; vi; 1.0; 0.0
+gml; terminology; de; 1.0; 0.0
+gml; terminology; nl; 1.0; 0.0
+gml; terminology; pt; 1.0; 0.0
+gml; terminology; ja; 1.0; 0.0
+gml; terminology; it; 1.0; 0.0
+gml; terminology; he; 1.0; 0.0
+gml; terminology; da; 1.0; 0.0
+gml; terminology; en; 1.0; 0.0
+gml; terminology; sv; 1.0; 0.0
+gml; terminology; ru; 1.0; 0.0
+gml; terminology; hi; 1.0; 0.0
+gml; terminology; zh; 1.0; 0.0
+gml; terminology; ko; 1.0; 0.0
+gml; social class; id; 1.0; 0.0
+gml; social class; fr; 1.0; 0.0
+gml; social class; mr; 1.0; 0.0
+gml; social class; tr; 1.0; 0.0
+gml; social class; lv; 1.0; 0.0
+gml; social class; el; 1.0; 0.0
+gml; social class; es; 1.0; 0.0
+gml; social class; pl; 1.0; 0.0
+gml; social class; vi; 1.0; 0.0
+gml; social class; de; 1.0; 0.0
+gml; social class; ml; 1.0; 0.0
+gml; social class; sh; 1.0; 0.0
+gml; social class; nl; 1.0; 0.0
+gml; social class; pt; 1.0; 0.0
+gml; social class; ro; 1.0; 0.0
+gml; social class; ja; 1.0; 0.0
+gml; social class; simple; 1.0; 0.0
+gml; social class; it; 1.0; 0.0
+gml; social class; he; 1.0; 0.0
+gml; social class; da; 1.0; 0.0
+gml; social class; en; 1.0; 0.0
+gml; social class; sr; 1.0; 0.0
+gml; social class; sv; 1.0; 0.0
+gml; social class; ckb; 1.0; 0.0
+gml; social class; ru; 1.0; 0.0
+gml; social class; hi; 1.0; 0.0
+gml; social class; arz; 1.0; 0.0
+gml; social class; bs; 1.0; 0.0
+gml; social class; zh; 1.0; 0.0
+gml; social class; mk; 1.0; 0.0
+gml; social class; hu; 1.0; 0.0
+gml; social class; ko; 1.0; 0.0
+gml; social class; war; 1.0; 0.0
+gml; languoid class; id; 1.0; 0.0
+gml; languoid class; fr; 1.0; 0.0
+gml; languoid class; mr; 1.0; 0.0
+gml; languoid class; tr; 1.0; 0.0
+gml; languoid class; lv; 1.0; 0.0
+gml; languoid class; el; 1.0; 0.0
+gml; languoid class; es; 1.0; 0.0
+gml; languoid class; pl; 1.0; 0.0
+gml; languoid class; vi; 1.0; 0.0
+gml; languoid class; de; 1.0; 0.0
+gml; languoid class; ml; 1.0; 0.0
+gml; languoid class; sh; 1.0; 0.0
+gml; languoid class; nl; 1.0; 0.0
+gml; languoid class; si; 1.0; 0.0
+gml; languoid class; pt; 1.0; 0.0
+gml; languoid class; ro; 1.0; 0.0
+gml; languoid class; ja; 1.0; 0.0
+gml; languoid class; simple; 1.0; 0.0
+gml; languoid class; it; 1.0; 0.0
+gml; languoid class; ceb; 1.0; 0.0
+gml; languoid class; he; 1.0; 0.0
+gml; languoid class; da; 1.0; 0.0
+gml; languoid class; en; 1.0; 0.0
+gml; languoid class; sr; 1.0; 0.0
+gml; languoid class; sv; 1.0; 0.0
+gml; languoid class; ckb; 1.0; 0.0
+gml; languoid class; ru; 1.0; 0.0
+gml; languoid class; hi; 1.0; 0.0
+gml; languoid class; arz; 1.0; 0.0
+gml; languoid class; bs; 1.0; 0.0
+gml; languoid class; te; 1.0; 0.0
+gml; languoid class; zh; 1.0; 0.0
+gml; languoid class; mk; 1.0; 0.0
+gml; languoid class; hu; 1.0; 0.0
+gml; languoid class; ko; 1.0; 0.0
+gml; languoid class; war; 1.0; 0.0
+gml; organism; id; 1.0; 0.0
+gml; organism; fr; 1.0; 0.0
+gml; organism; tr; 1.0; 0.0
+gml; organism; lv; 1.0; 0.0
+gml; organism; el; 1.0; 0.0
+gml; organism; es; 1.0; 0.0
+gml; organism; pl; 1.0; 0.0
+gml; organism; vi; 1.0; 0.0
+gml; organism; de; 1.0; 0.0
+gml; organism; ml; 1.0; 0.0
+gml; organism; sh; 1.0; 0.0
+gml; organism; nl; 1.0; 0.0
+gml; organism; si; 1.0; 0.0
+gml; organism; pt; 1.0; 0.0
+gml; organism; ro; 1.0; 0.0
+gml; organism; ja; 1.0; 0.0
+gml; organism; simple; 1.0; 0.0
+gml; organism; it; 1.0; 0.0
+gml; organism; he; 1.0; 0.0
+gml; organism; da; 1.0; 0.0
+gml; organism; en; 1.0; 0.0
+gml; organism; sr; 1.0; 0.0
+gml; organism; sv; 1.0; 0.0
+gml; organism; ckb; 1.0; 0.0
+gml; organism; ru; 1.0; 0.0
+gml; organism; hi; 1.0; 0.0
+gml; organism; bs; 1.0; 0.0
+gml; organism; te; 1.0; 0.0
+gml; organism; zh; 1.0; 0.0
+gml; organism; mk; 1.0; 0.0
+gml; organism; hu; 1.0; 0.0
+gml; organism; ko; 1.0; 0.0
+gml; organism; war; 1.0; 0.0
+gml; biochemical receptor; fr; 1.0; 0.0
+gml; biochemical receptor; es; 1.0; 0.0
+gml; biochemical receptor; pl; 1.0; 0.0
+gml; biochemical receptor; vi; 1.0; 0.0
+gml; biochemical receptor; de; 1.0; 0.0
+gml; biochemical receptor; sh; 1.0; 0.0
+gml; biochemical receptor; nl; 1.0; 0.0
+gml; biochemical receptor; pt; 1.0; 0.0
+gml; biochemical receptor; ja; 1.0; 0.0
+gml; biochemical receptor; it; 1.0; 0.0
+gml; biochemical receptor; en; 1.0; 0.0
+gml; biochemical receptor; sr; 1.0; 0.0
+gml; biochemical receptor; sv; 1.0; 0.0
+gml; biochemical receptor; ru; 1.0; 0.0
+gml; biochemical receptor; zh; 1.0; 0.0
+gml; biochemical receptor; hu; 1.0; 0.0
+gml; chemical substance; id; 1.0; 0.0
+gml; chemical substance; fr; 1.0; 0.0
+gml; chemical substance; mr; 1.0; 0.0
+gml; chemical substance; tr; 1.0; 0.0
+gml; chemical substance; lv; 1.0; 0.0
+gml; chemical substance; el; 1.0; 0.0
+gml; chemical substance; es; 1.0; 0.0
+gml; chemical substance; pl; 1.0; 0.0
+gml; chemical substance; vi; 1.0; 0.0
+gml; chemical substance; de; 1.0; 0.0
+gml; chemical substance; ml; 1.0; 0.0
+gml; chemical substance; sh; 1.0; 0.0
+gml; chemical substance; nl; 1.0; 0.0
+gml; chemical substance; si; 1.0; 0.0
+gml; chemical substance; pt; 1.0; 0.0
+gml; chemical substance; ro; 1.0; 0.0
+gml; chemical substance; ja; 1.0; 0.0
+gml; chemical substance; simple; 1.0; 0.0
+gml; chemical substance; it; 1.0; 0.0
+gml; chemical substance; ceb; 1.0; 0.0
+gml; chemical substance; he; 1.0; 0.0
+gml; chemical substance; da; 1.0; 0.0
+gml; chemical substance; en; 1.0; 0.0
+gml; chemical substance; sr; 1.0; 0.0
+gml; chemical substance; sv; 1.0; 0.0
+gml; chemical substance; ckb; 1.0; 0.0
+gml; chemical substance; ru; 1.0; 0.0
+gml; chemical substance; hi; 1.0; 0.0
+gml; chemical substance; bs; 1.0; 0.0
+gml; chemical substance; te; 1.0; 0.0
+gml; chemical substance; zh; 1.0; 0.0
+gml; chemical substance; mk; 1.0; 0.0
+gml; chemical substance; hu; 1.0; 0.0
+gml; chemical substance; ko; 1.0; 0.0
+gml; chemical substance; war; 1.0; 0.0
+gml; economy; id; 1.0; 0.0
+gml; economy; fr; 1.0; 0.0
+gml; economy; mr; 1.0; 0.0
+gml; economy; tr; 1.0; 0.0
+gml; economy; lv; 1.0; 0.0
+gml; economy; el; 1.0; 0.0
+gml; economy; es; 1.0; 0.0
+gml; economy; pl; 1.0; 0.0
+gml; economy; vi; 1.0; 0.0
+gml; economy; de; 1.0; 0.0
+gml; economy; ml; 1.0; 0.0
+gml; economy; sh; 1.0; 0.0
+gml; economy; nl; 1.0; 0.0
+gml; economy; pt; 1.0; 0.0
+gml; economy; ro; 1.0; 0.0
+gml; economy; ja; 1.0; 0.0
+gml; economy; simple; 1.0; 0.0
+gml; economy; it; 1.0; 0.0
+gml; economy; he; 1.0; 0.0
+gml; economy; da; 1.0; 0.0
+gml; economy; en; 1.0; 0.0
+gml; economy; sr; 1.0; 0.0
+gml; economy; sv; 1.0; 0.0
+gml; economy; ru; 1.0; 0.0
+gml; economy; hi; 1.0; 0.0
+gml; economy; arz; 1.0; 0.0
+gml; economy; bs; 1.0; 0.0
+gml; economy; te; 1.0; 0.0
+gml; economy; zh; 1.0; 0.0
+gml; economy; mk; 1.0; 0.0
+gml; economy; ko; 1.0; 0.0
+gml; genome; en; 1.0; 0.0
+gml; prison; id; 1.0; 0.0
+gml; prison; fr; 1.0; 0.0
+gml; prison; mr; 1.0; 0.0
+gml; prison; tr; 1.0; 0.0
+gml; prison; lv; 1.0; 0.0
+gml; prison; el; 1.0; 0.0
+gml; prison; es; 1.0; 0.0
+gml; prison; pl; 1.0; 0.0
+gml; prison; vi; 1.0; 0.0
+gml; prison; de; 1.0; 0.0
+gml; prison; ml; 1.0; 0.0
+gml; prison; sh; 1.0; 0.0
+gml; prison; nl; 1.0; 0.0
+gml; prison; si; 1.0; 0.0
+gml; prison; pt; 1.0; 0.0
+gml; prison; ro; 1.0; 0.0
+gml; prison; ja; 1.0; 0.0
+gml; prison; simple; 1.0; 0.0
+gml; prison; it; 1.0; 0.0
+gml; prison; ceb; 1.0; 0.0
+gml; prison; he; 1.0; 0.0
+gml; prison; da; 1.0; 0.0
+gml; prison; en; 1.0; 0.0
+gml; prison; sr; 1.0; 0.0
+gml; prison; sv; 1.0; 0.0
+gml; prison; ckb; 1.0; 0.0
+gml; prison; ru; 1.0; 0.0
+gml; prison; hi; 1.0; 0.0
+gml; prison; arz; 1.0; 0.0
+gml; prison; bs; 1.0; 0.0
+gml; prison; te; 1.0; 0.0
+gml; prison; zh; 1.0; 0.0
+gml; prison; mk; 1.0; 0.0
+gml; prison; hu; 1.0; 0.0
+gml; prison; ko; 1.0; 0.0
+gml; international trade; nl; 1.0; 0.0
+gml; international trade; ja; 1.0; 0.0
+gml; international trade; en; 1.0; 0.0
+gml; international trade; zh; 1.0; 0.0
+gml; aspect of history; id; 1.0; 0.0
+gml; aspect of history; fr; 1.0; 0.0
+gml; aspect of history; mr; 1.0; 0.0
+gml; aspect of history; tr; 1.0; 0.0
+gml; aspect of history; lv; 1.0; 0.0
+gml; aspect of history; el; 1.0; 0.0
+gml; aspect of history; es; 1.0; 0.0
+gml; aspect of history; pl; 1.0; 0.0
+gml; aspect of history; vi; 1.0; 0.0
+gml; aspect of history; de; 1.0; 0.0
+gml; aspect of history; ml; 1.0; 0.0
+gml; aspect of history; sh; 1.0; 0.0
+gml; aspect of history; nl; 1.0; 0.0
+gml; aspect of history; si; 1.0; 0.0
+gml; aspect of history; pt; 1.0; 0.0
+gml; aspect of history; ro; 1.0; 0.0
+gml; aspect of history; ja; 1.0; 0.0
+gml; aspect of history; simple; 1.0; 0.0
+gml; aspect of history; it; 1.0; 0.0
+gml; aspect of history; ceb; 1.0; 0.0
+gml; aspect of history; he; 1.0; 0.0
+gml; aspect of history; da; 1.0; 0.0
+gml; aspect of history; en; 1.0; 0.0
+gml; aspect of history; sr; 1.0; 0.0
+gml; aspect of history; sv; 1.0; 0.0
+gml; aspect of history; ckb; 1.0; 0.0
+gml; aspect of history; ru; 1.0; 0.0
+gml; aspect of history; hi; 1.0; 0.0
+gml; aspect of history; arz; 1.0; 0.0
+gml; aspect of history; bs; 1.0; 0.0
+gml; aspect of history; te; 1.0; 0.0
+gml; aspect of history; zh; 1.0; 0.0
+gml; aspect of history; mk; 1.0; 0.0
+gml; aspect of history; hu; 1.0; 0.0
+gml; aspect of history; ko; 1.0; 0.0
+gml; aspect of history; war; 1.0; 0.0
+gml; Christian hymn; id; 1.0; 0.0
+gml; Christian hymn; fr; 1.0; 0.0
+gml; Christian hymn; el; 1.0; 0.0
+gml; Christian hymn; es; 1.0; 0.0
+gml; Christian hymn; pl; 1.0; 0.0
+gml; Christian hymn; vi; 1.0; 0.0
+gml; Christian hymn; de; 1.0; 0.0
+gml; Christian hymn; nl; 1.0; 0.0
+gml; Christian hymn; pt; 1.0; 0.0
+gml; Christian hymn; ro; 1.0; 0.0
+gml; Christian hymn; ja; 1.0; 0.0
+gml; Christian hymn; simple; 1.0; 0.0
+gml; Christian hymn; it; 1.0; 0.0
+gml; Christian hymn; he; 1.0; 0.0
+gml; Christian hymn; da; 1.0; 0.0
+gml; Christian hymn; en; 1.0; 0.0
+gml; Christian hymn; sr; 1.0; 0.0
+gml; Christian hymn; sv; 1.0; 0.0
+gml; Christian hymn; ru; 1.0; 0.0
+gml; Christian hymn; zh; 1.0; 0.0
+gml; Christian hymn; hu; 1.0; 0.0
+gml; Christian hymn; ko; 1.0; 0.0
+gml; stellar evolution; id; 1.0; 0.0
+gml; stellar evolution; fr; 1.0; 0.0
+gml; stellar evolution; mr; 1.0; 0.0
+gml; stellar evolution; tr; 1.0; 0.0
+gml; stellar evolution; lv; 1.0; 0.0
+gml; stellar evolution; el; 1.0; 0.0
+gml; stellar evolution; es; 1.0; 0.0
+gml; stellar evolution; pl; 1.0; 0.0
+gml; stellar evolution; vi; 1.0; 0.0
+gml; stellar evolution; de; 1.0; 0.0
+gml; stellar evolution; ml; 1.0; 0.0
+gml; stellar evolution; sh; 1.0; 0.0
+gml; stellar evolution; nl; 1.0; 0.0
+gml; stellar evolution; si; 1.0; 0.0
+gml; stellar evolution; pt; 1.0; 0.0
+gml; stellar evolution; ro; 1.0; 0.0
+gml; stellar evolution; ja; 1.0; 0.0
+gml; stellar evolution; simple; 1.0; 0.0
+gml; stellar evolution; it; 1.0; 0.0
+gml; stellar evolution; he; 1.0; 0.0
+gml; stellar evolution; da; 1.0; 0.0
+gml; stellar evolution; en; 1.0; 0.0
+gml; stellar evolution; sr; 1.0; 0.0
+gml; stellar evolution; sv; 1.0; 0.0
+gml; stellar evolution; ru; 1.0; 0.0
+gml; stellar evolution; hi; 1.0; 0.0
+gml; stellar evolution; bs; 1.0; 0.0
+gml; stellar evolution; zh; 1.0; 0.0
+gml; stellar evolution; mk; 1.0; 0.0
+gml; stellar evolution; hu; 1.0; 0.0
+gml; stellar evolution; ko; 1.0; 0.0
+gml; protist; es; 1.0; 0.0
+gml; military term; id; 1.0; 0.0
+gml; military term; fr; 1.0; 0.0
+gml; military term; tr; 1.0; 0.0
+gml; military term; el; 1.0; 0.0
+gml; military term; es; 1.0; 0.0
+gml; military term; pl; 1.0; 0.0
+gml; military term; vi; 1.0; 0.0
+gml; military term; de; 1.0; 0.0
+gml; military term; sh; 1.0; 0.0
+gml; military term; nl; 1.0; 0.0
+gml; military term; si; 1.0; 0.0
+gml; military term; pt; 1.0; 0.0
+gml; military term; ro; 1.0; 0.0
+gml; military term; ja; 1.0; 0.0
+gml; military term; simple; 1.0; 0.0
+gml; military term; it; 1.0; 0.0
+gml; military term; he; 1.0; 0.0
+gml; military term; en; 1.0; 0.0
+gml; military term; sr; 1.0; 0.0
+gml; military term; sv; 1.0; 0.0
+gml; military term; ru; 1.0; 0.0
+gml; military term; hi; 1.0; 0.0
+gml; military term; zh; 1.0; 0.0
+gml; military term; mk; 1.0; 0.0
+gml; military term; hu; 1.0; 0.0
+gml; military term; ko; 1.0; 0.0
+gml; historical language; id; 1.0; 0.0
+gml; historical language; fr; 1.0; 0.0
+gml; historical language; mr; 1.0; 0.0
+gml; historical language; tr; 1.0; 0.0
+gml; historical language; lv; 1.0; 0.0
+gml; historical language; el; 1.0; 0.0
+gml; historical language; es; 1.0; 0.0
+gml; historical language; pl; 1.0; 0.0
+gml; historical language; vi; 1.0; 0.0
+gml; historical language; de; 1.0; 0.0
+gml; historical language; ml; 1.0; 0.0
+gml; historical language; sh; 1.0; 0.0
+gml; historical language; nl; 1.0; 0.0
+gml; historical language; pt; 1.0; 0.0
+gml; historical language; ro; 1.0; 0.0
+gml; historical language; ja; 1.0; 0.0
+gml; historical language; simple; 1.0; 0.0
+gml; historical language; it; 1.0; 0.0
+gml; historical language; he; 1.0; 0.0
+gml; historical language; da; 1.0; 0.0
+gml; historical language; en; 1.0; 0.0
+gml; historical language; sr; 1.0; 0.0
+gml; historical language; sv; 1.0; 0.0
+gml; historical language; ckb; 1.0; 0.0
+gml; historical language; ru; 1.0; 0.0
+gml; historical language; hi; 1.0; 0.0
+gml; historical language; arz; 1.0; 0.0
+gml; historical language; bs; 1.0; 0.0
+gml; historical language; te; 1.0; 0.0
+gml; historical language; zh; 1.0; 0.0
+gml; historical language; mk; 1.0; 0.0
+gml; historical language; hu; 1.0; 0.0
+gml; historical language; ko; 1.0; 0.0
+gml; music; id; 1.0; 0.0
+gml; music; fr; 1.0; 0.0
+gml; music; mr; 1.0; 0.0
+gml; music; tr; 1.0; 0.0
+gml; music; lv; 1.0; 0.0
+gml; music; es; 1.0; 0.0
+gml; music; pl; 1.0; 0.0
+gml; music; de; 1.0; 0.0
+gml; music; nl; 1.0; 0.0
+gml; music; pt; 1.0; 0.0
+gml; music; ro; 1.0; 0.0
+gml; music; ja; 1.0; 0.0
+gml; music; it; 1.0; 0.0
+gml; music; en; 1.0; 0.0
+gml; music; sr; 1.0; 0.0
+gml; music; sv; 1.0; 0.0
+gml; music; ru; 1.0; 0.0
+gml; music; zh; 1.0; 0.0
+gml; music; hu; 1.0; 0.0
+gml; drug; id; 1.0; 0.0
+gml; drug; fr; 1.0; 0.0
+gml; drug; mr; 1.0; 0.0
+gml; drug; tr; 1.0; 0.0
+gml; drug; lv; 1.0; 0.0
+gml; drug; el; 1.0; 0.0
+gml; drug; es; 1.0; 0.0
+gml; drug; pl; 1.0; 0.0
+gml; drug; vi; 1.0; 0.0
+gml; drug; de; 1.0; 0.0
+gml; drug; ml; 1.0; 0.0
+gml; drug; sh; 1.0; 0.0
+gml; drug; nl; 1.0; 0.0
+gml; drug; si; 1.0; 0.0
+gml; drug; pt; 1.0; 0.0
+gml; drug; ro; 1.0; 0.0
+gml; drug; ja; 1.0; 0.0
+gml; drug; simple; 1.0; 0.0
+gml; drug; it; 1.0; 0.0
+gml; drug; ceb; 1.0; 0.0
+gml; drug; he; 1.0; 0.0
+gml; drug; da; 1.0; 0.0
+gml; drug; en; 1.0; 0.0
+gml; drug; sr; 1.0; 0.0
+gml; drug; sv; 1.0; 0.0
+gml; drug; ckb; 1.0; 0.0
+gml; drug; ru; 1.0; 0.0
+gml; drug; hi; 1.0; 0.0
+gml; drug; arz; 1.0; 0.0
+gml; drug; bs; 1.0; 0.0
+gml; drug; te; 1.0; 0.0
+gml; drug; zh; 1.0; 0.0
+gml; drug; mk; 1.0; 0.0
+gml; drug; hu; 1.0; 0.0
+gml; drug; ko; 1.0; 0.0
+gml; drug; war; 1.0; 0.0
+gml; probability distribution; id; 1.0; 0.0
+gml; probability distribution; fr; 1.0; 0.0
+gml; probability distribution; tr; 1.0; 0.0
+gml; probability distribution; el; 1.0; 0.0
+gml; probability distribution; es; 1.0; 0.0
+gml; probability distribution; pl; 1.0; 0.0
+gml; probability distribution; vi; 1.0; 0.0
+gml; probability distribution; de; 1.0; 0.0
+gml; probability distribution; sh; 1.0; 0.0
+gml; probability distribution; nl; 1.0; 0.0
+gml; probability distribution; pt; 1.0; 0.0
+gml; probability distribution; ja; 1.0; 0.0
+gml; probability distribution; simple; 1.0; 0.0
+gml; probability distribution; it; 1.0; 0.0
+gml; probability distribution; he; 1.0; 0.0
+gml; probability distribution; da; 1.0; 0.0
+gml; probability distribution; en; 1.0; 0.0
+gml; probability distribution; sr; 1.0; 0.0
+gml; probability distribution; sv; 1.0; 0.0
+gml; probability distribution; ru; 1.0; 0.0
+gml; probability distribution; zh; 1.0; 0.0
+gml; probability distribution; mk; 1.0; 0.0
+gml; probability distribution; hu; 1.0; 0.0
+gml; probability distribution; ko; 1.0; 0.0
+gml; ancient Rome; it; 1.0; 0.0
+gml; ancient Rome; ru; 1.0; 0.0
+gml; computing; fr; 1.0; 0.0
+gml; computing; de; 1.0; 0.0
+gml; computing; nl; 1.0; 0.0
+gml; computing; it; 1.0; 0.0
+gml; computing; en; 1.0; 0.0
+gml; computing; ru; 1.0; 0.0
+gml; computing; ko; 1.0; 0.0
+gml; agriculture; fr; 1.0; 0.0
+gml; agriculture; de; 1.0; 0.0
+gml; agriculture; ml; 1.0; 0.0
+gml; agriculture; pt; 1.0; 0.0
+gml; organic compound; id; 1.0; 0.0
+gml; organic compound; fr; 1.0; 0.0
+gml; organic compound; mr; 1.0; 0.0
+gml; organic compound; tr; 1.0; 0.0
+gml; organic compound; lv; 1.0; 0.0
+gml; organic compound; el; 1.0; 0.0
+gml; organic compound; es; 1.0; 0.0
+gml; organic compound; pl; 1.0; 0.0
+gml; organic compound; vi; 1.0; 0.0
+gml; organic compound; de; 1.0; 0.0
+gml; organic compound; ml; 1.0; 0.0
+gml; organic compound; sh; 1.0; 0.0
+gml; organic compound; nl; 1.0; 0.0
+gml; organic compound; pt; 1.0; 0.0
+gml; organic compound; ro; 1.0; 0.0
+gml; organic compound; ja; 1.0; 0.0
+gml; organic compound; simple; 1.0; 0.0
+gml; organic compound; it; 1.0; 0.0
+gml; organic compound; he; 1.0; 0.0
+gml; organic compound; da; 1.0; 0.0
+gml; organic compound; en; 1.0; 0.0
+gml; organic compound; sr; 1.0; 0.0
+gml; organic compound; sv; 1.0; 0.0
+gml; organic compound; ru; 1.0; 0.0
+gml; organic compound; hi; 1.0; 0.0
+gml; organic compound; bs; 1.0; 0.0
+gml; organic compound; te; 1.0; 0.0
+gml; organic compound; zh; 1.0; 0.0
+gml; organic compound; mk; 1.0; 0.0
+gml; organic compound; hu; 1.0; 0.0
+gml; organic compound; ko; 1.0; 0.0
+gml; organic compound; war; 1.0; 0.0
+gml; rural area; id; 1.0; 0.0
+gml; rural area; fr; 1.0; 0.0
+gml; rural area; tr; 1.0; 0.0
+gml; rural area; el; 1.0; 0.0
+gml; rural area; es; 1.0; 0.0
+gml; rural area; pl; 1.0; 0.0
+gml; rural area; de; 1.0; 0.0
+gml; rural area; sh; 1.0; 0.0
+gml; rural area; nl; 1.0; 0.0
+gml; rural area; pt; 1.0; 0.0
+gml; rural area; ro; 1.0; 0.0
+gml; rural area; ja; 1.0; 0.0
+gml; rural area; it; 1.0; 0.0
+gml; rural area; ceb; 1.0; 0.0
+gml; rural area; da; 1.0; 0.0
+gml; rural area; en; 1.0; 0.0
+gml; rural area; sr; 1.0; 0.0
+gml; rural area; sv; 1.0; 0.0
+gml; rural area; ru; 1.0; 0.0
+gml; rural area; zh; 1.0; 0.0
+gml; rural area; mk; 1.0; 0.0
+gml; rural area; hu; 1.0; 0.0
+gml; rural area; ko; 1.0; 0.0
+gml; effect; id; 1.0; 0.0
+gml; effect; fr; 1.0; 0.0
+gml; effect; tr; 1.0; 0.0
+gml; effect; es; 1.0; 0.0
+gml; effect; pl; 1.0; 0.0
+gml; effect; vi; 1.0; 0.0
+gml; effect; de; 1.0; 0.0
+gml; effect; nl; 1.0; 0.0
+gml; effect; pt; 1.0; 0.0
+gml; effect; ro; 1.0; 0.0
+gml; effect; ja; 1.0; 0.0
+gml; effect; simple; 1.0; 0.0
+gml; effect; it; 1.0; 0.0
+gml; effect; he; 1.0; 0.0
+gml; effect; en; 1.0; 0.0
+gml; effect; ru; 1.0; 0.0
+gml; effect; hi; 1.0; 0.0
+gml; effect; zh; 1.0; 0.0
+gml; effect; ko; 1.0; 0.0
+gml; fruit; id; 1.0; 0.0
+gml; fruit; fr; 1.0; 0.0
+gml; fruit; mr; 1.0; 0.0
+gml; fruit; tr; 1.0; 0.0
+gml; fruit; lv; 1.0; 0.0
+gml; fruit; es; 1.0; 0.0
+gml; fruit; pl; 1.0; 0.0
+gml; fruit; vi; 1.0; 0.0
+gml; fruit; de; 1.0; 0.0
+gml; fruit; ml; 1.0; 0.0
+gml; fruit; sh; 1.0; 0.0
+gml; fruit; nl; 1.0; 0.0
+gml; fruit; pt; 1.0; 0.0
+gml; fruit; ro; 1.0; 0.0
+gml; fruit; ja; 1.0; 0.0
+gml; fruit; simple; 1.0; 0.0
+gml; fruit; it; 1.0; 0.0
+gml; fruit; he; 1.0; 0.0
+gml; fruit; da; 1.0; 0.0
+gml; fruit; en; 1.0; 0.0
+gml; fruit; sr; 1.0; 0.0
+gml; fruit; sv; 1.0; 0.0
+gml; fruit; ckb; 1.0; 0.0
+gml; fruit; ru; 1.0; 0.0
+gml; fruit; hi; 1.0; 0.0
+gml; fruit; arz; 1.0; 0.0
+gml; fruit; bs; 1.0; 0.0
+gml; fruit; zh; 1.0; 0.0
+gml; fruit; mk; 1.0; 0.0
+gml; fruit; hu; 1.0; 0.0
+gml; fruit; ko; 1.0; 0.0
+gml; black hole; pt; 1.0; 0.0
+gml; black hole; it; 1.0; 0.0
+gml; black hole; en; 1.0; 0.0
+gml; black hole; ru; 1.0; 0.0
+gml; group or class of chemical substances; id; 1.0; 0.0
+gml; group or class of chemical substances; fr; 1.0; 0.0
+gml; group or class of chemical substances; mr; 1.0; 0.0
+gml; group or class of chemical substances; tr; 1.0; 0.0
+gml; group or class of chemical substances; lv; 1.0; 0.0
+gml; group or class of chemical substances; el; 1.0; 0.0
+gml; group or class of chemical substances; es; 1.0; 0.0
+gml; group or class of chemical substances; pl; 1.0; 0.0
+gml; group or class of chemical substances; vi; 1.0; 0.0
+gml; group or class of chemical substances; de; 1.0; 0.0
+gml; group or class of chemical substances; ml; 1.0; 0.0
+gml; group or class of chemical substances; sh; 1.0; 0.0
+gml; group or class of chemical substances; nl; 1.0; 0.0
+gml; group or class of chemical substances; si; 1.0; 0.0
+gml; group or class of chemical substances; pt; 1.0; 0.0
+gml; group or class of chemical substances; ro; 1.0; 0.0
+gml; group or class of chemical substances; ja; 1.0; 0.0
+gml; group or class of chemical substances; simple; 1.0; 0.0
+gml; group or class of chemical substances; it; 1.0; 0.0
+gml; group or class of chemical substances; ceb; 1.0; 0.0
+gml; group or class of chemical substances; he; 1.0; 0.0
+gml; group or class of chemical substances; da; 1.0; 0.0
+gml; group or class of chemical substances; en; 1.0; 0.0
+gml; group or class of chemical substances; sr; 1.0; 0.0
+gml; group or class of chemical substances; sv; 1.0; 0.0
+gml; group or class of chemical substances; ckb; 1.0; 0.0
+gml; group or class of chemical substances; ru; 1.0; 0.0
+gml; group or class of chemical substances; hi; 1.0; 0.0
+gml; group or class of chemical substances; arz; 1.0; 0.0
+gml; group or class of chemical substances; bs; 1.0; 0.0
+gml; group or class of chemical substances; te; 1.0; 0.0
+gml; group or class of chemical substances; zh; 1.0; 0.0
+gml; group or class of chemical substances; mk; 1.0; 0.0
+gml; group or class of chemical substances; hu; 1.0; 0.0
+gml; group or class of chemical substances; ko; 1.0; 0.0
+gml; group or class of chemical substances; war; 1.0; 0.0
+gml; lexicon; id; 1.0; 0.0
+gml; lexicon; fr; 1.0; 0.0
+gml; lexicon; pl; 1.0; 0.0
+gml; lexicon; de; 1.0; 0.0
+gml; lexicon; nl; 1.0; 0.0
+gml; lexicon; ja; 1.0; 0.0
+gml; lexicon; simple; 1.0; 0.0
+gml; lexicon; it; 1.0; 0.0
+gml; lexicon; he; 1.0; 0.0
+gml; lexicon; da; 1.0; 0.0
+gml; lexicon; en; 1.0; 0.0
+gml; lexicon; sv; 1.0; 0.0
+gml; lexicon; ru; 1.0; 0.0
+gml; lexicon; zh; 1.0; 0.0
+gml; lexicon; ko; 1.0; 0.0
+gml; morpheme; fr; 1.0; 0.0
+gml; morpheme; es; 1.0; 0.0
+gml; morpheme; pl; 1.0; 0.0
+gml; morpheme; de; 1.0; 0.0
+gml; morpheme; nl; 1.0; 0.0
+gml; morpheme; he; 1.0; 0.0
+gml; morpheme; en; 1.0; 0.0
+gml; morpheme; ru; 1.0; 0.0
+gml; morpheme; hi; 1.0; 0.0
+gml; ecosystem; id; 1.0; 0.0
+gml; ecosystem; fr; 1.0; 0.0
+gml; ecosystem; tr; 1.0; 0.0
+gml; ecosystem; lv; 1.0; 0.0
+gml; ecosystem; el; 1.0; 0.0
+gml; ecosystem; es; 1.0; 0.0
+gml; ecosystem; pl; 1.0; 0.0
+gml; ecosystem; vi; 1.0; 0.0
+gml; ecosystem; de; 1.0; 0.0
+gml; ecosystem; ml; 1.0; 0.0
+gml; ecosystem; sh; 1.0; 0.0
+gml; ecosystem; nl; 1.0; 0.0
+gml; ecosystem; si; 1.0; 0.0
+gml; ecosystem; pt; 1.0; 0.0
+gml; ecosystem; ro; 1.0; 0.0
+gml; ecosystem; ja; 1.0; 0.0
+gml; ecosystem; simple; 1.0; 0.0
+gml; ecosystem; it; 1.0; 0.0
+gml; ecosystem; ceb; 1.0; 0.0
+gml; ecosystem; he; 1.0; 0.0
+gml; ecosystem; da; 1.0; 0.0
+gml; ecosystem; en; 1.0; 0.0
+gml; ecosystem; sr; 1.0; 0.0
+gml; ecosystem; sv; 1.0; 0.0
+gml; ecosystem; ckb; 1.0; 0.0
+gml; ecosystem; ru; 1.0; 0.0
+gml; ecosystem; hi; 1.0; 0.0
+gml; ecosystem; bs; 1.0; 0.0
+gml; ecosystem; te; 1.0; 0.0
+gml; ecosystem; zh; 1.0; 0.0
+gml; ecosystem; mk; 1.0; 0.0
+gml; ecosystem; hu; 1.0; 0.0
+gml; ecosystem; ko; 1.0; 0.0
+gml; ecosystem; war; 1.0; 0.0
+gml; francophonie; fr; 1.0; 0.0
+gml; francophonie; en; 1.0; 0.0
+gml; linguistic prescription; fr; 1.0; 0.0
+gml; linguistic prescription; es; 1.0; 0.0
+gml; linguistic prescription; pt; 1.0; 0.0
+gml; linguistic prescription; ja; 1.0; 0.0
+gml; linguistic prescription; it; 1.0; 0.0
+gml; linguistic prescription; en; 1.0; 0.0
+gml; language attitude; id; 1.0; 0.0
+gml; language attitude; fr; 1.0; 0.0
+gml; language attitude; lv; 1.0; 0.0
+gml; language attitude; es; 1.0; 0.0
+gml; language attitude; pl; 1.0; 0.0
+gml; language attitude; de; 1.0; 0.0
+gml; language attitude; sh; 1.0; 0.0
+gml; language attitude; nl; 1.0; 0.0
+gml; language attitude; pt; 1.0; 0.0
+gml; language attitude; it; 1.0; 0.0
+gml; language attitude; da; 1.0; 0.0
+gml; language attitude; en; 1.0; 0.0
+gml; language attitude; sr; 1.0; 0.0
+gml; language attitude; sv; 1.0; 0.0
+gml; language attitude; ru; 1.0; 0.0
+gml; language attitude; hi; 1.0; 0.0
+gml; language attitude; zh; 1.0; 0.0
+gml; language attitude; ko; 1.0; 0.0
+gml; Ancient Egypt; fr; 1.0; 0.0
+gml; Ancient Egypt; es; 1.0; 0.0
+gml; Ancient Egypt; de; 1.0; 0.0
+gml; Ancient Egypt; pt; 1.0; 0.0
+gml; Ancient Egypt; it; 1.0; 0.0
+gml; Ancient Egypt; en; 1.0; 0.0
+gml; phenomenon; id; 1.0; 0.0
+gml; phenomenon; fr; 1.0; 0.0
+gml; phenomenon; tr; 1.0; 0.0
+gml; phenomenon; lv; 1.0; 0.0
+gml; phenomenon; es; 1.0; 0.0
+gml; phenomenon; pl; 1.0; 0.0
+gml; phenomenon; vi; 1.0; 0.0
+gml; phenomenon; de; 1.0; 0.0
+gml; phenomenon; nl; 1.0; 0.0
+gml; phenomenon; pt; 1.0; 0.0
+gml; phenomenon; ro; 1.0; 0.0
+gml; phenomenon; ja; 1.0; 0.0
+gml; phenomenon; simple; 1.0; 0.0
+gml; phenomenon; it; 1.0; 0.0
+gml; phenomenon; he; 1.0; 0.0
+gml; phenomenon; da; 1.0; 0.0
+gml; phenomenon; en; 1.0; 0.0
+gml; phenomenon; sr; 1.0; 0.0
+gml; phenomenon; sv; 1.0; 0.0
+gml; phenomenon; ru; 1.0; 0.0
+gml; phenomenon; te; 1.0; 0.0
+gml; phenomenon; zh; 1.0; 0.0
+gml; phenomenon; hu; 1.0; 0.0
+gml; phenomenon; ko; 1.0; 0.0
+gml; stem cell; fr; 1.0; 0.0
+gml; stem cell; tr; 1.0; 0.0
+gml; stem cell; pl; 1.0; 0.0
+gml; stem cell; de; 1.0; 0.0
+gml; stem cell; nl; 1.0; 0.0
+gml; stem cell; pt; 1.0; 0.0
+gml; stem cell; ja; 1.0; 0.0
+gml; stem cell; en; 1.0; 0.0
+gml; stem cell; ru; 1.0; 0.0
+gml; paper; pl; 1.0; 0.0
+gml; paper; vi; 1.0; 0.0
+gml; paper; de; 1.0; 0.0
+gml; paper; ja; 1.0; 0.0
+gml; paper; en; 1.0; 0.0
+gml; paper; sv; 1.0; 0.0
+gml; paper; ru; 1.0; 0.0
+gml; clinical sign; id; 1.0; 0.0
+gml; clinical sign; fr; 1.0; 0.0
+gml; clinical sign; mr; 1.0; 0.0
+gml; clinical sign; tr; 1.0; 0.0
+gml; clinical sign; lv; 1.0; 0.0
+gml; clinical sign; el; 1.0; 0.0
+gml; clinical sign; es; 1.0; 0.0
+gml; clinical sign; pl; 1.0; 0.0
+gml; clinical sign; vi; 1.0; 0.0
+gml; clinical sign; de; 1.0; 0.0
+gml; clinical sign; ml; 1.0; 0.0
+gml; clinical sign; sh; 1.0; 0.0
+gml; clinical sign; nl; 1.0; 0.0
+gml; clinical sign; si; 1.0; 0.0
+gml; clinical sign; pt; 1.0; 0.0
+gml; clinical sign; ro; 1.0; 0.0
+gml; clinical sign; ja; 1.0; 0.0
+gml; clinical sign; simple; 1.0; 0.0
+gml; clinical sign; it; 1.0; 0.0
+gml; clinical sign; he; 1.0; 0.0
+gml; clinical sign; da; 1.0; 0.0
+gml; clinical sign; en; 1.0; 0.0
+gml; clinical sign; sr; 1.0; 0.0
+gml; clinical sign; sv; 1.0; 0.0
+gml; clinical sign; ckb; 1.0; 0.0
+gml; clinical sign; ru; 1.0; 0.0
+gml; clinical sign; hi; 1.0; 0.0
+gml; clinical sign; arz; 1.0; 0.0
+gml; clinical sign; bs; 1.0; 0.0
+gml; clinical sign; te; 1.0; 0.0
+gml; clinical sign; zh; 1.0; 0.0
+gml; clinical sign; mk; 1.0; 0.0
+gml; clinical sign; hu; 1.0; 0.0
+gml; clinical sign; ko; 1.0; 0.0
+gml; clinical sign; war; 1.0; 0.0
+gml; mental state; id; 1.0; 0.0
+gml; mental state; fr; 1.0; 0.0
+gml; mental state; tr; 1.0; 0.0
+gml; mental state; lv; 1.0; 0.0
+gml; mental state; el; 1.0; 0.0
+gml; mental state; es; 1.0; 0.0
+gml; mental state; pl; 1.0; 0.0
+gml; mental state; de; 1.0; 0.0
+gml; mental state; nl; 1.0; 0.0
+gml; mental state; pt; 1.0; 0.0
+gml; mental state; ro; 1.0; 0.0
+gml; mental state; ja; 1.0; 0.0
+gml; mental state; simple; 1.0; 0.0
+gml; mental state; it; 1.0; 0.0
+gml; mental state; da; 1.0; 0.0
+gml; mental state; en; 1.0; 0.0
+gml; mental state; sr; 1.0; 0.0
+gml; mental state; sv; 1.0; 0.0
+gml; mental state; ru; 1.0; 0.0
+gml; mental state; mk; 1.0; 0.0
+gml; mental state; hu; 1.0; 0.0
+gml; condition; id; 1.0; 0.0
+gml; condition; fr; 1.0; 0.0
+gml; condition; mr; 1.0; 0.0
+gml; condition; tr; 1.0; 0.0
+gml; condition; lv; 1.0; 0.0
+gml; condition; el; 1.0; 0.0
+gml; condition; es; 1.0; 0.0
+gml; condition; pl; 1.0; 0.0
+gml; condition; vi; 1.0; 0.0
+gml; condition; de; 1.0; 0.0
+gml; condition; ml; 1.0; 0.0
+gml; condition; sh; 1.0; 0.0
+gml; condition; nl; 1.0; 0.0
+gml; condition; si; 1.0; 0.0
+gml; condition; pt; 1.0; 0.0
+gml; condition; ro; 1.0; 0.0
+gml; condition; ja; 1.0; 0.0
+gml; condition; simple; 1.0; 0.0
+gml; condition; it; 1.0; 0.0
+gml; condition; ceb; 1.0; 0.0
+gml; condition; he; 1.0; 0.0
+gml; condition; da; 1.0; 0.0
+gml; condition; en; 1.0; 0.0
+gml; condition; sr; 1.0; 0.0
+gml; condition; sv; 1.0; 0.0
+gml; condition; ckb; 1.0; 0.0
+gml; condition; ru; 1.0; 0.0
+gml; condition; hi; 1.0; 0.0
+gml; condition; bs; 1.0; 0.0
+gml; condition; te; 1.0; 0.0
+gml; condition; zh; 1.0; 0.0
+gml; condition; mk; 1.0; 0.0
+gml; condition; hu; 1.0; 0.0
+gml; condition; ko; 1.0; 0.0
+gml; congenital abnormality; pt; 1.0; 0.0
+gml; congenital abnormality; en; 1.0; 0.0
+gml; languoid; fr; 1.0; 0.0
+gml; languoid; el; 1.0; 0.0
+gml; languoid; de; 1.0; 0.0
+gml; languoid; en; 1.0; 0.0
+gml; languoid; ru; 1.0; 0.0
+gml; languoid; zh; 1.0; 0.0
+gml; cell; id; 1.0; 0.0
+gml; cell; fr; 1.0; 0.0
+gml; cell; tr; 1.0; 0.0
+gml; cell; lv; 1.0; 0.0
+gml; cell; el; 1.0; 0.0
+gml; cell; es; 1.0; 0.0
+gml; cell; pl; 1.0; 0.0
+gml; cell; vi; 1.0; 0.0
+gml; cell; de; 1.0; 0.0
+gml; cell; ml; 1.0; 0.0
+gml; cell; sh; 1.0; 0.0
+gml; cell; nl; 1.0; 0.0
+gml; cell; pt; 1.0; 0.0
+gml; cell; ro; 1.0; 0.0
+gml; cell; ja; 1.0; 0.0
+gml; cell; simple; 1.0; 0.0
+gml; cell; it; 1.0; 0.0
+gml; cell; he; 1.0; 0.0
+gml; cell; da; 1.0; 0.0
+gml; cell; en; 1.0; 0.0
+gml; cell; sr; 1.0; 0.0
+gml; cell; sv; 1.0; 0.0
+gml; cell; ckb; 1.0; 0.0
+gml; cell; ru; 1.0; 0.0
+gml; cell; hi; 1.0; 0.0
+gml; cell; bs; 1.0; 0.0
+gml; cell; zh; 1.0; 0.0
+gml; cell; mk; 1.0; 0.0
+gml; cell; ko; 1.0; 0.0
+gml; art; id; 1.0; 0.0
+gml; art; fr; 1.0; 0.0
+gml; art; mr; 1.0; 0.0
+gml; art; tr; 1.0; 0.0
+gml; art; lv; 1.0; 0.0
+gml; art; el; 1.0; 0.0
+gml; art; es; 1.0; 0.0
+gml; art; pl; 1.0; 0.0
+gml; art; vi; 1.0; 0.0
+gml; art; de; 1.0; 0.0
+gml; art; ml; 1.0; 0.0
+gml; art; sh; 1.0; 0.0
+gml; art; nl; 1.0; 0.0
+gml; art; si; 1.0; 0.0
+gml; art; pt; 1.0; 0.0
+gml; art; ro; 1.0; 0.0
+gml; art; ja; 1.0; 0.0
+gml; art; simple; 1.0; 0.0
+gml; art; it; 1.0; 0.0
+gml; art; he; 1.0; 0.0
+gml; art; da; 1.0; 0.0
+gml; art; en; 1.0; 0.0
+gml; art; sr; 1.0; 0.0
+gml; art; sv; 1.0; 0.0
+gml; art; ckb; 1.0; 0.0
+gml; art; ru; 1.0; 0.0
+gml; art; hi; 1.0; 0.0
+gml; art; arz; 1.0; 0.0
+gml; art; bs; 1.0; 0.0
+gml; art; te; 1.0; 0.0
+gml; art; zh; 1.0; 0.0
+gml; art; mk; 1.0; 0.0
+gml; art; hu; 1.0; 0.0
+gml; art; ko; 1.0; 0.0
+gml; art; war; 1.0; 0.0
+gml; education; id; 1.0; 0.0
+gml; education; fr; 1.0; 0.0
+gml; education; mr; 1.0; 0.0
+gml; education; tr; 1.0; 0.0
+gml; education; el; 1.0; 0.0
+gml; education; es; 1.0; 0.0
+gml; education; pl; 1.0; 0.0
+gml; education; vi; 1.0; 0.0
+gml; education; de; 1.0; 0.0
+gml; education; ml; 1.0; 0.0
+gml; education; sh; 1.0; 0.0
+gml; education; nl; 1.0; 0.0
+gml; education; si; 1.0; 0.0
+gml; education; pt; 1.0; 0.0
+gml; education; ro; 1.0; 0.0
+gml; education; ja; 1.0; 0.0
+gml; education; simple; 1.0; 0.0
+gml; education; it; 1.0; 0.0
+gml; education; he; 1.0; 0.0
+gml; education; da; 1.0; 0.0
+gml; education; en; 1.0; 0.0
+gml; education; sr; 1.0; 0.0
+gml; education; sv; 1.0; 0.0
+gml; education; ckb; 1.0; 0.0
+gml; education; ru; 1.0; 0.0
+gml; education; hi; 1.0; 0.0
+gml; education; bs; 1.0; 0.0
+gml; education; te; 1.0; 0.0
+gml; education; zh; 1.0; 0.0
+gml; education; mk; 1.0; 0.0
+gml; education; hu; 1.0; 0.0
+gml; education; ko; 1.0; 0.0
+gml; education; war; 1.0; 0.0
+gml; biological model; de; 1.0; 0.0
+gml; biological model; pt; 1.0; 0.0
+gml; biological model; en; 1.0; 0.0
+gml; biological model; ru; 1.0; 0.0
+gml; politics; id; 1.0; 0.0
+gml; politics; fr; 1.0; 0.0
+gml; politics; tr; 1.0; 0.0
+gml; politics; es; 1.0; 0.0
+gml; politics; pl; 1.0; 0.0
+gml; politics; vi; 1.0; 0.0
+gml; politics; de; 1.0; 0.0
+gml; politics; nl; 1.0; 0.0
+gml; politics; pt; 1.0; 0.0
+gml; politics; ro; 1.0; 0.0
+gml; politics; ja; 1.0; 0.0
+gml; politics; it; 1.0; 0.0
+gml; politics; he; 1.0; 0.0
+gml; politics; da; 1.0; 0.0
+gml; politics; en; 1.0; 0.0
+gml; politics; sv; 1.0; 0.0
+gml; politics; ru; 1.0; 0.0
+gml; politics; zh; 1.0; 0.0
+gml; politics; hu; 1.0; 0.0
+gml; politics; ko; 1.0; 0.0
+gml; war; id; 1.0; 0.0
+gml; war; fr; 1.0; 0.0
+gml; war; mr; 1.0; 0.0
+gml; war; tr; 1.0; 0.0
+gml; war; lv; 1.0; 0.0
+gml; war; el; 1.0; 0.0
+gml; war; es; 1.0; 0.0
+gml; war; pl; 1.0; 0.0
+gml; war; vi; 1.0; 0.0
+gml; war; de; 1.0; 0.0
+gml; war; ml; 1.0; 0.0
+gml; war; sh; 1.0; 0.0
+gml; war; nl; 1.0; 0.0
+gml; war; si; 1.0; 0.0
+gml; war; pt; 1.0; 0.0
+gml; war; ro; 1.0; 0.0
+gml; war; ja; 1.0; 0.0
+gml; war; simple; 1.0; 0.0
+gml; war; it; 1.0; 0.0
+gml; war; ceb; 1.0; 0.0
+gml; war; he; 1.0; 0.0
+gml; war; da; 1.0; 0.0
+gml; war; en; 1.0; 0.0
+gml; war; sr; 1.0; 0.0
+gml; war; sv; 1.0; 0.0
+gml; war; ckb; 1.0; 0.0
+gml; war; ru; 1.0; 0.0
+gml; war; hi; 1.0; 0.0
+gml; war; arz; 1.0; 0.0
+gml; war; bs; 1.0; 0.0
+gml; war; te; 1.0; 0.0
+gml; war; zh; 1.0; 0.0
+gml; war; mk; 1.0; 0.0
+gml; war; hu; 1.0; 0.0
+gml; war; ko; 1.0; 0.0
+gml; war; war; 1.0; 0.0
+gml; affix; es; 1.0; 0.0
+gml; music style; id; 1.0; 0.0
+gml; music style; fr; 1.0; 0.0
+gml; music style; mr; 1.0; 0.0
+gml; music style; tr; 1.0; 0.0
+gml; music style; lv; 1.0; 0.0
+gml; music style; el; 1.0; 0.0
+gml; music style; es; 1.0; 0.0
+gml; music style; pl; 1.0; 0.0
+gml; music style; vi; 1.0; 0.0
+gml; music style; de; 1.0; 0.0
+gml; music style; ml; 1.0; 0.0
+gml; music style; sh; 1.0; 0.0
+gml; music style; nl; 1.0; 0.0
+gml; music style; si; 1.0; 0.0
+gml; music style; pt; 1.0; 0.0
+gml; music style; ro; 1.0; 0.0
+gml; music style; ja; 1.0; 0.0
+gml; music style; simple; 1.0; 0.0
+gml; music style; it; 1.0; 0.0
+gml; music style; he; 1.0; 0.0
+gml; music style; da; 1.0; 0.0
+gml; music style; en; 1.0; 0.0
+gml; music style; sr; 1.0; 0.0
+gml; music style; sv; 1.0; 0.0
+gml; music style; ckb; 1.0; 0.0
+gml; music style; ru; 1.0; 0.0
+gml; music style; hi; 1.0; 0.0
+gml; music style; bs; 1.0; 0.0
+gml; music style; te; 1.0; 0.0
+gml; music style; zh; 1.0; 0.0
+gml; music style; mk; 1.0; 0.0
+gml; music style; hu; 1.0; 0.0
+gml; music style; ko; 1.0; 0.0
+gml; service; id; 1.0; 0.0
+gml; service; fr; 1.0; 0.0
+gml; service; tr; 1.0; 0.0
+gml; service; el; 1.0; 0.0
+gml; service; es; 1.0; 0.0
+gml; service; pl; 1.0; 0.0
+gml; service; vi; 1.0; 0.0
+gml; service; de; 1.0; 0.0
+gml; service; ml; 1.0; 0.0
+gml; service; sh; 1.0; 0.0
+gml; service; nl; 1.0; 0.0
+gml; service; si; 1.0; 0.0
+gml; service; pt; 1.0; 0.0
+gml; service; ro; 1.0; 0.0
+gml; service; ja; 1.0; 0.0
+gml; service; simple; 1.0; 0.0
+gml; service; it; 1.0; 0.0
+gml; service; he; 1.0; 0.0
+gml; service; da; 1.0; 0.0
+gml; service; en; 1.0; 0.0
+gml; service; sr; 1.0; 0.0
+gml; service; sv; 1.0; 0.0
+gml; service; ru; 1.0; 0.0
+gml; service; hi; 1.0; 0.0
+gml; service; zh; 1.0; 0.0
+gml; service; hu; 1.0; 0.0
+gml; service; ko; 1.0; 0.0
+gml; feminism; fr; 1.0; 0.0
+gml; feminism; es; 1.0; 0.0
+gml; feminism; nl; 1.0; 0.0
+gml; feminism; ja; 1.0; 0.0
+gml; feminism; en; 1.0; 0.0
+gml; feminism; ru; 1.0; 0.0
+gml; book; id; 1.0; 0.0
+gml; book; fr; 1.0; 0.0
+gml; book; mr; 1.0; 0.0
+gml; book; tr; 1.0; 0.0
+gml; book; el; 1.0; 0.0
+gml; book; es; 1.0; 0.0
+gml; book; pl; 1.0; 0.0
+gml; book; vi; 1.0; 0.0
+gml; book; de; 1.0; 0.0
+gml; book; ml; 1.0; 0.0
+gml; book; nl; 1.0; 0.0
+gml; book; pt; 1.0; 0.0
+gml; book; ro; 1.0; 0.0
+gml; book; ja; 1.0; 0.0
+gml; book; simple; 1.0; 0.0
+gml; book; it; 1.0; 0.0
+gml; book; he; 1.0; 0.0
+gml; book; en; 1.0; 0.0
+gml; book; sr; 1.0; 0.0
+gml; book; sv; 1.0; 0.0
+gml; book; ru; 1.0; 0.0
+gml; book; te; 1.0; 0.0
+gml; book; zh; 1.0; 0.0
+gml; book; mk; 1.0; 0.0
+gml; book; hu; 1.0; 0.0
+gml; book; ko; 1.0; 0.0
+gml; goods; id; 1.0; 0.0
+gml; goods; fr; 1.0; 0.0
+gml; goods; mr; 1.0; 0.0
+gml; goods; tr; 1.0; 0.0
+gml; goods; lv; 1.0; 0.0
+gml; goods; el; 1.0; 0.0
+gml; goods; es; 1.0; 0.0
+gml; goods; pl; 1.0; 0.0
+gml; goods; vi; 1.0; 0.0
+gml; goods; de; 1.0; 0.0
+gml; goods; ml; 1.0; 0.0
+gml; goods; sh; 1.0; 0.0
+gml; goods; nl; 1.0; 0.0
+gml; goods; si; 1.0; 0.0
+gml; goods; pt; 1.0; 0.0
+gml; goods; ro; 1.0; 0.0
+gml; goods; ja; 1.0; 0.0
+gml; goods; simple; 1.0; 0.0
+gml; goods; it; 1.0; 0.0
+gml; goods; ceb; 1.0; 0.0
+gml; goods; he; 1.0; 0.0
+gml; goods; da; 1.0; 0.0
+gml; goods; en; 1.0; 0.0
+gml; goods; sr; 1.0; 0.0
+gml; goods; sv; 1.0; 0.0
+gml; goods; ckb; 1.0; 0.0
+gml; goods; ru; 1.0; 0.0
+gml; goods; hi; 1.0; 0.0
+gml; goods; bs; 1.0; 0.0
+gml; goods; te; 1.0; 0.0
+gml; goods; zh; 1.0; 0.0
+gml; goods; mk; 1.0; 0.0
+gml; goods; hu; 1.0; 0.0
+gml; goods; ko; 1.0; 0.0
+gml; goods; war; 1.0; 0.0
+gml; vegetable; fr; 1.0; 0.0
+gml; vegetable; tr; 1.0; 0.0
+gml; vegetable; es; 1.0; 0.0
+gml; vegetable; pl; 1.0; 0.0
+gml; vegetable; vi; 1.0; 0.0
+gml; vegetable; de; 1.0; 0.0
+gml; vegetable; nl; 1.0; 0.0
+gml; vegetable; pt; 1.0; 0.0
+gml; vegetable; ja; 1.0; 0.0
+gml; vegetable; simple; 1.0; 0.0
+gml; vegetable; it; 1.0; 0.0
+gml; vegetable; he; 1.0; 0.0
+gml; vegetable; da; 1.0; 0.0
+gml; vegetable; en; 1.0; 0.0
+gml; vegetable; sv; 1.0; 0.0
+gml; vegetable; ckb; 1.0; 0.0
+gml; vegetable; ru; 1.0; 0.0
+gml; vegetable; zh; 1.0; 0.0
+gml; vegetable; hu; 1.0; 0.0
+gml; vegetable; ko; 1.0; 0.0
+gml; deep sea community; fr; 1.0; 0.0
+gml; deep sea community; es; 1.0; 0.0
+gml; deep sea community; nl; 1.0; 0.0
+gml; deep sea community; pt; 1.0; 0.0
+gml; deep sea community; en; 1.0; 0.0
+gml; deep sea community; sv; 1.0; 0.0
+gml; plot; id; 1.0; 0.0
+gml; plot; fr; 1.0; 0.0
+gml; plot; pl; 1.0; 0.0
+gml; plot; de; 1.0; 0.0
+gml; plot; ml; 1.0; 0.0
+gml; plot; nl; 1.0; 0.0
+gml; plot; pt; 1.0; 0.0
+gml; plot; it; 1.0; 0.0
+gml; plot; en; 1.0; 0.0
+gml; plot; ru; 1.0; 0.0
+gml; plot; zh; 1.0; 0.0
+gml; literature; id; 1.0; 0.0
+gml; literature; fr; 1.0; 0.0
+gml; literature; tr; 1.0; 0.0
+gml; literature; el; 1.0; 0.0
+gml; literature; es; 1.0; 0.0
+gml; literature; pl; 1.0; 0.0
+gml; literature; de; 1.0; 0.0
+gml; literature; ml; 1.0; 0.0
+gml; literature; nl; 1.0; 0.0
+gml; literature; si; 1.0; 0.0
+gml; literature; pt; 1.0; 0.0
+gml; literature; ro; 1.0; 0.0
+gml; literature; ja; 1.0; 0.0
+gml; literature; it; 1.0; 0.0
+gml; literature; he; 1.0; 0.0
+gml; literature; da; 1.0; 0.0
+gml; literature; en; 1.0; 0.0
+gml; literature; sr; 1.0; 0.0
+gml; literature; sv; 1.0; 0.0
+gml; literature; ru; 1.0; 0.0
+gml; literature; hi; 1.0; 0.0
+gml; literature; arz; 1.0; 0.0
+gml; literature; zh; 1.0; 0.0
+gml; literature; hu; 1.0; 0.0
+gml; literature; ko; 1.0; 0.0
+gml; women's history; es; 1.0; 0.0
+gml; women's history; pt; 1.0; 0.0
+gml; women's history; simple; 1.0; 0.0
+gml; women's history; he; 1.0; 0.0
+gml; women's history; en; 1.0; 0.0
+gml; women's history; sv; 1.0; 0.0
+gml; tree; id; 1.0; 0.0
+gml; tree; fr; 1.0; 0.0
+gml; tree; mr; 1.0; 0.0
+gml; tree; tr; 1.0; 0.0
+gml; tree; el; 1.0; 0.0
+gml; tree; es; 1.0; 0.0
+gml; tree; pl; 1.0; 0.0
+gml; tree; vi; 1.0; 0.0
+gml; tree; de; 1.0; 0.0
+gml; tree; ml; 1.0; 0.0
+gml; tree; sh; 1.0; 0.0
+gml; tree; nl; 1.0; 0.0
+gml; tree; si; 1.0; 0.0
+gml; tree; pt; 1.0; 0.0
+gml; tree; ro; 1.0; 0.0
+gml; tree; ja; 1.0; 0.0
+gml; tree; simple; 1.0; 0.0
+gml; tree; it; 1.0; 0.0
+gml; tree; ceb; 1.0; 0.0
+gml; tree; he; 1.0; 0.0
+gml; tree; da; 1.0; 0.0
+gml; tree; en; 1.0; 0.0
+gml; tree; sr; 1.0; 0.0
+gml; tree; sv; 1.0; 0.0
+gml; tree; ru; 1.0; 0.0
+gml; tree; hi; 1.0; 0.0
+gml; tree; arz; 1.0; 0.0
+gml; tree; bs; 1.0; 0.0
+gml; tree; te; 1.0; 0.0
+gml; tree; zh; 1.0; 0.0
+gml; tree; mk; 1.0; 0.0
+gml; tree; hu; 1.0; 0.0
+gml; tree; ko; 1.0; 0.0
+gml; tree; war; 1.0; 0.0
+gml; inorganic compound; fr; 1.0; 0.0
+gml; inorganic compound; pl; 1.0; 0.0
+gml; inorganic compound; vi; 1.0; 0.0
+gml; inorganic compound; de; 1.0; 0.0
+gml; inorganic compound; sh; 1.0; 0.0
+gml; inorganic compound; nl; 1.0; 0.0
+gml; inorganic compound; ja; 1.0; 0.0
+gml; inorganic compound; simple; 1.0; 0.0
+gml; inorganic compound; it; 1.0; 0.0
+gml; inorganic compound; en; 1.0; 0.0
+gml; inorganic compound; sr; 1.0; 0.0
+gml; inorganic compound; ru; 1.0; 0.0
+gml; inorganic compound; zh; 1.0; 0.0
+gml; inorganic compound; hu; 1.0; 0.0
+gml; narrative; id; 1.0; 0.0
+gml; narrative; fr; 1.0; 0.0
+gml; narrative; tr; 1.0; 0.0
+gml; narrative; el; 1.0; 0.0
+gml; narrative; es; 1.0; 0.0
+gml; narrative; pl; 1.0; 0.0
+gml; narrative; vi; 1.0; 0.0
+gml; narrative; de; 1.0; 0.0
+gml; narrative; ml; 1.0; 0.0
+gml; narrative; sh; 1.0; 0.0
+gml; narrative; nl; 1.0; 0.0
+gml; narrative; pt; 1.0; 0.0
+gml; narrative; ro; 1.0; 0.0
+gml; narrative; ja; 1.0; 0.0
+gml; narrative; it; 1.0; 0.0
+gml; narrative; he; 1.0; 0.0
+gml; narrative; da; 1.0; 0.0
+gml; narrative; en; 1.0; 0.0
+gml; narrative; sr; 1.0; 0.0
+gml; narrative; sv; 1.0; 0.0
+gml; narrative; ru; 1.0; 0.0
+gml; narrative; hi; 1.0; 0.0
+gml; narrative; zh; 1.0; 0.0
+gml; narrative; hu; 1.0; 0.0
+gml; narrative; ko; 1.0; 0.0
+gml; religious hymn; nl; 1.0; 0.0
+gml; religious hymn; en; 1.0; 0.0
+gml; mathematical concept; id; 1.0; 0.0
+gml; mathematical concept; fr; 1.0; 0.0
+gml; mathematical concept; mr; 1.0; 0.0
+gml; mathematical concept; tr; 1.0; 0.0
+gml; mathematical concept; lv; 1.0; 0.0
+gml; mathematical concept; el; 1.0; 0.0
+gml; mathematical concept; es; 1.0; 0.0
+gml; mathematical concept; pl; 1.0; 0.0
+gml; mathematical concept; vi; 1.0; 0.0
+gml; mathematical concept; de; 1.0; 0.0
+gml; mathematical concept; ml; 1.0; 0.0
+gml; mathematical concept; sh; 1.0; 0.0
+gml; mathematical concept; nl; 1.0; 0.0
+gml; mathematical concept; si; 1.0; 0.0
+gml; mathematical concept; pt; 1.0; 0.0
+gml; mathematical concept; ro; 1.0; 0.0
+gml; mathematical concept; ja; 1.0; 0.0
+gml; mathematical concept; simple; 1.0; 0.0
+gml; mathematical concept; it; 1.0; 0.0
+gml; mathematical concept; he; 1.0; 0.0
+gml; mathematical concept; da; 1.0; 0.0
+gml; mathematical concept; en; 1.0; 0.0
+gml; mathematical concept; sr; 1.0; 0.0
+gml; mathematical concept; sv; 1.0; 0.0
+gml; mathematical concept; ckb; 1.0; 0.0
+gml; mathematical concept; ru; 1.0; 0.0
+gml; mathematical concept; hi; 1.0; 0.0
+gml; mathematical concept; arz; 1.0; 0.0
+gml; mathematical concept; bs; 1.0; 0.0
+gml; mathematical concept; te; 1.0; 0.0
+gml; mathematical concept; zh; 1.0; 0.0
+gml; mathematical concept; mk; 1.0; 0.0
+gml; mathematical concept; hu; 1.0; 0.0
+gml; mathematical concept; ko; 1.0; 0.0
+gml; mathematical concept; war; 1.0; 0.0
+gml; communication medium; id; 1.0; 0.0
+gml; communication medium; fr; 1.0; 0.0
+gml; communication medium; mr; 1.0; 0.0
+gml; communication medium; tr; 1.0; 0.0
+gml; communication medium; lv; 1.0; 0.0
+gml; communication medium; el; 1.0; 0.0
+gml; communication medium; es; 1.0; 0.0
+gml; communication medium; pl; 1.0; 0.0
+gml; communication medium; vi; 1.0; 0.0
+gml; communication medium; de; 1.0; 0.0
+gml; communication medium; ml; 1.0; 0.0
+gml; communication medium; sh; 1.0; 0.0
+gml; communication medium; nl; 1.0; 0.0
+gml; communication medium; si; 1.0; 0.0
+gml; communication medium; pt; 1.0; 0.0
+gml; communication medium; ro; 1.0; 0.0
+gml; communication medium; ja; 1.0; 0.0
+gml; communication medium; simple; 1.0; 0.0
+gml; communication medium; it; 1.0; 0.0
+gml; communication medium; he; 1.0; 0.0
+gml; communication medium; da; 1.0; 0.0
+gml; communication medium; en; 1.0; 0.0
+gml; communication medium; sr; 1.0; 0.0
+gml; communication medium; sv; 1.0; 0.0
+gml; communication medium; ckb; 1.0; 0.0
+gml; communication medium; ru; 1.0; 0.0
+gml; communication medium; hi; 1.0; 0.0
+gml; communication medium; arz; 1.0; 0.0
+gml; communication medium; bs; 1.0; 0.0
+gml; communication medium; te; 1.0; 0.0
+gml; communication medium; zh; 1.0; 0.0
+gml; communication medium; mk; 1.0; 0.0
+gml; communication medium; hu; 1.0; 0.0
+gml; communication medium; ko; 1.0; 0.0
+gml; communication medium; war; 1.0; 0.0
+gml; literary theme; id; 1.0; 0.0
+gml; literary theme; fr; 1.0; 0.0
+gml; literary theme; tr; 1.0; 0.0
+gml; literary theme; el; 1.0; 0.0
+gml; literary theme; es; 1.0; 0.0
+gml; literary theme; pl; 1.0; 0.0
+gml; literary theme; vi; 1.0; 0.0
+gml; literary theme; de; 1.0; 0.0
+gml; literary theme; sh; 1.0; 0.0
+gml; literary theme; nl; 1.0; 0.0
+gml; literary theme; pt; 1.0; 0.0
+gml; literary theme; ro; 1.0; 0.0
+gml; literary theme; ja; 1.0; 0.0
+gml; literary theme; it; 1.0; 0.0
+gml; literary theme; he; 1.0; 0.0
+gml; literary theme; da; 1.0; 0.0
+gml; literary theme; en; 1.0; 0.0
+gml; literary theme; sr; 1.0; 0.0
+gml; literary theme; sv; 1.0; 0.0
+gml; literary theme; ru; 1.0; 0.0
+gml; literary theme; zh; 1.0; 0.0
+gml; literary theme; hu; 1.0; 0.0
+gml; literary theme; ko; 1.0; 0.0
+gml; society; id; 1.0; 0.0
+gml; society; fr; 1.0; 0.0
+gml; society; tr; 1.0; 0.0
+gml; society; el; 1.0; 0.0
+gml; society; es; 1.0; 0.0
+gml; society; pl; 1.0; 0.0
+gml; society; vi; 1.0; 0.0
+gml; society; de; 1.0; 0.0
+gml; society; sh; 1.0; 0.0
+gml; society; nl; 1.0; 0.0
+gml; society; pt; 1.0; 0.0
+gml; society; ro; 1.0; 0.0
+gml; society; ja; 1.0; 0.0
+gml; society; simple; 1.0; 0.0
+gml; society; it; 1.0; 0.0
+gml; society; ceb; 1.0; 0.0
+gml; society; he; 1.0; 0.0
+gml; society; da; 1.0; 0.0
+gml; society; en; 1.0; 0.0
+gml; society; sr; 1.0; 0.0
+gml; society; sv; 1.0; 0.0
+gml; society; ru; 1.0; 0.0
+gml; society; arz; 1.0; 0.0
+gml; society; bs; 1.0; 0.0
+gml; society; zh; 1.0; 0.0
+gml; society; mk; 1.0; 0.0
+gml; society; hu; 1.0; 0.0
+gml; society; ko; 1.0; 0.0
+gml; Porifera; sv; 1.0; 0.0
+gml; galaxy; id; 1.0; 0.0
+gml; galaxy; fr; 1.0; 0.0
+gml; galaxy; tr; 1.0; 0.0
+gml; galaxy; lv; 1.0; 0.0
+gml; galaxy; el; 1.0; 0.0
+gml; galaxy; es; 1.0; 0.0
+gml; galaxy; pl; 1.0; 0.0
+gml; galaxy; vi; 1.0; 0.0
+gml; galaxy; de; 1.0; 0.0
+gml; galaxy; ml; 1.0; 0.0
+gml; galaxy; sh; 1.0; 0.0
+gml; galaxy; nl; 1.0; 0.0
+gml; galaxy; pt; 1.0; 0.0
+gml; galaxy; ro; 1.0; 0.0
+gml; galaxy; ja; 1.0; 0.0
+gml; galaxy; simple; 1.0; 0.0
+gml; galaxy; it; 1.0; 0.0
+gml; galaxy; he; 1.0; 0.0
+gml; galaxy; da; 1.0; 0.0
+gml; galaxy; en; 1.0; 0.0
+gml; galaxy; sr; 1.0; 0.0
+gml; galaxy; sv; 1.0; 0.0
+gml; galaxy; ckb; 1.0; 0.0
+gml; galaxy; ru; 1.0; 0.0
+gml; galaxy; hi; 1.0; 0.0
+gml; galaxy; bs; 1.0; 0.0
+gml; galaxy; zh; 1.0; 0.0
+gml; galaxy; mk; 1.0; 0.0
+gml; galaxy; hu; 1.0; 0.0
+gml; galaxy; ko; 1.0; 0.0
+gml; computer; id; 1.0; 0.0
+gml; computer; fr; 1.0; 0.0
+gml; computer; tr; 1.0; 0.0
+gml; computer; lv; 1.0; 0.0
+gml; computer; el; 1.0; 0.0
+gml; computer; es; 1.0; 0.0
+gml; computer; pl; 1.0; 0.0
+gml; computer; vi; 1.0; 0.0
+gml; computer; de; 1.0; 0.0
+gml; computer; ml; 1.0; 0.0
+gml; computer; sh; 1.0; 0.0
+gml; computer; nl; 1.0; 0.0
+gml; computer; pt; 1.0; 0.0
+gml; computer; ro; 1.0; 0.0
+gml; computer; ja; 1.0; 0.0
+gml; computer; simple; 1.0; 0.0
+gml; computer; it; 1.0; 0.0
+gml; computer; he; 1.0; 0.0
+gml; computer; da; 1.0; 0.0
+gml; computer; en; 1.0; 0.0
+gml; computer; sr; 1.0; 0.0
+gml; computer; sv; 1.0; 0.0
+gml; computer; ckb; 1.0; 0.0
+gml; computer; ru; 1.0; 0.0
+gml; computer; hi; 1.0; 0.0
+gml; computer; bs; 1.0; 0.0
+gml; computer; te; 1.0; 0.0
+gml; computer; zh; 1.0; 0.0
+gml; computer; mk; 1.0; 0.0
+gml; computer; hu; 1.0; 0.0
+gml; computer; ko; 1.0; 0.0
+gml; wage; de; 1.0; 0.0
+gml; wage; sv; 1.0; 0.0
+gml; knowledge; vi; 1.0; 0.0
+gml; knowledge; de; 1.0; 0.0
+gml; knowledge; ja; 1.0; 0.0
+gml; knowledge; en; 1.0; 0.0
+gml; linguistic norm; fr; 1.0; 0.0
+gml; linguistic norm; el; 1.0; 0.0
+gml; linguistic norm; es; 1.0; 0.0
+gml; linguistic norm; de; 1.0; 0.0
+gml; linguistic norm; pt; 1.0; 0.0
+gml; linguistic norm; en; 1.0; 0.0
+gml; Mollusca; pt; 1.0; 0.0
+gml; Mollusca; en; 1.0; 0.0
+gml; Mollusca; sv; 1.0; 0.0
+gml; plant organ; id; 1.0; 0.0
+gml; plant organ; fr; 1.0; 0.0
+gml; plant organ; tr; 1.0; 0.0
+gml; plant organ; lv; 1.0; 0.0
+gml; plant organ; es; 1.0; 0.0
+gml; plant organ; pl; 1.0; 0.0
+gml; plant organ; vi; 1.0; 0.0
+gml; plant organ; de; 1.0; 0.0
+gml; plant organ; ml; 1.0; 0.0
+gml; plant organ; sh; 1.0; 0.0
+gml; plant organ; nl; 1.0; 0.0
+gml; plant organ; si; 1.0; 0.0
+gml; plant organ; pt; 1.0; 0.0
+gml; plant organ; ro; 1.0; 0.0
+gml; plant organ; ja; 1.0; 0.0
+gml; plant organ; simple; 1.0; 0.0
+gml; plant organ; it; 1.0; 0.0
+gml; plant organ; he; 1.0; 0.0
+gml; plant organ; da; 1.0; 0.0
+gml; plant organ; en; 1.0; 0.0
+gml; plant organ; sr; 1.0; 0.0
+gml; plant organ; sv; 1.0; 0.0
+gml; plant organ; ru; 1.0; 0.0
+gml; plant organ; hi; 1.0; 0.0
+gml; plant organ; bs; 1.0; 0.0
+gml; plant organ; te; 1.0; 0.0
+gml; plant organ; zh; 1.0; 0.0
+gml; plant organ; mk; 1.0; 0.0
+gml; plant organ; hu; 1.0; 0.0
+gml; plant organ; ko; 1.0; 0.0
+gml; human population; id; 1.0; 0.0
+gml; human population; fr; 1.0; 0.0
+gml; human population; tr; 1.0; 0.0
+gml; human population; lv; 1.0; 0.0
+gml; human population; el; 1.0; 0.0
+gml; human population; es; 1.0; 0.0
+gml; human population; pl; 1.0; 0.0
+gml; human population; vi; 1.0; 0.0
+gml; human population; de; 1.0; 0.0
+gml; human population; sh; 1.0; 0.0
+gml; human population; nl; 1.0; 0.0
+gml; human population; pt; 1.0; 0.0
+gml; human population; ro; 1.0; 0.0
+gml; human population; ja; 1.0; 0.0
+gml; human population; it; 1.0; 0.0
+gml; human population; ceb; 1.0; 0.0
+gml; human population; he; 1.0; 0.0
+gml; human population; da; 1.0; 0.0
+gml; human population; en; 1.0; 0.0
+gml; human population; sr; 1.0; 0.0
+gml; human population; sv; 1.0; 0.0
+gml; human population; ru; 1.0; 0.0
+gml; human population; hi; 1.0; 0.0
+gml; human population; arz; 1.0; 0.0
+gml; human population; bs; 1.0; 0.0
+gml; human population; zh; 1.0; 0.0
+gml; human population; mk; 1.0; 0.0
+gml; human population; hu; 1.0; 0.0
+gml; human population; ko; 1.0; 0.0
+gml; life; fr; 1.0; 0.0
+gml; life; de; 1.0; 0.0
+gml; life; ml; 1.0; 0.0
+gml; life; pt; 1.0; 0.0
+gml; life; ja; 1.0; 0.0
+gml; life; en; 1.0; 0.0
+gml; life; ko; 1.0; 0.0
+gml; lexeme; es; 1.0; 0.0
+gml; lexeme; de; 1.0; 0.0
+gml; language ideology; id; 1.0; 0.0
+gml; language ideology; fr; 1.0; 0.0
+gml; language ideology; lv; 1.0; 0.0
+gml; language ideology; es; 1.0; 0.0
+gml; language ideology; pl; 1.0; 0.0
+gml; language ideology; de; 1.0; 0.0
+gml; language ideology; sh; 1.0; 0.0
+gml; language ideology; nl; 1.0; 0.0
+gml; language ideology; pt; 1.0; 0.0
+gml; language ideology; it; 1.0; 0.0
+gml; language ideology; da; 1.0; 0.0
+gml; language ideology; en; 1.0; 0.0
+gml; language ideology; sr; 1.0; 0.0
+gml; language ideology; sv; 1.0; 0.0
+gml; language ideology; ru; 1.0; 0.0
+gml; language ideology; hi; 1.0; 0.0
+gml; language ideology; zh; 1.0; 0.0
+gml; language ideology; ko; 1.0; 0.0
+gml; planetary magnetic field; id; 1.0; 0.0
+gml; planetary magnetic field; fr; 1.0; 0.0
+gml; planetary magnetic field; mr; 1.0; 0.0
+gml; planetary magnetic field; tr; 1.0; 0.0
+gml; planetary magnetic field; lv; 1.0; 0.0
+gml; planetary magnetic field; el; 1.0; 0.0
+gml; planetary magnetic field; es; 1.0; 0.0
+gml; planetary magnetic field; pl; 1.0; 0.0
+gml; planetary magnetic field; vi; 1.0; 0.0
+gml; planetary magnetic field; de; 1.0; 0.0
+gml; planetary magnetic field; ml; 1.0; 0.0
+gml; planetary magnetic field; sh; 1.0; 0.0
+gml; planetary magnetic field; nl; 1.0; 0.0
+gml; planetary magnetic field; si; 1.0; 0.0
+gml; planetary magnetic field; pt; 1.0; 0.0
+gml; planetary magnetic field; ja; 1.0; 0.0
+gml; planetary magnetic field; simple; 1.0; 0.0
+gml; planetary magnetic field; it; 1.0; 0.0
+gml; planetary magnetic field; he; 1.0; 0.0
+gml; planetary magnetic field; da; 1.0; 0.0
+gml; planetary magnetic field; en; 1.0; 0.0
+gml; planetary magnetic field; sr; 1.0; 0.0
+gml; planetary magnetic field; sv; 1.0; 0.0
+gml; planetary magnetic field; ru; 1.0; 0.0
+gml; planetary magnetic field; hi; 1.0; 0.0
+gml; planetary magnetic field; bs; 1.0; 0.0
+gml; planetary magnetic field; zh; 1.0; 0.0
+gml; planetary magnetic field; hu; 1.0; 0.0
+gml; planetary magnetic field; ko; 1.0; 0.0
+gml; hormone; id; 1.0; 0.0
+gml; hormone; fr; 1.0; 0.0
+gml; hormone; mr; 1.0; 0.0
+gml; hormone; tr; 1.0; 0.0
+gml; hormone; lv; 1.0; 0.0
+gml; hormone; el; 1.0; 0.0
+gml; hormone; es; 1.0; 0.0
+gml; hormone; pl; 1.0; 0.0
+gml; hormone; vi; 1.0; 0.0
+gml; hormone; de; 1.0; 0.0
+gml; hormone; sh; 1.0; 0.0
+gml; hormone; nl; 1.0; 0.0
+gml; hormone; pt; 1.0; 0.0
+gml; hormone; ro; 1.0; 0.0
+gml; hormone; ja; 1.0; 0.0
+gml; hormone; simple; 1.0; 0.0
+gml; hormone; it; 1.0; 0.0
+gml; hormone; he; 1.0; 0.0
+gml; hormone; da; 1.0; 0.0
+gml; hormone; en; 1.0; 0.0
+gml; hormone; sr; 1.0; 0.0
+gml; hormone; sv; 1.0; 0.0
+gml; hormone; ckb; 1.0; 0.0
+gml; hormone; ru; 1.0; 0.0
+gml; hormone; hi; 1.0; 0.0
+gml; hormone; bs; 1.0; 0.0
+gml; hormone; zh; 1.0; 0.0
+gml; hormone; mk; 1.0; 0.0
+gml; hormone; hu; 1.0; 0.0
+gml; hormone; ko; 1.0; 0.0
+gml; intensive or extensive property; de; 1.0; 0.0
+gml; intensive or extensive property; en; 1.0; 0.0
+gml; intensive or extensive property; zh; 1.0; 0.0
+gml; bell; id; 1.0; 0.0
+gml; bell; fr; 1.0; 0.0
+gml; bell; tr; 1.0; 0.0
+gml; bell; lv; 1.0; 0.0
+gml; bell; el; 1.0; 0.0
+gml; bell; es; 1.0; 0.0
+gml; bell; pl; 1.0; 0.0
+gml; bell; vi; 1.0; 0.0
+gml; bell; de; 1.0; 0.0
+gml; bell; ml; 1.0; 0.0
+gml; bell; sh; 1.0; 0.0
+gml; bell; nl; 1.0; 0.0
+gml; bell; si; 1.0; 0.0
+gml; bell; pt; 1.0; 0.0
+gml; bell; ro; 1.0; 0.0
+gml; bell; ja; 1.0; 0.0
+gml; bell; simple; 1.0; 0.0
+gml; bell; it; 1.0; 0.0
+gml; bell; he; 1.0; 0.0
+gml; bell; da; 1.0; 0.0
+gml; bell; en; 1.0; 0.0
+gml; bell; sr; 1.0; 0.0
+gml; bell; sv; 1.0; 0.0
+gml; bell; ru; 1.0; 0.0
+gml; bell; hi; 1.0; 0.0
+gml; bell; te; 1.0; 0.0
+gml; bell; zh; 1.0; 0.0
+gml; bell; mk; 1.0; 0.0
+gml; bell; hu; 1.0; 0.0
+gml; bell; ko; 1.0; 0.0
+gml; geography; en; 1.0; 0.0
+gml; language; id; 1.0; 0.0
+gml; language; fr; 1.0; 0.0
+gml; language; mr; 1.0; 0.0
+gml; language; tr; 1.0; 0.0
+gml; language; lv; 1.0; 0.0
+gml; language; el; 1.0; 0.0
+gml; language; es; 1.0; 0.0
+gml; language; pl; 1.0; 0.0
+gml; language; vi; 1.0; 0.0
+gml; language; de; 1.0; 0.0
+gml; language; ml; 1.0; 0.0
+gml; language; sh; 1.0; 0.0
+gml; language; nl; 1.0; 0.0
+gml; language; si; 1.0; 0.0
+gml; language; pt; 1.0; 0.0
+gml; language; ro; 1.0; 0.0
+gml; language; ja; 1.0; 0.0
+gml; language; simple; 1.0; 0.0
+gml; language; it; 1.0; 0.0
+gml; language; ceb; 1.0; 0.0
+gml; language; he; 1.0; 0.0
+gml; language; da; 1.0; 0.0
+gml; language; en; 1.0; 0.0
+gml; language; sr; 1.0; 0.0
+gml; language; sv; 1.0; 0.0
+gml; language; ckb; 1.0; 0.0
+gml; language; ru; 1.0; 0.0
+gml; language; hi; 1.0; 0.0
+gml; language; arz; 1.0; 0.0
+gml; language; bs; 1.0; 0.0
+gml; language; te; 1.0; 0.0
+gml; language; zh; 1.0; 0.0
+gml; language; mk; 1.0; 0.0
+gml; language; hu; 1.0; 0.0
+gml; language; ko; 1.0; 0.0
+gml; language; war; 1.0; 0.0
+gml; history of film; de; 1.0; 0.0
+gml; history of film; da; 1.0; 0.0
+gml; pressure; fr; 1.0; 0.0
+gml; pressure; pl; 1.0; 0.0
+gml; pressure; de; 1.0; 0.0
+gml; pressure; nl; 1.0; 0.0
+gml; pressure; ja; 1.0; 0.0
+gml; pressure; da; 1.0; 0.0
+gml; pressure; en; 1.0; 0.0
+fullgml; work; fr; 1.0; 0.0
+fullgml; work; es; 1.0; 0.0
+fullgml; work; pl; 1.0; 0.0
+fullgml; work; de; 1.0; 0.0
+fullgml; work; nl; 1.0; 0.0
+fullgml; work; pt; 1.0; 0.0
+fullgml; work; ro; 1.0; 0.0
+fullgml; work; ja; 1.0; 0.0
+fullgml; work; it; 1.0; 0.0
+fullgml; work; he; 1.0; 0.0
+fullgml; work; da; 1.0; 0.0
+fullgml; work; en; 1.0; 0.0
+fullgml; work; sv; 1.0; 0.0
+fullgml; work; ru; 1.0; 0.0
+fullgml; work; hi; 1.0; 0.0
+fullgml; work; zh; 1.0; 0.0
+fullgml; work; ko; 1.0; 0.0
+fullgml; data; fr; 1.0; 0.0
+fullgml; data; es; 1.0; 0.0
+fullgml; data; pl; 1.0; 0.0
+fullgml; data; vi; 1.0; 0.0
+fullgml; data; de; 1.0; 0.0
+fullgml; data; nl; 1.0; 0.0
+fullgml; data; pt; 1.0; 0.0
+fullgml; data; ja; 1.0; 0.0
+fullgml; data; he; 1.0; 0.0
+fullgml; data; en; 1.0; 0.0
+fullgml; data; sr; 1.0; 0.0
+fullgml; data; ru; 1.0; 0.0
+fullgml; data; hi; 1.0; 0.0
+fullgml; data; zh; 1.0; 0.0
+fullgml; history of art; en; 1.0; 0.0
+fullgml; prehistory; id; 1.0; 0.0
+fullgml; prehistory; fr; 1.0; 0.0
+fullgml; prehistory; mr; 1.0; 0.0
+fullgml; prehistory; tr; 1.0; 0.0
+fullgml; prehistory; lv; 1.0; 0.0
+fullgml; prehistory; el; 1.0; 0.0
+fullgml; prehistory; es; 1.0; 0.0
+fullgml; prehistory; pl; 1.0; 0.0
+fullgml; prehistory; vi; 1.0; 0.0
+fullgml; prehistory; de; 1.0; 0.0
+fullgml; prehistory; ml; 1.0; 0.0
+fullgml; prehistory; sh; 1.0; 0.0
+fullgml; prehistory; nl; 1.0; 0.0
+fullgml; prehistory; si; 1.0; 0.0
+fullgml; prehistory; pt; 1.0; 0.0
+fullgml; prehistory; ro; 1.0; 0.0
+fullgml; prehistory; ja; 1.0; 0.0
+fullgml; prehistory; simple; 1.0; 0.0
+fullgml; prehistory; it; 1.0; 0.0
+fullgml; prehistory; ceb; 1.0; 0.0
+fullgml; prehistory; he; 1.0; 0.0
+fullgml; prehistory; da; 1.0; 0.0
+fullgml; prehistory; en; 1.0; 0.0
+fullgml; prehistory; sr; 1.0; 0.0
+fullgml; prehistory; sv; 1.0; 0.0
+fullgml; prehistory; ru; 1.0; 0.0
+fullgml; prehistory; hi; 1.0; 0.0
+fullgml; prehistory; bs; 1.0; 0.0
+fullgml; prehistory; zh; 1.0; 0.0
+fullgml; prehistory; mk; 1.0; 0.0
+fullgml; prehistory; hu; 1.0; 0.0
+fullgml; prehistory; ko; 1.0; 0.0
+fullgml; prehistory; war; 1.0; 0.0
+fullgml; chemical element; id; 1.0; 0.0
+fullgml; chemical element; fr; 1.0; 0.0
+fullgml; chemical element; mr; 1.0; 0.0
+fullgml; chemical element; tr; 1.0; 0.0
+fullgml; chemical element; lv; 1.0; 0.0
+fullgml; chemical element; el; 1.0; 0.0
+fullgml; chemical element; es; 1.0; 0.0
+fullgml; chemical element; pl; 1.0; 0.0
+fullgml; chemical element; vi; 1.0; 0.0
+fullgml; chemical element; de; 1.0; 0.0
+fullgml; chemical element; ml; 1.0; 0.0
+fullgml; chemical element; sh; 1.0; 0.0
+fullgml; chemical element; nl; 1.0; 0.0
+fullgml; chemical element; si; 1.0; 0.0
+fullgml; chemical element; pt; 1.0; 0.0
+fullgml; chemical element; ro; 1.0; 0.0
+fullgml; chemical element; ja; 1.0; 0.0
+fullgml; chemical element; simple; 1.0; 0.0
+fullgml; chemical element; it; 1.0; 0.0
+fullgml; chemical element; ceb; 1.0; 0.0
+fullgml; chemical element; he; 1.0; 0.0
+fullgml; chemical element; da; 1.0; 0.0
+fullgml; chemical element; en; 1.0; 0.0
+fullgml; chemical element; sr; 1.0; 0.0
+fullgml; chemical element; sv; 1.0; 0.0
+fullgml; chemical element; ckb; 1.0; 0.0
+fullgml; chemical element; ru; 1.0; 0.0
+fullgml; chemical element; hi; 1.0; 0.0
+fullgml; chemical element; arz; 1.0; 0.0
+fullgml; chemical element; bs; 1.0; 0.0
+fullgml; chemical element; te; 1.0; 0.0
+fullgml; chemical element; zh; 1.0; 0.0
+fullgml; chemical element; mk; 1.0; 0.0
+fullgml; chemical element; hu; 1.0; 0.0
+fullgml; chemical element; ko; 1.0; 0.0
+fullgml; chemical element; war; 1.0; 0.0
+fullgml; dialect; id; 1.0; 0.0
+fullgml; dialect; fr; 1.0; 0.0
+fullgml; dialect; mr; 1.0; 0.0
+fullgml; dialect; tr; 1.0; 0.0
+fullgml; dialect; lv; 1.0; 0.0
+fullgml; dialect; el; 1.0; 0.0
+fullgml; dialect; es; 1.0; 0.0
+fullgml; dialect; pl; 1.0; 0.0
+fullgml; dialect; vi; 1.0; 0.0
+fullgml; dialect; de; 1.0; 0.0
+fullgml; dialect; ml; 1.0; 0.0
+fullgml; dialect; sh; 1.0; 0.0
+fullgml; dialect; nl; 1.0; 0.0
+fullgml; dialect; si; 1.0; 0.0
+fullgml; dialect; pt; 1.0; 0.0
+fullgml; dialect; ro; 1.0; 0.0
+fullgml; dialect; ja; 1.0; 0.0
+fullgml; dialect; simple; 1.0; 0.0
+fullgml; dialect; it; 1.0; 0.0
+fullgml; dialect; ceb; 1.0; 0.0
+fullgml; dialect; he; 1.0; 0.0
+fullgml; dialect; da; 1.0; 0.0
+fullgml; dialect; en; 1.0; 0.0
+fullgml; dialect; sr; 1.0; 0.0
+fullgml; dialect; sv; 1.0; 0.0
+fullgml; dialect; ckb; 1.0; 0.0
+fullgml; dialect; ru; 1.0; 0.0
+fullgml; dialect; hi; 1.0; 0.0
+fullgml; dialect; arz; 1.0; 0.0
+fullgml; dialect; bs; 1.0; 0.0
+fullgml; dialect; te; 1.0; 0.0
+fullgml; dialect; zh; 1.0; 0.0
+fullgml; dialect; mk; 1.0; 0.0
+fullgml; dialect; hu; 1.0; 0.0
+fullgml; dialect; ko; 1.0; 0.0
+fullgml; dialect; war; 1.0; 0.0
+fullgml; coat of arms; id; 1.0; 0.0
+fullgml; coat of arms; fr; 1.0; 0.0
+fullgml; coat of arms; tr; 1.0; 0.0
+fullgml; coat of arms; lv; 1.0; 0.0
+fullgml; coat of arms; el; 1.0; 0.0
+fullgml; coat of arms; es; 1.0; 0.0
+fullgml; coat of arms; pl; 1.0; 0.0
+fullgml; coat of arms; vi; 1.0; 0.0
+fullgml; coat of arms; de; 1.0; 0.0
+fullgml; coat of arms; sh; 1.0; 0.0
+fullgml; coat of arms; nl; 1.0; 0.0
+fullgml; coat of arms; pt; 1.0; 0.0
+fullgml; coat of arms; ro; 1.0; 0.0
+fullgml; coat of arms; ja; 1.0; 0.0
+fullgml; coat of arms; simple; 1.0; 0.0
+fullgml; coat of arms; it; 1.0; 0.0
+fullgml; coat of arms; he; 1.0; 0.0
+fullgml; coat of arms; da; 1.0; 0.0
+fullgml; coat of arms; en; 1.0; 0.0
+fullgml; coat of arms; sr; 1.0; 0.0
+fullgml; coat of arms; sv; 1.0; 0.0
+fullgml; coat of arms; ru; 1.0; 0.0
+fullgml; coat of arms; hi; 1.0; 0.0
+fullgml; coat of arms; arz; 1.0; 0.0
+fullgml; coat of arms; bs; 1.0; 0.0
+fullgml; coat of arms; zh; 1.0; 0.0
+fullgml; coat of arms; mk; 1.0; 0.0
+fullgml; coat of arms; hu; 1.0; 0.0
+fullgml; coat of arms; ko; 1.0; 0.0
+fullgml; chemical compound; id; 1.0; 0.0
+fullgml; chemical compound; fr; 1.0; 0.0
+fullgml; chemical compound; mr; 1.0; 0.0
+fullgml; chemical compound; tr; 1.0; 0.0
+fullgml; chemical compound; lv; 1.0; 0.0
+fullgml; chemical compound; el; 1.0; 0.0
+fullgml; chemical compound; es; 1.0; 0.0
+fullgml; chemical compound; pl; 1.0; 0.0
+fullgml; chemical compound; vi; 1.0; 0.0
+fullgml; chemical compound; de; 1.0; 0.0
+fullgml; chemical compound; ml; 1.0; 0.0
+fullgml; chemical compound; sh; 1.0; 0.0
+fullgml; chemical compound; nl; 1.0; 0.0
+fullgml; chemical compound; si; 1.0; 0.0
+fullgml; chemical compound; pt; 1.0; 0.0
+fullgml; chemical compound; ro; 1.0; 0.0
+fullgml; chemical compound; ja; 1.0; 0.0
+fullgml; chemical compound; simple; 1.0; 0.0
+fullgml; chemical compound; it; 1.0; 0.0
+fullgml; chemical compound; ceb; 1.0; 0.0
+fullgml; chemical compound; he; 1.0; 0.0
+fullgml; chemical compound; da; 1.0; 0.0
+fullgml; chemical compound; en; 1.0; 0.0
+fullgml; chemical compound; sr; 1.0; 0.0
+fullgml; chemical compound; sv; 1.0; 0.0
+fullgml; chemical compound; ckb; 1.0; 0.0
+fullgml; chemical compound; ru; 1.0; 0.0
+fullgml; chemical compound; hi; 1.0; 0.0
+fullgml; chemical compound; arz; 1.0; 0.0
+fullgml; chemical compound; bs; 1.0; 0.0
+fullgml; chemical compound; te; 1.0; 0.0
+fullgml; chemical compound; zh; 1.0; 0.0
+fullgml; chemical compound; mk; 1.0; 0.0
+fullgml; chemical compound; hu; 1.0; 0.0
+fullgml; chemical compound; ko; 1.0; 0.0
+fullgml; chemical compound; war; 1.0; 0.0
+fullgml; thermodynamic process; id; 1.0; 0.0
+fullgml; thermodynamic process; fr; 1.0; 0.0
+fullgml; thermodynamic process; mr; 1.0; 0.0
+fullgml; thermodynamic process; tr; 1.0; 0.0
+fullgml; thermodynamic process; lv; 1.0; 0.0
+fullgml; thermodynamic process; el; 1.0; 0.0
+fullgml; thermodynamic process; es; 1.0; 0.0
+fullgml; thermodynamic process; pl; 1.0; 0.0
+fullgml; thermodynamic process; vi; 1.0; 0.0
+fullgml; thermodynamic process; de; 1.0; 0.0
+fullgml; thermodynamic process; sh; 1.0; 0.0
+fullgml; thermodynamic process; nl; 1.0; 0.0
+fullgml; thermodynamic process; si; 1.0; 0.0
+fullgml; thermodynamic process; pt; 1.0; 0.0
+fullgml; thermodynamic process; ro; 1.0; 0.0
+fullgml; thermodynamic process; ja; 1.0; 0.0
+fullgml; thermodynamic process; simple; 1.0; 0.0
+fullgml; thermodynamic process; it; 1.0; 0.0
+fullgml; thermodynamic process; he; 1.0; 0.0
+fullgml; thermodynamic process; da; 1.0; 0.0
+fullgml; thermodynamic process; en; 1.0; 0.0
+fullgml; thermodynamic process; sr; 1.0; 0.0
+fullgml; thermodynamic process; sv; 1.0; 0.0
+fullgml; thermodynamic process; ckb; 1.0; 0.0
+fullgml; thermodynamic process; ru; 1.0; 0.0
+fullgml; thermodynamic process; hi; 1.0; 0.0
+fullgml; thermodynamic process; bs; 1.0; 0.0
+fullgml; thermodynamic process; zh; 1.0; 0.0
+fullgml; thermodynamic process; mk; 1.0; 0.0
+fullgml; thermodynamic process; hu; 1.0; 0.0
+fullgml; thermodynamic process; ko; 1.0; 0.0
+fullgml; standard language; id; 1.0; 0.0
+fullgml; standard language; fr; 1.0; 0.0
+fullgml; standard language; mr; 1.0; 0.0
+fullgml; standard language; tr; 1.0; 0.0
+fullgml; standard language; lv; 1.0; 0.0
+fullgml; standard language; el; 1.0; 0.0
+fullgml; standard language; es; 1.0; 0.0
+fullgml; standard language; pl; 1.0; 0.0
+fullgml; standard language; vi; 1.0; 0.0
+fullgml; standard language; de; 1.0; 0.0
+fullgml; standard language; ml; 1.0; 0.0
+fullgml; standard language; sh; 1.0; 0.0
+fullgml; standard language; nl; 1.0; 0.0
+fullgml; standard language; si; 1.0; 0.0
+fullgml; standard language; pt; 1.0; 0.0
+fullgml; standard language; ro; 1.0; 0.0
+fullgml; standard language; ja; 1.0; 0.0
+fullgml; standard language; simple; 1.0; 0.0
+fullgml; standard language; it; 1.0; 0.0
+fullgml; standard language; ceb; 1.0; 0.0
+fullgml; standard language; he; 1.0; 0.0
+fullgml; standard language; da; 1.0; 0.0
+fullgml; standard language; en; 1.0; 0.0
+fullgml; standard language; sr; 1.0; 0.0
+fullgml; standard language; sv; 1.0; 0.0
+fullgml; standard language; ckb; 1.0; 0.0
+fullgml; standard language; ru; 1.0; 0.0
+fullgml; standard language; hi; 1.0; 0.0
+fullgml; standard language; arz; 1.0; 0.0
+fullgml; standard language; bs; 1.0; 0.0
+fullgml; standard language; te; 1.0; 0.0
+fullgml; standard language; zh; 1.0; 0.0
+fullgml; standard language; mk; 1.0; 0.0
+fullgml; standard language; hu; 1.0; 0.0
+fullgml; standard language; ko; 1.0; 0.0
+fullgml; standard language; war; 1.0; 0.0
+fullgml; neutron star; fr; 1.0; 0.0
+fullgml; neutron star; tr; 1.0; 0.0
+fullgml; neutron star; es; 1.0; 0.0
+fullgml; neutron star; pl; 1.0; 0.0
+fullgml; neutron star; vi; 1.0; 0.0
+fullgml; neutron star; de; 1.0; 0.0
+fullgml; neutron star; nl; 1.0; 0.0
+fullgml; neutron star; pt; 1.0; 0.0
+fullgml; neutron star; ja; 1.0; 0.0
+fullgml; neutron star; da; 1.0; 0.0
+fullgml; neutron star; en; 1.0; 0.0
+fullgml; neutron star; sv; 1.0; 0.0
+fullgml; neutron star; ru; 1.0; 0.0
+fullgml; neutron star; bs; 1.0; 0.0
+fullgml; neutron star; zh; 1.0; 0.0
+fullgml; neutron star; ko; 1.0; 0.0
+fullgml; ceramic; id; 1.0; 0.0
+fullgml; ceramic; fr; 1.0; 0.0
+fullgml; ceramic; tr; 1.0; 0.0
+fullgml; ceramic; el; 1.0; 0.0
+fullgml; ceramic; es; 1.0; 0.0
+fullgml; ceramic; pl; 1.0; 0.0
+fullgml; ceramic; de; 1.0; 0.0
+fullgml; ceramic; nl; 1.0; 0.0
+fullgml; ceramic; pt; 1.0; 0.0
+fullgml; ceramic; ja; 1.0; 0.0
+fullgml; ceramic; it; 1.0; 0.0
+fullgml; ceramic; he; 1.0; 0.0
+fullgml; ceramic; da; 1.0; 0.0
+fullgml; ceramic; en; 1.0; 0.0
+fullgml; ceramic; sr; 1.0; 0.0
+fullgml; ceramic; sv; 1.0; 0.0
+fullgml; ceramic; ru; 1.0; 0.0
+fullgml; ceramic; zh; 1.0; 0.0
+fullgml; law; id; 1.0; 0.0
+fullgml; law; fr; 1.0; 0.0
+fullgml; law; mr; 1.0; 0.0
+fullgml; law; tr; 1.0; 0.0
+fullgml; law; el; 1.0; 0.0
+fullgml; law; es; 1.0; 0.0
+fullgml; law; pl; 1.0; 0.0
+fullgml; law; vi; 1.0; 0.0
+fullgml; law; de; 1.0; 0.0
+fullgml; law; ml; 1.0; 0.0
+fullgml; law; sh; 1.0; 0.0
+fullgml; law; nl; 1.0; 0.0
+fullgml; law; si; 1.0; 0.0
+fullgml; law; pt; 1.0; 0.0
+fullgml; law; ro; 1.0; 0.0
+fullgml; law; ja; 1.0; 0.0
+fullgml; law; simple; 1.0; 0.0
+fullgml; law; it; 1.0; 0.0
+fullgml; law; he; 1.0; 0.0
+fullgml; law; da; 1.0; 0.0
+fullgml; law; en; 1.0; 0.0
+fullgml; law; sr; 1.0; 0.0
+fullgml; law; sv; 1.0; 0.0
+fullgml; law; ckb; 1.0; 0.0
+fullgml; law; ru; 1.0; 0.0
+fullgml; law; hi; 1.0; 0.0
+fullgml; law; bs; 1.0; 0.0
+fullgml; law; te; 1.0; 0.0
+fullgml; law; zh; 1.0; 0.0
+fullgml; law; mk; 1.0; 0.0
+fullgml; law; hu; 1.0; 0.0
+fullgml; law; ko; 1.0; 0.0
+fullgml; law; war; 1.0; 0.0
+fullgml; history; id; 1.0; 0.0
+fullgml; history; fr; 1.0; 0.0
+fullgml; history; tr; 1.0; 0.0
+fullgml; history; es; 1.0; 0.0
+fullgml; history; pl; 1.0; 0.0
+fullgml; history; vi; 1.0; 0.0
+fullgml; history; de; 1.0; 0.0
+fullgml; history; sh; 1.0; 0.0
+fullgml; history; nl; 1.0; 0.0
+fullgml; history; pt; 1.0; 0.0
+fullgml; history; ro; 1.0; 0.0
+fullgml; history; ja; 1.0; 0.0
+fullgml; history; simple; 1.0; 0.0
+fullgml; history; it; 1.0; 0.0
+fullgml; history; he; 1.0; 0.0
+fullgml; history; da; 1.0; 0.0
+fullgml; history; en; 1.0; 0.0
+fullgml; history; sr; 1.0; 0.0
+fullgml; history; sv; 1.0; 0.0
+fullgml; history; ru; 1.0; 0.0
+fullgml; history; bs; 1.0; 0.0
+fullgml; history; zh; 1.0; 0.0
+fullgml; history; mk; 1.0; 0.0
+fullgml; history; hu; 1.0; 0.0
+fullgml; history; ko; 1.0; 0.0
+fullgml; social conflict; es; 1.0; 0.0
+fullgml; social conflict; en; 1.0; 0.0
+fullgml; history of music; pl; 1.0; 0.0
+fullgml; history of music; en; 1.0; 0.0
+fullgml; term; id; 1.0; 0.0
+fullgml; term; fr; 1.0; 0.0
+fullgml; term; mr; 1.0; 0.0
+fullgml; term; tr; 1.0; 0.0
+fullgml; term; lv; 1.0; 0.0
+fullgml; term; el; 1.0; 0.0
+fullgml; term; es; 1.0; 0.0
+fullgml; term; pl; 1.0; 0.0
+fullgml; term; vi; 1.0; 0.0
+fullgml; term; de; 1.0; 0.0
+fullgml; term; ml; 1.0; 0.0
+fullgml; term; sh; 1.0; 0.0
+fullgml; term; nl; 1.0; 0.0
+fullgml; term; si; 1.0; 0.0
+fullgml; term; pt; 1.0; 0.0
+fullgml; term; ro; 1.0; 0.0
+fullgml; term; ja; 1.0; 0.0
+fullgml; term; simple; 1.0; 0.0
+fullgml; term; it; 1.0; 0.0
+fullgml; term; ceb; 1.0; 0.0
+fullgml; term; he; 1.0; 0.0
+fullgml; term; da; 1.0; 0.0
+fullgml; term; en; 1.0; 0.0
+fullgml; term; sr; 1.0; 0.0
+fullgml; term; sv; 1.0; 0.0
+fullgml; term; ckb; 1.0; 0.0
+fullgml; term; ru; 1.0; 0.0
+fullgml; term; hi; 1.0; 0.0
+fullgml; term; arz; 1.0; 0.0
+fullgml; term; bs; 1.0; 0.0
+fullgml; term; te; 1.0; 0.0
+fullgml; term; zh; 1.0; 0.0
+fullgml; term; mk; 1.0; 0.0
+fullgml; term; hu; 1.0; 0.0
+fullgml; term; ko; 1.0; 0.0
+fullgml; term; war; 1.0; 0.0
+fullgml; gender; fr; 1.0; 0.0
+fullgml; gender; es; 1.0; 0.0
+fullgml; gender; pl; 1.0; 0.0
+fullgml; gender; de; 1.0; 0.0
+fullgml; gender; pt; 1.0; 0.0
+fullgml; gender; ro; 1.0; 0.0
+fullgml; gender; ja; 1.0; 0.0
+fullgml; gender; simple; 1.0; 0.0
+fullgml; gender; it; 1.0; 0.0
+fullgml; gender; he; 1.0; 0.0
+fullgml; gender; en; 1.0; 0.0
+fullgml; gender; sr; 1.0; 0.0
+fullgml; gender; zh; 1.0; 0.0
+fullgml; gender; ko; 1.0; 0.0
+fullgml; symptom; id; 1.0; 0.0
+fullgml; symptom; fr; 1.0; 0.0
+fullgml; symptom; mr; 1.0; 0.0
+fullgml; symptom; tr; 1.0; 0.0
+fullgml; symptom; lv; 1.0; 0.0
+fullgml; symptom; el; 1.0; 0.0
+fullgml; symptom; es; 1.0; 0.0
+fullgml; symptom; pl; 1.0; 0.0
+fullgml; symptom; vi; 1.0; 0.0
+fullgml; symptom; de; 1.0; 0.0
+fullgml; symptom; ml; 1.0; 0.0
+fullgml; symptom; sh; 1.0; 0.0
+fullgml; symptom; nl; 1.0; 0.0
+fullgml; symptom; si; 1.0; 0.0
+fullgml; symptom; pt; 1.0; 0.0
+fullgml; symptom; ro; 1.0; 0.0
+fullgml; symptom; ja; 1.0; 0.0
+fullgml; symptom; simple; 1.0; 0.0
+fullgml; symptom; it; 1.0; 0.0
+fullgml; symptom; ceb; 1.0; 0.0
+fullgml; symptom; he; 1.0; 0.0
+fullgml; symptom; da; 1.0; 0.0
+fullgml; symptom; en; 1.0; 0.0
+fullgml; symptom; sr; 1.0; 0.0
+fullgml; symptom; sv; 1.0; 0.0
+fullgml; symptom; ckb; 1.0; 0.0
+fullgml; symptom; ru; 1.0; 0.0
+fullgml; symptom; hi; 1.0; 0.0
+fullgml; symptom; arz; 1.0; 0.0
+fullgml; symptom; bs; 1.0; 0.0
+fullgml; symptom; te; 1.0; 0.0
+fullgml; symptom; zh; 1.0; 0.0
+fullgml; symptom; mk; 1.0; 0.0
+fullgml; symptom; hu; 1.0; 0.0
+fullgml; symptom; ko; 1.0; 0.0
+fullgml; symptom; war; 1.0; 0.0
+fullgml; cancer; fr; 1.0; 0.0
+fullgml; cancer; de; 1.0; 0.0
+fullgml; cancer; it; 1.0; 0.0
+fullgml; cancer; en; 1.0; 0.0
+fullgml; Jewish people; fr; 1.0; 0.0
+fullgml; Jewish people; tr; 1.0; 0.0
+fullgml; Jewish people; es; 1.0; 0.0
+fullgml; Jewish people; pl; 1.0; 0.0
+fullgml; Jewish people; de; 1.0; 0.0
+fullgml; Jewish people; nl; 1.0; 0.0
+fullgml; Jewish people; pt; 1.0; 0.0
+fullgml; Jewish people; ja; 1.0; 0.0
+fullgml; Jewish people; it; 1.0; 0.0
+fullgml; Jewish people; he; 1.0; 0.0
+fullgml; Jewish people; en; 1.0; 0.0
+fullgml; Jewish people; sv; 1.0; 0.0
+fullgml; Jewish people; ru; 1.0; 0.0
+fullgml; archaeological site; id; 1.0; 0.0
+fullgml; archaeological site; fr; 1.0; 0.0
+fullgml; archaeological site; mr; 1.0; 0.0
+fullgml; archaeological site; tr; 1.0; 0.0
+fullgml; archaeological site; lv; 1.0; 0.0
+fullgml; archaeological site; el; 1.0; 0.0
+fullgml; archaeological site; es; 1.0; 0.0
+fullgml; archaeological site; pl; 1.0; 0.0
+fullgml; archaeological site; vi; 1.0; 0.0
+fullgml; archaeological site; de; 1.0; 0.0
+fullgml; archaeological site; ml; 1.0; 0.0
+fullgml; archaeological site; sh; 1.0; 0.0
+fullgml; archaeological site; nl; 1.0; 0.0
+fullgml; archaeological site; si; 1.0; 0.0
+fullgml; archaeological site; pt; 1.0; 0.0
+fullgml; archaeological site; ro; 1.0; 0.0
+fullgml; archaeological site; ja; 1.0; 0.0
+fullgml; archaeological site; simple; 1.0; 0.0
+fullgml; archaeological site; it; 1.0; 0.0
+fullgml; archaeological site; ceb; 1.0; 0.0
+fullgml; archaeological site; he; 1.0; 0.0
+fullgml; archaeological site; da; 1.0; 0.0
+fullgml; archaeological site; en; 1.0; 0.0
+fullgml; archaeological site; sr; 1.0; 0.0
+fullgml; archaeological site; sv; 1.0; 0.0
+fullgml; archaeological site; ckb; 1.0; 0.0
+fullgml; archaeological site; ru; 1.0; 0.0
+fullgml; archaeological site; hi; 1.0; 0.0
+fullgml; archaeological site; arz; 1.0; 0.0
+fullgml; archaeological site; bs; 1.0; 0.0
+fullgml; archaeological site; te; 1.0; 0.0
+fullgml; archaeological site; zh; 1.0; 0.0
+fullgml; archaeological site; mk; 1.0; 0.0
+fullgml; archaeological site; hu; 1.0; 0.0
+fullgml; archaeological site; ko; 1.0; 0.0
+fullgml; archaeological site; war; 1.0; 0.0
+fullgml; animal; id; 1.0; 0.0
+fullgml; animal; fr; 1.0; 0.0
+fullgml; animal; mr; 1.0; 0.0
+fullgml; animal; tr; 1.0; 0.0
+fullgml; animal; lv; 1.0; 0.0
+fullgml; animal; el; 1.0; 0.0
+fullgml; animal; es; 1.0; 0.0
+fullgml; animal; pl; 1.0; 0.0
+fullgml; animal; vi; 1.0; 0.0
+fullgml; animal; de; 1.0; 0.0
+fullgml; animal; ml; 1.0; 0.0
+fullgml; animal; sh; 1.0; 0.0
+fullgml; animal; nl; 1.0; 0.0
+fullgml; animal; pt; 1.0; 0.0
+fullgml; animal; ro; 1.0; 0.0
+fullgml; animal; ja; 1.0; 0.0
+fullgml; animal; simple; 1.0; 0.0
+fullgml; animal; it; 1.0; 0.0
+fullgml; animal; he; 1.0; 0.0
+fullgml; animal; da; 1.0; 0.0
+fullgml; animal; en; 1.0; 0.0
+fullgml; animal; sr; 1.0; 0.0
+fullgml; animal; sv; 1.0; 0.0
+fullgml; animal; ru; 1.0; 0.0
+fullgml; animal; hi; 1.0; 0.0
+fullgml; animal; arz; 1.0; 0.0
+fullgml; animal; bs; 1.0; 0.0
+fullgml; animal; te; 1.0; 0.0
+fullgml; animal; zh; 1.0; 0.0
+fullgml; animal; mk; 1.0; 0.0
+fullgml; animal; hu; 1.0; 0.0
+fullgml; animal; ko; 1.0; 0.0
+fullgml; vocabulary; fr; 1.0; 0.0
+fullgml; vocabulary; es; 1.0; 0.0
+fullgml; vocabulary; de; 1.0; 0.0
+fullgml; vocabulary; ro; 1.0; 0.0
+fullgml; vocabulary; ja; 1.0; 0.0
+fullgml; vocabulary; en; 1.0; 0.0
+fullgml; vocabulary; ru; 1.0; 0.0
+fullgml; vocabulary; zh; 1.0; 0.0
+fullgml; vocabulary; hu; 1.0; 0.0
+fullgml; Ancient Greece; es; 1.0; 0.0
+fullgml; Ancient Greece; en; 1.0; 0.0
+fullgml; stellar magnetic field; zh; 1.0; 0.0
+fullgml; human behaviour; id; 1.0; 0.0
+fullgml; human behaviour; fr; 1.0; 0.0
+fullgml; human behaviour; mr; 1.0; 0.0
+fullgml; human behaviour; tr; 1.0; 0.0
+fullgml; human behaviour; lv; 1.0; 0.0
+fullgml; human behaviour; el; 1.0; 0.0
+fullgml; human behaviour; es; 1.0; 0.0
+fullgml; human behaviour; pl; 1.0; 0.0
+fullgml; human behaviour; vi; 1.0; 0.0
+fullgml; human behaviour; de; 1.0; 0.0
+fullgml; human behaviour; ml; 1.0; 0.0
+fullgml; human behaviour; sh; 1.0; 0.0
+fullgml; human behaviour; nl; 1.0; 0.0
+fullgml; human behaviour; pt; 1.0; 0.0
+fullgml; human behaviour; ro; 1.0; 0.0
+fullgml; human behaviour; ja; 1.0; 0.0
+fullgml; human behaviour; simple; 1.0; 0.0
+fullgml; human behaviour; it; 1.0; 0.0
+fullgml; human behaviour; he; 1.0; 0.0
+fullgml; human behaviour; da; 1.0; 0.0
+fullgml; human behaviour; en; 1.0; 0.0
+fullgml; human behaviour; sr; 1.0; 0.0
+fullgml; human behaviour; sv; 1.0; 0.0
+fullgml; human behaviour; ru; 1.0; 0.0
+fullgml; human behaviour; hi; 1.0; 0.0
+fullgml; human behaviour; arz; 1.0; 0.0
+fullgml; human behaviour; bs; 1.0; 0.0
+fullgml; human behaviour; te; 1.0; 0.0
+fullgml; human behaviour; zh; 1.0; 0.0
+fullgml; human behaviour; mk; 1.0; 0.0
+fullgml; human behaviour; hu; 1.0; 0.0
+fullgml; human behaviour; ko; 1.0; 0.0
+fullgml; plant structure; id; 1.0; 0.0
+fullgml; plant structure; fr; 1.0; 0.0
+fullgml; plant structure; mr; 1.0; 0.0
+fullgml; plant structure; tr; 1.0; 0.0
+fullgml; plant structure; lv; 1.0; 0.0
+fullgml; plant structure; el; 1.0; 0.0
+fullgml; plant structure; es; 1.0; 0.0
+fullgml; plant structure; pl; 1.0; 0.0
+fullgml; plant structure; vi; 1.0; 0.0
+fullgml; plant structure; de; 1.0; 0.0
+fullgml; plant structure; ml; 1.0; 0.0
+fullgml; plant structure; sh; 1.0; 0.0
+fullgml; plant structure; nl; 1.0; 0.0
+fullgml; plant structure; si; 1.0; 0.0
+fullgml; plant structure; pt; 1.0; 0.0
+fullgml; plant structure; ro; 1.0; 0.0
+fullgml; plant structure; ja; 1.0; 0.0
+fullgml; plant structure; simple; 1.0; 0.0
+fullgml; plant structure; it; 1.0; 0.0
+fullgml; plant structure; he; 1.0; 0.0
+fullgml; plant structure; da; 1.0; 0.0
+fullgml; plant structure; en; 1.0; 0.0
+fullgml; plant structure; sr; 1.0; 0.0
+fullgml; plant structure; sv; 1.0; 0.0
+fullgml; plant structure; ckb; 1.0; 0.0
+fullgml; plant structure; ru; 1.0; 0.0
+fullgml; plant structure; hi; 1.0; 0.0
+fullgml; plant structure; bs; 1.0; 0.0
+fullgml; plant structure; te; 1.0; 0.0
+fullgml; plant structure; zh; 1.0; 0.0
+fullgml; plant structure; mk; 1.0; 0.0
+fullgml; plant structure; hu; 1.0; 0.0
+fullgml; plant structure; ko; 1.0; 0.0
+fullgml; plant structure; war; 1.0; 0.0
+fullgml; group action; id; 1.0; 0.0
+fullgml; group action; fr; 1.0; 0.0
+fullgml; group action; mr; 1.0; 0.0
+fullgml; group action; tr; 1.0; 0.0
+fullgml; group action; lv; 1.0; 0.0
+fullgml; group action; el; 1.0; 0.0
+fullgml; group action; es; 1.0; 0.0
+fullgml; group action; pl; 1.0; 0.0
+fullgml; group action; vi; 1.0; 0.0
+fullgml; group action; de; 1.0; 0.0
+fullgml; group action; ml; 1.0; 0.0
+fullgml; group action; sh; 1.0; 0.0
+fullgml; group action; nl; 1.0; 0.0
+fullgml; group action; pt; 1.0; 0.0
+fullgml; group action; ro; 1.0; 0.0
+fullgml; group action; ja; 1.0; 0.0
+fullgml; group action; simple; 1.0; 0.0
+fullgml; group action; it; 1.0; 0.0
+fullgml; group action; he; 1.0; 0.0
+fullgml; group action; da; 1.0; 0.0
+fullgml; group action; en; 1.0; 0.0
+fullgml; group action; sr; 1.0; 0.0
+fullgml; group action; sv; 1.0; 0.0
+fullgml; group action; ru; 1.0; 0.0
+fullgml; group action; hi; 1.0; 0.0
+fullgml; group action; arz; 1.0; 0.0
+fullgml; group action; bs; 1.0; 0.0
+fullgml; group action; zh; 1.0; 0.0
+fullgml; group action; mk; 1.0; 0.0
+fullgml; group action; hu; 1.0; 0.0
+fullgml; group action; ko; 1.0; 0.0
+fullgml; work of art; id; 1.0; 0.0
+fullgml; work of art; fr; 1.0; 0.0
+fullgml; work of art; tr; 1.0; 0.0
+fullgml; work of art; lv; 1.0; 0.0
+fullgml; work of art; el; 1.0; 0.0
+fullgml; work of art; es; 1.0; 0.0
+fullgml; work of art; pl; 1.0; 0.0
+fullgml; work of art; vi; 1.0; 0.0
+fullgml; work of art; de; 1.0; 0.0
+fullgml; work of art; ml; 1.0; 0.0
+fullgml; work of art; sh; 1.0; 0.0
+fullgml; work of art; nl; 1.0; 0.0
+fullgml; work of art; pt; 1.0; 0.0
+fullgml; work of art; ro; 1.0; 0.0
+fullgml; work of art; ja; 1.0; 0.0
+fullgml; work of art; simple; 1.0; 0.0
+fullgml; work of art; it; 1.0; 0.0
+fullgml; work of art; ceb; 1.0; 0.0
+fullgml; work of art; he; 1.0; 0.0
+fullgml; work of art; da; 1.0; 0.0
+fullgml; work of art; en; 1.0; 0.0
+fullgml; work of art; sr; 1.0; 0.0
+fullgml; work of art; sv; 1.0; 0.0
+fullgml; work of art; ru; 1.0; 0.0
+fullgml; work of art; hi; 1.0; 0.0
+fullgml; work of art; te; 1.0; 0.0
+fullgml; work of art; zh; 1.0; 0.0
+fullgml; work of art; mk; 1.0; 0.0
+fullgml; work of art; hu; 1.0; 0.0
+fullgml; work of art; ko; 1.0; 0.0
+fullgml; kiss; es; 1.0; 0.0
+fullgml; kiss; de; 1.0; 0.0
+fullgml; kiss; it; 1.0; 0.0
+fullgml; kiss; he; 1.0; 0.0
+fullgml; kiss; en; 1.0; 0.0
+fullgml; kiss; ru; 1.0; 0.0
+fullgml; temperature; id; 1.0; 0.0
+fullgml; temperature; fr; 1.0; 0.0
+fullgml; temperature; es; 1.0; 0.0
+fullgml; temperature; pl; 1.0; 0.0
+fullgml; temperature; de; 1.0; 0.0
+fullgml; temperature; sh; 1.0; 0.0
+fullgml; temperature; nl; 1.0; 0.0
+fullgml; temperature; si; 1.0; 0.0
+fullgml; temperature; pt; 1.0; 0.0
+fullgml; temperature; ro; 1.0; 0.0
+fullgml; temperature; simple; 1.0; 0.0
+fullgml; temperature; he; 1.0; 0.0
+fullgml; temperature; da; 1.0; 0.0
+fullgml; temperature; en; 1.0; 0.0
+fullgml; temperature; sv; 1.0; 0.0
+fullgml; temperature; ckb; 1.0; 0.0
+fullgml; temperature; ru; 1.0; 0.0
+fullgml; temperature; te; 1.0; 0.0
+fullgml; temperature; zh; 1.0; 0.0
+fullgml; temperature; ko; 1.0; 0.0
+fullgml; Bible; en; 1.0; 0.0
+fullgml; blazonry; id; 1.0; 0.0
+fullgml; blazonry; fr; 1.0; 0.0
+fullgml; terminology; id; 1.0; 0.0
+fullgml; terminology; fr; 1.0; 0.0
+fullgml; terminology; tr; 1.0; 0.0
+fullgml; terminology; es; 1.0; 0.0
+fullgml; terminology; pl; 1.0; 0.0
+fullgml; terminology; vi; 1.0; 0.0
+fullgml; terminology; de; 1.0; 0.0
+fullgml; terminology; nl; 1.0; 0.0
+fullgml; terminology; pt; 1.0; 0.0
+fullgml; terminology; ja; 1.0; 0.0
+fullgml; terminology; it; 1.0; 0.0
+fullgml; terminology; he; 1.0; 0.0
+fullgml; terminology; da; 1.0; 0.0
+fullgml; terminology; en; 1.0; 0.0
+fullgml; terminology; sv; 1.0; 0.0
+fullgml; terminology; ru; 1.0; 0.0
+fullgml; terminology; hi; 1.0; 0.0
+fullgml; terminology; zh; 1.0; 0.0
+fullgml; terminology; ko; 1.0; 0.0
+fullgml; social class; id; 1.0; 0.0
+fullgml; social class; fr; 1.0; 0.0
+fullgml; social class; mr; 1.0; 0.0
+fullgml; social class; tr; 1.0; 0.0
+fullgml; social class; lv; 1.0; 0.0
+fullgml; social class; el; 1.0; 0.0
+fullgml; social class; es; 1.0; 0.0
+fullgml; social class; pl; 1.0; 0.0
+fullgml; social class; vi; 1.0; 0.0
+fullgml; social class; de; 1.0; 0.0
+fullgml; social class; ml; 1.0; 0.0
+fullgml; social class; sh; 1.0; 0.0
+fullgml; social class; nl; 1.0; 0.0
+fullgml; social class; pt; 1.0; 0.0
+fullgml; social class; ro; 1.0; 0.0
+fullgml; social class; ja; 1.0; 0.0
+fullgml; social class; simple; 1.0; 0.0
+fullgml; social class; it; 1.0; 0.0
+fullgml; social class; he; 1.0; 0.0
+fullgml; social class; da; 1.0; 0.0
+fullgml; social class; en; 1.0; 0.0
+fullgml; social class; sr; 1.0; 0.0
+fullgml; social class; sv; 1.0; 0.0
+fullgml; social class; ckb; 1.0; 0.0
+fullgml; social class; ru; 1.0; 0.0
+fullgml; social class; hi; 1.0; 0.0
+fullgml; social class; arz; 1.0; 0.0
+fullgml; social class; bs; 1.0; 0.0
+fullgml; social class; zh; 1.0; 0.0
+fullgml; social class; mk; 1.0; 0.0
+fullgml; social class; hu; 1.0; 0.0
+fullgml; social class; ko; 1.0; 0.0
+fullgml; social class; war; 1.0; 0.0
+fullgml; languoid class; id; 1.0; 0.0
+fullgml; languoid class; fr; 1.0; 0.0
+fullgml; languoid class; mr; 1.0; 0.0
+fullgml; languoid class; tr; 1.0; 0.0
+fullgml; languoid class; lv; 1.0; 0.0
+fullgml; languoid class; el; 1.0; 0.0
+fullgml; languoid class; es; 1.0; 0.0
+fullgml; languoid class; pl; 1.0; 0.0
+fullgml; languoid class; vi; 1.0; 0.0
+fullgml; languoid class; de; 1.0; 0.0
+fullgml; languoid class; ml; 1.0; 0.0
+fullgml; languoid class; sh; 1.0; 0.0
+fullgml; languoid class; nl; 1.0; 0.0
+fullgml; languoid class; si; 1.0; 0.0
+fullgml; languoid class; pt; 1.0; 0.0
+fullgml; languoid class; ro; 1.0; 0.0
+fullgml; languoid class; ja; 1.0; 0.0
+fullgml; languoid class; simple; 1.0; 0.0
+fullgml; languoid class; it; 1.0; 0.0
+fullgml; languoid class; ceb; 1.0; 0.0
+fullgml; languoid class; he; 1.0; 0.0
+fullgml; languoid class; da; 1.0; 0.0
+fullgml; languoid class; en; 1.0; 0.0
+fullgml; languoid class; sr; 1.0; 0.0
+fullgml; languoid class; sv; 1.0; 0.0
+fullgml; languoid class; ckb; 1.0; 0.0
+fullgml; languoid class; ru; 1.0; 0.0
+fullgml; languoid class; hi; 1.0; 0.0
+fullgml; languoid class; arz; 1.0; 0.0
+fullgml; languoid class; bs; 1.0; 0.0
+fullgml; languoid class; te; 1.0; 0.0
+fullgml; languoid class; zh; 1.0; 0.0
+fullgml; languoid class; mk; 1.0; 0.0
+fullgml; languoid class; hu; 1.0; 0.0
+fullgml; languoid class; ko; 1.0; 0.0
+fullgml; languoid class; war; 1.0; 0.0
+fullgml; organism; id; 1.0; 0.0
+fullgml; organism; fr; 1.0; 0.0
+fullgml; organism; tr; 1.0; 0.0
+fullgml; organism; lv; 1.0; 0.0
+fullgml; organism; el; 1.0; 0.0
+fullgml; organism; es; 1.0; 0.0
+fullgml; organism; pl; 1.0; 0.0
+fullgml; organism; vi; 1.0; 0.0
+fullgml; organism; de; 1.0; 0.0
+fullgml; organism; ml; 1.0; 0.0
+fullgml; organism; sh; 1.0; 0.0
+fullgml; organism; nl; 1.0; 0.0
+fullgml; organism; si; 1.0; 0.0
+fullgml; organism; pt; 1.0; 0.0
+fullgml; organism; ro; 1.0; 0.0
+fullgml; organism; ja; 1.0; 0.0
+fullgml; organism; simple; 1.0; 0.0
+fullgml; organism; it; 1.0; 0.0
+fullgml; organism; he; 1.0; 0.0
+fullgml; organism; da; 1.0; 0.0
+fullgml; organism; en; 1.0; 0.0
+fullgml; organism; sr; 1.0; 0.0
+fullgml; organism; sv; 1.0; 0.0
+fullgml; organism; ckb; 1.0; 0.0
+fullgml; organism; ru; 1.0; 0.0
+fullgml; organism; hi; 1.0; 0.0
+fullgml; organism; bs; 1.0; 0.0
+fullgml; organism; te; 1.0; 0.0
+fullgml; organism; zh; 1.0; 0.0
+fullgml; organism; mk; 1.0; 0.0
+fullgml; organism; hu; 1.0; 0.0
+fullgml; organism; ko; 1.0; 0.0
+fullgml; organism; war; 1.0; 0.0
+fullgml; biochemical receptor; fr; 1.0; 0.0
+fullgml; biochemical receptor; es; 1.0; 0.0
+fullgml; biochemical receptor; pl; 1.0; 0.0
+fullgml; biochemical receptor; vi; 1.0; 0.0
+fullgml; biochemical receptor; de; 1.0; 0.0
+fullgml; biochemical receptor; sh; 1.0; 0.0
+fullgml; biochemical receptor; nl; 1.0; 0.0
+fullgml; biochemical receptor; pt; 1.0; 0.0
+fullgml; biochemical receptor; ja; 1.0; 0.0
+fullgml; biochemical receptor; it; 1.0; 0.0
+fullgml; biochemical receptor; en; 1.0; 0.0
+fullgml; biochemical receptor; sr; 1.0; 0.0
+fullgml; biochemical receptor; sv; 1.0; 0.0
+fullgml; biochemical receptor; ru; 1.0; 0.0
+fullgml; biochemical receptor; zh; 1.0; 0.0
+fullgml; biochemical receptor; hu; 1.0; 0.0
+fullgml; chemical substance; id; 1.0; 0.0
+fullgml; chemical substance; fr; 1.0; 0.0
+fullgml; chemical substance; mr; 1.0; 0.0
+fullgml; chemical substance; tr; 1.0; 0.0
+fullgml; chemical substance; lv; 1.0; 0.0
+fullgml; chemical substance; el; 1.0; 0.0
+fullgml; chemical substance; es; 1.0; 0.0
+fullgml; chemical substance; pl; 1.0; 0.0
+fullgml; chemical substance; vi; 1.0; 0.0
+fullgml; chemical substance; de; 1.0; 0.0
+fullgml; chemical substance; ml; 1.0; 0.0
+fullgml; chemical substance; sh; 1.0; 0.0
+fullgml; chemical substance; nl; 1.0; 0.0
+fullgml; chemical substance; si; 1.0; 0.0
+fullgml; chemical substance; pt; 1.0; 0.0
+fullgml; chemical substance; ro; 1.0; 0.0
+fullgml; chemical substance; ja; 1.0; 0.0
+fullgml; chemical substance; simple; 1.0; 0.0
+fullgml; chemical substance; it; 1.0; 0.0
+fullgml; chemical substance; ceb; 1.0; 0.0
+fullgml; chemical substance; he; 1.0; 0.0
+fullgml; chemical substance; da; 1.0; 0.0
+fullgml; chemical substance; en; 1.0; 0.0
+fullgml; chemical substance; sr; 1.0; 0.0
+fullgml; chemical substance; sv; 1.0; 0.0
+fullgml; chemical substance; ckb; 1.0; 0.0
+fullgml; chemical substance; ru; 1.0; 0.0
+fullgml; chemical substance; hi; 1.0; 0.0
+fullgml; chemical substance; bs; 1.0; 0.0
+fullgml; chemical substance; te; 1.0; 0.0
+fullgml; chemical substance; zh; 1.0; 0.0
+fullgml; chemical substance; mk; 1.0; 0.0
+fullgml; chemical substance; hu; 1.0; 0.0
+fullgml; chemical substance; ko; 1.0; 0.0
+fullgml; chemical substance; war; 1.0; 0.0
+fullgml; economy; id; 1.0; 0.0
+fullgml; economy; fr; 1.0; 0.0
+fullgml; economy; mr; 1.0; 0.0
+fullgml; economy; tr; 1.0; 0.0
+fullgml; economy; lv; 1.0; 0.0
+fullgml; economy; el; 1.0; 0.0
+fullgml; economy; es; 1.0; 0.0
+fullgml; economy; pl; 1.0; 0.0
+fullgml; economy; vi; 1.0; 0.0
+fullgml; economy; de; 1.0; 0.0
+fullgml; economy; ml; 1.0; 0.0
+fullgml; economy; sh; 1.0; 0.0
+fullgml; economy; nl; 1.0; 0.0
+fullgml; economy; pt; 1.0; 0.0
+fullgml; economy; ro; 1.0; 0.0
+fullgml; economy; ja; 1.0; 0.0
+fullgml; economy; simple; 1.0; 0.0
+fullgml; economy; it; 1.0; 0.0
+fullgml; economy; he; 1.0; 0.0
+fullgml; economy; da; 1.0; 0.0
+fullgml; economy; en; 1.0; 0.0
+fullgml; economy; sr; 1.0; 0.0
+fullgml; economy; sv; 1.0; 0.0
+fullgml; economy; ru; 1.0; 0.0
+fullgml; economy; hi; 1.0; 0.0
+fullgml; economy; arz; 1.0; 0.0
+fullgml; economy; bs; 1.0; 0.0
+fullgml; economy; te; 1.0; 0.0
+fullgml; economy; zh; 1.0; 0.0
+fullgml; economy; mk; 1.0; 0.0
+fullgml; economy; ko; 1.0; 0.0
+fullgml; genome; en; 1.0; 0.0
+fullgml; prison; id; 1.0; 0.0
+fullgml; prison; fr; 1.0; 0.0
+fullgml; prison; mr; 1.0; 0.0
+fullgml; prison; tr; 1.0; 0.0
+fullgml; prison; lv; 1.0; 0.0
+fullgml; prison; el; 1.0; 0.0
+fullgml; prison; es; 1.0; 0.0
+fullgml; prison; pl; 1.0; 0.0
+fullgml; prison; vi; 1.0; 0.0
+fullgml; prison; de; 1.0; 0.0
+fullgml; prison; ml; 1.0; 0.0
+fullgml; prison; sh; 1.0; 0.0
+fullgml; prison; nl; 1.0; 0.0
+fullgml; prison; si; 1.0; 0.0
+fullgml; prison; pt; 1.0; 0.0
+fullgml; prison; ro; 1.0; 0.0
+fullgml; prison; ja; 1.0; 0.0
+fullgml; prison; simple; 1.0; 0.0
+fullgml; prison; it; 1.0; 0.0
+fullgml; prison; ceb; 1.0; 0.0
+fullgml; prison; he; 1.0; 0.0
+fullgml; prison; da; 1.0; 0.0
+fullgml; prison; en; 1.0; 0.0
+fullgml; prison; sr; 1.0; 0.0
+fullgml; prison; sv; 1.0; 0.0
+fullgml; prison; ckb; 1.0; 0.0
+fullgml; prison; ru; 1.0; 0.0
+fullgml; prison; hi; 1.0; 0.0
+fullgml; prison; arz; 1.0; 0.0
+fullgml; prison; bs; 1.0; 0.0
+fullgml; prison; te; 1.0; 0.0
+fullgml; prison; zh; 1.0; 0.0
+fullgml; prison; mk; 1.0; 0.0
+fullgml; prison; hu; 1.0; 0.0
+fullgml; prison; ko; 1.0; 0.0
+fullgml; international trade; nl; 1.0; 0.0
+fullgml; international trade; ja; 1.0; 0.0
+fullgml; international trade; en; 1.0; 0.0
+fullgml; international trade; zh; 1.0; 0.0
+fullgml; aspect of history; id; 1.0; 0.0
+fullgml; aspect of history; fr; 1.0; 0.0
+fullgml; aspect of history; mr; 1.0; 0.0
+fullgml; aspect of history; tr; 1.0; 0.0
+fullgml; aspect of history; lv; 1.0; 0.0
+fullgml; aspect of history; el; 1.0; 0.0
+fullgml; aspect of history; es; 1.0; 0.0
+fullgml; aspect of history; pl; 1.0; 0.0
+fullgml; aspect of history; vi; 1.0; 0.0
+fullgml; aspect of history; de; 1.0; 0.0
+fullgml; aspect of history; ml; 1.0; 0.0
+fullgml; aspect of history; sh; 1.0; 0.0
+fullgml; aspect of history; nl; 1.0; 0.0
+fullgml; aspect of history; si; 1.0; 0.0
+fullgml; aspect of history; pt; 1.0; 0.0
+fullgml; aspect of history; ro; 1.0; 0.0
+fullgml; aspect of history; ja; 1.0; 0.0
+fullgml; aspect of history; simple; 1.0; 0.0
+fullgml; aspect of history; it; 1.0; 0.0
+fullgml; aspect of history; ceb; 1.0; 0.0
+fullgml; aspect of history; he; 1.0; 0.0
+fullgml; aspect of history; da; 1.0; 0.0
+fullgml; aspect of history; en; 1.0; 0.0
+fullgml; aspect of history; sr; 1.0; 0.0
+fullgml; aspect of history; sv; 1.0; 0.0
+fullgml; aspect of history; ckb; 1.0; 0.0
+fullgml; aspect of history; ru; 1.0; 0.0
+fullgml; aspect of history; hi; 1.0; 0.0
+fullgml; aspect of history; arz; 1.0; 0.0
+fullgml; aspect of history; bs; 1.0; 0.0
+fullgml; aspect of history; te; 1.0; 0.0
+fullgml; aspect of history; zh; 1.0; 0.0
+fullgml; aspect of history; mk; 1.0; 0.0
+fullgml; aspect of history; hu; 1.0; 0.0
+fullgml; aspect of history; ko; 1.0; 0.0
+fullgml; aspect of history; war; 1.0; 0.0
+fullgml; Christian hymn; id; 1.0; 0.0
+fullgml; Christian hymn; fr; 1.0; 0.0
+fullgml; Christian hymn; el; 1.0; 0.0
+fullgml; Christian hymn; es; 1.0; 0.0
+fullgml; Christian hymn; pl; 1.0; 0.0
+fullgml; Christian hymn; vi; 1.0; 0.0
+fullgml; Christian hymn; de; 1.0; 0.0
+fullgml; Christian hymn; nl; 1.0; 0.0
+fullgml; Christian hymn; pt; 1.0; 0.0
+fullgml; Christian hymn; ro; 1.0; 0.0
+fullgml; Christian hymn; ja; 1.0; 0.0
+fullgml; Christian hymn; simple; 1.0; 0.0
+fullgml; Christian hymn; it; 1.0; 0.0
+fullgml; Christian hymn; he; 1.0; 0.0
+fullgml; Christian hymn; da; 1.0; 0.0
+fullgml; Christian hymn; en; 1.0; 0.0
+fullgml; Christian hymn; sr; 1.0; 0.0
+fullgml; Christian hymn; sv; 1.0; 0.0
+fullgml; Christian hymn; ru; 1.0; 0.0
+fullgml; Christian hymn; zh; 1.0; 0.0
+fullgml; Christian hymn; hu; 1.0; 0.0
+fullgml; Christian hymn; ko; 1.0; 0.0
+fullgml; stellar evolution; id; 1.0; 0.0
+fullgml; stellar evolution; fr; 1.0; 0.0
+fullgml; stellar evolution; mr; 1.0; 0.0
+fullgml; stellar evolution; tr; 1.0; 0.0
+fullgml; stellar evolution; lv; 1.0; 0.0
+fullgml; stellar evolution; el; 1.0; 0.0
+fullgml; stellar evolution; es; 1.0; 0.0
+fullgml; stellar evolution; pl; 1.0; 0.0
+fullgml; stellar evolution; vi; 1.0; 0.0
+fullgml; stellar evolution; de; 1.0; 0.0
+fullgml; stellar evolution; ml; 1.0; 0.0
+fullgml; stellar evolution; sh; 1.0; 0.0
+fullgml; stellar evolution; nl; 1.0; 0.0
+fullgml; stellar evolution; si; 1.0; 0.0
+fullgml; stellar evolution; pt; 1.0; 0.0
+fullgml; stellar evolution; ro; 1.0; 0.0
+fullgml; stellar evolution; ja; 1.0; 0.0
+fullgml; stellar evolution; simple; 1.0; 0.0
+fullgml; stellar evolution; it; 1.0; 0.0
+fullgml; stellar evolution; he; 1.0; 0.0
+fullgml; stellar evolution; da; 1.0; 0.0
+fullgml; stellar evolution; en; 1.0; 0.0
+fullgml; stellar evolution; sr; 1.0; 0.0
+fullgml; stellar evolution; sv; 1.0; 0.0
+fullgml; stellar evolution; ru; 1.0; 0.0
+fullgml; stellar evolution; hi; 1.0; 0.0
+fullgml; stellar evolution; bs; 1.0; 0.0
+fullgml; stellar evolution; zh; 1.0; 0.0
+fullgml; stellar evolution; mk; 1.0; 0.0
+fullgml; stellar evolution; hu; 1.0; 0.0
+fullgml; stellar evolution; ko; 1.0; 0.0
+fullgml; protist; es; 1.0; 0.0
+fullgml; military term; id; 1.0; 0.0
+fullgml; military term; fr; 1.0; 0.0
+fullgml; military term; tr; 1.0; 0.0
+fullgml; military term; el; 1.0; 0.0
+fullgml; military term; es; 1.0; 0.0
+fullgml; military term; pl; 1.0; 0.0
+fullgml; military term; vi; 1.0; 0.0
+fullgml; military term; de; 1.0; 0.0
+fullgml; military term; sh; 1.0; 0.0
+fullgml; military term; nl; 1.0; 0.0
+fullgml; military term; si; 1.0; 0.0
+fullgml; military term; pt; 1.0; 0.0
+fullgml; military term; ro; 1.0; 0.0
+fullgml; military term; ja; 1.0; 0.0
+fullgml; military term; simple; 1.0; 0.0
+fullgml; military term; it; 1.0; 0.0
+fullgml; military term; he; 1.0; 0.0
+fullgml; military term; en; 1.0; 0.0
+fullgml; military term; sr; 1.0; 0.0
+fullgml; military term; sv; 1.0; 0.0
+fullgml; military term; ru; 1.0; 0.0
+fullgml; military term; hi; 1.0; 0.0
+fullgml; military term; zh; 1.0; 0.0
+fullgml; military term; mk; 1.0; 0.0
+fullgml; military term; hu; 1.0; 0.0
+fullgml; military term; ko; 1.0; 0.0
+fullgml; historical language; id; 1.0; 0.0
+fullgml; historical language; fr; 1.0; 0.0
+fullgml; historical language; mr; 1.0; 0.0
+fullgml; historical language; tr; 1.0; 0.0
+fullgml; historical language; lv; 1.0; 0.0
+fullgml; historical language; el; 1.0; 0.0
+fullgml; historical language; es; 1.0; 0.0
+fullgml; historical language; pl; 1.0; 0.0
+fullgml; historical language; vi; 1.0; 0.0
+fullgml; historical language; de; 1.0; 0.0
+fullgml; historical language; ml; 1.0; 0.0
+fullgml; historical language; sh; 1.0; 0.0
+fullgml; historical language; nl; 1.0; 0.0
+fullgml; historical language; pt; 1.0; 0.0
+fullgml; historical language; ro; 1.0; 0.0
+fullgml; historical language; ja; 1.0; 0.0
+fullgml; historical language; simple; 1.0; 0.0
+fullgml; historical language; it; 1.0; 0.0
+fullgml; historical language; he; 1.0; 0.0
+fullgml; historical language; da; 1.0; 0.0
+fullgml; historical language; en; 1.0; 0.0
+fullgml; historical language; sr; 1.0; 0.0
+fullgml; historical language; sv; 1.0; 0.0
+fullgml; historical language; ckb; 1.0; 0.0
+fullgml; historical language; ru; 1.0; 0.0
+fullgml; historical language; hi; 1.0; 0.0
+fullgml; historical language; arz; 1.0; 0.0
+fullgml; historical language; bs; 1.0; 0.0
+fullgml; historical language; te; 1.0; 0.0
+fullgml; historical language; zh; 1.0; 0.0
+fullgml; historical language; mk; 1.0; 0.0
+fullgml; historical language; hu; 1.0; 0.0
+fullgml; historical language; ko; 1.0; 0.0
+fullgml; music; id; 1.0; 0.0
+fullgml; music; fr; 1.0; 0.0
+fullgml; music; mr; 1.0; 0.0
+fullgml; music; tr; 1.0; 0.0
+fullgml; music; lv; 1.0; 0.0
+fullgml; music; es; 1.0; 0.0
+fullgml; music; pl; 1.0; 0.0
+fullgml; music; de; 1.0; 0.0
+fullgml; music; nl; 1.0; 0.0
+fullgml; music; pt; 1.0; 0.0
+fullgml; music; ro; 1.0; 0.0
+fullgml; music; ja; 1.0; 0.0
+fullgml; music; it; 1.0; 0.0
+fullgml; music; en; 1.0; 0.0
+fullgml; music; sr; 1.0; 0.0
+fullgml; music; sv; 1.0; 0.0
+fullgml; music; ru; 1.0; 0.0
+fullgml; music; zh; 1.0; 0.0
+fullgml; music; hu; 1.0; 0.0
+fullgml; drug; id; 1.0; 0.0
+fullgml; drug; fr; 1.0; 0.0
+fullgml; drug; mr; 1.0; 0.0
+fullgml; drug; tr; 1.0; 0.0
+fullgml; drug; lv; 1.0; 0.0
+fullgml; drug; el; 1.0; 0.0
+fullgml; drug; es; 1.0; 0.0
+fullgml; drug; pl; 1.0; 0.0
+fullgml; drug; vi; 1.0; 0.0
+fullgml; drug; de; 1.0; 0.0
+fullgml; drug; ml; 1.0; 0.0
+fullgml; drug; sh; 1.0; 0.0
+fullgml; drug; nl; 1.0; 0.0
+fullgml; drug; si; 1.0; 0.0
+fullgml; drug; pt; 1.0; 0.0
+fullgml; drug; ro; 1.0; 0.0
+fullgml; drug; ja; 1.0; 0.0
+fullgml; drug; simple; 1.0; 0.0
+fullgml; drug; it; 1.0; 0.0
+fullgml; drug; ceb; 1.0; 0.0
+fullgml; drug; he; 1.0; 0.0
+fullgml; drug; da; 1.0; 0.0
+fullgml; drug; en; 1.0; 0.0
+fullgml; drug; sr; 1.0; 0.0
+fullgml; drug; sv; 1.0; 0.0
+fullgml; drug; ckb; 1.0; 0.0
+fullgml; drug; ru; 1.0; 0.0
+fullgml; drug; hi; 1.0; 0.0
+fullgml; drug; arz; 1.0; 0.0
+fullgml; drug; bs; 1.0; 0.0
+fullgml; drug; te; 1.0; 0.0
+fullgml; drug; zh; 1.0; 0.0
+fullgml; drug; mk; 1.0; 0.0
+fullgml; drug; hu; 1.0; 0.0
+fullgml; drug; ko; 1.0; 0.0
+fullgml; drug; war; 1.0; 0.0
+fullgml; probability distribution; id; 1.0; 0.0
+fullgml; probability distribution; fr; 1.0; 0.0
+fullgml; probability distribution; tr; 1.0; 0.0
+fullgml; probability distribution; el; 1.0; 0.0
+fullgml; probability distribution; es; 1.0; 0.0
+fullgml; probability distribution; pl; 1.0; 0.0
+fullgml; probability distribution; vi; 1.0; 0.0
+fullgml; probability distribution; de; 1.0; 0.0
+fullgml; probability distribution; sh; 1.0; 0.0
+fullgml; probability distribution; nl; 1.0; 0.0
+fullgml; probability distribution; pt; 1.0; 0.0
+fullgml; probability distribution; ja; 1.0; 0.0
+fullgml; probability distribution; simple; 1.0; 0.0
+fullgml; probability distribution; it; 1.0; 0.0
+fullgml; probability distribution; he; 1.0; 0.0
+fullgml; probability distribution; da; 1.0; 0.0
+fullgml; probability distribution; en; 1.0; 0.0
+fullgml; probability distribution; sr; 1.0; 0.0
+fullgml; probability distribution; sv; 1.0; 0.0
+fullgml; probability distribution; ru; 1.0; 0.0
+fullgml; probability distribution; zh; 1.0; 0.0
+fullgml; probability distribution; mk; 1.0; 0.0
+fullgml; probability distribution; hu; 1.0; 0.0
+fullgml; probability distribution; ko; 1.0; 0.0
+fullgml; ancient Rome; it; 1.0; 0.0
+fullgml; ancient Rome; ru; 1.0; 0.0
+fullgml; computing; fr; 1.0; 0.0
+fullgml; computing; de; 1.0; 0.0
+fullgml; computing; nl; 1.0; 0.0
+fullgml; computing; it; 1.0; 0.0
+fullgml; computing; en; 1.0; 0.0
+fullgml; computing; ru; 1.0; 0.0
+fullgml; computing; ko; 1.0; 0.0
+fullgml; agriculture; fr; 1.0; 0.0
+fullgml; agriculture; de; 1.0; 0.0
+fullgml; agriculture; ml; 1.0; 0.0
+fullgml; agriculture; pt; 1.0; 0.0
+fullgml; organic compound; id; 1.0; 0.0
+fullgml; organic compound; fr; 1.0; 0.0
+fullgml; organic compound; mr; 1.0; 0.0
+fullgml; organic compound; tr; 1.0; 0.0
+fullgml; organic compound; lv; 1.0; 0.0
+fullgml; organic compound; el; 1.0; 0.0
+fullgml; organic compound; es; 1.0; 0.0
+fullgml; organic compound; pl; 1.0; 0.0
+fullgml; organic compound; vi; 1.0; 0.0
+fullgml; organic compound; de; 1.0; 0.0
+fullgml; organic compound; ml; 1.0; 0.0
+fullgml; organic compound; sh; 1.0; 0.0
+fullgml; organic compound; nl; 1.0; 0.0
+fullgml; organic compound; pt; 1.0; 0.0
+fullgml; organic compound; ro; 1.0; 0.0
+fullgml; organic compound; ja; 1.0; 0.0
+fullgml; organic compound; simple; 1.0; 0.0
+fullgml; organic compound; it; 1.0; 0.0
+fullgml; organic compound; he; 1.0; 0.0
+fullgml; organic compound; da; 1.0; 0.0
+fullgml; organic compound; en; 1.0; 0.0
+fullgml; organic compound; sr; 1.0; 0.0
+fullgml; organic compound; sv; 1.0; 0.0
+fullgml; organic compound; ru; 1.0; 0.0
+fullgml; organic compound; hi; 1.0; 0.0
+fullgml; organic compound; bs; 1.0; 0.0
+fullgml; organic compound; te; 1.0; 0.0
+fullgml; organic compound; zh; 1.0; 0.0
+fullgml; organic compound; mk; 1.0; 0.0
+fullgml; organic compound; hu; 1.0; 0.0
+fullgml; organic compound; ko; 1.0; 0.0
+fullgml; organic compound; war; 1.0; 0.0
+fullgml; rural area; id; 1.0; 0.0
+fullgml; rural area; fr; 1.0; 0.0
+fullgml; rural area; tr; 1.0; 0.0
+fullgml; rural area; el; 1.0; 0.0
+fullgml; rural area; es; 1.0; 0.0
+fullgml; rural area; pl; 1.0; 0.0
+fullgml; rural area; de; 1.0; 0.0
+fullgml; rural area; sh; 1.0; 0.0
+fullgml; rural area; nl; 1.0; 0.0
+fullgml; rural area; pt; 1.0; 0.0
+fullgml; rural area; ro; 1.0; 0.0
+fullgml; rural area; ja; 1.0; 0.0
+fullgml; rural area; it; 1.0; 0.0
+fullgml; rural area; ceb; 1.0; 0.0
+fullgml; rural area; da; 1.0; 0.0
+fullgml; rural area; en; 1.0; 0.0
+fullgml; rural area; sr; 1.0; 0.0
+fullgml; rural area; sv; 1.0; 0.0
+fullgml; rural area; ru; 1.0; 0.0
+fullgml; rural area; zh; 1.0; 0.0
+fullgml; rural area; mk; 1.0; 0.0
+fullgml; rural area; hu; 1.0; 0.0
+fullgml; rural area; ko; 1.0; 0.0
+fullgml; effect; id; 1.0; 0.0
+fullgml; effect; fr; 1.0; 0.0
+fullgml; effect; tr; 1.0; 0.0
+fullgml; effect; es; 1.0; 0.0
+fullgml; effect; pl; 1.0; 0.0
+fullgml; effect; vi; 1.0; 0.0
+fullgml; effect; de; 1.0; 0.0
+fullgml; effect; nl; 1.0; 0.0
+fullgml; effect; pt; 1.0; 0.0
+fullgml; effect; ro; 1.0; 0.0
+fullgml; effect; ja; 1.0; 0.0
+fullgml; effect; simple; 1.0; 0.0
+fullgml; effect; it; 1.0; 0.0
+fullgml; effect; he; 1.0; 0.0
+fullgml; effect; en; 1.0; 0.0
+fullgml; effect; ru; 1.0; 0.0
+fullgml; effect; hi; 1.0; 0.0
+fullgml; effect; zh; 1.0; 0.0
+fullgml; effect; ko; 1.0; 0.0
+fullgml; fruit; id; 1.0; 0.0
+fullgml; fruit; fr; 1.0; 0.0
+fullgml; fruit; mr; 1.0; 0.0
+fullgml; fruit; tr; 1.0; 0.0
+fullgml; fruit; lv; 1.0; 0.0
+fullgml; fruit; es; 1.0; 0.0
+fullgml; fruit; pl; 1.0; 0.0
+fullgml; fruit; vi; 1.0; 0.0
+fullgml; fruit; de; 1.0; 0.0
+fullgml; fruit; ml; 1.0; 0.0
+fullgml; fruit; sh; 1.0; 0.0
+fullgml; fruit; nl; 1.0; 0.0
+fullgml; fruit; pt; 1.0; 0.0
+fullgml; fruit; ro; 1.0; 0.0
+fullgml; fruit; ja; 1.0; 0.0
+fullgml; fruit; simple; 1.0; 0.0
+fullgml; fruit; it; 1.0; 0.0
+fullgml; fruit; he; 1.0; 0.0
+fullgml; fruit; da; 1.0; 0.0
+fullgml; fruit; en; 1.0; 0.0
+fullgml; fruit; sr; 1.0; 0.0
+fullgml; fruit; sv; 1.0; 0.0
+fullgml; fruit; ckb; 1.0; 0.0
+fullgml; fruit; ru; 1.0; 0.0
+fullgml; fruit; hi; 1.0; 0.0
+fullgml; fruit; arz; 1.0; 0.0
+fullgml; fruit; bs; 1.0; 0.0
+fullgml; fruit; zh; 1.0; 0.0
+fullgml; fruit; mk; 1.0; 0.0
+fullgml; fruit; hu; 1.0; 0.0
+fullgml; fruit; ko; 1.0; 0.0
+fullgml; black hole; pt; 1.0; 0.0
+fullgml; black hole; it; 1.0; 0.0
+fullgml; black hole; en; 1.0; 0.0
+fullgml; black hole; ru; 1.0; 0.0
+fullgml; group or class of chemical substances; id; 1.0; 0.0
+fullgml; group or class of chemical substances; fr; 1.0; 0.0
+fullgml; group or class of chemical substances; mr; 1.0; 0.0
+fullgml; group or class of chemical substances; tr; 1.0; 0.0
+fullgml; group or class of chemical substances; lv; 1.0; 0.0
+fullgml; group or class of chemical substances; el; 1.0; 0.0
+fullgml; group or class of chemical substances; es; 1.0; 0.0
+fullgml; group or class of chemical substances; pl; 1.0; 0.0
+fullgml; group or class of chemical substances; vi; 1.0; 0.0
+fullgml; group or class of chemical substances; de; 1.0; 0.0
+fullgml; group or class of chemical substances; ml; 1.0; 0.0
+fullgml; group or class of chemical substances; sh; 1.0; 0.0
+fullgml; group or class of chemical substances; nl; 1.0; 0.0
+fullgml; group or class of chemical substances; si; 1.0; 0.0
+fullgml; group or class of chemical substances; pt; 1.0; 0.0
+fullgml; group or class of chemical substances; ro; 1.0; 0.0
+fullgml; group or class of chemical substances; ja; 1.0; 0.0
+fullgml; group or class of chemical substances; simple; 1.0; 0.0
+fullgml; group or class of chemical substances; it; 1.0; 0.0
+fullgml; group or class of chemical substances; ceb; 1.0; 0.0
+fullgml; group or class of chemical substances; he; 1.0; 0.0
+fullgml; group or class of chemical substances; da; 1.0; 0.0
+fullgml; group or class of chemical substances; en; 1.0; 0.0
+fullgml; group or class of chemical substances; sr; 1.0; 0.0
+fullgml; group or class of chemical substances; sv; 1.0; 0.0
+fullgml; group or class of chemical substances; ckb; 1.0; 0.0
+fullgml; group or class of chemical substances; ru; 1.0; 0.0
+fullgml; group or class of chemical substances; hi; 1.0; 0.0
+fullgml; group or class of chemical substances; arz; 1.0; 0.0
+fullgml; group or class of chemical substances; bs; 1.0; 0.0
+fullgml; group or class of chemical substances; te; 1.0; 0.0
+fullgml; group or class of chemical substances; zh; 1.0; 0.0
+fullgml; group or class of chemical substances; mk; 1.0; 0.0
+fullgml; group or class of chemical substances; hu; 1.0; 0.0
+fullgml; group or class of chemical substances; ko; 1.0; 0.0
+fullgml; group or class of chemical substances; war; 1.0; 0.0
+fullgml; lexicon; id; 1.0; 0.0
+fullgml; lexicon; fr; 1.0; 0.0
+fullgml; lexicon; pl; 1.0; 0.0
+fullgml; lexicon; de; 1.0; 0.0
+fullgml; lexicon; nl; 1.0; 0.0
+fullgml; lexicon; ja; 1.0; 0.0
+fullgml; lexicon; simple; 1.0; 0.0
+fullgml; lexicon; it; 1.0; 0.0
+fullgml; lexicon; he; 1.0; 0.0
+fullgml; lexicon; da; 1.0; 0.0
+fullgml; lexicon; en; 1.0; 0.0
+fullgml; lexicon; sv; 1.0; 0.0
+fullgml; lexicon; ru; 1.0; 0.0
+fullgml; lexicon; zh; 1.0; 0.0
+fullgml; lexicon; ko; 1.0; 0.0
+fullgml; morpheme; fr; 1.0; 0.0
+fullgml; morpheme; es; 1.0; 0.0
+fullgml; morpheme; pl; 1.0; 0.0
+fullgml; morpheme; de; 1.0; 0.0
+fullgml; morpheme; nl; 1.0; 0.0
+fullgml; morpheme; he; 1.0; 0.0
+fullgml; morpheme; en; 1.0; 0.0
+fullgml; morpheme; ru; 1.0; 0.0
+fullgml; morpheme; hi; 1.0; 0.0
+fullgml; ecosystem; id; 1.0; 0.0
+fullgml; ecosystem; fr; 1.0; 0.0
+fullgml; ecosystem; tr; 1.0; 0.0
+fullgml; ecosystem; lv; 1.0; 0.0
+fullgml; ecosystem; el; 1.0; 0.0
+fullgml; ecosystem; es; 1.0; 0.0
+fullgml; ecosystem; pl; 1.0; 0.0
+fullgml; ecosystem; vi; 1.0; 0.0
+fullgml; ecosystem; de; 1.0; 0.0
+fullgml; ecosystem; ml; 1.0; 0.0
+fullgml; ecosystem; sh; 1.0; 0.0
+fullgml; ecosystem; nl; 1.0; 0.0
+fullgml; ecosystem; si; 1.0; 0.0
+fullgml; ecosystem; pt; 1.0; 0.0
+fullgml; ecosystem; ro; 1.0; 0.0
+fullgml; ecosystem; ja; 1.0; 0.0
+fullgml; ecosystem; simple; 1.0; 0.0
+fullgml; ecosystem; it; 1.0; 0.0
+fullgml; ecosystem; ceb; 1.0; 0.0
+fullgml; ecosystem; he; 1.0; 0.0
+fullgml; ecosystem; da; 1.0; 0.0
+fullgml; ecosystem; en; 1.0; 0.0
+fullgml; ecosystem; sr; 1.0; 0.0
+fullgml; ecosystem; sv; 1.0; 0.0
+fullgml; ecosystem; ckb; 1.0; 0.0
+fullgml; ecosystem; ru; 1.0; 0.0
+fullgml; ecosystem; hi; 1.0; 0.0
+fullgml; ecosystem; bs; 1.0; 0.0
+fullgml; ecosystem; te; 1.0; 0.0
+fullgml; ecosystem; zh; 1.0; 0.0
+fullgml; ecosystem; mk; 1.0; 0.0
+fullgml; ecosystem; hu; 1.0; 0.0
+fullgml; ecosystem; ko; 1.0; 0.0
+fullgml; ecosystem; war; 1.0; 0.0
+fullgml; francophonie; fr; 1.0; 0.0
+fullgml; francophonie; en; 1.0; 0.0
+fullgml; linguistic prescription; fr; 1.0; 0.0
+fullgml; linguistic prescription; es; 1.0; 0.0
+fullgml; linguistic prescription; pt; 1.0; 0.0
+fullgml; linguistic prescription; ja; 1.0; 0.0
+fullgml; linguistic prescription; it; 1.0; 0.0
+fullgml; linguistic prescription; en; 1.0; 0.0
+fullgml; language attitude; id; 1.0; 0.0
+fullgml; language attitude; fr; 1.0; 0.0
+fullgml; language attitude; lv; 1.0; 0.0
+fullgml; language attitude; es; 1.0; 0.0
+fullgml; language attitude; pl; 1.0; 0.0
+fullgml; language attitude; de; 1.0; 0.0
+fullgml; language attitude; sh; 1.0; 0.0
+fullgml; language attitude; nl; 1.0; 0.0
+fullgml; language attitude; pt; 1.0; 0.0
+fullgml; language attitude; it; 1.0; 0.0
+fullgml; language attitude; da; 1.0; 0.0
+fullgml; language attitude; en; 1.0; 0.0
+fullgml; language attitude; sr; 1.0; 0.0
+fullgml; language attitude; sv; 1.0; 0.0
+fullgml; language attitude; ru; 1.0; 0.0
+fullgml; language attitude; hi; 1.0; 0.0
+fullgml; language attitude; zh; 1.0; 0.0
+fullgml; language attitude; ko; 1.0; 0.0
+fullgml; Ancient Egypt; fr; 1.0; 0.0
+fullgml; Ancient Egypt; es; 1.0; 0.0
+fullgml; Ancient Egypt; de; 1.0; 0.0
+fullgml; Ancient Egypt; pt; 1.0; 0.0
+fullgml; Ancient Egypt; it; 1.0; 0.0
+fullgml; Ancient Egypt; en; 1.0; 0.0
+fullgml; phenomenon; id; 1.0; 0.0
+fullgml; phenomenon; fr; 1.0; 0.0
+fullgml; phenomenon; tr; 1.0; 0.0
+fullgml; phenomenon; lv; 1.0; 0.0
+fullgml; phenomenon; es; 1.0; 0.0
+fullgml; phenomenon; pl; 1.0; 0.0
+fullgml; phenomenon; vi; 1.0; 0.0
+fullgml; phenomenon; de; 1.0; 0.0
+fullgml; phenomenon; nl; 1.0; 0.0
+fullgml; phenomenon; pt; 1.0; 0.0
+fullgml; phenomenon; ro; 1.0; 0.0
+fullgml; phenomenon; ja; 1.0; 0.0
+fullgml; phenomenon; simple; 1.0; 0.0
+fullgml; phenomenon; it; 1.0; 0.0
+fullgml; phenomenon; he; 1.0; 0.0
+fullgml; phenomenon; da; 1.0; 0.0
+fullgml; phenomenon; en; 1.0; 0.0
+fullgml; phenomenon; sr; 1.0; 0.0
+fullgml; phenomenon; sv; 1.0; 0.0
+fullgml; phenomenon; ru; 1.0; 0.0
+fullgml; phenomenon; te; 1.0; 0.0
+fullgml; phenomenon; zh; 1.0; 0.0
+fullgml; phenomenon; hu; 1.0; 0.0
+fullgml; phenomenon; ko; 1.0; 0.0
+fullgml; stem cell; fr; 1.0; 0.0
+fullgml; stem cell; tr; 1.0; 0.0
+fullgml; stem cell; pl; 1.0; 0.0
+fullgml; stem cell; de; 1.0; 0.0
+fullgml; stem cell; nl; 1.0; 0.0
+fullgml; stem cell; pt; 1.0; 0.0
+fullgml; stem cell; ja; 1.0; 0.0
+fullgml; stem cell; en; 1.0; 0.0
+fullgml; stem cell; ru; 1.0; 0.0
+fullgml; paper; pl; 1.0; 0.0
+fullgml; paper; vi; 1.0; 0.0
+fullgml; paper; de; 1.0; 0.0
+fullgml; paper; ja; 1.0; 0.0
+fullgml; paper; en; 1.0; 0.0
+fullgml; paper; sv; 1.0; 0.0
+fullgml; paper; ru; 1.0; 0.0
+fullgml; clinical sign; id; 1.0; 0.0
+fullgml; clinical sign; fr; 1.0; 0.0
+fullgml; clinical sign; mr; 1.0; 0.0
+fullgml; clinical sign; tr; 1.0; 0.0
+fullgml; clinical sign; lv; 1.0; 0.0
+fullgml; clinical sign; el; 1.0; 0.0
+fullgml; clinical sign; es; 1.0; 0.0
+fullgml; clinical sign; pl; 1.0; 0.0
+fullgml; clinical sign; vi; 1.0; 0.0
+fullgml; clinical sign; de; 1.0; 0.0
+fullgml; clinical sign; ml; 1.0; 0.0
+fullgml; clinical sign; sh; 1.0; 0.0
+fullgml; clinical sign; nl; 1.0; 0.0
+fullgml; clinical sign; si; 1.0; 0.0
+fullgml; clinical sign; pt; 1.0; 0.0
+fullgml; clinical sign; ro; 1.0; 0.0
+fullgml; clinical sign; ja; 1.0; 0.0
+fullgml; clinical sign; simple; 1.0; 0.0
+fullgml; clinical sign; it; 1.0; 0.0
+fullgml; clinical sign; he; 1.0; 0.0
+fullgml; clinical sign; da; 1.0; 0.0
+fullgml; clinical sign; en; 1.0; 0.0
+fullgml; clinical sign; sr; 1.0; 0.0
+fullgml; clinical sign; sv; 1.0; 0.0
+fullgml; clinical sign; ckb; 1.0; 0.0
+fullgml; clinical sign; ru; 1.0; 0.0
+fullgml; clinical sign; hi; 1.0; 0.0
+fullgml; clinical sign; arz; 1.0; 0.0
+fullgml; clinical sign; bs; 1.0; 0.0
+fullgml; clinical sign; te; 1.0; 0.0
+fullgml; clinical sign; zh; 1.0; 0.0
+fullgml; clinical sign; mk; 1.0; 0.0
+fullgml; clinical sign; hu; 1.0; 0.0
+fullgml; clinical sign; ko; 1.0; 0.0
+fullgml; clinical sign; war; 1.0; 0.0
+fullgml; mental state; id; 1.0; 0.0
+fullgml; mental state; fr; 1.0; 0.0
+fullgml; mental state; tr; 1.0; 0.0
+fullgml; mental state; lv; 1.0; 0.0
+fullgml; mental state; el; 1.0; 0.0
+fullgml; mental state; es; 1.0; 0.0
+fullgml; mental state; pl; 1.0; 0.0
+fullgml; mental state; de; 1.0; 0.0
+fullgml; mental state; nl; 1.0; 0.0
+fullgml; mental state; pt; 1.0; 0.0
+fullgml; mental state; ro; 1.0; 0.0
+fullgml; mental state; ja; 1.0; 0.0
+fullgml; mental state; simple; 1.0; 0.0
+fullgml; mental state; it; 1.0; 0.0
+fullgml; mental state; da; 1.0; 0.0
+fullgml; mental state; en; 1.0; 0.0
+fullgml; mental state; sr; 1.0; 0.0
+fullgml; mental state; sv; 1.0; 0.0
+fullgml; mental state; ru; 1.0; 0.0
+fullgml; mental state; mk; 1.0; 0.0
+fullgml; mental state; hu; 1.0; 0.0
+fullgml; condition; id; 1.0; 0.0
+fullgml; condition; fr; 1.0; 0.0
+fullgml; condition; mr; 1.0; 0.0
+fullgml; condition; tr; 1.0; 0.0
+fullgml; condition; lv; 1.0; 0.0
+fullgml; condition; el; 1.0; 0.0
+fullgml; condition; es; 1.0; 0.0
+fullgml; condition; pl; 1.0; 0.0
+fullgml; condition; vi; 1.0; 0.0
+fullgml; condition; de; 1.0; 0.0
+fullgml; condition; ml; 1.0; 0.0
+fullgml; condition; sh; 1.0; 0.0
+fullgml; condition; nl; 1.0; 0.0
+fullgml; condition; si; 1.0; 0.0
+fullgml; condition; pt; 1.0; 0.0
+fullgml; condition; ro; 1.0; 0.0
+fullgml; condition; ja; 1.0; 0.0
+fullgml; condition; simple; 1.0; 0.0
+fullgml; condition; it; 1.0; 0.0
+fullgml; condition; ceb; 1.0; 0.0
+fullgml; condition; he; 1.0; 0.0
+fullgml; condition; da; 1.0; 0.0
+fullgml; condition; en; 1.0; 0.0
+fullgml; condition; sr; 1.0; 0.0
+fullgml; condition; sv; 1.0; 0.0
+fullgml; condition; ckb; 1.0; 0.0
+fullgml; condition; ru; 1.0; 0.0
+fullgml; condition; hi; 1.0; 0.0
+fullgml; condition; bs; 1.0; 0.0
+fullgml; condition; te; 1.0; 0.0
+fullgml; condition; zh; 1.0; 0.0
+fullgml; condition; mk; 1.0; 0.0
+fullgml; condition; hu; 1.0; 0.0
+fullgml; condition; ko; 1.0; 0.0
+fullgml; congenital abnormality; pt; 1.0; 0.0
+fullgml; congenital abnormality; en; 1.0; 0.0
+fullgml; languoid; fr; 1.0; 0.0
+fullgml; languoid; el; 1.0; 0.0
+fullgml; languoid; de; 1.0; 0.0
+fullgml; languoid; en; 1.0; 0.0
+fullgml; languoid; ru; 1.0; 0.0
+fullgml; languoid; zh; 1.0; 0.0
+fullgml; cell; id; 1.0; 0.0
+fullgml; cell; fr; 1.0; 0.0
+fullgml; cell; tr; 1.0; 0.0
+fullgml; cell; lv; 1.0; 0.0
+fullgml; cell; el; 1.0; 0.0
+fullgml; cell; es; 1.0; 0.0
+fullgml; cell; pl; 1.0; 0.0
+fullgml; cell; vi; 1.0; 0.0
+fullgml; cell; de; 1.0; 0.0
+fullgml; cell; ml; 1.0; 0.0
+fullgml; cell; sh; 1.0; 0.0
+fullgml; cell; nl; 1.0; 0.0
+fullgml; cell; pt; 1.0; 0.0
+fullgml; cell; ro; 1.0; 0.0
+fullgml; cell; ja; 1.0; 0.0
+fullgml; cell; simple; 1.0; 0.0
+fullgml; cell; it; 1.0; 0.0
+fullgml; cell; he; 1.0; 0.0
+fullgml; cell; da; 1.0; 0.0
+fullgml; cell; en; 1.0; 0.0
+fullgml; cell; sr; 1.0; 0.0
+fullgml; cell; sv; 1.0; 0.0
+fullgml; cell; ckb; 1.0; 0.0
+fullgml; cell; ru; 1.0; 0.0
+fullgml; cell; hi; 1.0; 0.0
+fullgml; cell; bs; 1.0; 0.0
+fullgml; cell; zh; 1.0; 0.0
+fullgml; cell; mk; 1.0; 0.0
+fullgml; cell; ko; 1.0; 0.0
+fullgml; art; id; 1.0; 0.0
+fullgml; art; fr; 1.0; 0.0
+fullgml; art; mr; 1.0; 0.0
+fullgml; art; tr; 1.0; 0.0
+fullgml; art; lv; 1.0; 0.0
+fullgml; art; el; 1.0; 0.0
+fullgml; art; es; 1.0; 0.0
+fullgml; art; pl; 1.0; 0.0
+fullgml; art; vi; 1.0; 0.0
+fullgml; art; de; 1.0; 0.0
+fullgml; art; ml; 1.0; 0.0
+fullgml; art; sh; 1.0; 0.0
+fullgml; art; nl; 1.0; 0.0
+fullgml; art; si; 1.0; 0.0
+fullgml; art; pt; 1.0; 0.0
+fullgml; art; ro; 1.0; 0.0
+fullgml; art; ja; 1.0; 0.0
+fullgml; art; simple; 1.0; 0.0
+fullgml; art; it; 1.0; 0.0
+fullgml; art; he; 1.0; 0.0
+fullgml; art; da; 1.0; 0.0
+fullgml; art; en; 1.0; 0.0
+fullgml; art; sr; 1.0; 0.0
+fullgml; art; sv; 1.0; 0.0
+fullgml; art; ckb; 1.0; 0.0
+fullgml; art; ru; 1.0; 0.0
+fullgml; art; hi; 1.0; 0.0
+fullgml; art; arz; 1.0; 0.0
+fullgml; art; bs; 1.0; 0.0
+fullgml; art; te; 1.0; 0.0
+fullgml; art; zh; 1.0; 0.0
+fullgml; art; mk; 1.0; 0.0
+fullgml; art; hu; 1.0; 0.0
+fullgml; art; ko; 1.0; 0.0
+fullgml; art; war; 1.0; 0.0
+fullgml; education; id; 1.0; 0.0
+fullgml; education; fr; 1.0; 0.0
+fullgml; education; mr; 1.0; 0.0
+fullgml; education; tr; 1.0; 0.0
+fullgml; education; el; 1.0; 0.0
+fullgml; education; es; 1.0; 0.0
+fullgml; education; pl; 1.0; 0.0
+fullgml; education; vi; 1.0; 0.0
+fullgml; education; de; 1.0; 0.0
+fullgml; education; ml; 1.0; 0.0
+fullgml; education; sh; 1.0; 0.0
+fullgml; education; nl; 1.0; 0.0
+fullgml; education; si; 1.0; 0.0
+fullgml; education; pt; 1.0; 0.0
+fullgml; education; ro; 1.0; 0.0
+fullgml; education; ja; 1.0; 0.0
+fullgml; education; simple; 1.0; 0.0
+fullgml; education; it; 1.0; 0.0
+fullgml; education; he; 1.0; 0.0
+fullgml; education; da; 1.0; 0.0
+fullgml; education; en; 1.0; 0.0
+fullgml; education; sr; 1.0; 0.0
+fullgml; education; sv; 1.0; 0.0
+fullgml; education; ckb; 1.0; 0.0
+fullgml; education; ru; 1.0; 0.0
+fullgml; education; hi; 1.0; 0.0
+fullgml; education; bs; 1.0; 0.0
+fullgml; education; te; 1.0; 0.0
+fullgml; education; zh; 1.0; 0.0
+fullgml; education; mk; 1.0; 0.0
+fullgml; education; hu; 1.0; 0.0
+fullgml; education; ko; 1.0; 0.0
+fullgml; education; war; 1.0; 0.0
+fullgml; biological model; de; 1.0; 0.0
+fullgml; biological model; pt; 1.0; 0.0
+fullgml; biological model; en; 1.0; 0.0
+fullgml; biological model; ru; 1.0; 0.0
+fullgml; politics; id; 1.0; 0.0
+fullgml; politics; fr; 1.0; 0.0
+fullgml; politics; tr; 1.0; 0.0
+fullgml; politics; es; 1.0; 0.0
+fullgml; politics; pl; 1.0; 0.0
+fullgml; politics; vi; 1.0; 0.0
+fullgml; politics; de; 1.0; 0.0
+fullgml; politics; nl; 1.0; 0.0
+fullgml; politics; pt; 1.0; 0.0
+fullgml; politics; ro; 1.0; 0.0
+fullgml; politics; ja; 1.0; 0.0
+fullgml; politics; it; 1.0; 0.0
+fullgml; politics; he; 1.0; 0.0
+fullgml; politics; da; 1.0; 0.0
+fullgml; politics; en; 1.0; 0.0
+fullgml; politics; sv; 1.0; 0.0
+fullgml; politics; ru; 1.0; 0.0
+fullgml; politics; zh; 1.0; 0.0
+fullgml; politics; hu; 1.0; 0.0
+fullgml; politics; ko; 1.0; 0.0
+fullgml; war; id; 1.0; 0.0
+fullgml; war; fr; 1.0; 0.0
+fullgml; war; mr; 1.0; 0.0
+fullgml; war; tr; 1.0; 0.0
+fullgml; war; lv; 1.0; 0.0
+fullgml; war; el; 1.0; 0.0
+fullgml; war; es; 1.0; 0.0
+fullgml; war; pl; 1.0; 0.0
+fullgml; war; vi; 1.0; 0.0
+fullgml; war; de; 1.0; 0.0
+fullgml; war; ml; 1.0; 0.0
+fullgml; war; sh; 1.0; 0.0
+fullgml; war; nl; 1.0; 0.0
+fullgml; war; si; 1.0; 0.0
+fullgml; war; pt; 1.0; 0.0
+fullgml; war; ro; 1.0; 0.0
+fullgml; war; ja; 1.0; 0.0
+fullgml; war; simple; 1.0; 0.0
+fullgml; war; it; 1.0; 0.0
+fullgml; war; ceb; 1.0; 0.0
+fullgml; war; he; 1.0; 0.0
+fullgml; war; da; 1.0; 0.0
+fullgml; war; en; 1.0; 0.0
+fullgml; war; sr; 1.0; 0.0
+fullgml; war; sv; 1.0; 0.0
+fullgml; war; ckb; 1.0; 0.0
+fullgml; war; ru; 1.0; 0.0
+fullgml; war; hi; 1.0; 0.0
+fullgml; war; arz; 1.0; 0.0
+fullgml; war; bs; 1.0; 0.0
+fullgml; war; te; 1.0; 0.0
+fullgml; war; zh; 1.0; 0.0
+fullgml; war; mk; 1.0; 0.0
+fullgml; war; hu; 1.0; 0.0
+fullgml; war; ko; 1.0; 0.0
+fullgml; war; war; 1.0; 0.0
+fullgml; affix; es; 1.0; 0.0
+fullgml; music style; id; 1.0; 0.0
+fullgml; music style; fr; 1.0; 0.0
+fullgml; music style; mr; 1.0; 0.0
+fullgml; music style; tr; 1.0; 0.0
+fullgml; music style; lv; 1.0; 0.0
+fullgml; music style; el; 1.0; 0.0
+fullgml; music style; es; 1.0; 0.0
+fullgml; music style; pl; 1.0; 0.0
+fullgml; music style; vi; 1.0; 0.0
+fullgml; music style; de; 1.0; 0.0
+fullgml; music style; ml; 1.0; 0.0
+fullgml; music style; sh; 1.0; 0.0
+fullgml; music style; nl; 1.0; 0.0
+fullgml; music style; si; 1.0; 0.0
+fullgml; music style; pt; 1.0; 0.0
+fullgml; music style; ro; 1.0; 0.0
+fullgml; music style; ja; 1.0; 0.0
+fullgml; music style; simple; 1.0; 0.0
+fullgml; music style; it; 1.0; 0.0
+fullgml; music style; he; 1.0; 0.0
+fullgml; music style; da; 1.0; 0.0
+fullgml; music style; en; 1.0; 0.0
+fullgml; music style; sr; 1.0; 0.0
+fullgml; music style; sv; 1.0; 0.0
+fullgml; music style; ckb; 1.0; 0.0
+fullgml; music style; ru; 1.0; 0.0
+fullgml; music style; hi; 1.0; 0.0
+fullgml; music style; bs; 1.0; 0.0
+fullgml; music style; te; 1.0; 0.0
+fullgml; music style; zh; 1.0; 0.0
+fullgml; music style; mk; 1.0; 0.0
+fullgml; music style; hu; 1.0; 0.0
+fullgml; music style; ko; 1.0; 0.0
+fullgml; service; id; 1.0; 0.0
+fullgml; service; fr; 1.0; 0.0
+fullgml; service; tr; 1.0; 0.0
+fullgml; service; el; 1.0; 0.0
+fullgml; service; es; 1.0; 0.0
+fullgml; service; pl; 1.0; 0.0
+fullgml; service; vi; 1.0; 0.0
+fullgml; service; de; 1.0; 0.0
+fullgml; service; ml; 1.0; 0.0
+fullgml; service; sh; 1.0; 0.0
+fullgml; service; nl; 1.0; 0.0
+fullgml; service; si; 1.0; 0.0
+fullgml; service; pt; 1.0; 0.0
+fullgml; service; ro; 1.0; 0.0
+fullgml; service; ja; 1.0; 0.0
+fullgml; service; simple; 1.0; 0.0
+fullgml; service; it; 1.0; 0.0
+fullgml; service; he; 1.0; 0.0
+fullgml; service; da; 1.0; 0.0
+fullgml; service; en; 1.0; 0.0
+fullgml; service; sr; 1.0; 0.0
+fullgml; service; sv; 1.0; 0.0
+fullgml; service; ru; 1.0; 0.0
+fullgml; service; hi; 1.0; 0.0
+fullgml; service; zh; 1.0; 0.0
+fullgml; service; hu; 1.0; 0.0
+fullgml; service; ko; 1.0; 0.0
+fullgml; feminism; fr; 1.0; 0.0
+fullgml; feminism; es; 1.0; 0.0
+fullgml; feminism; nl; 1.0; 0.0
+fullgml; feminism; ja; 1.0; 0.0
+fullgml; feminism; en; 1.0; 0.0
+fullgml; feminism; ru; 1.0; 0.0
+fullgml; book; id; 1.0; 0.0
+fullgml; book; fr; 1.0; 0.0
+fullgml; book; mr; 1.0; 0.0
+fullgml; book; tr; 1.0; 0.0
+fullgml; book; el; 1.0; 0.0
+fullgml; book; es; 1.0; 0.0
+fullgml; book; pl; 1.0; 0.0
+fullgml; book; vi; 1.0; 0.0
+fullgml; book; de; 1.0; 0.0
+fullgml; book; ml; 1.0; 0.0
+fullgml; book; nl; 1.0; 0.0
+fullgml; book; pt; 1.0; 0.0
+fullgml; book; ro; 1.0; 0.0
+fullgml; book; ja; 1.0; 0.0
+fullgml; book; simple; 1.0; 0.0
+fullgml; book; it; 1.0; 0.0
+fullgml; book; he; 1.0; 0.0
+fullgml; book; en; 1.0; 0.0
+fullgml; book; sr; 1.0; 0.0
+fullgml; book; sv; 1.0; 0.0
+fullgml; book; ru; 1.0; 0.0
+fullgml; book; te; 1.0; 0.0
+fullgml; book; zh; 1.0; 0.0
+fullgml; book; mk; 1.0; 0.0
+fullgml; book; hu; 1.0; 0.0
+fullgml; book; ko; 1.0; 0.0
+fullgml; goods; id; 1.0; 0.0
+fullgml; goods; fr; 1.0; 0.0
+fullgml; goods; mr; 1.0; 0.0
+fullgml; goods; tr; 1.0; 0.0
+fullgml; goods; lv; 1.0; 0.0
+fullgml; goods; el; 1.0; 0.0
+fullgml; goods; es; 1.0; 0.0
+fullgml; goods; pl; 1.0; 0.0
+fullgml; goods; vi; 1.0; 0.0
+fullgml; goods; de; 1.0; 0.0
+fullgml; goods; ml; 1.0; 0.0
+fullgml; goods; sh; 1.0; 0.0
+fullgml; goods; nl; 1.0; 0.0
+fullgml; goods; si; 1.0; 0.0
+fullgml; goods; pt; 1.0; 0.0
+fullgml; goods; ro; 1.0; 0.0
+fullgml; goods; ja; 1.0; 0.0
+fullgml; goods; simple; 1.0; 0.0
+fullgml; goods; it; 1.0; 0.0
+fullgml; goods; ceb; 1.0; 0.0
+fullgml; goods; he; 1.0; 0.0
+fullgml; goods; da; 1.0; 0.0
+fullgml; goods; en; 1.0; 0.0
+fullgml; goods; sr; 1.0; 0.0
+fullgml; goods; sv; 1.0; 0.0
+fullgml; goods; ckb; 1.0; 0.0
+fullgml; goods; ru; 1.0; 0.0
+fullgml; goods; hi; 1.0; 0.0
+fullgml; goods; bs; 1.0; 0.0
+fullgml; goods; te; 1.0; 0.0
+fullgml; goods; zh; 1.0; 0.0
+fullgml; goods; mk; 1.0; 0.0
+fullgml; goods; hu; 1.0; 0.0
+fullgml; goods; ko; 1.0; 0.0
+fullgml; goods; war; 1.0; 0.0
+fullgml; vegetable; fr; 1.0; 0.0
+fullgml; vegetable; tr; 1.0; 0.0
+fullgml; vegetable; es; 1.0; 0.0
+fullgml; vegetable; pl; 1.0; 0.0
+fullgml; vegetable; vi; 1.0; 0.0
+fullgml; vegetable; de; 1.0; 0.0
+fullgml; vegetable; nl; 1.0; 0.0
+fullgml; vegetable; pt; 1.0; 0.0
+fullgml; vegetable; ja; 1.0; 0.0
+fullgml; vegetable; simple; 1.0; 0.0
+fullgml; vegetable; it; 1.0; 0.0
+fullgml; vegetable; he; 1.0; 0.0
+fullgml; vegetable; da; 1.0; 0.0
+fullgml; vegetable; en; 1.0; 0.0
+fullgml; vegetable; sv; 1.0; 0.0
+fullgml; vegetable; ckb; 1.0; 0.0
+fullgml; vegetable; ru; 1.0; 0.0
+fullgml; vegetable; zh; 1.0; 0.0
+fullgml; vegetable; hu; 1.0; 0.0
+fullgml; vegetable; ko; 1.0; 0.0
+fullgml; deep sea community; fr; 1.0; 0.0
+fullgml; deep sea community; es; 1.0; 0.0
+fullgml; deep sea community; nl; 1.0; 0.0
+fullgml; deep sea community; pt; 1.0; 0.0
+fullgml; deep sea community; en; 1.0; 0.0
+fullgml; deep sea community; sv; 1.0; 0.0
+fullgml; plot; id; 1.0; 0.0
+fullgml; plot; fr; 1.0; 0.0
+fullgml; plot; pl; 1.0; 0.0
+fullgml; plot; de; 1.0; 0.0
+fullgml; plot; ml; 1.0; 0.0
+fullgml; plot; nl; 1.0; 0.0
+fullgml; plot; pt; 1.0; 0.0
+fullgml; plot; it; 1.0; 0.0
+fullgml; plot; en; 1.0; 0.0
+fullgml; plot; ru; 1.0; 0.0
+fullgml; plot; zh; 1.0; 0.0
+fullgml; literature; id; 1.0; 0.0
+fullgml; literature; fr; 1.0; 0.0
+fullgml; literature; tr; 1.0; 0.0
+fullgml; literature; el; 1.0; 0.0
+fullgml; literature; es; 1.0; 0.0
+fullgml; literature; pl; 1.0; 0.0
+fullgml; literature; de; 1.0; 0.0
+fullgml; literature; ml; 1.0; 0.0
+fullgml; literature; nl; 1.0; 0.0
+fullgml; literature; si; 1.0; 0.0
+fullgml; literature; pt; 1.0; 0.0
+fullgml; literature; ro; 1.0; 0.0
+fullgml; literature; ja; 1.0; 0.0
+fullgml; literature; it; 1.0; 0.0
+fullgml; literature; he; 1.0; 0.0
+fullgml; literature; da; 1.0; 0.0
+fullgml; literature; en; 1.0; 0.0
+fullgml; literature; sr; 1.0; 0.0
+fullgml; literature; sv; 1.0; 0.0
+fullgml; literature; ru; 1.0; 0.0
+fullgml; literature; hi; 1.0; 0.0
+fullgml; literature; arz; 1.0; 0.0
+fullgml; literature; zh; 1.0; 0.0
+fullgml; literature; hu; 1.0; 0.0
+fullgml; literature; ko; 1.0; 0.0
+fullgml; women's history; es; 1.0; 0.0
+fullgml; women's history; pt; 1.0; 0.0
+fullgml; women's history; simple; 1.0; 0.0
+fullgml; women's history; he; 1.0; 0.0
+fullgml; women's history; en; 1.0; 0.0
+fullgml; women's history; sv; 1.0; 0.0
+fullgml; tree; id; 1.0; 0.0
+fullgml; tree; fr; 1.0; 0.0
+fullgml; tree; mr; 1.0; 0.0
+fullgml; tree; tr; 1.0; 0.0
+fullgml; tree; el; 1.0; 0.0
+fullgml; tree; es; 1.0; 0.0
+fullgml; tree; pl; 1.0; 0.0
+fullgml; tree; vi; 1.0; 0.0
+fullgml; tree; de; 1.0; 0.0
+fullgml; tree; ml; 1.0; 0.0
+fullgml; tree; sh; 1.0; 0.0
+fullgml; tree; nl; 1.0; 0.0
+fullgml; tree; si; 1.0; 0.0
+fullgml; tree; pt; 1.0; 0.0
+fullgml; tree; ro; 1.0; 0.0
+fullgml; tree; ja; 1.0; 0.0
+fullgml; tree; simple; 1.0; 0.0
+fullgml; tree; it; 1.0; 0.0
+fullgml; tree; ceb; 1.0; 0.0
+fullgml; tree; he; 1.0; 0.0
+fullgml; tree; da; 1.0; 0.0
+fullgml; tree; en; 1.0; 0.0
+fullgml; tree; sr; 1.0; 0.0
+fullgml; tree; sv; 1.0; 0.0
+fullgml; tree; ru; 1.0; 0.0
+fullgml; tree; hi; 1.0; 0.0
+fullgml; tree; arz; 1.0; 0.0
+fullgml; tree; bs; 1.0; 0.0
+fullgml; tree; te; 1.0; 0.0
+fullgml; tree; zh; 1.0; 0.0
+fullgml; tree; mk; 1.0; 0.0
+fullgml; tree; hu; 1.0; 0.0
+fullgml; tree; ko; 1.0; 0.0
+fullgml; tree; war; 1.0; 0.0
+fullgml; inorganic compound; fr; 1.0; 0.0
+fullgml; inorganic compound; pl; 1.0; 0.0
+fullgml; inorganic compound; vi; 1.0; 0.0
+fullgml; inorganic compound; de; 1.0; 0.0
+fullgml; inorganic compound; sh; 1.0; 0.0
+fullgml; inorganic compound; nl; 1.0; 0.0
+fullgml; inorganic compound; ja; 1.0; 0.0
+fullgml; inorganic compound; simple; 1.0; 0.0
+fullgml; inorganic compound; it; 1.0; 0.0
+fullgml; inorganic compound; en; 1.0; 0.0
+fullgml; inorganic compound; sr; 1.0; 0.0
+fullgml; inorganic compound; ru; 1.0; 0.0
+fullgml; inorganic compound; zh; 1.0; 0.0
+fullgml; inorganic compound; hu; 1.0; 0.0
+fullgml; narrative; id; 1.0; 0.0
+fullgml; narrative; fr; 1.0; 0.0
+fullgml; narrative; tr; 1.0; 0.0
+fullgml; narrative; el; 1.0; 0.0
+fullgml; narrative; es; 1.0; 0.0
+fullgml; narrative; pl; 1.0; 0.0
+fullgml; narrative; vi; 1.0; 0.0
+fullgml; narrative; de; 1.0; 0.0
+fullgml; narrative; ml; 1.0; 0.0
+fullgml; narrative; sh; 1.0; 0.0
+fullgml; narrative; nl; 1.0; 0.0
+fullgml; narrative; pt; 1.0; 0.0
+fullgml; narrative; ro; 1.0; 0.0
+fullgml; narrative; ja; 1.0; 0.0
+fullgml; narrative; it; 1.0; 0.0
+fullgml; narrative; he; 1.0; 0.0
+fullgml; narrative; da; 1.0; 0.0
+fullgml; narrative; en; 1.0; 0.0
+fullgml; narrative; sr; 1.0; 0.0
+fullgml; narrative; sv; 1.0; 0.0
+fullgml; narrative; ru; 1.0; 0.0
+fullgml; narrative; hi; 1.0; 0.0
+fullgml; narrative; zh; 1.0; 0.0
+fullgml; narrative; hu; 1.0; 0.0
+fullgml; narrative; ko; 1.0; 0.0
+fullgml; religious hymn; nl; 1.0; 0.0
+fullgml; religious hymn; en; 1.0; 0.0
+fullgml; mathematical concept; id; 1.0; 0.0
+fullgml; mathematical concept; fr; 1.0; 0.0
+fullgml; mathematical concept; mr; 1.0; 0.0
+fullgml; mathematical concept; tr; 1.0; 0.0
+fullgml; mathematical concept; lv; 1.0; 0.0
+fullgml; mathematical concept; el; 1.0; 0.0
+fullgml; mathematical concept; es; 1.0; 0.0
+fullgml; mathematical concept; pl; 1.0; 0.0
+fullgml; mathematical concept; vi; 1.0; 0.0
+fullgml; mathematical concept; de; 1.0; 0.0
+fullgml; mathematical concept; ml; 1.0; 0.0
+fullgml; mathematical concept; sh; 1.0; 0.0
+fullgml; mathematical concept; nl; 1.0; 0.0
+fullgml; mathematical concept; si; 1.0; 0.0
+fullgml; mathematical concept; pt; 1.0; 0.0
+fullgml; mathematical concept; ro; 1.0; 0.0
+fullgml; mathematical concept; ja; 1.0; 0.0
+fullgml; mathematical concept; simple; 1.0; 0.0
+fullgml; mathematical concept; it; 1.0; 0.0
+fullgml; mathematical concept; he; 1.0; 0.0
+fullgml; mathematical concept; da; 1.0; 0.0
+fullgml; mathematical concept; en; 1.0; 0.0
+fullgml; mathematical concept; sr; 1.0; 0.0
+fullgml; mathematical concept; sv; 1.0; 0.0
+fullgml; mathematical concept; ckb; 1.0; 0.0
+fullgml; mathematical concept; ru; 1.0; 0.0
+fullgml; mathematical concept; hi; 1.0; 0.0
+fullgml; mathematical concept; arz; 1.0; 0.0
+fullgml; mathematical concept; bs; 1.0; 0.0
+fullgml; mathematical concept; te; 1.0; 0.0
+fullgml; mathematical concept; zh; 1.0; 0.0
+fullgml; mathematical concept; mk; 1.0; 0.0
+fullgml; mathematical concept; hu; 1.0; 0.0
+fullgml; mathematical concept; ko; 1.0; 0.0
+fullgml; mathematical concept; war; 1.0; 0.0
+fullgml; communication medium; id; 1.0; 0.0
+fullgml; communication medium; fr; 1.0; 0.0
+fullgml; communication medium; mr; 1.0; 0.0
+fullgml; communication medium; tr; 1.0; 0.0
+fullgml; communication medium; lv; 1.0; 0.0
+fullgml; communication medium; el; 1.0; 0.0
+fullgml; communication medium; es; 1.0; 0.0
+fullgml; communication medium; pl; 1.0; 0.0
+fullgml; communication medium; vi; 1.0; 0.0
+fullgml; communication medium; de; 1.0; 0.0
+fullgml; communication medium; ml; 1.0; 0.0
+fullgml; communication medium; sh; 1.0; 0.0
+fullgml; communication medium; nl; 1.0; 0.0
+fullgml; communication medium; si; 1.0; 0.0
+fullgml; communication medium; pt; 1.0; 0.0
+fullgml; communication medium; ro; 1.0; 0.0
+fullgml; communication medium; ja; 1.0; 0.0
+fullgml; communication medium; simple; 1.0; 0.0
+fullgml; communication medium; it; 1.0; 0.0
+fullgml; communication medium; he; 1.0; 0.0
+fullgml; communication medium; da; 1.0; 0.0
+fullgml; communication medium; en; 1.0; 0.0
+fullgml; communication medium; sr; 1.0; 0.0
+fullgml; communication medium; sv; 1.0; 0.0
+fullgml; communication medium; ckb; 1.0; 0.0
+fullgml; communication medium; ru; 1.0; 0.0
+fullgml; communication medium; hi; 1.0; 0.0
+fullgml; communication medium; arz; 1.0; 0.0
+fullgml; communication medium; bs; 1.0; 0.0
+fullgml; communication medium; te; 1.0; 0.0
+fullgml; communication medium; zh; 1.0; 0.0
+fullgml; communication medium; mk; 1.0; 0.0
+fullgml; communication medium; hu; 1.0; 0.0
+fullgml; communication medium; ko; 1.0; 0.0
+fullgml; communication medium; war; 1.0; 0.0
+fullgml; literary theme; id; 1.0; 0.0
+fullgml; literary theme; fr; 1.0; 0.0
+fullgml; literary theme; tr; 1.0; 0.0
+fullgml; literary theme; el; 1.0; 0.0
+fullgml; literary theme; es; 1.0; 0.0
+fullgml; literary theme; pl; 1.0; 0.0
+fullgml; literary theme; vi; 1.0; 0.0
+fullgml; literary theme; de; 1.0; 0.0
+fullgml; literary theme; sh; 1.0; 0.0
+fullgml; literary theme; nl; 1.0; 0.0
+fullgml; literary theme; pt; 1.0; 0.0
+fullgml; literary theme; ro; 1.0; 0.0
+fullgml; literary theme; ja; 1.0; 0.0
+fullgml; literary theme; it; 1.0; 0.0
+fullgml; literary theme; he; 1.0; 0.0
+fullgml; literary theme; da; 1.0; 0.0
+fullgml; literary theme; en; 1.0; 0.0
+fullgml; literary theme; sr; 1.0; 0.0
+fullgml; literary theme; sv; 1.0; 0.0
+fullgml; literary theme; ru; 1.0; 0.0
+fullgml; literary theme; zh; 1.0; 0.0
+fullgml; literary theme; hu; 1.0; 0.0
+fullgml; literary theme; ko; 1.0; 0.0
+fullgml; society; id; 1.0; 0.0
+fullgml; society; fr; 1.0; 0.0
+fullgml; society; tr; 1.0; 0.0
+fullgml; society; el; 1.0; 0.0
+fullgml; society; es; 1.0; 0.0
+fullgml; society; pl; 1.0; 0.0
+fullgml; society; vi; 1.0; 0.0
+fullgml; society; de; 1.0; 0.0
+fullgml; society; sh; 1.0; 0.0
+fullgml; society; nl; 1.0; 0.0
+fullgml; society; pt; 1.0; 0.0
+fullgml; society; ro; 1.0; 0.0
+fullgml; society; ja; 1.0; 0.0
+fullgml; society; simple; 1.0; 0.0
+fullgml; society; it; 1.0; 0.0
+fullgml; society; ceb; 1.0; 0.0
+fullgml; society; he; 1.0; 0.0
+fullgml; society; da; 1.0; 0.0
+fullgml; society; en; 1.0; 0.0
+fullgml; society; sr; 1.0; 0.0
+fullgml; society; sv; 1.0; 0.0
+fullgml; society; ru; 1.0; 0.0
+fullgml; society; arz; 1.0; 0.0
+fullgml; society; bs; 1.0; 0.0
+fullgml; society; zh; 1.0; 0.0
+fullgml; society; mk; 1.0; 0.0
+fullgml; society; hu; 1.0; 0.0
+fullgml; society; ko; 1.0; 0.0
+fullgml; Porifera; sv; 1.0; 0.0
+fullgml; galaxy; id; 1.0; 0.0
+fullgml; galaxy; fr; 1.0; 0.0
+fullgml; galaxy; tr; 1.0; 0.0
+fullgml; galaxy; lv; 1.0; 0.0
+fullgml; galaxy; el; 1.0; 0.0
+fullgml; galaxy; es; 1.0; 0.0
+fullgml; galaxy; pl; 1.0; 0.0
+fullgml; galaxy; vi; 1.0; 0.0
+fullgml; galaxy; de; 1.0; 0.0
+fullgml; galaxy; ml; 1.0; 0.0
+fullgml; galaxy; sh; 1.0; 0.0
+fullgml; galaxy; nl; 1.0; 0.0
+fullgml; galaxy; pt; 1.0; 0.0
+fullgml; galaxy; ro; 1.0; 0.0
+fullgml; galaxy; ja; 1.0; 0.0
+fullgml; galaxy; simple; 1.0; 0.0
+fullgml; galaxy; it; 1.0; 0.0
+fullgml; galaxy; he; 1.0; 0.0
+fullgml; galaxy; da; 1.0; 0.0
+fullgml; galaxy; en; 1.0; 0.0
+fullgml; galaxy; sr; 1.0; 0.0
+fullgml; galaxy; sv; 1.0; 0.0
+fullgml; galaxy; ckb; 1.0; 0.0
+fullgml; galaxy; ru; 1.0; 0.0
+fullgml; galaxy; hi; 1.0; 0.0
+fullgml; galaxy; bs; 1.0; 0.0
+fullgml; galaxy; zh; 1.0; 0.0
+fullgml; galaxy; mk; 1.0; 0.0
+fullgml; galaxy; hu; 1.0; 0.0
+fullgml; galaxy; ko; 1.0; 0.0
+fullgml; computer; id; 1.0; 0.0
+fullgml; computer; fr; 1.0; 0.0
+fullgml; computer; tr; 1.0; 0.0
+fullgml; computer; lv; 1.0; 0.0
+fullgml; computer; el; 1.0; 0.0
+fullgml; computer; es; 1.0; 0.0
+fullgml; computer; pl; 1.0; 0.0
+fullgml; computer; vi; 1.0; 0.0
+fullgml; computer; de; 1.0; 0.0
+fullgml; computer; ml; 1.0; 0.0
+fullgml; computer; sh; 1.0; 0.0
+fullgml; computer; nl; 1.0; 0.0
+fullgml; computer; pt; 1.0; 0.0
+fullgml; computer; ro; 1.0; 0.0
+fullgml; computer; ja; 1.0; 0.0
+fullgml; computer; simple; 1.0; 0.0
+fullgml; computer; it; 1.0; 0.0
+fullgml; computer; he; 1.0; 0.0
+fullgml; computer; da; 1.0; 0.0
+fullgml; computer; en; 1.0; 0.0
+fullgml; computer; sr; 1.0; 0.0
+fullgml; computer; sv; 1.0; 0.0
+fullgml; computer; ckb; 1.0; 0.0
+fullgml; computer; ru; 1.0; 0.0
+fullgml; computer; hi; 1.0; 0.0
+fullgml; computer; bs; 1.0; 0.0
+fullgml; computer; te; 1.0; 0.0
+fullgml; computer; zh; 1.0; 0.0
+fullgml; computer; mk; 1.0; 0.0
+fullgml; computer; hu; 1.0; 0.0
+fullgml; computer; ko; 1.0; 0.0
+fullgml; wage; de; 1.0; 0.0
+fullgml; wage; sv; 1.0; 0.0
+fullgml; knowledge; vi; 1.0; 0.0
+fullgml; knowledge; de; 1.0; 0.0
+fullgml; knowledge; ja; 1.0; 0.0
+fullgml; knowledge; en; 1.0; 0.0
+fullgml; linguistic norm; fr; 1.0; 0.0
+fullgml; linguistic norm; el; 1.0; 0.0
+fullgml; linguistic norm; es; 1.0; 0.0
+fullgml; linguistic norm; de; 1.0; 0.0
+fullgml; linguistic norm; pt; 1.0; 0.0
+fullgml; linguistic norm; en; 1.0; 0.0
+fullgml; Mollusca; pt; 1.0; 0.0
+fullgml; Mollusca; en; 1.0; 0.0
+fullgml; Mollusca; sv; 1.0; 0.0
+fullgml; plant organ; id; 1.0; 0.0
+fullgml; plant organ; fr; 1.0; 0.0
+fullgml; plant organ; tr; 1.0; 0.0
+fullgml; plant organ; lv; 1.0; 0.0
+fullgml; plant organ; es; 1.0; 0.0
+fullgml; plant organ; pl; 1.0; 0.0
+fullgml; plant organ; vi; 1.0; 0.0
+fullgml; plant organ; de; 1.0; 0.0
+fullgml; plant organ; ml; 1.0; 0.0
+fullgml; plant organ; sh; 1.0; 0.0
+fullgml; plant organ; nl; 1.0; 0.0
+fullgml; plant organ; si; 1.0; 0.0
+fullgml; plant organ; pt; 1.0; 0.0
+fullgml; plant organ; ro; 1.0; 0.0
+fullgml; plant organ; ja; 1.0; 0.0
+fullgml; plant organ; simple; 1.0; 0.0
+fullgml; plant organ; it; 1.0; 0.0
+fullgml; plant organ; he; 1.0; 0.0
+fullgml; plant organ; da; 1.0; 0.0
+fullgml; plant organ; en; 1.0; 0.0
+fullgml; plant organ; sr; 1.0; 0.0
+fullgml; plant organ; sv; 1.0; 0.0
+fullgml; plant organ; ru; 1.0; 0.0
+fullgml; plant organ; hi; 1.0; 0.0
+fullgml; plant organ; bs; 1.0; 0.0
+fullgml; plant organ; te; 1.0; 0.0
+fullgml; plant organ; zh; 1.0; 0.0
+fullgml; plant organ; mk; 1.0; 0.0
+fullgml; plant organ; hu; 1.0; 0.0
+fullgml; plant organ; ko; 1.0; 0.0
+fullgml; human population; id; 1.0; 0.0
+fullgml; human population; fr; 1.0; 0.0
+fullgml; human population; tr; 1.0; 0.0
+fullgml; human population; lv; 1.0; 0.0
+fullgml; human population; el; 1.0; 0.0
+fullgml; human population; es; 1.0; 0.0
+fullgml; human population; pl; 1.0; 0.0
+fullgml; human population; vi; 1.0; 0.0
+fullgml; human population; de; 1.0; 0.0
+fullgml; human population; sh; 1.0; 0.0
+fullgml; human population; nl; 1.0; 0.0
+fullgml; human population; pt; 1.0; 0.0
+fullgml; human population; ro; 1.0; 0.0
+fullgml; human population; ja; 1.0; 0.0
+fullgml; human population; it; 1.0; 0.0
+fullgml; human population; ceb; 1.0; 0.0
+fullgml; human population; he; 1.0; 0.0
+fullgml; human population; da; 1.0; 0.0
+fullgml; human population; en; 1.0; 0.0
+fullgml; human population; sr; 1.0; 0.0
+fullgml; human population; sv; 1.0; 0.0
+fullgml; human population; ru; 1.0; 0.0
+fullgml; human population; hi; 1.0; 0.0
+fullgml; human population; arz; 1.0; 0.0
+fullgml; human population; bs; 1.0; 0.0
+fullgml; human population; zh; 1.0; 0.0
+fullgml; human population; mk; 1.0; 0.0
+fullgml; human population; hu; 1.0; 0.0
+fullgml; human population; ko; 1.0; 0.0
+fullgml; life; fr; 1.0; 0.0
+fullgml; life; de; 1.0; 0.0
+fullgml; life; ml; 1.0; 0.0
+fullgml; life; pt; 1.0; 0.0
+fullgml; life; ja; 1.0; 0.0
+fullgml; life; en; 1.0; 0.0
+fullgml; life; ko; 1.0; 0.0
+fullgml; lexeme; es; 1.0; 0.0
+fullgml; lexeme; de; 1.0; 0.0
+fullgml; language ideology; id; 1.0; 0.0
+fullgml; language ideology; fr; 1.0; 0.0
+fullgml; language ideology; lv; 1.0; 0.0
+fullgml; language ideology; es; 1.0; 0.0
+fullgml; language ideology; pl; 1.0; 0.0
+fullgml; language ideology; de; 1.0; 0.0
+fullgml; language ideology; sh; 1.0; 0.0
+fullgml; language ideology; nl; 1.0; 0.0
+fullgml; language ideology; pt; 1.0; 0.0
+fullgml; language ideology; it; 1.0; 0.0
+fullgml; language ideology; da; 1.0; 0.0
+fullgml; language ideology; en; 1.0; 0.0
+fullgml; language ideology; sr; 1.0; 0.0
+fullgml; language ideology; sv; 1.0; 0.0
+fullgml; language ideology; ru; 1.0; 0.0
+fullgml; language ideology; hi; 1.0; 0.0
+fullgml; language ideology; zh; 1.0; 0.0
+fullgml; language ideology; ko; 1.0; 0.0
+fullgml; planetary magnetic field; id; 1.0; 0.0
+fullgml; planetary magnetic field; fr; 1.0; 0.0
+fullgml; planetary magnetic field; mr; 1.0; 0.0
+fullgml; planetary magnetic field; tr; 1.0; 0.0
+fullgml; planetary magnetic field; lv; 1.0; 0.0
+fullgml; planetary magnetic field; el; 1.0; 0.0
+fullgml; planetary magnetic field; es; 1.0; 0.0
+fullgml; planetary magnetic field; pl; 1.0; 0.0
+fullgml; planetary magnetic field; vi; 1.0; 0.0
+fullgml; planetary magnetic field; de; 1.0; 0.0
+fullgml; planetary magnetic field; ml; 1.0; 0.0
+fullgml; planetary magnetic field; sh; 1.0; 0.0
+fullgml; planetary magnetic field; nl; 1.0; 0.0
+fullgml; planetary magnetic field; si; 1.0; 0.0
+fullgml; planetary magnetic field; pt; 1.0; 0.0
+fullgml; planetary magnetic field; ja; 1.0; 0.0
+fullgml; planetary magnetic field; simple; 1.0; 0.0
+fullgml; planetary magnetic field; it; 1.0; 0.0
+fullgml; planetary magnetic field; he; 1.0; 0.0
+fullgml; planetary magnetic field; da; 1.0; 0.0
+fullgml; planetary magnetic field; en; 1.0; 0.0
+fullgml; planetary magnetic field; sr; 1.0; 0.0
+fullgml; planetary magnetic field; sv; 1.0; 0.0
+fullgml; planetary magnetic field; ru; 1.0; 0.0
+fullgml; planetary magnetic field; hi; 1.0; 0.0
+fullgml; planetary magnetic field; bs; 1.0; 0.0
+fullgml; planetary magnetic field; zh; 1.0; 0.0
+fullgml; planetary magnetic field; hu; 1.0; 0.0
+fullgml; planetary magnetic field; ko; 1.0; 0.0
+fullgml; hormone; id; 1.0; 0.0
+fullgml; hormone; fr; 1.0; 0.0
+fullgml; hormone; mr; 1.0; 0.0
+fullgml; hormone; tr; 1.0; 0.0
+fullgml; hormone; lv; 1.0; 0.0
+fullgml; hormone; el; 1.0; 0.0
+fullgml; hormone; es; 1.0; 0.0
+fullgml; hormone; pl; 1.0; 0.0
+fullgml; hormone; vi; 1.0; 0.0
+fullgml; hormone; de; 1.0; 0.0
+fullgml; hormone; sh; 1.0; 0.0
+fullgml; hormone; nl; 1.0; 0.0
+fullgml; hormone; pt; 1.0; 0.0
+fullgml; hormone; ro; 1.0; 0.0
+fullgml; hormone; ja; 1.0; 0.0
+fullgml; hormone; simple; 1.0; 0.0
+fullgml; hormone; it; 1.0; 0.0
+fullgml; hormone; he; 1.0; 0.0
+fullgml; hormone; da; 1.0; 0.0
+fullgml; hormone; en; 1.0; 0.0
+fullgml; hormone; sr; 1.0; 0.0
+fullgml; hormone; sv; 1.0; 0.0
+fullgml; hormone; ckb; 1.0; 0.0
+fullgml; hormone; ru; 1.0; 0.0
+fullgml; hormone; hi; 1.0; 0.0
+fullgml; hormone; bs; 1.0; 0.0
+fullgml; hormone; zh; 1.0; 0.0
+fullgml; hormone; mk; 1.0; 0.0
+fullgml; hormone; hu; 1.0; 0.0
+fullgml; hormone; ko; 1.0; 0.0
+fullgml; intensive or extensive property; de; 1.0; 0.0
+fullgml; intensive or extensive property; en; 1.0; 0.0
+fullgml; intensive or extensive property; zh; 1.0; 0.0
+fullgml; bell; id; 1.0; 0.0
+fullgml; bell; fr; 1.0; 0.0
+fullgml; bell; tr; 1.0; 0.0
+fullgml; bell; lv; 1.0; 0.0
+fullgml; bell; el; 1.0; 0.0
+fullgml; bell; es; 1.0; 0.0
+fullgml; bell; pl; 1.0; 0.0
+fullgml; bell; vi; 1.0; 0.0
+fullgml; bell; de; 1.0; 0.0
+fullgml; bell; ml; 1.0; 0.0
+fullgml; bell; sh; 1.0; 0.0
+fullgml; bell; nl; 1.0; 0.0
+fullgml; bell; si; 1.0; 0.0
+fullgml; bell; pt; 1.0; 0.0
+fullgml; bell; ro; 1.0; 0.0
+fullgml; bell; ja; 1.0; 0.0
+fullgml; bell; simple; 1.0; 0.0
+fullgml; bell; it; 1.0; 0.0
+fullgml; bell; he; 1.0; 0.0
+fullgml; bell; da; 1.0; 0.0
+fullgml; bell; en; 1.0; 0.0
+fullgml; bell; sr; 1.0; 0.0
+fullgml; bell; sv; 1.0; 0.0
+fullgml; bell; ru; 1.0; 0.0
+fullgml; bell; hi; 1.0; 0.0
+fullgml; bell; te; 1.0; 0.0
+fullgml; bell; zh; 1.0; 0.0
+fullgml; bell; mk; 1.0; 0.0
+fullgml; bell; hu; 1.0; 0.0
+fullgml; bell; ko; 1.0; 0.0
+fullgml; geography; en; 1.0; 0.0
+fullgml; language; id; 1.0; 0.0
+fullgml; language; fr; 1.0; 0.0
+fullgml; language; mr; 1.0; 0.0
+fullgml; language; tr; 1.0; 0.0
+fullgml; language; lv; 1.0; 0.0
+fullgml; language; el; 1.0; 0.0
+fullgml; language; es; 1.0; 0.0
+fullgml; language; pl; 1.0; 0.0
+fullgml; language; vi; 1.0; 0.0
+fullgml; language; de; 1.0; 0.0
+fullgml; language; ml; 1.0; 0.0
+fullgml; language; sh; 1.0; 0.0
+fullgml; language; nl; 1.0; 0.0
+fullgml; language; si; 1.0; 0.0
+fullgml; language; pt; 1.0; 0.0
+fullgml; language; ro; 1.0; 0.0
+fullgml; language; ja; 1.0; 0.0
+fullgml; language; simple; 1.0; 0.0
+fullgml; language; it; 1.0; 0.0
+fullgml; language; ceb; 1.0; 0.0
+fullgml; language; he; 1.0; 0.0
+fullgml; language; da; 1.0; 0.0
+fullgml; language; en; 1.0; 0.0
+fullgml; language; sr; 1.0; 0.0
+fullgml; language; sv; 1.0; 0.0
+fullgml; language; ckb; 1.0; 0.0
+fullgml; language; ru; 1.0; 0.0
+fullgml; language; hi; 1.0; 0.0
+fullgml; language; arz; 1.0; 0.0
+fullgml; language; bs; 1.0; 0.0
+fullgml; language; te; 1.0; 0.0
+fullgml; language; zh; 1.0; 0.0
+fullgml; language; mk; 1.0; 0.0
+fullgml; language; hu; 1.0; 0.0
+fullgml; language; ko; 1.0; 0.0
+fullgml; language; war; 1.0; 0.0
+fullgml; history of film; de; 1.0; 0.0
+fullgml; history of film; da; 1.0; 0.0
+fullgml; pressure; fr; 1.0; 0.0
+fullgml; pressure; pl; 1.0; 0.0
+fullgml; pressure; de; 1.0; 0.0
+fullgml; pressure; nl; 1.0; 0.0
+fullgml; pressure; ja; 1.0; 0.0
+fullgml; pressure; da; 1.0; 0.0
+fullgml; pressure; en; 1.0; 0.0
