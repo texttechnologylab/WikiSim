@@ -69,11 +69,6 @@ graph
 		id 13
 		label "Q131861"
 	]
-	node
-	[
-		id 14
-		label "Q172425"
-	]
 	edge
 	[
 		id 1
@@ -216,12 +211,6 @@ graph
 	[
 		id 24
 		source 10
-		target 2
-	]
-	edge
-	[
-		id 25
-		source 14
 		target 2
 	]
 ]

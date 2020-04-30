@@ -32,27 +32,17 @@ graph
 	node
 	[
 		id 6
-		label "Q41309"
-	]
-	node
-	[
-		id 7
 		label "Q46096"
 	]
 	node
 	[
-		id 8
+		id 7
 		label "Q48173"
 	]
 	node
 	[
-		id 9
+		id 8
 		label "Q131861"
-	]
-	node
-	[
-		id 10
-		label "Q936364"
 	]
 	edge
 	[

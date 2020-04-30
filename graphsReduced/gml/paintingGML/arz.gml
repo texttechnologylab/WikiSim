@@ -12,42 +12,27 @@ graph
 	node
 	[
 		id 2
-		label "Q3221339"
-	]
-	node
-	[
-		id 3
-		label "Q1753248"
-	]
-	node
-	[
-		id 4
-		label "Q1899740"
-	]
-	node
-	[
-		id 5
 		label "Q1978815"
 	]
 	node
 	[
-		id 6
+		id 3
 		label "Q1752990"
 	]
 	node
 	[
-		id 7
+		id 4
 		label "Q1892745"
 	]
 	node
 	[
-		id 8
+		id 5
 		label "Q4118041"
 	]
 	edge
 	[
 		id 1
-		source 7
-		target 7
+		source 4
+		target 4
 	]
 ]

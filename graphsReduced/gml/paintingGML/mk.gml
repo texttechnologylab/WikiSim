@@ -97,166 +97,101 @@ graph
 	node
 	[
 		id 19
-		label "Q3525935"
-	]
-	node
-	[
-		id 20
 		label "Q1070896"
 	]
 	node
 	[
-		id 21
+		id 20
 		label "Q3842704"
 	]
 	node
 	[
-		id 22
-		label "Q3473161"
-	]
-	node
-	[
-		id 23
+		id 21
 		label "Q965124"
 	]
 	node
 	[
-		id 24
-		label "Q3207608"
-	]
-	node
-	[
-		id 25
+		id 22
 		label "Q1169395"
 	]
 	node
 	[
-		id 26
+		id 23
 		label "Q1217003"
 	]
 	node
 	[
-		id 27
+		id 24
 		label "Q3320114"
 	]
 	node
 	[
-		id 28
+		id 25
 		label "Q1752990"
 	]
 	node
 	[
-		id 29
-		label "Q2011510"
-	]
-	node
-	[
-		id 30
+		id 26
 		label "Q4315887"
 	]
 	node
 	[
-		id 31
+		id 27
 		label "Q5914606"
 	]
 	node
 	[
-		id 32
+		id 28
 		label "Q4503153"
 	]
 	node
 	[
-		id 33
-		label "Q7994688"
-	]
-	node
-	[
-		id 34
-		label "Q5456612"
-	]
-	node
-	[
-		id 35
+		id 29
 		label "Q2336984"
 	]
 	node
 	[
-		id 36
+		id 30
 		label "Q2157202"
 	]
 	node
 	[
-		id 37
+		id 31
 		label "Q2246489"
 	]
 	node
 	[
-		id 38
+		id 32
 		label "Q2272625"
 	]
 	node
 	[
-		id 39
-		label "Q6753733"
-	]
-	node
-	[
-		id 40
-		label "Q2293905"
-	]
-	node
-	[
-		id 41
+		id 33
 		label "Q2533791"
 	]
 	node
 	[
-		id 42
+		id 34
 		label "Q2366825"
 	]
 	node
 	[
-		id 43
+		id 35
 		label "Q2282256"
 	]
 	node
 	[
-		id 44
-		label "Q7769644"
-	]
-	node
-	[
-		id 45
+		id 36
 		label "Q7580482"
 	]
 	node
 	[
-		id 46
-		label "Q18649388"
-	]
-	node
-	[
-		id 47
-		label "Q22330069"
-	]
-	node
-	[
-		id 48
-		label "Q22948543"
-	]
-	node
-	[
-		id 49
-		label "Q24715424"
-	]
-	node
-	[
-		id 50
+		id 37
 		label "Q27881824"
 	]
 	node
 	[
-		id 51
+		id 38
 		label "Q28442826"
 	]
 	edge
@@ -274,19 +209,7 @@ graph
 	edge
 	[
 		id 3
-		source 33
-		target 34
-	]
-	edge
-	[
-		id 4
-		source 36
+		source 30
 		target 3
-	]
-	edge
-	[
-		id 5
-		source 40
-		target 29
 	]
 ]

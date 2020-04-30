@@ -222,46 +222,41 @@ graph
 	node
 	[
 		id 44
-		label "Q518730"
-	]
-	node
-	[
-		id 45
 		label "Q523607"
 	]
 	node
 	[
-		id 46
+		id 45
 		label "Q541563"
 	]
 	node
 	[
-		id 47
+		id 46
 		label "Q601796"
 	]
 	node
 	[
-		id 48
+		id 47
 		label "Q674689"
 	]
 	node
 	[
-		id 49
+		id 48
 		label "Q826841"
 	]
 	node
 	[
-		id 50
+		id 49
 		label "Q849428"
 	]
 	node
 	[
-		id 51
+		id 50
 		label "Q856215"
 	]
 	node
 	[
-		id 52
+		id 51
 		label "Q923006"
 	]
 	edge
@@ -351,7 +346,7 @@ graph
 	edge
 	[
 		id 15
-		source 51
+		source 50
 		target 6
 	]
 ]

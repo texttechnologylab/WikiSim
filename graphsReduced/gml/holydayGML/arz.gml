@@ -22,32 +22,22 @@ graph
 	node
 	[
 		id 4
-		label "Q47499"
-	]
-	node
-	[
-		id 5
 		label "Q464458"
 	]
 	node
 	[
-		id 6
+		id 5
 		label "Q42236"
 	]
 	node
 	[
-		id 7
+		id 6
 		label "Q186206"
 	]
 	node
 	[
-		id 8
+		id 7
 		label "Q51638"
-	]
-	node
-	[
-		id 9
-		label "Q132994"
 	]
 	edge
 	[
@@ -64,14 +54,14 @@ graph
 	edge
 	[
 		id 3
-		source 2
-		target 5
+		source 5
+		target 6
 	]
 	edge
 	[
 		id 4
 		source 6
-		target 7
+		target 5
 	]
 	edge
 	[
@@ -83,53 +73,17 @@ graph
 	[
 		id 6
 		source 4
-		target 5
+		target 2
 	]
 	edge
 	[
 		id 7
-		source 4
-		target 2
+		source 3
+		target 4
 	]
 	edge
 	[
 		id 8
-		source 7
-		target 6
-	]
-	edge
-	[
-		id 9
-		source 5
-		target 3
-	]
-	edge
-	[
-		id 10
-		source 5
-		target 4
-	]
-	edge
-	[
-		id 11
-		source 5
-		target 2
-	]
-	edge
-	[
-		id 12
-		source 3
-		target 4
-	]
-	edge
-	[
-		id 13
-		source 3
-		target 5
-	]
-	edge
-	[
-		id 14
 		source 3
 		target 2
 	]

@@ -77,21 +77,11 @@ graph
 	node
 	[
 		id 15
-		label "Q17141489"
-	]
-	node
-	[
-		id 16
-		label "Q674689"
-	]
-	node
-	[
-		id 17
 		label "Q21406831"
 	]
 	node
 	[
-		id 18
+		id 16
 		label "Q826841"
 	]
 ]

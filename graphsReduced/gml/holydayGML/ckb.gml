@@ -22,38 +22,33 @@ graph
 	node
 	[
 		id 4
-		label "Q130881"
-	]
-	node
-	[
-		id 5
 		label "Q131028"
 	]
 	node
 	[
-		id 6
+		id 5
 		label "Q464458"
 	]
 	node
 	[
-		id 7
+		id 6
 		label "Q514400"
 	]
 	node
 	[
-		id 8
+		id 7
 		label "Q946446"
 	]
 	edge
 	[
 		id 1
-		source 6
-		target 7
+		source 5
+		target 6
 	]
 	edge
 	[
 		id 2
-		source 6
-		target 6
+		source 5
+		target 5
 	]
 ]

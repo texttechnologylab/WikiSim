@@ -2,6 +2,7 @@ package siteStatistics;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -57,7 +58,7 @@ public class SiteStatistics {
 		consideredLanguages.add("sr");
 		consideredLanguages.add("sv");
 		consideredLanguages.add("te");
-//		consideredLanguages.add("tr");
+		//		consideredLanguages.add("tr");
 		consideredLanguages.add("vi");
 		consideredLanguages.add("war");
 		consideredLanguages.add("zh");
@@ -119,7 +120,11 @@ public class SiteStatistics {
 											sb.append(formatProp("SV2",formatDDC(getDDC(language, ""+currentPage.getPageId())),false)).append("¤");
 											System.out.println(sb.toString());
 											string+=sb.toString();
-											FileUtils.writeStringToFile(Paths.get(path,"html",category.getName(),language,vertex+"_"+wikipediaTitles.get(vertex)+".xml").toFile(),currentPage.apiOutput,"UTF-8");
+											try{
+												FileUtils.writeStringToFile(Paths.get(path,"html",category.getName(),language,vertex+"_"+wikipediaTitles.get(vertex)+".xml").toFile(),currentPage.apiOutput,"UTF-8");
+											}catch(FileNotFoundException e){
+												e.printStackTrace();
+											}
 										}
 
 									}

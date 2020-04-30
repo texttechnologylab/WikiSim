@@ -37,82 +37,62 @@ graph
 	node
 	[
 		id 7
-		label "Q82595"
-	]
-	node
-	[
-		id 8
-		label "Q115821"
-	]
-	node
-	[
-		id 9
 		label "Q680619"
 	]
 	node
 	[
-		id 10
+		id 8
 		label "Q5348442"
 	]
 	node
 	[
-		id 11
+		id 9
 		label "Q5348456"
 	]
 	node
 	[
-		id 12
+		id 10
 		label "Q25451333"
 	]
 	node
 	[
-		id 13
+		id 11
 		label "Q276445"
 	]
 	node
 	[
-		id 14
-		label "Q60681"
-	]
-	node
-	[
-		id 15
+		id 12
 		label "Q187304"
 	]
 	node
 	[
-		id 16
+		id 13
 		label "Q482403"
 	]
 	node
 	[
-		id 17
+		id 14
 		label "Q5100359"
 	]
 	node
 	[
-		id 18
+		id 15
 		label "Q324867"
 	]
 	node
 	[
-		id 19
+		id 16
 		label "Q194641"
 	]
 	node
 	[
-		id 20
+		id 17
 		label "Q570246"
 	]
 	node
 	[
-		id 21
+		id 18
 		label "Q7427162"
-	]
-	node
-	[
-		id 22
-		label "Q168018"
 	]
 	edge
 	[
@@ -129,32 +109,32 @@ graph
 	edge
 	[
 		id 3
-		source 9
-		target 10
+		source 7
+		target 8
 	]
 	edge
 	[
 		id 4
-		source 9
-		target 11
-	]
-	edge
-	[
-		id 5
-		source 9
-		target 12
-	]
-	edge
-	[
-		id 6
-		source 9
+		source 7
 		target 9
 	]
 	edge
 	[
+		id 5
+		source 7
+		target 10
+	]
+	edge
+	[
+		id 6
+		source 7
+		target 7
+	]
+	edge
+	[
 		id 7
-		source 16
-		target 17
+		source 13
+		target 14
 	]
 	edge
 	[
@@ -177,19 +157,19 @@ graph
 	edge
 	[
 		id 11
-		source 21
+		source 18
 		target 4
 	]
 	edge
 	[
 		id 12
-		source 21
+		source 18
 		target 5
 	]
 	edge
 	[
 		id 13
-		source 21
+		source 18
 		target 6
 	]
 	edge
@@ -213,49 +193,49 @@ graph
 	edge
 	[
 		id 17
-		source 17
-		target 16
+		source 14
+		target 13
 	]
 	edge
 	[
 		id 18
-		source 10
-		target 11
+		source 8
+		target 9
 	]
 	edge
 	[
 		id 19
-		source 10
-		target 9
+		source 8
+		target 7
 	]
 	edge
 	[
 		id 20
-		source 10
-		target 12
-	]
-	edge
-	[
-		id 21
-		source 11
+		source 8
 		target 10
 	]
 	edge
 	[
+		id 21
+		source 9
+		target 8
+	]
+	edge
+	[
 		id 22
-		source 11
-		target 9
+		source 9
+		target 7
 	]
 	edge
 	[
 		id 23
-		source 11
-		target 12
+		source 9
+		target 10
 	]
 	edge
 	[
 		id 24
-		source 12
-		target 9
+		source 10
+		target 7
 	]
 ]

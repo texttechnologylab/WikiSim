@@ -169,11 +169,6 @@ graph
 		id 33
 		label "Q1034573"
 	]
-	node
-	[
-		id 34
-		label "Q2564633"
-	]
 	edge
 	[
 		id 1

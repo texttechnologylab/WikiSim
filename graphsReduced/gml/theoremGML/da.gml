@@ -312,16 +312,11 @@ graph
 	node
 	[
 		id 62
-		label "Q2428364"
-	]
-	node
-	[
-		id 63
 		label "Q14402006"
 	]
 	node
 	[
-		id 64
+		id 63
 		label "Q5530428"
 	]
 	edge
@@ -561,7 +556,7 @@ graph
 	edge
 	[
 		id 40
-		source 63
+		source 62
 		target 37
 	]
 ]
