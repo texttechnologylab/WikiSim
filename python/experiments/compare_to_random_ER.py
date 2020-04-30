@@ -2,6 +2,7 @@ import sys
 import os
 import igraph
 import numpy as np
+from joblib import Parallel, delayed
 
 sys.path.extend(['../', './'])
 from similaritymeasures.deltacon import deltaCon, personalized_rw_affinities, shortest_path_affinities, load_all_graphs
@@ -91,14 +92,13 @@ if __name__ == '__main__':
     types = ['gml', 'fullgml']
 
     # consider these similarity functions
-    # similarities = [edge_jaccard_similarity, ged_similarity,
-    #                 vertex_edge_jaccard_similarity, vertex_jaccard_similarity,
-    #                 intersection_rw_kernel,
-    #                 deltacon_rw, deltacon_sp]
-    similarities = [deltacon_rw, deltacon_sp]
+    similarities = [edge_jaccard_similarity, ged_similarity,
+                    vertex_edge_jaccard_similarity, vertex_jaccard_similarity,
+                    intersection_rw_kernel,
+                    deltacon_rw, deltacon_sp]
+    # similarities = [deltacon_rw, deltacon_sp]
 
     # create this many er graphs per instance
-    repetitions = 10
+    repetitions = 100
 
-    for similarity in similarities:
-        er_similarities(similarity, repetitions, dataset_root, dataset_output, types)
+    element_run = Parallel(n_jobs=-1)(delayed(er_similarities)(similarity, repetitions, dataset_root, dataset_output, types) for similarity in similarities)
