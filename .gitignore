@@ -4,6 +4,9 @@
 *.out
 *.soc
 *.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pyc
+*.xdv
 /graphsCleaned/
 /graphsReduced/html
-/output/

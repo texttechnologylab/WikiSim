@@ -63,6 +63,7 @@ def er_similarities(similarity, repetitions, root_in, output_folder, types):
                         f.write(f'{type}; {d}; {lang}; {np.mean(similarity_score)}; {np.std(similarity_score)}\n')
                     else:
                         f.write(f'{type}; {d}; {lang}; nan; graph is empty\n')
+                    f.flush()
 
 
 def deltacon_rw(G1, G2):
@@ -90,13 +91,14 @@ if __name__ == '__main__':
     types = ['gml', 'fullgml']
 
     # consider these similarity functions
-    similarities = [edge_jaccard_similarity, ged_similarity,
-                    vertex_edge_jaccard_similarity, vertex_jaccard_similarity,
-                    intersection_rw_kernel,
-                    deltacon_rw, deltacon_sp]
+    # similarities = [edge_jaccard_similarity, ged_similarity,
+    #                 vertex_edge_jaccard_similarity, vertex_jaccard_similarity,
+    #                 intersection_rw_kernel,
+    #                 deltacon_rw, deltacon_sp]
+    similarities = [deltacon_rw, deltacon_sp]
 
     # create this many er graphs per instance
-    repetitions = 100
+    repetitions = 10
 
     for similarity in similarities:
         er_similarities(similarity, repetitions, dataset_root, dataset_output, types)

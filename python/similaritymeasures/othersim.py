@@ -240,6 +240,7 @@ def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similar
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+            out_csv.flush()
 
 
 def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
@@ -264,3 +265,4 @@ def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballliga
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+            out_csv.flush()

@@ -303,6 +303,7 @@ def main_deltaCon(graphs, output_folder='../output/gml/fussballligaGML', affinit
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+            out_csv.flush()
 
 
 def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
@@ -331,6 +332,7 @@ def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballliga
                 sim = 0.0 # no vertex overlap!
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+            out_csv.flush()
 
 
 def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussballligaGML'):
@@ -359,6 +361,7 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
                 sim2 = 0.0  # no vertex overlap!
             print(l1, l2, sim1, sim2, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim1}, {sim2}, {toc-tic}\n')
+            out_csv.flush()
 
 
 def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
@@ -382,3 +385,4 @@ def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussball
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+            out_csv.flush()
