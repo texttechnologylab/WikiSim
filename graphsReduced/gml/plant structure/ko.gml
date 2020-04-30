@@ -42,81 +42,66 @@ graph
 	node
 	[
 		id 8
-		label "Q987768"
-	]
-	node
-	[
-		id 9
 		label "Q987774"
 	]
 	node
 	[
-		id 10
+		id 9
 		label "Q2923673"
 	]
 	node
 	[
-		id 11
+		id 10
 		label "Q1155708"
 	]
 	node
 	[
-		id 12
-		label "Q1293511"
-	]
-	node
-	[
-		id 13
+		id 11
 		label "Q796482"
 	]
 	node
 	[
-		id 14
-		label "Q11827976"
-	]
-	node
-	[
-		id 15
+		id 12
 		label "Q1295298"
 	]
 	node
 	[
-		id 16
+		id 13
 		label "Q1351263"
 	]
 	node
 	[
-		id 17
+		id 14
 		label "Q148515"
 	]
 	node
 	[
-		id 18
+		id 15
 		label "Q184453"
 	]
 	node
 	[
-		id 19
+		id 16
 		label "Q185138"
 	]
 	node
 	[
-		id 20
+		id 17
 		label "Q188748"
 	]
 	node
 	[
-		id 21
+		id 18
 		label "Q193472"
 	]
 	node
 	[
-		id 22
+		id 19
 		label "Q216635"
 	]
 	node
 	[
-		id 23
+		id 20
 		label "Q286677"
 	]
 ]

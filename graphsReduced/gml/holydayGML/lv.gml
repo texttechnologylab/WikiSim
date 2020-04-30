@@ -77,21 +77,16 @@ graph
 	node
 	[
 		id 15
-		label "Q163708"
-	]
-	node
-	[
-		id 16
 		label "Q464458"
 	]
 	node
 	[
-		id 17
+		id 16
 		label "Q514400"
 	]
 	node
 	[
-		id 18
+		id 17
 		label "Q1968642"
 	]
 	edge
@@ -133,7 +128,7 @@ graph
 	edge
 	[
 		id 7
-		source 16
-		target 17
+		source 15
+		target 16
 	]
 ]

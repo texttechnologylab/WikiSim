@@ -182,131 +182,121 @@ graph
 	node
 	[
 		id 36
-		label "Q288500"
-	]
-	node
-	[
-		id 37
 		label "Q289500"
 	]
 	node
 	[
-		id 38
+		id 37
 		label "Q309479"
 	]
 	node
 	[
-		id 39
+		id 38
 		label "Q368988"
 	]
 	node
 	[
-		id 40
+		id 39
 		label "Q5252320"
 	]
 	node
 	[
-		id 41
+		id 40
 		label "Q5506658"
 	]
 	node
 	[
-		id 42
+		id 41
 		label "Q5656649"
 	]
 	node
 	[
-		id 43
+		id 42
 		label "Q6119828"
 	]
 	node
 	[
-		id 44
+		id 43
 		label "Q6439640"
 	]
 	node
 	[
-		id 45
+		id 44
 		label "Q7169663"
 	]
 	node
 	[
-		id 46
+		id 45
 		label "Q7801155"
 	]
 	node
 	[
-		id 47
+		id 46
 		label "Q472971"
 	]
 	node
 	[
-		id 48
+		id 47
 		label "Q518730"
 	]
 	node
 	[
-		id 49
+		id 48
 		label "Q541563"
 	]
 	node
 	[
-		id 50
+		id 49
 		label "Q576072"
 	]
 	node
 	[
-		id 51
+		id 50
 		label "Q590554"
 	]
 	node
 	[
-		id 52
+		id 51
 		label "Q601796"
 	]
 	node
 	[
-		id 53
+		id 52
 		label "Q636889"
 	]
 	node
 	[
-		id 54
+		id 53
 		label "Q674689"
 	]
 	node
 	[
-		id 55
+		id 54
 		label "Q751484"
 	]
 	node
 	[
-		id 56
+		id 55
 		label "Q28733081"
 	]
 	node
 	[
-		id 57
+		id 56
 		label "Q826841"
 	]
 	node
 	[
-		id 58
+		id 57
 		label "Q827230"
 	]
 	node
 	[
-		id 59
+		id 58
 		label "Q849428"
 	]
 	node
 	[
-		id 60
-		label "Q856215"
-	]
-	node
-	[
-		id 61
+		id 59
 		label "Q907439"
 	]
 ]

@@ -569,11 +569,6 @@ graph
 		id 113
 		label "Q6119825"
 	]
-	node
-	[
-		id 114
-		label "Q6403282"
-	]
 	edge
 	[
 		id 1
@@ -903,11 +898,5 @@ graph
 		id 55
 		source 106
 		target 5
-	]
-	edge
-	[
-		id 56
-		source 114
-		target 82
 	]
 ]

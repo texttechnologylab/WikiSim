@@ -15,7 +15,7 @@ import org.apache.commons.io.FileUtils;
 public class Cleanup {
 
 	public static void main(String[] args) throws Exception {
-		File[]createdFiles = new File("graphs/oecdTopics/content").listFiles();
+		File[]createdFiles = new File("graphsReduced/content").listFiles();
 		for (File category : createdFiles) {
 			File[]languages = category.listFiles();
 			for (File file : languages) {
@@ -71,8 +71,8 @@ public class Cleanup {
 						inVertices = true;
 				}
 				
-				cleanUp(created,defect,new File(file.getPath().replace("graphs", "graphsCleaned")));
-				cleanUp(original,defect,new File(file.getPath().replace("content", "gml").replace("graphs", "graphsCleaned")));
+				cleanUp(created,defect,new File(file.getPath().replace("graphsReduced", "graphsReducedCleaned")));
+				cleanUp(original,defect,new File(file.getPath().replace("content", "gml").replace("graphsReduced", "graphsReducedCleaned")));
 			}
 		}
 	}

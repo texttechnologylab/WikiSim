@@ -67,7 +67,7 @@ public class GraphStatistics {
 
 		//String graphsFolder = "/home/staff_homes/ahemati/projects/WikiSim/graphs/oecd/gml";
 
-		String graphsFolder = "/home/staff_homes/ahemati/projects/WikiSim/graphsReduced/gml";
+		String graphsFolder = "/home/staff_homes/ahemati/projects/WikiSim/graphsReducedCleaned/gml";
 		String outputPath = "/home/staff_homes/ahemati/projects/WikiSim/texOutputs/topicsStatistics/topicsStatistics_min10.tex";
 
 		File[]topics = new File(graphsFolder).listFiles();

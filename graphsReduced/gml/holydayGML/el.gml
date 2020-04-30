@@ -142,11 +142,6 @@ graph
 	node
 	[
 		id 28
-		label "Q2185469"
-	]
-	node
-	[
-		id 29
 		label "Q2870970"
 	]
 	edge

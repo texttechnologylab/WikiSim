@@ -222,146 +222,141 @@ graph
 	node
 	[
 		id 44
-		label "Q3297804"
-	]
-	node
-	[
-		id 45
 		label "Q3333764"
 	]
 	node
 	[
-		id 46
+		id 45
 		label "Q3333767"
 	]
 	node
 	[
-		id 47
+		id 46
 		label "Q3475675"
 	]
 	node
 	[
-		id 48
+		id 47
 		label "Q3537483"
 	]
 	node
 	[
-		id 49
+		id 48
 		label "Q3554820"
 	]
 	node
 	[
-		id 50
+		id 49
 		label "Q3656201"
 	]
 	node
 	[
-		id 51
+		id 50
 		label "Q3773677"
 	]
 	node
 	[
-		id 52
+		id 51
 		label "Q4894564"
 	]
 	node
 	[
-		id 53
+		id 52
 		label "Q199006"
 	]
 	node
 	[
-		id 54
+		id 53
 		label "Q202805"
 	]
 	node
 	[
-		id 55
+		id 54
 		label "Q257387"
 	]
 	node
 	[
-		id 56
+		id 55
 		label "Q10371414"
 	]
 	node
 	[
-		id 57
+		id 56
 		label "Q288500"
 	]
 	node
 	[
-		id 58
+		id 57
 		label "Q289500"
 	]
 	node
 	[
-		id 59
+		id 58
 		label "Q368988"
 	]
 	node
 	[
-		id 60
+		id 59
 		label "Q7801155"
 	]
 	node
 	[
-		id 61
+		id 60
 		label "Q11143305"
 	]
 	node
 	[
-		id 62
+		id 61
 		label "Q15297666"
 	]
 	node
 	[
-		id 63
+		id 62
 		label "Q15473654"
 	]
 	node
 	[
-		id 64
+		id 63
 		label "Q388660"
 	]
 	node
 	[
-		id 65
+		id 64
 		label "Q523607"
 	]
 	node
 	[
-		id 66
+		id 65
 		label "Q590554"
 	]
 	node
 	[
-		id 67
+		id 66
 		label "Q601796"
 	]
 	node
 	[
-		id 68
+		id 67
 		label "Q636889"
 	]
 	node
 	[
-		id 69
+		id 68
 		label "Q674689"
 	]
 	node
 	[
-		id 70
+		id 69
 		label "Q826841"
 	]
 	node
 	[
-		id 71
+		id 70
 		label "Q849428"
 	]
 	node
 	[
-		id 72
+		id 71
 		label "Q856215"
 	]
 	edge
@@ -427,14 +422,14 @@ graph
 	edge
 	[
 		id 11
-		source 55
+		source 54
 		target 25
 	]
 	edge
 	[
 		id 12
-		source 55
-		target 56
+		source 54
+		target 55
 	]
 	edge
 	[
@@ -451,25 +446,25 @@ graph
 	edge
 	[
 		id 15
-		source 56
-		target 55
+		source 55
+		target 54
 	]
 	edge
 	[
 		id 16
-		source 56
+		source 55
 		target 25
 	]
 	edge
 	[
 		id 17
-		source 64
+		source 63
 		target 10
 	]
 	edge
 	[
 		id 18
-		source 64
+		source 63
 		target 25
 	]
 	edge
@@ -500,6 +495,6 @@ graph
 	[
 		id 23
 		source 25
-		target 56
+		target 55
 	]
 ]

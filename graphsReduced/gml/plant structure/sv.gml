@@ -72,141 +72,136 @@ graph
 	node
 	[
 		id 14
-		label "Q482083"
-	]
-	node
-	[
-		id 15
 		label "Q987768"
 	]
 	node
 	[
-		id 16
+		id 15
 		label "Q2923673"
 	]
 	node
 	[
-		id 17
+		id 16
 		label "Q828761"
 	]
 	node
 	[
-		id 18
+		id 17
 		label "Q914105"
 	]
 	node
 	[
-		id 19
+		id 18
 		label "Q1146493"
 	]
 	node
 	[
-		id 20
+		id 19
 		label "Q768312"
 	]
 	node
 	[
-		id 21
+		id 20
 		label "Q4832012"
 	]
 	node
 	[
-		id 22
+		id 21
 		label "Q5566605"
 	]
 	node
 	[
-		id 23
+		id 22
 		label "Q11827976"
 	]
 	node
 	[
-		id 24
+		id 23
 		label "Q15621878"
 	]
 	node
 	[
-		id 25
+		id 24
 		label "Q1305062"
 	]
 	node
 	[
-		id 26
+		id 25
 		label "Q1390205"
 	]
 	node
 	[
-		id 27
+		id 26
 		label "Q216635"
 	]
 	node
 	[
-		id 28
+		id 27
 		label "Q1425870"
 	]
 	node
 	[
-		id 29
+		id 28
 		label "Q1470757"
 	]
 	node
 	[
-		id 30
+		id 29
 		label "Q134267"
 	]
 	node
 	[
-		id 31
+		id 30
 		label "Q184453"
 	]
 	node
 	[
-		id 32
+		id 31
 		label "Q369429"
 	]
 	node
 	[
-		id 33
+		id 32
 		label "Q1734345"
 	]
 	node
 	[
-		id 34
+		id 33
 		label "Q1889013"
 	]
 	node
 	[
-		id 35
+		id 34
 		label "Q2070853"
 	]
 	node
 	[
-		id 36
+		id 35
 		label "Q188748"
 	]
 	node
 	[
-		id 37
+		id 36
 		label "Q192576"
 	]
 	node
 	[
-		id 38
+		id 37
 		label "Q193472"
 	]
 	node
 	[
-		id 39
+		id 38
 		label "Q195161"
 	]
 	node
 	[
-		id 40
+		id 39
 		label "Q246023"
 	]
 	node
 	[
-		id 41
+		id 40
 		label "Q304216"
 	]
 	edge
@@ -230,109 +225,109 @@ graph
 	edge
 	[
 		id 4
-		source 19
+		source 18
 		target 1
 	]
 	edge
 	[
 		id 5
-		source 22
+		source 21
 		target 1
 	]
 	edge
 	[
 		id 6
-		source 23
+		source 22
 		target 3
 	]
 	edge
 	[
 		id 7
-		source 23
+		source 22
 		target 2
 	]
 	edge
 	[
 		id 8
-		source 26
-		target 27
+		source 25
+		target 26
 	]
 	edge
 	[
 		id 9
-		source 28
-		target 15
+		source 27
+		target 14
 	]
 	edge
 	[
 		id 10
-		source 31
+		source 30
 		target 10
 	]
 	edge
 	[
 		id 11
-		source 31
+		source 30
 		target 3
 	]
 	edge
 	[
 		id 12
-		source 31
-		target 16
+		source 30
+		target 15
 	]
 	edge
 	[
 		id 13
-		source 31
-		target 32
+		source 30
+		target 31
 	]
 	edge
 	[
 		id 14
-		source 31
-		target 26
+		source 30
+		target 25
 	]
 	edge
 	[
 		id 15
-		source 31
+		source 30
 		target 2
 	]
 	edge
 	[
 		id 16
-		source 40
-		target 20
+		source 39
+		target 19
 	]
 	edge
 	[
 		id 17
-		source 32
-		target 31
+		source 31
+		target 30
 	]
 	edge
 	[
 		id 18
-		source 32
+		source 31
 		target 3
 	]
 	edge
 	[
 		id 19
-		source 32
-		target 16
+		source 31
+		target 15
 	]
 	edge
 	[
 		id 20
-		source 32
-		target 26
+		source 31
+		target 25
 	]
 	edge
 	[
 		id 21
-		source 32
+		source 31
 		target 2
 	]
 ]

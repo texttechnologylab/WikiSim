@@ -117,21 +117,16 @@ graph
 	node
 	[
 		id 23
-		label "Q241868"
-	]
-	node
-	[
-		id 24
 		label "Q14402006"
 	]
 	node
 	[
-		id 25
+		id 24
 		label "Q6967039"
 	]
 	node
 	[
-		id 26
+		id 25
 		label "Q17099544"
 	]
 	edge
