@@ -6,7 +6,7 @@ from joblib import Parallel, delayed
 
 sys.path.extend(['../', './'])
 from similaritymeasures.deltacon import deltaCon, personalized_rw_affinities, shortest_path_affinities, load_all_graphs
-from similaritymeasures.othersim import edge_jaccard_similarity, ged_similarity, vertex_edge_jaccard_similarity, vertex_jaccard_similarity, intersection_rw_kernel
+from similaritymeasures.othersim import edge_jaccard_similarity, ged_similarity, vertex_edge_jaccard_similarity, vertex_jaccard_similarity, intersection_rw_kernel, intersection_rw_kernel_kiter
 
 
 def has_loops(g: igraph.Graph):
@@ -75,6 +75,9 @@ def deltacon_rw(G1, G2):
 def deltacon_sp(G1, G2):
     '''Wrapper function for deltacon with shortest path similarities'''
     return deltaCon(G1, G2, affinities=shortest_path_affinities)
+
+def intersection_rw_kernel_10iter(G1, G2):
+    return intersection_rw_kernel_kiter(G1, G2, k=10)
 
 
 if __name__ == '__main__':

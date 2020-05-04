@@ -60,7 +60,8 @@ def compute_sampled_statistics(similarity_file, similarity_root, type, sample_si
 
 # similarity_folder = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecdTopics')
 # similarity_folder = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecd')
-similarity_folder = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'output')
+# similarity_folder = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'output')
+similarity_folder = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'graphsReduced')
 
 similarity_files = ['deltaCON_intersection_personalized_rw_affinities_lowmem.csv',
                     'deltaCON_intersection_shortest_path_affinities.csv',
@@ -70,6 +71,7 @@ similarity_files = ['deltaCON_intersection_personalized_rw_affinities_lowmem.csv
                     'otherSim_intersection_edge_jaccard_similarity.csv',
                     'otherSim_intersection_ged_similarity.csv',
                     'otherSim_intersection_rw_kernel.csv',
+                    'otherSim_intersection_rw_kernel_10iter.csv',
                     'otherSim_intersection_rw_kernel_unnormalized.csv',
                     'otherSim_intersection_vertex_jaccard_similarity.csv',
                     'otherSim_vertex_edge_jaccard_similarity.csv',

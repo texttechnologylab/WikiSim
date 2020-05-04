@@ -19,6 +19,8 @@ nohup python3 -u ../experiments/compute_vertex_jacc_similarities_intersection.py
 sleep 1
 nohup python3 -u ../experiments/compute_intersection_rw_kernel.py ${infolder} ${outfolder} > compute_intersection_rw_kernel.out &
 sleep 1
+nohup python3 -u ../experiments/compute_intersection_rw_kernel_10iterations.py ${infolder} ${outfolder} > compute_intersection_rw_kernel_10iterations.out &
+sleep 1
 nohup python3 -u ../experiments/compute_intersection_rw_kernel_unnormalized.py ${infolder} ${outfolder} > compute_intersection_rw_kernel_unnormalized.out &
 sleep 1
 nohup python3 -u ../experiments/compute_rw_similarities.py ${infolder} ${outfolder} > compute_rw_similarities.out &

@@ -102,7 +102,8 @@ def visualize(similarity_file, out_root, type, dataset=None, show=True, matplotl
 process_all = True
 # similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecdTopics')
 # similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecd')
-similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'output')
+# similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'output')
+similarity_root = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'graphsReduced')
 
 similarity_files = ['deltaCON_personalized_rw_affinities.csv',
                     'deltaCON_intersection_personalized_rw_affinities.csv',
@@ -115,6 +116,8 @@ similarity_files = ['deltaCON_personalized_rw_affinities.csv',
                     'otherSim_vertex_jaccard_similarity.csv',
                     'otherSim_edge_jaccard_similarity.csv',
                     'otherSim_intersection_rw_kernel.csv',
+                    'otherSim_intersection_rw_kernel_unnormalized.csv',
+                    'otherSim_intersection_rw_kernel_10iter.csv',
                     'otherSim_intersection_vertex_jaccard_similarity.csv',]
 
 replace_nan_with_value = -1.0
@@ -130,7 +133,7 @@ if __name__ == '__main__':
             except Exception as e:
                 print(e)
             try:
-                visualize(similarity_file=similarity_file, out_root=similarity_root, type='gml', dataset=None, show=False, matplotlib=False, handle_nan=replace_nan_with_value)
+                visualize(similarity_file=similarity_file, out_root=similarity_root, type='fullgml', dataset=None, show=False, matplotlib=False, handle_nan=replace_nan_with_value)
             except IOError:
                 pass
             except Exception as e:
