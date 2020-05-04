@@ -241,28 +241,27 @@ def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=
     """
 
     if g1.vcount() > 0:
-        labels = set(g1.vs['label'])
+        labels_set = set(g1.vs['label'])
     else:
-        labels = set()
+        labels_set = set()
     if g2.vcount() > 0:
-        labels.intersection_update(g2.vs['label'])
+        labels_set.intersection_update(g2.vs['label'])
     else:
-        labels = set() # intersection will be empty
+        labels_set = set() # intersection will be empty
 
     # new unique vertex ids in the small intersection graph
-    labels = list(labels)
+    labels = list(labels_set)
     label_ids = {l: i for i, l in enumerate(labels)}
 
     def __restrict_to_intersection(g):
         g_new = igraph.Graph(directed=directed)
         g_new.add_vertices(len(labels))
         g_new.vs['label'] = labels
-        for e in g.es:
-            try:
-                g_new.add_edge(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']])
-            except KeyError:
-                pass # here, we have encountered an edge with at least one endpoint not in the vertex set intersection
-        return g_new
+
+        intersection_edges = filter(lambda e:
+                                    g.vs[e.source]['label'] in labels_set and g.vs[e.target]['label'] in labels_set,
+                                    g.es)
+        edges = [(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']]) for e in intersection_edges]
 
     return __restrict_to_intersection(g1), __restrict_to_intersection(g2)
 
