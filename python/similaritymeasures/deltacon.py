@@ -262,6 +262,8 @@ def restrict_to_intersection(g1: igraph.Graph, g2: igraph.Graph, directed: bool=
                                     g.vs[e.source]['label'] in labels_set and g.vs[e.target]['label'] in labels_set,
                                     g.es)
         edges = [(label_ids[g.vs[e.source]['label']], label_ids[g.vs[e.target]['label']]) for e in intersection_edges]
+        g_new.add_edges(edges)
+        return g_new
 
     return __restrict_to_intersection(g1), __restrict_to_intersection(g2)
 
