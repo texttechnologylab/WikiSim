@@ -1,7 +1,0 @@
-Language1, Language2, SimilarityScore, Time
-it, it, 1.0, 3.3855438232421875e-05
-it, ru, 0.0, 1.239776611328125e-05
-it, union, 0.5, 9.298324584960938e-06
-ru, ru, 1.0, 8.58306884765625e-06
-ru, union, 0.5, 9.5367431640625e-06
-union, union, 1.0, 8.821487426757812e-06

@@ -1,4 +1,0 @@
-Language1, Language2, SimilarityScore, Kernel, Time
-it, it, 1.0, 1.0, 0.0001289844512939453
-it, ru, 0.0, 0.0, 0.0001289844512939453
-ru, ru, 1.0, 1.0, 6.29425048828125e-05
