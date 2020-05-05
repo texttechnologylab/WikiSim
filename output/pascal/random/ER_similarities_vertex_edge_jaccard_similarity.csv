@@ -1,203 +1,1715 @@
-Root path: ../../graphs/
+Root path: ../../graphsReduced/
 Sample Size: 100
 
-type; dataset; language; mean; stdgml; theoremGML; fr; 0.5008179626790189; 0.0003291968058441798
-gml; theoremGML; es; 0.5008057584203086; 0.0005661745922548673
-gml; theoremGML; pl; 0.5005580396810398; 0.0005908285368627289
-gml; theoremGML; vi; 0.5018291796683894; 0.00148128540105266
-gml; theoremGML; de; 0.5003632384037455; 0.0003156284740294714
-gml; theoremGML; nl; 0.5006059737710848; 0.0008316571891908454
-gml; theoremGML; ja; 0.5009228046755532; 0.00047364855366939556
-gml; theoremGML; it; 0.5017346568575659; 0.0004373660781305535
-gml; theoremGML; en; 0.5003915163514094; 0.0001415908994707081
-gml; theoremGML; sv; 0.5005858476845948; 0.0007834819615571252
-gml; theoremGML; ru; 0.500578708861956; 0.0003093543313017305
+type; dataset; language; mean; std
+gml; chemical element; id; 0.8995454336298334; 0.0007435855256456861
+gml; chemical element; fr; 0.7988394071323529; 0.000963465433276082
+gml; chemical element; mr; 0.5; 0.0
+gml; chemical element; lv; 0.7042568732022723; 0.0017788345496386835
+gml; chemical element; el; 0.5; 0.0
+gml; chemical element; es; 0.8214667445299423; 0.0010199182365897273
+gml; chemical element; pl; 0.9323377688714873; 0.00046964611692163676
+gml; chemical element; vi; 0.8447460620341692; 0.0010812547295976685
+gml; chemical element; de; 0.9019741144409291; 0.0006757193060888686
+gml; chemical element; ml; 0.5; 0.0
+gml; chemical element; sh; 0.5389406865338335; 0.0021107254714780232
+gml; chemical element; nl; 0.9682156515806344; 0.0002620187820178935
+gml; chemical element; si; 0.5; 0.0
+gml; chemical element; pt; 0.5411841839454836; 0.0019694888869170955
+gml; chemical element; ro; 0.9386442689087048; 0.00046364767131201496
+gml; chemical element; ja; 0.5; 0.0
+gml; chemical element; simple; 0.9691745183850319; 0.00027361579114352526
+gml; chemical element; it; 0.9760251688678179; 0.00020196561732638762
+gml; chemical element; ceb; 0.931947262680476; 0.0004975006088692213
+gml; chemical element; he; 0.5; 0.0
+gml; chemical element; da; 0.9380822891027029; 0.00047792605008410385
+gml; chemical element; en; 0.790501851683079; 0.0010136911106127665
+gml; chemical element; sr; 0.5; 0.0
+gml; chemical element; sv; 0.8496939426027932; 0.0008551578643274262
+gml; chemical element; ckb; 0.5; 0.0
+gml; chemical element; ru; 0.5; 0.0
+gml; chemical element; hi; 0.5; 0.0
+gml; chemical element; arz; 0.5; 0.0
+gml; chemical element; bs; 0.959356624800673; 0.00035172983697980063
+gml; chemical element; te; 0.5; 0.0
+gml; chemical element; zh; 0.5182754479574307; 0.001880655050919208
+gml; chemical element; mk; 0.5; 0.0
+gml; chemical element; hu; 0.596031841053045; 0.0017962314105529134
+gml; chemical element; ko; 0.5; 0.0
+gml; chemical element; war; 0.5; 0.0
+gml; dialect; id; 0.5098735286995457; 0.002935977122192284
+gml; dialect; fr; 0.5037673538129481; 0.0005613262589719658
+gml; dialect; mr; 0.5; 0.0
+gml; dialect; lv; 0.5; 0.0
+gml; dialect; el; 0.5; 0.0
+gml; dialect; es; 0.5002448979591837; 0.000663186808541719
+gml; dialect; pl; 0.5044369912818298; 0.0016070051063817217
+gml; dialect; vi; 0.5; 0.0
+gml; dialect; de; 0.5014049568128454; 0.0006624159728375126
+gml; dialect; ml; 0.5; 0.0
+gml; dialect; sh; 0.503; 0.007141428428542856
+gml; dialect; nl; 0.5029400195015438; 0.0007056031009270674
+gml; dialect; si; 0.5; 0.0
+gml; dialect; pt; 0.5062867985353225; 0.0011976113191881344
+gml; dialect; ro; 0.5036363636363635; 0.012331509060227747
+gml; dialect; ja; 0.5; 0.0
+gml; dialect; simple; 0.5033522727272728; 0.007043850623882523
+gml; dialect; it; 0.5231680202287957; 0.0009299679139283143
+gml; dialect; ceb; 0.5; 0.0
+gml; dialect; he; 0.5; 0.0
+gml; dialect; da; 0.5022152327047894; 0.004480231740667949
+gml; dialect; en; 0.5083635660122932; 0.0002637526027876977
+gml; dialect; sr; 0.5; 0.0
+gml; dialect; sv; 0.5083959020666389; 0.0018038784282333067
+gml; dialect; ckb; 0.5; 0.0
+gml; dialect; ru; 0.5; 0.0
+gml; dialect; hi; 0.5; 0.0
+gml; dialect; arz; 0.5; 0.0
+gml; dialect; bs; 0.5; 0.0
+gml; dialect; te; 0.5; 0.0
+gml; dialect; zh; 0.5; 0.0
+gml; dialect; mk; 0.5; 0.0
+gml; dialect; hu; 0.5044878303526921; 0.003940984639360478
+gml; dialect; ko; 0.5; 0.0
+gml; dialect; war; 0.5; 0.0
+gml; coat of arms; id; 0.6614530109509404; 0.008046009872590288
+gml; coat of arms; fr; 0.5145671122297688; 0.0016243563731757856
+gml; coat of arms; lv; 0.5; 0.0
+gml; coat of arms; el; 0.5; 0.0
+gml; coat of arms; es; 0.5000895356186235; 0.0003425310836834743
+gml; coat of arms; pl; 0.504746324236664; 8.5050626515458e-05
+gml; coat of arms; vi; 0.5; 0.0
+gml; coat of arms; de; 0.5058658040784282; 0.0010410113206433293
+gml; coat of arms; sh; 0.536588388056134; 0.005673634114267782
+gml; coat of arms; nl; 0.5058063283514431; 0.0007842112193953096
+gml; coat of arms; pt; 0.5; 0.0
+gml; coat of arms; ro; 0.509804324028462; 0.01239266526725587
+gml; coat of arms; ja; 0.5; 0.0
+gml; coat of arms; simple; 0.5; 0.0
+gml; coat of arms; it; 0.5294945824188856; 0.0013622474834026805
+gml; coat of arms; he; 0.5; 0.0
+gml; coat of arms; da; 0.5; 0.0
+gml; coat of arms; en; 0.5076839929077921; 0.0006156428504576401
+gml; coat of arms; sr; 0.5; 0.0
+gml; coat of arms; sv; 0.5026007314977305; 0.0013646223777753065
+gml; coat of arms; ru; 0.5; 0.0
+gml; coat of arms; hi; 0.5; 0.0
+gml; coat of arms; arz; 0.5; 0.0
+gml; coat of arms; bs; 0.5337040010393775; 0.006582852424299273
+gml; coat of arms; zh; 0.5; 0.0
+gml; coat of arms; mk; 0.5; 0.0
+gml; coat of arms; hu; 0.5; 0.0
+gml; coat of arms; ko; 0.5; 0.0
+gml; theoremGML; id; 0.5065384183595694; 0.005007892881073195
+gml; theoremGML; fr; 0.5008553225020976; 0.00027712150200679173
+gml; theoremGML; mr; 0.5; 0.0
+gml; theoremGML; lv; 0.5036666666666666; 0.010429658564774676
+gml; theoremGML; el; 0.5015513078470826; 0.0030907810050657594
+gml; theoremGML; es; 0.5007381632008676; 0.0005166110275286362
+gml; theoremGML; pl; 0.5006264107840526; 0.0005612431647856676
+gml; theoremGML; vi; 0.501906297933409; 0.001612273942134756
+gml; theoremGML; de; 0.5003131316190333; 0.00023156658627192898
+gml; theoremGML; ml; 0.5137328954570335; 0.014192132570424284
+gml; theoremGML; sh; 0.5075064886911383; 0.010574030568066814
+gml; theoremGML; nl; 0.5007155812235144; 0.00100322689388833
+gml; theoremGML; si; 0.515; 0.08529361054615991
+gml; theoremGML; pt; 0.5012689800188092; 0.000612123356132491
+gml; theoremGML; ro; 0.5011017669045191; 0.0020670482508577327
+gml; theoremGML; ja; 0.5009429779595994; 0.000542298280936164
+gml; theoremGML; simple; 0.501842105263158; 0.006714395169564769
+gml; theoremGML; it; 0.5017580498263662; 0.0005045810592388803
+gml; theoremGML; he; 0.5014135973382053; 0.0007832454545956903
+gml; theoremGML; da; 0.5024749090571876; 0.0035962479450668337
+gml; theoremGML; en; 0.5003989983406014; 0.00013355278257237192
+gml; theoremGML; sr; 0.5021188034688855; 0.0023755308461782727
+gml; theoremGML; sv; 0.5005213922596308; 0.0006243052507353754
+gml; theoremGML; ckb; 0.5095934876127519; 0.009121520463388929
+gml; theoremGML; ru; 0.5005304725490942; 0.00032870279917211455
+gml; theoremGML; hi; 0.5080526406734611; 0.0046152743979319885
+gml; theoremGML; bs; 0.5032825843103199; 0.005644803672410257
+gml; theoremGML; te; 0.5; 0.0
+gml; theoremGML; zh; 0.5017191340533176; 0.0005359695207468859
+gml; theoremGML; mk; 0.51207869209756; 0.010072451827781255
+gml; theoremGML; hu; 0.500985717449681; 0.0010935395458967479
+gml; theoremGML; ko; 0.5014593111574868; 0.000704344977903771
 gml; theoremGML; war; 0.5; 0.0
-gml; holydayGML; fr; 0.5094070760803135; 0.0030751373325127837
-gml; holydayGML; es; 0.5029228073012237; 0.003979658930021608
-gml; holydayGML; pl; 0.5121142862217214; 0.004765409291284796
-gml; holydayGML; vi; 0.5072111545176401; 0.006232430733311728
-gml; holydayGML; de; 0.513915021969506; 0.0043936796600613495
-gml; holydayGML; nl; 0.5053971744533423; 0.005484814992636055
-gml; holydayGML; ja; 0.506049815527973; 0.004353895804107711
-gml; holydayGML; it; 0.5061234326401588; 0.003141048177371118
-gml; holydayGML; ceb; 0.6505098163585014; 0.017256244264151083
-gml; holydayGML; en; 0.5168580582472206; 0.0014337892511206663
-gml; holydayGML; sv; 0.5072748109620844; 0.0029133001078073223
-gml; holydayGML; ru; 0.5108146904836176; 0.0025412583286959505
-gml; holydayGML; war; 0.505; 0.049749371855330994
-gml; paintingGML; fr; 0.5; 0.0
-gml; paintingGML; es; 0.5000637989480743; 8.748541513053206e-05
-gml; paintingGML; pl; 0.5007764505574959; 0.00011303647543868674
-gml; paintingGML; vi; 0.5028119910667833; 0.0030808010166856427
-gml; paintingGML; de; 0.500515443117331; 0.0002527362943402339
-gml; paintingGML; nl; 0.5012666580951249; 0.00018358358548545495
-gml; paintingGML; ja; 0.5039909875521225; 0.0008169869112599177
-gml; paintingGML; it; 0.5006424106384173; 4.676435055373934e-05
+gml; chemical compound; id; 0.5073276366521541; 0.0010276110600092735
+gml; chemical compound; fr; 0.502194693936857; 0.00038995980010322255
+gml; chemical compound; mr; 0.5; 0.0
+gml; chemical compound; lv; 0.5016474954735224; 0.0013619029626751164
+gml; chemical compound; el; 0.5; 0.0
+gml; chemical compound; es; 0.5012964758837647; 0.00043363150412064906
+gml; chemical compound; pl; 0.503853243079641; 0.0004841701460518061
+gml; chemical compound; vi; 0.5032596402075226; 0.0006941965494034841
+gml; chemical compound; de; 0.5009693140032081; 0.00032354381493844835
+gml; chemical compound; ml; 0.5; 0.0
+gml; chemical compound; sh; 0.5025327322930027; 0.0003248743051033672
+gml; chemical compound; nl; 0.5020807700415468; 0.0005118663545682022
+gml; chemical compound; si; 0.5; 0.0
+gml; chemical compound; pt; 0.5014401095394284; 0.0005873983374121924
+gml; chemical compound; ro; 0.5047650251301762; 0.0009518628771057537
+gml; chemical compound; ja; 0.5; 0.0
+gml; chemical compound; simple; 0.5023346820061401; 0.0014168795907723178
+gml; chemical compound; it; 0.5040964267832254; 0.0004463552458992526
+gml; chemical compound; ceb; 0.5; 0.0
+gml; chemical compound; he; 0.5003846153846154; 0.0038268747581023817
+gml; chemical compound; da; 0.5029513464359127; 0.0015059584970420177
+gml; chemical compound; en; 0.5062430794937257; 0.00033165915992384765
+gml; chemical compound; sr; 0.5023408857356528; 0.0003426091388002943
+gml; chemical compound; sv; 0.5024758523480805; 0.000555417457890277
+gml; chemical compound; ckb; 0.5; 0.0
+gml; chemical compound; ru; 0.5; 0.0
+gml; chemical compound; hi; 0.5; 0.0
+gml; chemical compound; arz; 0.5; 0.0
+gml; chemical compound; bs; 0.5127867317618836; 0.001872543191766204
+gml; chemical compound; te; 0.5; 0.0
+gml; chemical compound; zh; 0.5; 0.0
+gml; chemical compound; mk; 0.5; 0.0
+gml; chemical compound; hu; 0.5025467571457881; 0.0007670565327306051
+gml; chemical compound; ko; 0.5; 0.0
+gml; chemical compound; war; 0.501; 0.009949874371066194
+gml; holydayGML; id; 0.5132006201727949; 0.003993957348649152
+gml; holydayGML; fr; 0.5100874309750633; 0.0030280018226269525
+gml; holydayGML; mr; 0.562879290273218; 0.011254533381684525
+gml; holydayGML; lv; 0.5038461538461538; 0.01153846153846153
+gml; holydayGML; el; 0.5046794871794872; 0.01398126740550726
+gml; holydayGML; es; 0.5024448266920849; 0.0028804618305995596
+gml; holydayGML; pl; 0.5128096030332873; 0.0051624341619480076
+gml; holydayGML; vi; 0.5081649360302452; 0.0060200350881983574
+gml; holydayGML; de; 0.5139199488288082; 0.003788518517402911
+gml; holydayGML; ml; 0.5344995750036438; 0.01337377440647282
+gml; holydayGML; sh; 0.5100959573018397; 0.012637100874610771
+gml; holydayGML; nl; 0.5048783142390427; 0.004118554786922026
+gml; holydayGML; si; 0.505; 0.028431203515386628
+gml; holydayGML; pt; 0.5118518298601672; 0.004419094593196146
+gml; holydayGML; ro; 0.5096578652426348; 0.006135888828951066
+gml; holydayGML; ja; 0.5053250321727871; 0.004178480722154277
+gml; holydayGML; simple; 0.5458760685023126; 0.006706464676194358
+gml; holydayGML; it; 0.5054607694192996; 0.0026198869860187936
+gml; holydayGML; ceb; 0.649410836625094; 0.017501485947531596
+gml; holydayGML; he; 0.5265459120376244; 0.005229293652015711
+gml; holydayGML; da; 0.5172714563848585; 0.006930589722012163
+gml; holydayGML; en; 0.5167292478341623; 0.0018711181611879041
+gml; holydayGML; sr; 0.5282589243070654; 0.008247523541705732
+gml; holydayGML; sv; 0.5073048170161963; 0.00313622779839511
+gml; holydayGML; ckb; 0.515; 0.04769696007084727
+gml; holydayGML; ru; 0.5111030694158524; 0.002763096276473901
+gml; holydayGML; hi; 0.5089580308121658; 0.008299533820438436
+gml; holydayGML; arz; 0.5577599067599066; 0.0447898669796558
+gml; holydayGML; bs; 0.51; 0.039581140290126375
+gml; holydayGML; te; 0.5141191417278373; 0.01853164545513174
+gml; holydayGML; zh; 0.5314769595748505; 0.00372070498293725
+gml; holydayGML; mk; 0.5156745827984595; 0.013303369054564255
+gml; holydayGML; hu; 0.5292770775260837; 0.006638524545691774
+gml; holydayGML; ko; 0.5105493258761498; 0.004458421583326907
+gml; holydayGML; war; 0.51; 0.06999999999999999
+gml; paintingGML; id; 0.5119930839062817; 0.0021476403642623344
+gml; paintingGML; fr; 0.5001176470588236; 0.0008235294117647027
+gml; paintingGML; mr; 0.5; 0.0
+gml; paintingGML; lv; 0.5001960784313725; 0.0013725490196078384
+gml; paintingGML; el; 0.5023375239078804; 0.0007351122541402525
+gml; paintingGML; es; 0.5000612446711554; 7.964614501341214e-05
+gml; paintingGML; pl; 0.5007862171859672; 0.00011667743671276332
+gml; paintingGML; vi; 0.5034286315533117; 0.0028970117111069833
+gml; paintingGML; de; 0.5004965817819311; 0.0002467241689345094
+gml; paintingGML; ml; 0.5052843307510522; 0.0007156574114522035
+gml; paintingGML; sh; 0.5004545454545455; 0.0016567988080744113
+gml; paintingGML; nl; 0.5012715887811937; 0.00017789485585077447
+gml; paintingGML; si; 0.5; 0.0
+gml; paintingGML; pt; 0.5009623918711743; 0.00025511505983846945
+gml; paintingGML; ro; 0.5165829619696027; 0.0008082606947826091
+gml; paintingGML; ja; 0.5039936970890403; 0.0006911827610364776
+gml; paintingGML; simple; 0.5010204081632652; 0.0030612244897959225
+gml; paintingGML; it; 0.500647520514776; 4.68908005372973e-05
 gml; paintingGML; ceb; 0.5; 0.0
-gml; paintingGML; en; 0.5013511787354985; 4.687298793644967e-05
-gml; paintingGML; sv; 0.5017239368331197; 0.00048600159559514515
-gml; paintingGML; ru; 0.5011771557725555; 0.00010123733677678798
+gml; paintingGML; he; 0.5008762094529717; 0.0010850829581004618
+gml; paintingGML; da; 0.5023891632327913; 0.0014922160864003313
+gml; paintingGML; en; 0.5013502002558436; 4.5129656998564494e-05
+gml; paintingGML; sr; 0.5055081530499934; 0.004431798803872215
+gml; paintingGML; sv; 0.5018061432948488; 0.0005465960207905244
+gml; paintingGML; ckb; 0.5; 0.0
+gml; paintingGML; ru; 0.5011897100246764; 0.0001005704080320068
+gml; paintingGML; hi; 0.5035714285714286; 0.015567496226930972
+gml; paintingGML; arz; 0.55; 0.15
+gml; paintingGML; bs; 0.5962763998415903; 0.018177855141079217
+gml; paintingGML; te; 0.5; 0.0
+gml; paintingGML; zh; 0.5025428361921712; 0.000812324716137664
+gml; paintingGML; mk; 0.502; 0.014
+gml; paintingGML; hu; 0.5014235496233646; 0.0023739569336012423
+gml; paintingGML; ko; 0.5003846153846154; 0.0038268747581023817
 gml; paintingGML; war; 0.5; 0.0
-gml; warGML; fr; 0.5; 0.0
-gml; warGML; es; 0.5; 0.0
-gml; warGML; pl; 0.5; 0.0
-gml; warGML; vi; 0.5; 0.0
-gml; warGML; de; 0.5; 0.0
-gml; warGML; nl; 0.5; 0.0
-gml; warGML; ja; 0.5; 0.0
-gml; warGML; it; 0.5; 0.0
-gml; warGML; ceb; nan; graph is empty
-gml; warGML; en; 0.5; 0.0
-gml; warGML; sv; 0.5; 0.0
-gml; warGML; ru; 0.5; 0.0
-gml; warGML; war; nan; graph is empty
-gml; fussballligaGML; fr; 0.5676372616953143; 0.0005017150131576894
-gml; fussballligaGML; es; 0.5009591511717709; 0.0005275131909013764
-gml; fussballligaGML; pl; 0.5204697931885301; 0.000660861735666395
-gml; fussballligaGML; vi; 0.5140357996327033; 0.0017413173059888842
-gml; fussballligaGML; de; 0.5159641284137072; 0.0005385887470204742
-gml; fussballligaGML; nl; 0.5293996438810531; 0.00047071355511647475
-gml; fussballligaGML; ja; 0.521986432030995; 0.0007381764087754826
-gml; fussballligaGML; it; 0.5159607773381552; 0.0005308505417669515
-gml; fussballligaGML; en; 0.5097352522600938; 0.0003034701004467686
-gml; fussballligaGML; sv; 0.5236900550277942; 0.0011251021051620887
-gml; fussballligaGML; ru; 0.5196375272206969; 0.0007280719382323562
-gml; killerGML; fr; 0.5; 0.0
-gml; killerGML; es; 0.5; 0.0
-gml; killerGML; pl; 0.5; 0.0
-gml; killerGML; vi; nan; graph is empty
-gml; killerGML; de; 0.5; 0.0
-gml; killerGML; nl; 0.5; 0.0
-gml; killerGML; ja; 0.5; 0.0
-gml; killerGML; it; 0.5; 0.0
-gml; killerGML; en; 0.5; 0.0
-gml; killerGML; sv; 0.5; 0.0
-gml; killerGML; ru; 0.5; 0.0
-gml; killerGML; war; nan; graph is empty
-gml; krankheitGML; fr; 0.5018952632639896; 8.646406910701046e-05
-gml; krankheitGML; es; 0.5006808482565379; 0.00010601950459099413
-gml; krankheitGML; pl; 0.5007213577659779; 0.00011660048343990051
-gml; krankheitGML; vi; 0.5016881004180267; 0.0002991938663311968
-gml; krankheitGML; de; 0.5007094451020678; 8.083960442327357e-05
-gml; krankheitGML; nl; 0.5007457414181056; 0.00017203496467584967
-gml; krankheitGML; ja; 0.5034973038031754; 0.00015859024964328013
-gml; krankheitGML; it; 0.5027284710919484; 0.00010813981561974563
-gml; krankheitGML; ceb; 0.5251388888888888; 0.034621799223631955
-gml; krankheitGML; en; 0.5029081770774986; 5.13085064055835e-05
-gml; krankheitGML; sv; 0.5031791572716319; 0.000199721692574382
-gml; krankheitGML; ru; 0.5038206259311108; 0.0001356898712279456
+gml; term; id; 0.5; 0.0
+gml; term; fr; 0.5002702702702703; 0.0018918918918918882
+gml; term; mr; 0.5; 0.0
+gml; term; lv; 0.5; 0.0
+gml; term; el; 0.5; 0.0
+gml; term; es; 0.5003658536585366; 0.002080331964540487
+gml; term; pl; 0.5; 0.0
+gml; term; vi; 0.5; 0.0
+gml; term; de; 0.5004954954954955; 0.0014094133195641312
+gml; term; ml; 0.5; 0.0
+gml; term; sh; 0.5; 0.0
+gml; term; nl; 0.5001428571428571; 0.0014214106244380235
+gml; term; si; 0.5; 0.0
+gml; term; pt; 0.5001282051282051; 0.0012756249193674569
+gml; term; ro; 0.505; 0.049749371855330994
+gml; term; ja; 0.5; 0.0
+gml; term; simple; 0.5; 0.0
+gml; term; it; 0.5002325581395349; 0.0016279069767441891
+gml; term; ceb; 0.5; 0.0
+gml; term; he; 0.5; 0.0
+gml; term; da; 0.502; 0.014
+gml; term; en; 0.5002305475504323; 0.0005282508005712877
+gml; term; sr; 0.5; 0.0
+gml; term; sv; 0.5001851851851852; 0.0018425693279752187
+gml; term; ckb; 0.5; 0.0
+gml; term; ru; 0.5; 0.0
+gml; term; hi; 0.5; 0.0
+gml; term; arz; 0.5; 0.0
+gml; term; bs; 0.5; 0.0
+gml; term; te; 0.5; 0.0
+gml; term; zh; 0.5; 0.0
+gml; term; mk; 0.5; 0.0
+gml; term; hu; 0.5; 0.0
+gml; term; ko; 0.5; 0.0
+gml; term; war; 0.56; 0.16248076809271925
+gml; symptom; id; 0.5019290780141844; 0.0049361702127659465
+gml; symptom; fr; 0.5040020180591117; 0.00261199699450812
+gml; symptom; mr; 0.5; 0.0
+gml; symptom; lv; 0.505; 0.021794494717703363
+gml; symptom; el; 0.5; 0.0
+gml; symptom; es; 0.5025819119853456; 0.0025228794424289177
+gml; symptom; pl; 0.5017475412270577; 0.0029721497570606094
+gml; symptom; vi; 0.5; 0.0
+gml; symptom; de; 0.5020954089250814; 0.0027001539122239364
+gml; symptom; ml; 0.5; 0.0
+gml; symptom; sh; 0.5803029656291602; 0.005705794710563057
+gml; symptom; nl; 0.5027021474693888; 0.002893020206615647
+gml; symptom; si; 0.5; 0.0
+gml; symptom; pt; 0.5224859472403814; 0.0024658621607004175
+gml; symptom; ro; 0.5011111111111112; 0.007777777777777783
+gml; symptom; ja; 0.5; 0.0
+gml; symptom; simple; 0.5020370370370371; 0.005794254758208144
+gml; symptom; it; 0.5059804721894847; 0.00287083611553427
+gml; symptom; ceb; 0.5; 0.0
+gml; symptom; he; 0.5; 0.0
+gml; symptom; da; 0.500909090909091; 0.006363636363636359
+gml; symptom; en; 0.509970719071823; 0.0017392461893865124
+gml; symptom; sr; 0.507116411638399; 0.004921270032846249
+gml; symptom; sv; 0.5027490870307743; 0.0030792040684474065
+gml; symptom; ckb; 0.5; 0.0
+gml; symptom; ru; 0.5; 0.0
+gml; symptom; hi; 0.5; 0.0
+gml; symptom; arz; 0.5; 0.0
+gml; symptom; bs; 0.5; 0.0
+gml; symptom; te; 0.5; 0.0
+gml; symptom; zh; 0.5; 0.0
+gml; symptom; mk; 0.5; 0.0
+gml; symptom; hu; 0.5087575259989052; 0.01218043316134859
+gml; symptom; ko; 0.5; 0.0
+gml; symptom; war; 0.5; 0.0
+gml; archaeological site; id; 0.5017111230816756; 0.000885387968554826
+gml; archaeological site; fr; 0.5011096769346871; 0.0003240427787430118
+gml; archaeological site; mr; 0.5; 0.0
+gml; archaeological site; lv; 0.5005714285714286; 0.0027994168488950505
+gml; archaeological site; el; 0.5; 0.0
+gml; archaeological site; es; 0.5003898683569729; 0.000399986568293379
+gml; archaeological site; pl; 0.5006777885824181; 0.0005517189252433586
+gml; archaeological site; vi; 0.5012994201318931; 0.0012215779995725297
+gml; archaeological site; de; 0.5002404150792209; 0.00016692174677082462
+gml; archaeological site; ml; 0.5; 0.0
+gml; archaeological site; sh; 0.5014693046001679; 0.0006696999434304367
+gml; archaeological site; nl; 0.5007829805440696; 0.0005044420303841347
+gml; archaeological site; si; 0.5; 0.0
+gml; archaeological site; pt; 0.5008775671730172; 0.0004627087861144581
+gml; archaeological site; ro; 0.5032410664071765; 0.0013030731365754145
+gml; archaeological site; ja; 0.5; 0.0
+gml; archaeological site; simple; 0.5015848427347477; 0.00217506341799157
+gml; archaeological site; it; 0.5015337078753723; 0.0003394078229718768
+gml; archaeological site; ceb; 0.5; 0.0
+gml; archaeological site; he; 0.5; 0.0
+gml; archaeological site; da; 0.5045209873058554; 0.0013680451268335441
+gml; archaeological site; en; 0.5027806336228636; 0.0002447634077893335
+gml; archaeological site; sr; 0.5; 0.0
+gml; archaeological site; sv; 0.5011543806691852; 0.0005953474693915904
+gml; archaeological site; ckb; 0.5; 0.0
+gml; archaeological site; ru; 0.5; 0.0
+gml; archaeological site; hi; 0.5; 0.0
+gml; archaeological site; arz; 0.5; 0.0
+gml; archaeological site; bs; 0.506947924079322; 0.005674470480410902
+gml; archaeological site; te; 0.5; 0.0
+gml; archaeological site; zh; 0.5; 0.0
+gml; archaeological site; mk; 0.5; 0.0
+gml; archaeological site; hu; 0.5024146461467065; 0.0008070806871185232
+gml; archaeological site; ko; 0.5; 0.0
+gml; archaeological site; war; 0.5; 0.0
+gml; plant structure; id; 0.5162486395101715; 0.007863379670796295
+gml; plant structure; fr; 0.5086719983961618; 0.0028777090979149704
+gml; plant structure; mr; 0.5; 0.0
+gml; plant structure; tr; 0.5103689284390063; 0.013126597396770835
+gml; plant structure; lv; 0.5260005646527385; 0.021308025989945162
+gml; plant structure; el; 0.5; 0.0
+gml; plant structure; es; 0.5061187905818791; 0.0032675267602525577
+gml; plant structure; pl; 0.5053352721243187; 0.0026503410346804144
+gml; plant structure; vi; 0.5; 0.0
+gml; plant structure; de; 0.5069487753859427; 0.0025839283580867587
+gml; plant structure; ml; 0.5; 0.0
+gml; plant structure; sh; 0.5245691675497177; 0.019451282544295016
+gml; plant structure; nl; 0.5578151537306163; 0.001610863188928462
+gml; plant structure; si; 0.5; 0.0
+gml; plant structure; pt; 0.5046959273892654; 0.003485847440257811
+gml; plant structure; ro; 0.5171620718462823; 0.023311780546781492
+gml; plant structure; ja; 0.5; 0.0
+gml; plant structure; simple; 0.5150085033751395; 0.008355412399059849
+gml; plant structure; it; 0.5123368204767704; 0.0038171494847826326
+gml; plant structure; he; 0.5; 0.0
+gml; plant structure; da; 0.5230581167258376; 0.014249668551877696
+gml; plant structure; en; 0.517239220408728; 0.0024321404069554205
+gml; plant structure; sr; 0.5042; 0.00814616474176653
+gml; plant structure; sv; 0.5036772983114447; 0.006436229204768246
+gml; plant structure; ckb; 0.5; 0.0
+gml; plant structure; ru; 0.5; 0.0
+gml; plant structure; hi; 0.5; 0.0
+gml; plant structure; bs; 0.5637361852995008; 0.014674916403551069
+gml; plant structure; te; 0.5; 0.0
+gml; plant structure; zh; 0.5; 0.0
+gml; plant structure; mk; 0.5; 0.0
+gml; plant structure; hu; 0.5; 0.0
+gml; plant structure; ko; 0.5; 0.0
+gml; plant structure; war; 0.5; 0.0
+gml; social class; id; 0.5102945590994372; 0.010544896412451247
+gml; social class; fr; 0.5095328834131017; 0.004095651976669951
+gml; social class; mr; 0.5; 0.0
+gml; social class; lv; 0.5; 0.0
+gml; social class; el; 0.5; 0.0
+gml; social class; es; 0.5054997243543597; 0.004130029192941396
+gml; social class; pl; 0.5049355534998458; 0.007084529524767284
+gml; social class; vi; 0.51; 0.039581140290126375
+gml; social class; de; 0.5099097779197159; 0.004997188736522975
+gml; social class; ml; 0.5; 0.0
+gml; social class; sh; 0.5348815139287865; 0.012343127065816145
+gml; social class; nl; 0.505844885043064; 0.006102226446794707
+gml; social class; pt; 0.5144704445849466; 0.004916926823301768
+gml; social class; ro; 0.507095238095238; 0.015510876880025238
+gml; social class; ja; 0.5; 0.0
+gml; social class; simple; 0.506; 0.02374868417407583
+gml; social class; it; 0.5361103768947691; 0.004247646578481907
+gml; social class; he; 0.5; 0.0
+gml; social class; da; 0.5352445160889172; 0.012456779422057758
+gml; social class; en; 0.5465855732048793; 0.0030452097804094655
+gml; social class; sr; 0.5; 0.0
+gml; social class; sv; 0.5079205822280067; 0.008522323891457075
+gml; social class; ckb; 0.5; 0.0
+gml; social class; ru; 0.5; 0.0
+gml; social class; hi; 0.5; 0.0
+gml; social class; arz; 0.5; 0.0
+gml; social class; bs; 0.5; 0.0
+gml; social class; zh; 0.5; 0.0
+gml; social class; mk; 0.5; 0.0
+gml; social class; hu; 0.5096509971509972; 0.014175891768054043
+gml; social class; ko; 0.5; 0.0
+gml; social class; war; 0.5; 0.0
+gml; chemical substance; id; 0.5061264822134387; 0.010826360414863498
+gml; chemical substance; fr; 0.5016160140268849; 0.003755871180138973
+gml; chemical substance; mr; 0.5; 0.0
+gml; chemical substance; lv; 0.5; 0.0
+gml; chemical substance; el; 0.5; 0.0
+gml; chemical substance; es; 0.5002631578947369; 0.002618387992385841
+gml; chemical substance; pl; 0.5008620689655173; 0.0037576715030523122
+gml; chemical substance; vi; 0.5020351167819522; 0.0037144904967147388
+gml; chemical substance; de; 0.5010413642960814; 0.0032594099489089015
+gml; chemical substance; ml; 0.5; 0.0
+gml; chemical substance; sh; 0.5004761904761905; 0.003333333333333338
+gml; chemical substance; nl; 0.5005882352941177; 0.00411764705882353
+gml; chemical substance; si; 0.5; 0.0
+gml; chemical substance; pt; 0.5014814814814815; 0.005023948135648338
+gml; chemical substance; ro; 0.5; 0.0
+gml; chemical substance; ja; 0.5; 0.0
+gml; chemical substance; simple; 0.503; 0.017058722109231976
+gml; chemical substance; it; 0.5012790697674419; 0.003638252987712103
+gml; chemical substance; ceb; 0.6545238095238095; 0.08774673666819964
+gml; chemical substance; he; 0.5; 0.0
+gml; chemical substance; da; 0.5033333333333333; 0.009999999999999998
+gml; chemical substance; en; 0.5037012106856261; 0.001482504015191981
+gml; chemical substance; sr; 0.5017241379310345; 0.005172413793103459
+gml; chemical substance; sv; 0.5006521739130434; 0.003708417849833037
+gml; chemical substance; ckb; 0.5; 0.0
+gml; chemical substance; ru; 0.5; 0.0
+gml; chemical substance; hi; 0.5; 0.0
+gml; chemical substance; bs; 0.5172727272727272; 0.022063020180930155
+gml; chemical substance; te; 0.5; 0.0
+gml; chemical substance; zh; 0.5; 0.0
+gml; chemical substance; mk; 0.5; 0.0
+gml; chemical substance; hu; 0.5; 0.0
+gml; chemical substance; ko; 0.5; 0.0
+gml; chemical substance; war; 0.5; 0.0
+gml; prison; id; 0.5; 0.0
+gml; prison; fr; 0.5002409638554216; 0.0011804769844738134
+gml; prison; mr; 0.5; 0.0
+gml; prison; lv; 0.5; 0.0
+gml; prison; el; 0.5; 0.0
+gml; prison; es; 0.5; 0.0
+gml; prison; pl; 0.5; 0.0
+gml; prison; vi; 0.5; 0.0
+gml; prison; de; 0.5008007936507937; 0.0012404190645835462
+gml; prison; ml; 0.5; 0.0
+gml; prison; sh; 0.5; 0.0
+gml; prison; nl; 0.5009910891089109; 0.0021045366712246594
+gml; prison; si; 0.5; 0.0
+gml; prison; pt; 0.5; 0.0
+gml; prison; ro; 0.5807251754114294; 0.006426865508996049
+gml; prison; ja; 0.5; 0.0
+gml; prison; simple; 0.5; 0.0
+gml; prison; it; 0.5004640151515152; 0.0034418017161118248
+gml; prison; ceb; 0.5; 0.0
+gml; prison; he; 0.5; 0.0
+gml; prison; da; 0.5; 0.0
+gml; prison; en; 0.5021544517852665; 0.00016025251098127983
+gml; prison; sr; 0.5; 0.0
+gml; prison; sv; 0.5; 0.0
+gml; prison; ckb; 0.5; 0.0
+gml; prison; ru; 0.5; 0.0
+gml; prison; hi; 0.5; 0.0
+gml; prison; arz; 0.5; 0.0
+gml; prison; bs; 0.5; 0.0
+gml; prison; te; 0.5; 0.0
+gml; prison; zh; 0.5; 0.0
+gml; prison; mk; 0.5; 0.0
+gml; prison; hu; 0.505; 0.049749371855330994
+gml; prison; ko; 0.5; 0.0
+gml; aspect of history; id; 0.5025046876809015; 0.001258925486353394
+gml; aspect of history; fr; 0.5010661014874764; 0.00016489195303118253
+gml; aspect of history; mr; 0.5; 0.0
+gml; aspect of history; lv; 0.5; 0.0
+gml; aspect of history; el; 0.5; 0.0
+gml; aspect of history; es; 0.5000560224089635; 0.0001517094006467961
+gml; aspect of history; pl; 0.5008269259387188; 0.001225713382334766
+gml; aspect of history; vi; 0.5; 0.0
+gml; aspect of history; de; 0.5006195493664509; 0.00029487863092892926
+gml; aspect of history; ml; 0.5; 0.0
+gml; aspect of history; sh; 0.5019440550036623; 0.002616438156686992
+gml; aspect of history; nl; 0.5021345713417545; 0.0005018877914349771
+gml; aspect of history; si; 0.5; 0.0
+gml; aspect of history; pt; 0.5; 0.0
+gml; aspect of history; ro; 0.5012342090393516; 0.0017674077805977695
+gml; aspect of history; ja; 0.5; 0.0
+gml; aspect of history; simple; 0.5021393442622951; 0.004146539221123749
+gml; aspect of history; it; 0.5011691808342122; 0.0003827206641654902
+gml; aspect of history; ceb; 0.5; 0.0
+gml; aspect of history; he; 0.5; 0.0
+gml; aspect of history; da; 0.5040166321815779; 0.0026057573816923945
+gml; aspect of history; en; 0.5011899494844809; 6.55205825854419e-05
+gml; aspect of history; sr; 0.5002173913043478; 0.002163016167623086
+gml; aspect of history; sv; 0.5013945431040204; 0.0009467853144402839
+gml; aspect of history; ckb; 0.5; 0.0
+gml; aspect of history; ru; 0.5; 0.0
+gml; aspect of history; hi; 0.5; 0.0
+gml; aspect of history; arz; 0.5; 0.0
+gml; aspect of history; bs; 0.5016904761904761; 0.007105417753464413
+gml; aspect of history; te; 0.5; 0.0
+gml; aspect of history; zh; 0.5; 0.0
+gml; aspect of history; mk; 0.5; 0.0
+gml; aspect of history; hu; 0.5; 0.0
+gml; aspect of history; ko; 0.5; 0.0
+gml; aspect of history; war; 0.505; 0.028431203515386628
+gml; historical language; id; 0.5026315789473683; 0.007894736842105253
+gml; historical language; fr; 0.5053361666415487; 0.005230675746907538
+gml; historical language; mr; 0.5; 0.0
+gml; historical language; lv; 0.5; 0.0
+gml; historical language; el; 0.5; 0.0
+gml; historical language; es; 0.5; 0.0
+gml; historical language; pl; 0.502; 0.013999999999999999
+gml; historical language; vi; 0.5; 0.0
+gml; historical language; de; 0.5050435028910766; 0.00530500848198314
+gml; historical language; ml; 0.5; 0.0
+gml; historical language; sh; 0.5111467720685112; 0.017156606657833282
+gml; historical language; nl; 0.5147617701086385; 0.0073196213978589395
+gml; historical language; pt; 0.5; 0.0
+gml; historical language; ro; 0.5033333333333333; 0.023333333333333324
+gml; historical language; ja; 0.5; 0.0
+gml; historical language; simple; 0.5084722222222222; 0.022038739041027704
+gml; historical language; it; 0.5080615079053594; 0.005370865579927193
+gml; historical language; he; 0.5; 0.0
+gml; historical language; da; 0.5106585081585081; 0.021615615847919954
+gml; historical language; en; 0.5194765927804935; 0.003870046025939315
+gml; historical language; sr; 0.5; 0.0
+gml; historical language; sv; 0.5036190476190476; 0.009962969987662157
+gml; historical language; ckb; 0.5; 0.0
+gml; historical language; ru; 0.5; 0.0
+gml; historical language; hi; 0.5; 0.0
+gml; historical language; arz; 0.5; 0.0
+gml; historical language; bs; 0.5; 0.0
+gml; historical language; te; 0.5; 0.0
+gml; historical language; zh; 0.5; 0.0
+gml; historical language; mk; 0.5; 0.0
+gml; historical language; hu; 0.5038888888888888; 0.014174834246858973
+gml; historical language; ko; 0.5; 0.0
+gml; fussballligaGML; id; 0.5644877916422071; 0.002160551142627275
+gml; fussballligaGML; fr; 0.5675900562445373; 0.0005248049219374314
+gml; fussballligaGML; mr; 0.7132123814226153; 0.01843113209046708
+gml; fussballligaGML; lv; 0.7561831902902411; 0.0032558694028585896
+gml; fussballligaGML; el; 0.5308266920582151; 0.0013383529457985815
+gml; fussballligaGML; es; 0.5009613155855761; 0.0004536447979175499
+gml; fussballligaGML; pl; 0.5204513853589288; 0.0007167911642660425
+gml; fussballligaGML; vi; 0.513698153812879; 0.0016504122246125724
+gml; fussballligaGML; de; 0.5160421271876063; 0.0005881816325055849
+gml; fussballligaGML; ml; 0.5485714285714285; 0.054908705925331695
+gml; fussballligaGML; sh; 0.5203463465298143; 0.015735277741927237
+gml; fussballligaGML; nl; 0.5293485608269362; 0.00041431126564286475
+gml; fussballligaGML; pt; 0.5116929772856225; 0.0005397387251796572
+gml; fussballligaGML; ro; 0.6289155066876462; 0.0006471243541878156
+gml; fussballligaGML; ja; 0.5221585912752511; 0.0009438480142606085
+gml; fussballligaGML; simple; 0.5027891005814733; 0.0027705895113858845
+gml; fussballligaGML; it; 0.5158646013553304; 0.0005586679873391984
+gml; fussballligaGML; he; 0.5534727784765991; 0.0019287059312751214
+gml; fussballligaGML; da; 0.5302547195082458; 0.0016858191279600417
+gml; fussballligaGML; en; 0.5097185802716119; 0.0002820805796066361
+gml; fussballligaGML; sr; 0.6056978626598264; 0.002987476038894049
+gml; fussballligaGML; sv; 0.523681974774391; 0.0010339502506851144
+gml; fussballligaGML; ckb; 0.505; 0.049749371855330994
+gml; fussballligaGML; ru; 0.5196588657234251; 0.0007729432916506766
+gml; fussballligaGML; hi; 0.585; 0.18781639970992944
+gml; fussballligaGML; arz; 0.5192042080645225; 0.014490020027916686
+gml; fussballligaGML; bs; 0.6408715928183167; 0.0034847703632753546
+gml; fussballligaGML; te; nan; graph is empty
+gml; fussballligaGML; zh; 0.5155859127214644; 0.0007781820236013739
+gml; fussballligaGML; mk; 0.5454779193258034; 0.011600183071750744
+gml; fussballligaGML; hu; 0.5335522432634131; 0.0008939192197422992
+gml; fussballligaGML; ko; 0.5299215506571052; 0.0008723087670145352
+gml; group or class of chemical substances; id; 0.5088326812974058; 0.004908273688246246
+gml; group or class of chemical substances; fr; 0.5017011651818426; 0.0017741518786983054
+gml; group or class of chemical substances; mr; 0.5; 0.0
+gml; group or class of chemical substances; lv; 0.5022222222222222; 0.010886621079036351
+gml; group or class of chemical substances; el; 0.5; 0.0
+gml; group or class of chemical substances; es; 0.5016553747867986; 0.001982507365561607
+gml; group or class of chemical substances; pl; 0.5038364122915239; 0.0028870570618082475
+gml; group or class of chemical substances; vi; 0.5057541637519596; 0.004589595126303943
+gml; group or class of chemical substances; de; 0.5014545932868392; 0.001496773987440401
+gml; group or class of chemical substances; ml; 0.5; 0.0
+gml; group or class of chemical substances; sh; 0.5069365987892427; 0.0037312675256683052
+gml; group or class of chemical substances; nl; 0.5023649375933482; 0.0024398634839728002
+gml; group or class of chemical substances; si; 0.5; 0.0
+gml; group or class of chemical substances; pt; 0.5014771075581395; 0.0023866643564011045
+gml; group or class of chemical substances; ro; 0.5073785338979931; 0.005867885267572839
+gml; group or class of chemical substances; ja; 0.5; 0.0
+gml; group or class of chemical substances; simple; 0.5061582148964202; 0.008823304381225982
+gml; group or class of chemical substances; it; 0.505451097263365; 0.002643646884169902
+gml; group or class of chemical substances; ceb; 0.5; 0.0
+gml; group or class of chemical substances; he; 0.5; 0.0
+gml; group or class of chemical substances; da; 0.5072363715335997; 0.007877518038069303
+gml; group or class of chemical substances; en; 0.5012384739809344; 0.0006381026260133426
+gml; group or class of chemical substances; sr; 0.5040854798225689; 0.003461766245125256
+gml; group or class of chemical substances; sv; 0.5038176136979373; 0.004467938571169975
+gml; group or class of chemical substances; ckb; 0.5; 0.0
+gml; group or class of chemical substances; ru; 0.5; 0.0
+gml; group or class of chemical substances; hi; 0.5; 0.0
+gml; group or class of chemical substances; arz; 0.5; 0.0
+gml; group or class of chemical substances; bs; 0.5185369333823673; 0.014610017007791949
+gml; group or class of chemical substances; te; 0.5; 0.0
+gml; group or class of chemical substances; zh; 0.5; 0.0
+gml; group or class of chemical substances; mk; 0.5; 0.0
+gml; group or class of chemical substances; hu; 0.5048877492877493; 0.010336994537079418
+gml; group or class of chemical substances; ko; 0.5; 0.0
+gml; group or class of chemical substances; war; 0.5116666666666667; 0.042524502740576904
+gml; clinical sign; id; 0.5; 0.0
+gml; clinical sign; fr; 0.5007159945317841; 0.0022390980688264906
+gml; clinical sign; mr; 0.5; 0.0
+gml; clinical sign; lv; 0.5; 0.0
+gml; clinical sign; el; 0.5; 0.0
+gml; clinical sign; es; 0.5011960584437649; 0.002405485283680907
+gml; clinical sign; pl; 0.5004878048780488; 0.0013209818544123405
+gml; clinical sign; vi; 0.5; 0.0
+gml; clinical sign; de; 0.5008273870200476; 0.001993988048132012
+gml; clinical sign; ml; 0.5; 0.0
+gml; clinical sign; sh; 0.5367306117209634; 0.014105800469927193
+gml; clinical sign; nl; 0.502470238095238; 0.005493320682150471
+gml; clinical sign; si; 0.5; 0.0
+gml; clinical sign; pt; 0.5031771151231463; 0.0027608083102927863
+gml; clinical sign; ro; 0.5; 0.0
+gml; clinical sign; ja; 0.5; 0.0
+gml; clinical sign; simple; 0.5033333333333334; 0.023333333333333327
+gml; clinical sign; it; 0.5011662861491628; 0.0027578536038145697
+gml; clinical sign; he; 0.5; 0.0
+gml; clinical sign; da; 0.5033333333333333; 0.023333333333333324
+gml; clinical sign; en; 0.5023067060072622; 0.0006987225931154677
+gml; clinical sign; sr; 0.505442942942943; 0.00798367918176961
+gml; clinical sign; sv; 0.5028000000000001; 0.0069397406291589955
+gml; clinical sign; ckb; 0.5; 0.0
+gml; clinical sign; ru; 0.5; 0.0
+gml; clinical sign; hi; 0.5; 0.0
+gml; clinical sign; arz; 0.5; 0.0
+gml; clinical sign; bs; 0.509; 0.028618176042508357
+gml; clinical sign; te; 0.5; 0.0
+gml; clinical sign; zh; 0.5; 0.0
+gml; clinical sign; mk; 0.5; 0.0
+gml; clinical sign; hu; 0.505; 0.049749371855330994
+gml; clinical sign; ko; 0.5; 0.0
+gml; clinical sign; war; 0.5; 0.0
+gml; war; id; 0.5011687442968608; 0.0006715047358736042
+gml; war; fr; 0.5012878167596565; 0.0004962443216639135
+gml; war; mr; 0.5; 0.0
+gml; war; lv; 0.5; 0.0
+gml; war; el; 0.5; 0.0
+gml; war; es; 0.5005878788971904; 0.00045789410454628735
+gml; war; pl; 0.5009266404014563; 0.0006351673779985608
+gml; war; vi; 0.5; 0.0
+gml; war; de; 0.5006513016747092; 0.0004776811853512865
+gml; war; ml; 0.5; 0.0
+gml; war; sh; 0.5013831947159669; 0.0010382362859422264
+gml; war; nl; 0.5031341225313338; 0.0008756865555545049
+gml; war; si; 0.5; 0.0
+gml; war; pt; 0.5011879441781347; 0.0006207108712677812
+gml; war; ro; 0.5005295566502462; 0.003930308308546303
+gml; war; ja; 0.5; 0.0
+gml; war; simple; 0.5010977929984779; 0.0027003146567057892
+gml; war; it; 0.5049694473032785; 0.000461360539567337
+gml; war; ceb; 0.5; 0.0
+gml; war; he; 0.5; 0.0
+gml; war; da; 0.5049579197637587; 0.0015504047040997072
+gml; war; en; 0.5043182802056986; 0.00035554964966364545
+gml; war; sr; 0.5; 0.0
+gml; war; sv; 0.5012870867160918; 0.0010709469252357052
+gml; war; ckb; 0.5; 0.0
+gml; war; ru; 0.5; 0.0
+gml; war; hi; 0.5; 0.0
+gml; war; arz; 0.5; 0.0
+gml; war; bs; 0.5041401912234441; 0.005198672914956245
+gml; war; te; 0.5; 0.0
+gml; war; zh; 0.5; 0.0
+gml; war; mk; 0.5; 0.0
+gml; war; hu; 0.5; 0.0
+gml; war; ko; 0.5; 0.0
+gml; war; war; 0.5; 0.0
+gml; krankheitGML; id; 0.5010881957387584; 0.0003423806433109649
+gml; krankheitGML; fr; 0.5019017805398482; 9.671938830568465e-05
+gml; krankheitGML; mr; 0.5087253777354701; 0.002415167095835783
+gml; krankheitGML; lv; 0.5020565062476514; 0.0008113347211465198
+gml; krankheitGML; el; 0.5027658896049627; 0.0005346116891106963
+gml; krankheitGML; es; 0.5007015182790606; 0.00010632513961871107
+gml; krankheitGML; pl; 0.5007041363753407; 0.00010306374210079276
+gml; krankheitGML; vi; 0.5016989484813311; 0.00037019797483629145
+gml; krankheitGML; de; 0.5007025547501296; 8.839926042607202e-05
+gml; krankheitGML; ml; 0.5035454071929275; 0.0010544032858465044
+gml; krankheitGML; sh; 0.5024604951626884; 0.0005068867338671612
+gml; krankheitGML; nl; 0.5007238031365042; 0.00013055032621450547
+gml; krankheitGML; si; 0.5059750761687257; 0.0028457749188809363
+gml; krankheitGML; pt; 0.5029229282667905; 0.00013363993813106086
+gml; krankheitGML; ro; 0.5013566561638345; 0.0005150506805833359
+gml; krankheitGML; ja; 0.5034442119712021; 0.00017359268849258234
+gml; krankheitGML; simple; 0.5021800334563371; 0.00045066934791290644
+gml; krankheitGML; it; 0.5027446324313886; 0.00011368984426101498
+gml; krankheitGML; ceb; 0.5256944444444445; 0.03465966587074384
+gml; krankheitGML; he; 0.5014371340499145; 0.0002394346205033457
+gml; krankheitGML; da; 0.5010587167929671; 0.00046305066616278716
+gml; krankheitGML; en; 0.5029062136458642; 4.769631535963897e-05
+gml; krankheitGML; sr; 0.5013789290441277; 0.00029260125121679533
+gml; krankheitGML; sv; 0.5032040165653012; 0.00019520388742321336
+gml; krankheitGML; ckb; 0.5009154929577465; 0.0023683340451831287
+gml; krankheitGML; ru; 0.5038360305693835; 0.00013209293185706622
+gml; krankheitGML; hi; 0.5026138337058346; 0.0006340312295325299
+gml; krankheitGML; arz; 0.5032692286762226; 0.004164203061569713
+gml; krankheitGML; bs; 0.5042479614972349; 0.0013048593502145004
+gml; krankheitGML; te; 0.5018015168181369; 0.0021786174362240698
+gml; krankheitGML; zh; 0.5054084043021672; 0.00021130132324649077
+gml; krankheitGML; mk; 0.5042456980519604; 0.000910490502398646
+gml; krankheitGML; hu; 0.502412213008412; 0.0005431591181395207
+gml; krankheitGML; ko; 0.5020898394816639; 0.00032574300571452047
 gml; krankheitGML; war; 0.5; 0.0
-gml; komponistGML; fr; 0.5244860614316036; 0.007776080716552117
-gml; komponistGML; es; 0.5192484597446125; 0.008745050099619775
-gml; komponistGML; pl; 0.522113644049351; 0.012580243655381188
-gml; komponistGML; vi; 0.5214299405126119; 0.012866270846234387
-gml; komponistGML; de; 0.5089082016111047; 0.006483987543658983
-gml; komponistGML; nl; 0.5142299084514611; 0.010531332172102732
-gml; komponistGML; ja; 0.5277783660521194; 0.00881920437822651
-gml; komponistGML; it; 0.5489632514822438; 0.009254203774915072
+gml; mathematical concept; id; 0.5132400932400932; 0.025994736634929374
+gml; mathematical concept; fr; 0.5006666666666666; 0.0026387426860084166
+gml; mathematical concept; mr; 0.5; 0.0
+gml; mathematical concept; tr; 0.5054545454545454; 0.014770978917519915
+gml; mathematical concept; lv; 0.5; 0.0
+gml; mathematical concept; el; 0.5; 0.0
+gml; mathematical concept; es; 0.5013793103448275; 0.004677468953879505
+gml; mathematical concept; pl; 0.5017647058823529; 0.006984907110022306
+gml; mathematical concept; vi; 0.5; 0.0
+gml; mathematical concept; de; 0.5025406162464986; 0.003771696981782352
+gml; mathematical concept; ml; 0.5; 0.0
+gml; mathematical concept; sh; 0.5244848484848484; 0.03229137318803809
+gml; mathematical concept; nl; 0.5059897856760871; 0.005775472628731901
+gml; mathematical concept; si; 0.5; 0.0
+gml; mathematical concept; pt; 0.5025852272727274; 0.0061251519700605
+gml; mathematical concept; ro; 0.5033333333333333; 0.023333333333333324
+gml; mathematical concept; ja; 0.5; 0.0
+gml; mathematical concept; simple; 0.5057142857142857; 0.01937808566607219
+gml; mathematical concept; it; 0.5042250534275852; 0.00581670842364901
+gml; mathematical concept; he; 0.5; 0.0
+gml; mathematical concept; da; 0.5090476190476191; 0.029696117766988307
+gml; mathematical concept; en; 0.5015089389817333; 0.0014907371829285723
+gml; mathematical concept; sr; 0.5033333333333334; 0.02333333333333333
+gml; mathematical concept; sv; 0.5026190476190476; 0.007449756117696206
+gml; mathematical concept; ckb; 0.5; 0.0
+gml; mathematical concept; ru; 0.5; 0.0
+gml; mathematical concept; hi; 0.5; 0.0
+gml; mathematical concept; arz; 0.5; 0.0
+gml; mathematical concept; bs; 0.5213888888888889; 0.035378247135356644
+gml; mathematical concept; te; 0.5; 0.0
+gml; mathematical concept; zh; 0.5; 0.0
+gml; mathematical concept; mk; 0.5; 0.0
+gml; mathematical concept; hu; 0.5016666666666667; 0.016583123951776996
+gml; mathematical concept; ko; 0.5; 0.0
+gml; mathematical concept; war; 0.53; 0.11874342087037917
+gml; galaxy; id; 0.5717162547015452; 0.0045449046280750605
+gml; galaxy; fr; 0.556158232447266; 0.00037179995823339137
+gml; galaxy; lv; 0.5; 0.0
+gml; galaxy; el; 0.6206086487730734; 0.002919195743357271
+gml; galaxy; es; 0.5013359124939103; 0.001781491812834391
+gml; galaxy; pl; 0.5006882912818366; 0.00028456074332501065
+gml; galaxy; vi; 0.5164250034616097; 0.0021334847993917045
+gml; galaxy; de; 0.5046487881337036; 0.0006198448324083915
+gml; galaxy; ml; 0.5; 0.0
+gml; galaxy; sh; 0.510228386738039; 0.00034938829034199893
+gml; galaxy; nl; 0.5173101235234516; 0.0002997025334941415
+gml; galaxy; pt; 0.5004129176419307; 0.0002652688493592812
+gml; galaxy; ro; 0.7337318781287252; 0.0017050315201775361
+gml; galaxy; ja; 0.5018275220116163; 0.003269302825459011
+gml; galaxy; simple; 0.5; 0.0
+gml; galaxy; it; 0.5040074234731207; 0.0031309171371295625
+gml; galaxy; he; 0.5; 0.0
+gml; galaxy; da; 0.5; 0.0
+gml; galaxy; en; 0.5638841926593773; 0.0009619053185622199
+gml; galaxy; sr; 0.5043135342816606; 0.00027608616996754333
+gml; galaxy; sv; 0.5041736227138002; 0.003190567196012817
+gml; galaxy; ckb; 0.5; 0.0
+gml; galaxy; ru; 0.5008922457611521; 0.00030895088833202036
+gml; galaxy; hi; 0.5; 0.0
+gml; galaxy; bs; 0.5317303592309613; 0.00027743306811731604
+gml; galaxy; zh; 0.501636073605671; 0.00047156894505869207
+gml; galaxy; mk; 0.5; 0.0
+gml; galaxy; hu; 0.6003304673121572; 0.003539538664855967
+gml; galaxy; ko; 0.5633932911799301; 0.002593320560068979
+gml; language; id; 0.5037573030293307; 0.0012444155312028146
+gml; language; fr; 0.5; 0.0
+gml; language; mr; 0.5; 0.0
+gml; language; lv; 0.5032753889287748; 0.0022257363556378138
+gml; language; el; 0.5; 0.0
+gml; language; es; 0.5; 0.0
+gml; language; pl; nan; graph is empty
+gml; language; vi; 0.5002307692307693; 0.0013122093930178402
+gml; language; de; 0.5; 0.0
+gml; language; ml; 0.5; 0.0
+gml; language; sh; 0.5045709674692499; 0.00203731645864086
+gml; language; nl; 0.5; 0.0
+gml; language; si; 0.5; 0.0
+gml; language; pt; 0.5; 0.0
+gml; language; ro; 0.5064496971013278; 0.0022655332429362286
+gml; language; ja; 0.5; 0.0
+gml; language; simple; 0.5051104875045987; 0.00198219151722386
+gml; language; it; 0.5; 0.0
+gml; language; ceb; 0.5030434782608695; 0.007543196336042375
+gml; language; he; 0.5; 0.0
+gml; language; da; 0.5069832983134264; 0.002288384098880297
+gml; language; en; 0.507; 0.02551470164434614
+gml; language; sr; 0.5; 0.0
+gml; language; sv; 0.5; 0.0
+gml; language; ckb; 0.5; 0.0
+gml; language; ru; 0.5; 0.0
+gml; language; hi; 0.5; 0.0
+gml; language; arz; 0.5; 0.0
+gml; language; bs; 0.5269070951148905; 0.007832433156673457
+gml; language; te; 0.5; 0.0
+gml; language; zh; 0.5; 0.0
+gml; language; mk; 0.5; 0.0
+gml; language; hu; 0.5200720395462525; 0.002093441700197046
+gml; language; ko; 0.5; 0.0
+gml; language; war; 0.5011111111111112; 0.007777777777777783
+gml; komponistGML; id; 0.5392431015278961; 0.017671179737114632
+gml; komponistGML; fr; 0.5227937884696766; 0.006882292187603971
+gml; komponistGML; mr; 0.5233333333333333; 0.05783117190965824
+gml; komponistGML; lv; 0.520841964548861; 0.017124364832643048
+gml; komponistGML; el; 0.56446582065471; 0.018484929137141098
+gml; komponistGML; es; 0.5213307422255928; 0.010251884947096723
+gml; komponistGML; pl; 0.5234258920499572; 0.011387069340643232
+gml; komponistGML; vi; 0.524308723560257; 0.013990112946824874
+gml; komponistGML; de; 0.509931498021136; 0.007138164342470578
+gml; komponistGML; ml; 0.5917777783210486; 0.03309567433656792
+gml; komponistGML; sh; 0.6182406046382536; 0.021439314634710258
+gml; komponistGML; nl; 0.5127436118988539; 0.009170422304576629
+gml; komponistGML; si; 0.5; 0.0
+gml; komponistGML; pt; 0.5498845946058657; 0.013642610879534315
+gml; komponistGML; ro; 0.5763777931487236; 0.017663729474714326
+gml; komponistGML; ja; 0.527325070247269; 0.00947812470322887
+gml; komponistGML; simple; 0.5312476404581666; 0.020222093796287487
+gml; komponistGML; it; 0.5496631097066467; 0.008733173957600298
 gml; komponistGML; ceb; 0.5; 0.0
-gml; komponistGML; en; 0.5321296160205936; 0.0075342642639204685
-gml; komponistGML; sv; 0.5071541416566627; 0.00831620806072797
-gml; komponistGML; ru; 0.5120015866547053; 0.008857032482130161
+gml; komponistGML; he; 0.5255551302137784; 0.014182486744955891
+gml; komponistGML; da; 0.5230130256970199; 0.01237035235230924
+gml; komponistGML; en; 0.5319556472048652; 0.0071207535531546485
+gml; komponistGML; sr; 0.5452432681144771; 0.022646511619201296
+gml; komponistGML; sv; 0.5111019207683074; 0.010091890829899846
+gml; komponistGML; ckb; 0.5342352941176471; 0.0274721312074543
+gml; komponistGML; ru; 0.5128824425821713; 0.007866792664973971
+gml; komponistGML; hi; 0.545; 0.14309088021254185
+gml; komponistGML; arz; 0.523; 0.04770494633433628
+gml; komponistGML; bs; 0.7101261942319497; 0.020650165111998953
+gml; komponistGML; te; 0.5; 0.0
+gml; komponistGML; zh; 0.5850960628433058; 0.01064990265603102
+gml; komponistGML; mk; 0.5501412053006972; 0.02313508604034942
+gml; komponistGML; hu; 0.5962990717777361; 0.01642230960208244
+gml; komponistGML; ko; 0.5749948298278429; 0.012710606720133376
 gml; komponistGML; war; 0.5; 0.0
-fullgml; theoremGML; fr; 0.5001187486637351; 2.9161247024266345e-05
-fullgml; theoremGML; es; 0.5001870018580381; 7.466308142825353e-05
-fullgml; theoremGML; pl; 0.5002166542208712; 7.982481286187177e-05
-fullgml; theoremGML; vi; 0.5005702396517244; 0.00025012991039949063
-fullgml; theoremGML; de; 0.5001163736990687; 4.0028794232483075e-05
-fullgml; theoremGML; nl; 0.5002671737093836; 0.00011013573459835101
-fullgml; theoremGML; ja; 0.5001589658027566; 4.977097146828636e-05
-fullgml; theoremGML; it; 0.5002514492595153; 5.266834084809013e-05
-fullgml; theoremGML; en; 0.5000614269124122; 1.5558194331198224e-05
-fullgml; theoremGML; sv; 0.5003518221893456; 0.000140450090908223
-fullgml; theoremGML; ru; 0.5001134511534945; 3.321384407709004e-05
-fullgml; theoremGML; war; 0.6216666666666666; 0.13714347718113803
-fullgml; holydayGML; fr; 0.5001004374997203; 5.341795323126069e-05
-fullgml; holydayGML; es; 0.500137364296919; 9.571903409262018e-05
-fullgml; holydayGML; pl; 0.5002752517135218; 0.00014366609872467603
-fullgml; holydayGML; vi; 0.5005015482537002; 0.0003547108929433055
-fullgml; holydayGML; de; 0.5001701274121941; 0.00010624510701419798
-fullgml; holydayGML; nl; 0.5002462032523101; 0.00014049714797390782
-fullgml; holydayGML; ja; 0.5001561913395666; 0.00010548954809100672
-fullgml; holydayGML; it; 0.5001238298318682; 7.127242581144671e-05
-fullgml; holydayGML; ceb; 0.5255840871208114; 0.004111791326438544
-fullgml; holydayGML; en; 0.5000364616898357; 1.6224214776610243e-05
-fullgml; holydayGML; sv; 0.5002783044123715; 0.00011938293970439473
-fullgml; holydayGML; ru; 0.5001410424256437; 7.83944685100713e-05
-fullgml; holydayGML; war; 0.5180810179927827; 0.013934082820945673
-fullgml; paintingGML; fr; 0.500071816795591; 9.01389583849101e-06
-fullgml; paintingGML; es; 0.5000700055692849; 1.7342243776459367e-05
-fullgml; paintingGML; pl; 0.5000963738010323; 1.8866735060063004e-05
-fullgml; paintingGML; vi; 0.5004930760355165; 0.00026795911031338203
-fullgml; paintingGML; de; 0.5000373918342078; 1.390902747937287e-05
-fullgml; paintingGML; nl; 0.5001079526543795; 2.5541647743724345e-05
-fullgml; paintingGML; ja; 0.5001010877491457; 3.491849461362591e-05
-fullgml; paintingGML; it; 0.5000996848069614; 9.938563989408005e-06
-fullgml; paintingGML; ceb; 0.62; 0.13759844960366863
-fullgml; paintingGML; en; 0.500045831795955; 4.957277743298649e-06
-fullgml; paintingGML; sv; 0.5001597575926572; 6.317488387890585e-05
-fullgml; paintingGML; ru; 0.5000664835385235; 1.2274519809286772e-05
-fullgml; paintingGML; war; 0.5081893145289371; 0.007668847974097344
-fullgml; warGML; fr; 0.5005727741753822; 0.000524650231780413
-fullgml; warGML; es; 0.5005365085800123; 0.0005666480837115653
-fullgml; warGML; pl; 0.501485642689674; 0.0014165477099737254
-fullgml; warGML; vi; 0.5005883320526461; 0.0005286374403615419
-fullgml; warGML; de; 0.5003182006870535; 0.0002952683924731915
-fullgml; warGML; nl; 0.5017997013480519; 0.001954375984481547
-fullgml; warGML; ja; 0.5003397379989479; 0.00033331396481855216
-fullgml; warGML; it; 0.5006349269410455; 0.0005303568833085079
-fullgml; warGML; ceb; 0.5449206349206349; 0.0493784751895331
-fullgml; warGML; en; 0.500176143209685; 0.0001451040398920282
-fullgml; warGML; sv; 0.5011684854911911; 0.001348015936727424
-fullgml; warGML; ru; 0.5006491120298001; 0.0005846143038170592
-fullgml; warGML; war; 0.5715; 0.0735713938973566
-fullgml; fussballligaGML; fr; 0.5000485447070808; 1.0368750100204736e-05
-fullgml; fussballligaGML; es; 0.5000171741715239; 9.07534817681742e-06
-fullgml; fussballligaGML; pl; 0.5000433294181238; 1.8663299763719104e-05
-fullgml; fussballligaGML; vi; 0.5001795732763424; 6.685846503167028e-05
-fullgml; fussballligaGML; de; 0.500026891532557; 1.126613704206511e-05
-fullgml; fussballligaGML; nl; 0.5000669323610972; 1.3919127337892057e-05
-fullgml; fussballligaGML; ja; 0.5000691558095207; 2.2817871213586714e-05
-fullgml; fussballligaGML; it; 0.5000380274182373; 1.2698342265378592e-05
-fullgml; fussballligaGML; en; 0.5000127073667506; 4.054500717216312e-06
-fullgml; fussballligaGML; sv; 0.5001160449891724; 4.4104931142376647e-05
-fullgml; fussballligaGML; ru; 0.5000404723570123; 1.6918812528002244e-05
-fullgml; killerGML; fr; 0.500031866955308; 1.3649767318317518e-05
-fullgml; killerGML; es; 0.500064702960129; 2.6175422393013245e-05
-fullgml; killerGML; pl; 0.5000834316683983; 4.055424624568516e-05
-fullgml; killerGML; vi; 0.500312391450604; 0.0001940721072192281
-fullgml; killerGML; de; 0.5000353130113564; 1.72674560884879e-05
-fullgml; killerGML; nl; 0.5000926820770087; 5.102886338409534e-05
-fullgml; killerGML; ja; 0.5000459557192243; 2.4321071691055e-05
-fullgml; killerGML; it; 0.5000479822068286; 1.980521426925074e-05
-fullgml; killerGML; en; 0.5000122513548294; 4.310683763855372e-06
-fullgml; killerGML; sv; 0.5000947620286987; 5.055478018107022e-05
-fullgml; killerGML; ru; 0.5000496862279186; 1.9971653564581587e-05
-fullgml; killerGML; war; 0.555; 0.0687386354243376
-fullgml; krankheitGML; fr; 0.5000709307803259; 9.859363152225283e-06
-fullgml; krankheitGML; es; 0.5001139765526917; 1.5665187173889272e-05
-fullgml; krankheitGML; pl; 0.5001189896750159; 2.2648495100563453e-05
-fullgml; krankheitGML; vi; 0.500277440471073; 5.1771674396827434e-05
-fullgml; krankheitGML; de; 0.5000596214645946; 9.144323179738473e-06
-fullgml; krankheitGML; nl; 0.500126146133674; 2.790646097835159e-05
-fullgml; krankheitGML; ja; 0.5000919997400921; 1.3933411336708815e-05
-fullgml; krankheitGML; it; 0.500188772042296; 1.46804161603132e-05
-fullgml; krankheitGML; ceb; 0.5115208279614494; 0.010184845026440452
-fullgml; krankheitGML; en; 0.5000672056000569; 4.622852397633175e-06
-fullgml; krankheitGML; sv; 0.5002799628628882; 3.543603149444882e-05
-fullgml; krankheitGML; ru; 0.5001775412133176; 1.5697326603234243e-05
-fullgml; krankheitGML; war; 0.5031941126817724; 0.0032011928191742695
-fullgml; komponistGML; fr; 0.5000930635449978; 5.0940311792110356e-05
-fullgml; komponistGML; es; 0.5001552814873914; 8.557317256353092e-05
-fullgml; komponistGML; pl; 0.5002868720502627; 0.0001573329192395915
-fullgml; komponistGML; vi; 0.5004702025134021; 0.0002805378469029064
-fullgml; komponistGML; de; 0.5001002752174173; 6.595791508226821e-05
-fullgml; komponistGML; nl; 0.5002130641972289; 0.00015261405810559529
-fullgml; komponistGML; ja; 0.500138259480703; 9.330939940491716e-05
-fullgml; komponistGML; it; 0.5001941224179443; 8.959278103898376e-05
-fullgml; komponistGML; ceb; 0.5040929804255706; 0.0046611897270440504
-fullgml; komponistGML; en; 0.5000771215977237; 3.9494639955453774e-05
-fullgml; komponistGML; sv; 0.5003236928661561; 0.00019362552055219708
-fullgml; komponistGML; ru; 0.5001902801106703; 9.713821805690653e-05
-fullgml; komponistGML; war; 0.5063400313172893; 0.005727411955644215
+fullgml; chemical element; id; 0.5008869124842434; 8.709165362608544e-05
+fullgml; chemical element; fr; 0.5002099721053113; 3.4118741245023824e-05
+fullgml; chemical element; mr; 0.5; 0.0
+fullgml; chemical element; tr; 0.502205110313315; 0.00017972256217625994
+fullgml; chemical element; lv; 0.5055209981564383; 0.0003866349269594412
+fullgml; chemical element; el; 0.5; 0.0
+fullgml; chemical element; es; 0.5004360673735276; 5.792405344108658e-05
+fullgml; chemical element; pl; 0.5010013145969219; 8.00418516828858e-05
+fullgml; chemical element; vi; 0.5012147217975919; 0.0001097875458607333
+fullgml; chemical element; de; 0.5001429695343046; 2.8224146349006494e-05
+fullgml; chemical element; ml; 0.5; 0.0
+fullgml; chemical element; sh; 0.5012975711861073; 0.00017392845844854866
+fullgml; chemical element; nl; 0.5009123063369487; 8.785257890566646e-05
+fullgml; chemical element; si; 0.5; 0.0
+fullgml; chemical element; pt; 0.5007757782917035; 0.00016913451873854773
+fullgml; chemical element; ro; 0.5009607503259634; 0.00010468693155809516
+fullgml; chemical element; ja; 0.5; 0.0
+fullgml; chemical element; simple; 0.5023128351375185; 0.0001723997309035069
+fullgml; chemical element; it; 0.5004199794166059; 5.729622052525087e-05
+fullgml; chemical element; ceb; 0.5608905063487809; 0.0008826332297985181
+fullgml; chemical element; he; 0.5; 0.0
+fullgml; chemical element; da; 0.500947343318979; 9.730313604976766e-05
+fullgml; chemical element; en; 0.5000943899243769; 1.8577786512249387e-05
+fullgml; chemical element; sr; 0.5; 0.0
+fullgml; chemical element; sv; 0.5016136988704223; 0.00011841336472305261
+fullgml; chemical element; ckb; 0.5; 0.0
+fullgml; chemical element; ru; 0.5; 0.0
+fullgml; chemical element; hi; 0.5; 0.0
+fullgml; chemical element; arz; 0.5; 0.0
+fullgml; chemical element; bs; 0.5022003537510344; 0.00014912184443772927
+fullgml; chemical element; te; 0.5; 0.0
+fullgml; chemical element; zh; 0.5052843622024352; 0.0009017516567283539
+fullgml; chemical element; mk; 0.5; 0.0
+fullgml; chemical element; hu; 0.501994413412789; 0.0002397969587369095
+fullgml; chemical element; ko; 0.5; 0.0
+fullgml; chemical element; war; 0.5030402499876714; 0.001638326096257578
+fullgml; dialect; id; 0.5005618184070851; 0.00014780497318272649
+fullgml; dialect; fr; 0.500077507690044; 2.9373885308462222e-05
+fullgml; dialect; mr; 0.5; 0.0
+fullgml; dialect; tr; 0.5007720192888587; 0.00043388907231877154
+fullgml; dialect; lv; 0.5028472159737174; 0.002767991562667767
+fullgml; dialect; el; 0.5; 0.0
+fullgml; dialect; es; 0.500163799954095; 0.00011636407268787593
+fullgml; dialect; pl; 0.5006600209151151; 0.0002457112063789182
+fullgml; dialect; vi; 0.5005813953488372; 0.002534243571825978
+fullgml; dialect; de; 0.5000928147815265; 4.696101349578023e-05
+fullgml; dialect; ml; 0.5; 0.0
+fullgml; dialect; sh; 0.5005768657747166; 0.0005353734844475635
+fullgml; dialect; nl; 0.5001549650936761; 5.881923547975202e-05
+fullgml; dialect; si; 0.5; 0.0
+fullgml; dialect; pt; 0.5003878159545552; 0.0001579759057848459
+fullgml; dialect; ro; 0.5014896202888931; 0.0010405923495122019
+fullgml; dialect; ja; 0.5002100840336134; 0.0009157350721724071
+fullgml; dialect; simple; 0.5009618678112552; 0.0005839183340496422
+fullgml; dialect; it; 0.5001804475110733; 3.795035726121687e-05
+fullgml; dialect; ceb; 0.5132672364672365; 0.015374699178406807
+fullgml; dialect; he; 0.5; 0.0
+fullgml; dialect; da; 0.5008915632755353; 0.000599557277778402
+fullgml; dialect; en; 0.5000351796217087; 6.201866958093907e-06
+fullgml; dialect; sr; 0.5016666666666666; 0.006074928962939565
+fullgml; dialect; sv; 0.5004237036808065; 0.00019187298670419878
+fullgml; dialect; ckb; 0.5; 0.0
+fullgml; dialect; ru; 0.500093896713615; 0.0004599980737621057
+fullgml; dialect; hi; 0.5; 0.0
+fullgml; dialect; arz; 0.5; 0.0
+fullgml; dialect; bs; 0.5030716731258452; 0.0029686583634709386
+fullgml; dialect; te; 0.5; 0.0
+fullgml; dialect; zh; 0.5; 0.0
+fullgml; dialect; mk; 0.5; 0.0
+fullgml; dialect; hu; 0.5005610339020866; 0.0002838975380796125
+fullgml; dialect; ko; 0.5004494949494949; 0.002726239048404594
+fullgml; dialect; war; 0.582; 0.08930845424706442
+fullgml; coat of arms; id; 0.5015411196739877; 0.00042121665524689524
+fullgml; coat of arms; fr; 0.5000300232098256; 2.0270304771632746e-05
+fullgml; coat of arms; tr; 0.5036453201970443; 0.007921926661589035
+fullgml; coat of arms; lv; 0.5; 0.0
+fullgml; coat of arms; el; 0.5; 0.0
+fullgml; coat of arms; es; 0.5000993254675079; 4.2763948179103325e-05
+fullgml; coat of arms; pl; 0.501342565423444; 2.804835166554258e-05
+fullgml; coat of arms; vi; 0.5; 0.0
+fullgml; coat of arms; de; 0.5000547667350719; 3.269798955455714e-05
+fullgml; coat of arms; sh; 0.5020443589953181; 0.0004983475428959823
+fullgml; coat of arms; nl; 0.5001810784521253; 8.272460040407336e-05
+fullgml; coat of arms; pt; 0.5001363387645914; 0.0005685534846889555
+fullgml; coat of arms; ro; 0.500495049825445; 0.000404603279295356
+fullgml; coat of arms; ja; 0.5; 0.0
+fullgml; coat of arms; simple; 0.5055312279090444; 0.004624885339399406
+fullgml; coat of arms; it; 0.5000561637277326; 2.369340204169313e-05
+fullgml; coat of arms; he; 0.5; 0.0
+fullgml; coat of arms; da; 0.5; 0.0
+fullgml; coat of arms; en; 0.5000531545778909; 2.157856567783693e-05
+fullgml; coat of arms; sr; 0.5; 0.0
+fullgml; coat of arms; sv; 0.5002350457506053; 0.00013423370920265392
+fullgml; coat of arms; ru; 0.5; 0.0
+fullgml; coat of arms; hi; 0.5; 0.0
+fullgml; coat of arms; arz; 0.5; 0.0
+fullgml; coat of arms; bs; 0.501090260182699; 0.0003555130820016252
+fullgml; coat of arms; zh; 0.5; 0.0
+fullgml; coat of arms; mk; 0.5; 0.0
+fullgml; coat of arms; hu; 0.5; 0.0
+fullgml; coat of arms; ko; 0.5; 0.0
+fullgml; theoremGML; id; 0.5011238114064045; 0.0005040772868994849
+fullgml; theoremGML; fr; 0.5001262017080869; 3.220846450666937e-05
+fullgml; theoremGML; mr; 0.5404761904761906; 0.05022624549935472
+fullgml; theoremGML; lv; 0.5016917095938651; 0.0011766848227227188
+fullgml; theoremGML; el; 0.5008733443921847; 0.0004362955847705832
+fullgml; theoremGML; es; 0.5001930633515257; 8.018446634435092e-05
+fullgml; theoremGML; pl; 0.5002061692067525; 8.57462875271395e-05
+fullgml; theoremGML; vi; 0.5005418840665301; 0.000187397891664437
+fullgml; theoremGML; de; 0.5001162412554391; 3.592679391930938e-05
+fullgml; theoremGML; ml; 0.504226842178561; 0.002484616686231725
+fullgml; theoremGML; sh; 0.5009446390084916; 0.0007197517620174828
+fullgml; theoremGML; nl; 0.5002569656453297; 0.00012446040913516678
+fullgml; theoremGML; si; 0.5092857142857142; 0.012371080439702982
+fullgml; theoremGML; pt; 0.5002087579498055; 6.73658492186699e-05
+fullgml; theoremGML; ro; 0.5006533143739114; 0.00038032390979991353
+fullgml; theoremGML; ja; 0.5001594143715438; 5.0903473178988224e-05
+fullgml; theoremGML; simple; 0.5010225031669661; 0.0007454254822921886
+fullgml; theoremGML; it; 0.5002470565658885; 6.455845504512817e-05
+fullgml; theoremGML; he; 0.5002791647307817; 8.997673947769625e-05
+fullgml; theoremGML; da; 0.5005778889991422; 0.0003872651908367267
+fullgml; theoremGML; en; 0.500055176853806; 1.5066443032700686e-05
+fullgml; theoremGML; sr; 0.5005172228416268; 0.0002574124246452612
+fullgml; theoremGML; sv; 0.5003483542464651; 0.00014099870456006145
+fullgml; theoremGML; ckb; 0.5044941866069859; 0.0017265111642538354
+fullgml; theoremGML; ru; 0.5001194645896239; 4.8154906868192926e-05
+fullgml; theoremGML; hi; 0.5014194664387563; 0.0006357006950248435
+fullgml; theoremGML; bs; 0.502811770279466; 0.001143181139665589
+fullgml; theoremGML; te; 0.5242652464494569; 0.022753541475185907
+fullgml; theoremGML; zh; 0.5001718869427243; 4.944744791762425e-05
+fullgml; theoremGML; mk; 0.5020845617912248; 0.0013212951819747693
+fullgml; theoremGML; hu; 0.5003630424861657; 0.00018907664023918655
+fullgml; theoremGML; ko; 0.5002744812033135; 8.443168850741556e-05
+fullgml; theoremGML; war; 0.6333333333333333; 0.1201850425154663
+fullgml; chemical compound; id; 0.5003954577236583; 7.952312448542375e-05
+fullgml; chemical compound; fr; 0.5001074856766973; 2.595869796526509e-05
+fullgml; chemical compound; mr; 0.5; 0.0
+fullgml; chemical compound; tr; 0.5005222295285823; 0.00012770797837478414
+fullgml; chemical compound; lv; 0.500781570948396; 0.000462991364896603
+fullgml; chemical compound; el; 0.5001219512195122; 0.0012133993135446592
+fullgml; chemical compound; es; 0.5001772266277564; 3.99582288648088e-05
+fullgml; chemical compound; pl; 0.5002223324485587; 3.360674641003604e-05
+fullgml; chemical compound; vi; 0.5002949900352802; 6.979167303037928e-05
+fullgml; chemical compound; de; 0.5000887826517179; 2.1694913894256762e-05
+fullgml; chemical compound; ml; 0.5; 0.0
+fullgml; chemical compound; sh; 0.5004210736153232; 3.2133325088875685e-05
+fullgml; chemical compound; nl; 0.5002789477131383; 4.976714468799996e-05
+fullgml; chemical compound; si; 0.5; 0.0
+fullgml; chemical compound; pt; 0.5001901893087086; 5.066406187773339e-05
+fullgml; chemical compound; ro; 0.5005398824129725; 0.00013274775004558218
+fullgml; chemical compound; ja; 0.5000710900473934; 0.00040423512107184257
+fullgml; chemical compound; simple; 0.5004613239583722; 0.00016896988783224586
+fullgml; chemical compound; it; 0.5001527148533379; 2.572627918356795e-05
+fullgml; chemical compound; ceb; 0.5326639563335216; 0.023152131454771012
+fullgml; chemical compound; he; 0.5004319104900328; 0.0007023121403241947
+fullgml; chemical compound; da; 0.5003437205809232; 0.0001459994017713972
+fullgml; chemical compound; en; 0.5000649472417174; 8.378390419910556e-06
+fullgml; chemical compound; sr; 0.5004124891970907; 3.671502420312193e-05
+fullgml; chemical compound; sv; 0.5002052180370827; 5.3124815841194625e-05
+fullgml; chemical compound; ckb; 0.5; 0.0
+fullgml; chemical compound; ru; 0.5000638297872341; 0.00036295153423896934
+fullgml; chemical compound; hi; 0.5; 0.0
+fullgml; chemical compound; arz; 0.5; 0.0
+fullgml; chemical compound; bs; 0.5005470358794741; 0.00013921602315533166
+fullgml; chemical compound; te; 0.5; 0.0
+fullgml; chemical compound; zh; 0.5; 0.0
+fullgml; chemical compound; mk; 0.5; 0.0
+fullgml; chemical compound; hu; 0.5004253819151488; 0.00010093475698948166
+fullgml; chemical compound; ko; 0.500090909090909; 0.0009045340337332856
+fullgml; chemical compound; war; 0.5054313881795462; 0.004082237469757756
+fullgml; holydayGML; id; 0.500233753290258; 0.00011746244921524804
+fullgml; holydayGML; fr; 0.5000991896834743; 5.356392752691625e-05
+fullgml; holydayGML; mr; 0.5006560095912278; 0.0003667506265935021
+fullgml; holydayGML; lv; 0.5013002583516808; 0.0008659367442807165
+fullgml; holydayGML; el; 0.5006196843554065; 0.0005659301064306162
+fullgml; holydayGML; es; 0.5001404562875745; 8.962757611546916e-05
+fullgml; holydayGML; pl; 0.5003082015995635; 0.00015318299259573103
+fullgml; holydayGML; vi; 0.5004876111597535; 0.00035568840890369346
+fullgml; holydayGML; de; 0.5001305222274697; 8.875986508633863e-05
+fullgml; holydayGML; ml; 0.5008596174040704; 0.0005244822845789829
+fullgml; holydayGML; sh; 0.5004903327164935; 0.0003329966056968917
+fullgml; holydayGML; nl; 0.500247927088123; 0.00014323802710733066
+fullgml; holydayGML; si; 0.5047675071943845; 0.004586911127864345
+fullgml; holydayGML; pt; 0.5001842174016918; 0.00012229974263877123
+fullgml; holydayGML; ro; 0.5004492967162546; 0.00026250111537221043
+fullgml; holydayGML; ja; 0.5001416508541449; 8.135629497897588e-05
+fullgml; holydayGML; simple; 0.5005076643488073; 0.00023580939394898253
+fullgml; holydayGML; it; 0.500126524682107; 7.936463402991033e-05
+fullgml; holydayGML; ceb; 0.5262798855139135; 0.004377250121462031
+fullgml; holydayGML; he; 0.5001376260506204; 8.048056787333496e-05
+fullgml; holydayGML; da; 0.5003731005454161; 0.00022324457810862718
+fullgml; holydayGML; en; 0.5000376964325208; 1.7312233690096042e-05
+fullgml; holydayGML; sr; 0.5005881066894831; 0.0003139997831972796
+fullgml; holydayGML; sv; 0.5002896515281636; 0.00012627416504767527
+fullgml; holydayGML; ckb; 0.5027418372034304; 0.0024081204929249367
+fullgml; holydayGML; ru; 0.5001414727550659; 7.914951900055636e-05
+fullgml; holydayGML; hi; 0.500450285146075; 0.00027877540360914577
+fullgml; holydayGML; arz; 0.5028673954157037; 0.0017802358526391772
+fullgml; holydayGML; bs; 0.5012037875043966; 0.0008750837171223896
+fullgml; holydayGML; te; 0.5008841428641645; 0.0006132348831017623
+fullgml; holydayGML; zh; 0.5001427116387801; 8.021391932674448e-05
+fullgml; holydayGML; mk; 0.5011731188746967; 0.000716226820647199
+fullgml; holydayGML; hu; 0.500300663807824; 0.0001977943561620183
+fullgml; holydayGML; ko; 0.5002156919853755; 0.00014258275633343784
+fullgml; holydayGML; war; 0.5158424180483003; 0.014096953251487071
+fullgml; paintingGML; id; 0.5011392805345917; 0.00027669425301322237
+fullgml; paintingGML; fr; 0.5000735225985706; 8.047568267959774e-06
+fullgml; paintingGML; mr; 0.5204145166838665; 0.022360518300369114
+fullgml; paintingGML; lv; 0.5006889845817947; 0.00029919207149151463
+fullgml; paintingGML; el; 0.5003821380510768; 0.00014054569885445074
+fullgml; paintingGML; es; 0.5000681929815529; 1.691582117575496e-05
+fullgml; paintingGML; pl; 0.50009464797907; 1.835210538977784e-05
+fullgml; paintingGML; vi; 0.500458250991947; 0.0002528549736330287
+fullgml; paintingGML; de; 0.5000382774772052; 1.665042668216857e-05
+fullgml; paintingGML; ml; 0.5015253792163865; 0.00021642213299465999
+fullgml; paintingGML; sh; 0.500351688350714; 0.0002194321846696372
+fullgml; paintingGML; nl; 0.5001122296277712; 2.7089227870798017e-05
+fullgml; paintingGML; si; 0.5081728466402711; 0.008169290495398829
+fullgml; paintingGML; pt; 0.5001226728109165; 2.9506214998643175e-05
+fullgml; paintingGML; ro; 0.5006912679550005; 9.967691472942094e-05
+fullgml; paintingGML; ja; 0.5001004718496126; 3.8967656289270224e-05
+fullgml; paintingGML; simple; 0.5009200125241374; 0.0005692043573607878
+fullgml; paintingGML; it; 0.5000977213726537; 1.0490430187716578e-05
+fullgml; paintingGML; ceb; 0.6216666666666667; 0.12439855304624726
+fullgml; paintingGML; he; 0.5002448999711249; 8.134937212903785e-05
+fullgml; paintingGML; da; 0.5002658766308444; 9.86142018095764e-05
+fullgml; paintingGML; en; 0.5000454759084401; 4.979843983292125e-06
+fullgml; paintingGML; sr; 0.5004374149857538; 0.00032046116200768783
+fullgml; paintingGML; sv; 0.5001621885049148; 5.746137423300797e-05
+fullgml; paintingGML; ckb; 0.5092694173976178; 0.008745306699563709
+fullgml; paintingGML; ru; 0.5000675949386203; 1.3131838428376873e-05
+fullgml; paintingGML; hi; 0.5026112067627861; 0.0024141898992700553
+fullgml; paintingGML; arz; 0.5071361116237265; 0.005822553011381327
+fullgml; paintingGML; bs; 0.5056141464441426; 0.0015341839652710534
+fullgml; paintingGML; te; 0.5228205128205127; 0.026749483966199594
+fullgml; paintingGML; zh; 0.5001707098655603; 6.107214009738604e-05
+fullgml; paintingGML; mk; 0.500938338679385; 0.0007202546962216573
+fullgml; paintingGML; hu; 0.5004395436507025; 0.0002161477132430676
+fullgml; paintingGML; ko; 0.5006492877643615; 0.0003865245176917517
+fullgml; paintingGML; war; 0.5095172626116021; 0.008759196674031276
+fullgml; term; id; 0.5001675544948045; 0.0001404827970184365
+fullgml; term; fr; 0.5000412909465065; 3.1967688852405856e-05
+fullgml; term; mr; 0.5; 0.0
+fullgml; term; tr; 0.5002541131796501; 0.00024616865073451706
+fullgml; term; lv; 0.503663490248396; 0.005835206350494263
+fullgml; term; el; 0.5013772893772894; 0.0027464158269366623
+fullgml; term; es; 0.5000638922968307; 5.648420910978133e-05
+fullgml; term; pl; 0.5000793529707758; 7.511089491137235e-05
+fullgml; term; vi; 0.501032452953181; 0.001391655101434313
+fullgml; term; de; 0.5000375804304528; 3.277019110033743e-05
+fullgml; term; ml; 0.5; 0.0
+fullgml; term; sh; 0.5002538501735199; 0.00026036335752220444
+fullgml; term; nl; 0.5000592021156006; 4.896917223553144e-05
+fullgml; term; si; 0.5; 0.0
+fullgml; term; pt; 0.5000689213069844; 5.869900160519263e-05
+fullgml; term; ro; 0.500268746334231; 0.0002700981266414079
+fullgml; term; ja; 0.5004311511489618; 0.0007407689036858973
+fullgml; term; simple; 0.5004650787961098; 0.0004564518098582663
+fullgml; term; it; 0.5000470858110534; 3.65528448203615e-05
+fullgml; term; ceb; 0.785; 0.24753787588973122
+fullgml; term; he; 0.5007586064728922; 0.001944668918715369
+fullgml; term; da; 0.5002527195207399; 0.00020956379521018564
+fullgml; term; en; 0.5000065204330855; 5.316953094265369e-06
+fullgml; term; sr; 0.5007356390505702; 0.0008348101775700125
+fullgml; term; sv; 0.5001195435855319; 0.000102766371716147
+fullgml; term; ckb; 0.5; 0.0
+fullgml; term; ru; 0.5003269099311823; 0.0005530596527037139
+fullgml; term; hi; 0.5; 0.0
+fullgml; term; arz; 0.5; 0.0
+fullgml; term; bs; 0.5004595239130332; 0.00044028577201857765
+fullgml; term; te; 0.5; 0.0
+fullgml; term; zh; 0.5006239225518755; 0.001059785968548927
+fullgml; term; mk; 0.5; 0.0
+fullgml; term; hu; 0.500444798609625; 0.00044985135511108916
+fullgml; term; ko; 0.5006382978723404; 0.002526455763199547
+fullgml; term; war; 0.5177668308702791; 0.016634828209799956
+fullgml; symptom; id; 0.5007164846038625; 0.0004269253773180379
+fullgml; symptom; fr; 0.5002002419964444; 0.00011442248997007929
+fullgml; symptom; mr; 0.5; 0.0
+fullgml; symptom; tr; 0.5008469523907496; 0.0006045194314668775
+fullgml; symptom; lv; 0.503252092861499; 0.002489744093197433
+fullgml; symptom; el; 0.5; 0.0
+fullgml; symptom; es; 0.5002766166330502; 0.00015367044433118733
+fullgml; symptom; pl; 0.5003275372499272; 0.00022126160354675093
+fullgml; symptom; vi; 0.5023235156615242; 0.003614441476959246
+fullgml; symptom; de; 0.5001614785626277; 0.00011998359719378587
+fullgml; symptom; ml; 0.5; 0.0
+fullgml; symptom; sh; 0.5014426171068165; 0.0003551156719546358
+fullgml; symptom; nl; 0.5002947070811035; 0.00018830182629728283
+fullgml; symptom; si; 0.5088494989601058; 0.009622122489881115
+fullgml; symptom; pt; 0.5004354775367978; 0.00014482672539773683
+fullgml; symptom; ro; 0.5012635318398904; 0.0009644408380560871
+fullgml; symptom; ja; 0.5; 0.0
+fullgml; symptom; simple; 0.50085542525746; 0.0005909880655211305
+fullgml; symptom; it; 0.500210128251668; 8.387509853182313e-05
+fullgml; symptom; ceb; 0.5805; 0.0877197241217732
+fullgml; symptom; he; 0.5; 0.0
+fullgml; symptom; da; 0.5008324309000463; 0.0007121898041337499
+fullgml; symptom; en; 0.5000580235504352; 2.5956113434559543e-05
+fullgml; symptom; sr; 0.5017398675804033; 0.000834701157637575
+fullgml; symptom; sv; 0.5003416721690737; 0.0002551708403192475
+fullgml; symptom; ckb; 0.5; 0.0
+fullgml; symptom; ru; 0.500701754385965; 0.0023797649063597506
+fullgml; symptom; hi; 0.5; 0.0
+fullgml; symptom; arz; 0.5; 0.0
+fullgml; symptom; bs; 0.5015684130538153; 0.0014404308379408867
+fullgml; symptom; te; 0.5; 0.0
+fullgml; symptom; zh; 0.5; 0.0
+fullgml; symptom; mk; 0.5; 0.0
+fullgml; symptom; hu; 0.5030340965517457; 0.0021472943034062
+fullgml; symptom; ko; 0.5; 0.0
+fullgml; symptom; war; 0.5430757575757575; 0.04239893996543825
+fullgml; archaeological site; id; 0.5001381434933841; 7.310204619336653e-05
+fullgml; archaeological site; fr; 0.5000350572727679; 1.3279527466577124e-05
+fullgml; archaeological site; mr; 0.5; 0.0
+fullgml; archaeological site; tr; 0.5001635486700396; 4.495147103146098e-05
+fullgml; archaeological site; lv; 0.500531515365376; 0.0002961853009067303
+fullgml; archaeological site; el; 0.5; 0.0
+fullgml; archaeological site; es; 0.5000535194967515; 2.2120703677644808e-05
+fullgml; archaeological site; pl; 0.5000524995895196; 2.6235375707924958e-05
+fullgml; archaeological site; vi; 0.5001883411127506; 8.974251502035592e-05
+fullgml; archaeological site; de; 0.5000224520397968; 9.63770827628864e-06
+fullgml; archaeological site; ml; 0.5; 0.0
+fullgml; archaeological site; sh; 0.5001154038073272; 5.065496932454897e-05
+fullgml; archaeological site; nl; 0.5000643441976773; 3.582252695856954e-05
+fullgml; archaeological site; si; 0.5; 0.0
+fullgml; archaeological site; pt; 0.5000669233638351; 2.9603694189928296e-05
+fullgml; archaeological site; ro; 0.5002342228506699; 8.823574765109862e-05
+fullgml; archaeological site; ja; 0.5; 0.0
+fullgml; archaeological site; simple; 0.5003392626572444; 0.00018299439237366832
+fullgml; archaeological site; it; 0.5000412601321977; 1.2765388128133913e-05
+fullgml; archaeological site; ceb; 0.500770390154401; 0.0003321954322642251
+fullgml; archaeological site; he; 0.5; 0.0
+fullgml; archaeological site; da; 0.5002180557307889; 7.298587066615694e-05
+fullgml; archaeological site; en; 0.5000203880675453; 4.378285495950669e-06
+fullgml; archaeological site; sr; 0.5002407372039724; 0.0004522425018815789
+fullgml; archaeological site; sv; 0.5001023918240693; 5.119123711609681e-05
+fullgml; archaeological site; ckb; 0.5; 0.0
+fullgml; archaeological site; ru; 0.5000377358490566; 0.00026415094339622637
+fullgml; archaeological site; hi; 0.5; 0.0
+fullgml; archaeological site; arz; 0.5; 0.0
+fullgml; archaeological site; bs; 0.5004447890623904; 0.00025160217906883677
+fullgml; archaeological site; te; 0.5; 0.0
+fullgml; archaeological site; zh; 0.5; 0.0
+fullgml; archaeological site; mk; 0.5; 0.0
+fullgml; archaeological site; hu; 0.5001228268654533; 4.900863489204298e-05
+fullgml; archaeological site; ko; 0.5; 0.0
+fullgml; archaeological site; war; 0.5012108202908282; 0.0011321390472706625
+fullgml; plant structure; id; 0.5010136189728772; 0.000651141051981815
+fullgml; plant structure; fr; 0.5003397591413836; 0.0001419231857821549
+fullgml; plant structure; mr; 0.5; 0.0
+fullgml; plant structure; tr; 0.5022439356629136; 0.0015073659608761227
+fullgml; plant structure; lv; 0.5025612204740385; 0.0022571980637851384
+fullgml; plant structure; el; 0.5; 0.0
+fullgml; plant structure; es; 0.5004115606743256; 0.00023599079801680517
+fullgml; plant structure; pl; 0.5006046816866806; 0.000334997541574444
+fullgml; plant structure; vi; 0.5025996194789062; 0.0038818797380636002
+fullgml; plant structure; de; 0.5003092362231459; 0.00016797507903679065
+fullgml; plant structure; ml; 0.5; 0.0
+fullgml; plant structure; sh; 0.5014491183615348; 0.0012355131079955692
+fullgml; plant structure; nl; 0.5018645736537275; 0.00016135645659762798
+fullgml; plant structure; si; 0.5; 0.0
+fullgml; plant structure; pt; 0.5008965188793075; 0.0004251170106761199
+fullgml; plant structure; ro; 0.5027979075841493; 0.002483190576105604
+fullgml; plant structure; ja; 0.5; 0.0
+fullgml; plant structure; simple; 0.5011071756569241; 0.0006479361896035162
+fullgml; plant structure; it; 0.5009799351196031; 0.0003066327496201936
+fullgml; plant structure; he; 0.5; 0.0
+fullgml; plant structure; da; 0.5012569820788123; 0.000807812854420717
+fullgml; plant structure; en; 0.500227392487483; 9.060047840975511e-05
+fullgml; plant structure; sr; 0.5022992113185283; 0.002643926689334872
+fullgml; plant structure; sv; 0.5009202296033233; 0.0007467115915276051
+fullgml; plant structure; ckb; 0.5; 0.0
+fullgml; plant structure; ru; 0.5; 0.0
+fullgml; plant structure; hi; 0.5; 0.0
+fullgml; plant structure; bs; 0.501931360381963; 0.00042798024280481164
+fullgml; plant structure; te; 0.5; 0.0
+fullgml; plant structure; zh; 0.5; 0.0
+fullgml; plant structure; mk; 0.5; 0.0
+fullgml; plant structure; hu; 0.5029643117456642; 0.004623500060478075
+fullgml; plant structure; ko; 0.5; 0.0
+fullgml; plant structure; war; 0.537142857142857; 0.051981158281886417
+fullgml; social class; id; 0.5008384755615019; 0.0005675455906413042
+fullgml; social class; fr; 0.500129179762823; 9.631897147037152e-05
+fullgml; social class; mr; 0.5; 0.0
+fullgml; social class; tr; 0.5009308058323131; 0.0008730609768933778
+fullgml; social class; lv; 0.5052362421873253; 0.00731697123804225
+fullgml; social class; el; 0.5; 0.0
+fullgml; social class; es; 0.5001638460562957; 0.000105722446607589
+fullgml; social class; pl; 0.5003105246722845; 0.0002549616415822806
+fullgml; social class; vi; 0.5010424964985786; 0.0011939055315329777
+fullgml; social class; de; 0.5001100280926415; 8.650376885673908e-05
+fullgml; social class; ml; 0.5; 0.0
+fullgml; social class; sh; 0.5015639806914372; 0.0008315993307821883
+fullgml; social class; nl; 0.500224312897424; 0.0001930136384187437
+fullgml; social class; pt; 0.5001674755824405; 0.00013238906500208546
+fullgml; social class; ro; 0.5005879912118015; 0.0005834174323885862
+fullgml; social class; ja; 0.5015308279506752; 0.0023635218809300827
+fullgml; social class; simple; 0.5026022098644318; 0.002326702076483379
+fullgml; social class; it; 0.5002429438488837; 0.00011230107258988362
+fullgml; social class; he; 0.5; 0.0
+fullgml; social class; da; 0.5003492558429524; 0.0002960617564036598
+fullgml; social class; en; 0.5000455752240817; 2.3759235706574278e-05
+fullgml; social class; sr; 0.5029706790123456; 0.003669750166130771
+fullgml; social class; sv; 0.5003644443191706; 0.00029605131942780097
+fullgml; social class; ckb; 0.5; 0.0
+fullgml; social class; ru; 0.5025955871705899; 0.002548367231139868
+fullgml; social class; hi; 0.5; 0.0
+fullgml; social class; arz; 0.5; 0.0
+fullgml; social class; bs; 0.5139466823648136; 0.011358301882870117
+fullgml; social class; zh; 0.5; 0.0
+fullgml; social class; mk; 0.5; 0.0
+fullgml; social class; hu; 0.5030018301270286; 0.0025367893692524604
+fullgml; social class; ko; 0.5017948717948718; 0.00444855168535831
+fullgml; social class; war; 0.785; 0.24753787588973122
+fullgml; chemical substance; id; 0.5003676200506999; 0.00022307557398446387
+fullgml; chemical substance; fr; 0.5001442762064373; 9.463765419743722e-05
+fullgml; chemical substance; mr; 0.5; 0.0
+fullgml; chemical substance; tr; 0.5009686127019518; 0.0006466016185556018
+fullgml; chemical substance; lv; 0.5027436291607703; 0.0032268905028474747
+fullgml; chemical substance; el; 0.5; 0.0
+fullgml; chemical substance; es; 0.500340044707375; 0.00017732903976290323
+fullgml; chemical substance; pl; 0.5002347158033299; 0.00014626919359406345
+fullgml; chemical substance; vi; 0.5004798050294735; 0.0002628575537171643
+fullgml; chemical substance; de; 0.5001331116964789; 9.081658284872097e-05
+fullgml; chemical substance; ml; 0.5; 0.0
+fullgml; chemical substance; sh; 0.5004254744028664; 0.00018320662657577767
+fullgml; chemical substance; nl; 0.5003064149389702; 0.0001745727586944065
+fullgml; chemical substance; si; 0.5; 0.0
+fullgml; chemical substance; pt; 0.5003325059757175; 0.00022945945846927163
+fullgml; chemical substance; ro; 0.500371618662377; 0.0003186143089148602
+fullgml; chemical substance; ja; 0.5; 0.0
+fullgml; chemical substance; simple; 0.5010312548958755; 0.0007424898307411309
+fullgml; chemical substance; it; 0.5001696083486741; 0.00011240127481721801
+fullgml; chemical substance; ceb; 0.5037104738523918; 0.0020048442629676103
+fullgml; chemical substance; he; 0.502282196969697; 0.005865244706895275
+fullgml; chemical substance; da; 0.5006137001763957; 0.0004183826012136597
+fullgml; chemical substance; en; 0.500042534655136; 1.477511352309997e-05
+fullgml; chemical substance; sr; 0.500443044999884; 0.00019602235314451977
+fullgml; chemical substance; sv; 0.500261544468251; 0.0001982002868324181
+fullgml; chemical substance; ckb; 0.5; 0.0
+fullgml; chemical substance; ru; 0.5009701492537313; 0.0025097271225075052
+fullgml; chemical substance; hi; 0.5; 0.0
+fullgml; chemical substance; bs; 0.501031323185575; 0.0007005618282189395
+fullgml; chemical substance; te; 0.5; 0.0
+fullgml; chemical substance; zh; 0.5; 0.0
+fullgml; chemical substance; mk; 0.5; 0.0
+fullgml; chemical substance; hu; 0.5006550657460284; 0.0005091833182131196
+fullgml; chemical substance; ko; 0.5; 0.0
+fullgml; chemical substance; war; 0.560060606060606; 0.04817396543592664
+fullgml; prison; id; 0.5010961980621861; 0.0009369493841745357
+fullgml; prison; fr; 0.5000859671573087; 6.109131966650774e-05
+fullgml; prison; mr; 0.5; 0.0
+fullgml; prison; tr; 0.5020602797043782; 0.0020591441973461227
+fullgml; prison; lv; 0.5051346681972371; 0.004710973507810497
+fullgml; prison; el; 0.5; 0.0
+fullgml; prison; es; 0.5001822466183503; 0.0001442407802305603
+fullgml; prison; pl; 0.5004912367393851; 0.000529452481901592
+fullgml; prison; vi; 0.5012400214851788; 0.001268068419931922
+fullgml; prison; de; 0.5001189420089068; 8.407315240155647e-05
+fullgml; prison; ml; 0.5; 0.0
+fullgml; prison; sh; 0.5001604162344278; 0.0001391776239168767
+fullgml; prison; nl; 0.5001819698061017; 0.00013946244160044222
+fullgml; prison; si; 0.5; 0.0
+fullgml; prison; pt; 0.5003034419220799; 0.0003377347559036277
+fullgml; prison; ro; 0.5029314808295239; 0.0009589996595087501
+fullgml; prison; ja; 0.5; 0.0
+fullgml; prison; simple; 0.5018248099595857; 0.001696177401620467
+fullgml; prison; it; 0.500140027901705; 0.00010939337390571115
+fullgml; prison; ceb; 0.5184761904761904; 0.023379740051975743
+fullgml; prison; he; 0.5; 0.0
+fullgml; prison; da; 0.501237269802094; 0.0010223284504977128
+fullgml; prison; en; 0.500027673544353; 8.173473932657428e-06
+fullgml; prison; sr; 0.5; 0.0
+fullgml; prison; sv; 0.5005194414573584; 0.0004967048504056257
+fullgml; prison; ckb; 0.5; 0.0
+fullgml; prison; ru; 0.5; 0.0
+fullgml; prison; hi; 0.5; 0.0
+fullgml; prison; arz; 0.5; 0.0
+fullgml; prison; bs; 0.5109209125749365; 0.012239907716809807
+fullgml; prison; te; 0.5; 0.0
+fullgml; prison; zh; 0.5; 0.0
+fullgml; prison; mk; 0.5; 0.0
+fullgml; prison; hu; 0.5006763899179806; 0.0007401639826104617
+fullgml; prison; ko; 0.5; 0.0
+fullgml; aspect of history; id; 0.5000418892839549; 2.3495532239264185e-05
+fullgml; aspect of history; fr; 0.5000074476236124; 3.413164936119616e-06
+fullgml; aspect of history; mr; 0.5; 0.0
+fullgml; aspect of history; tr; 0.5000794442783498; 6.379866166996308e-05
+fullgml; aspect of history; lv; 0.5; 0.0
+fullgml; aspect of history; el; 0.5001851851851852; 0.001842569327975219
+fullgml; aspect of history; es; 0.5000096994280748; 4.356522765017932e-06
+fullgml; aspect of history; pl; 0.5000270636875179; 1.6871661018433747e-05
+fullgml; aspect of history; vi; 0.5003535353535353; 0.0012886212951690056
+fullgml; aspect of history; de; 0.5000068265234969; 3.4130677058795358e-06
+fullgml; aspect of history; ml; 0.5; 0.0
+fullgml; aspect of history; sh; 0.5000576128092884; 3.525589893782706e-05
+fullgml; aspect of history; nl; 0.5000159003256577; 7.887058984113523e-06
+fullgml; aspect of history; si; 0.5; 0.0
+fullgml; aspect of history; pt; 0.5000655490057365; 5.8878555707091204e-05
+fullgml; aspect of history; ro; 0.5000527009425527; 3.676864944391499e-05
+fullgml; aspect of history; ja; 0.5001752750054638; 0.0004920567148597109
+fullgml; aspect of history; simple; 0.5000950989235302; 7.219251629885267e-05
+fullgml; aspect of history; it; 0.500009965228028; 4.991868575804e-06
+fullgml; aspect of history; ceb; 0.5081032252348043; 0.008299053373882731
+fullgml; aspect of history; he; 0.5; 0.0
+fullgml; aspect of history; da; 0.5000482615294083; 3.2302598403784725e-05
+fullgml; aspect of history; en; 0.5000018927129815; 5.934352946444145e-07
+fullgml; aspect of history; sr; 0.5000965626300369; 7.040526050293863e-05
+fullgml; aspect of history; sv; 0.5000269313675241; 1.6308459621927375e-05
+fullgml; aspect of history; ckb; 0.5; 0.0
+fullgml; aspect of history; ru; 0.5; 0.0
+fullgml; aspect of history; hi; 0.5; 0.0
+fullgml; aspect of history; arz; 0.5; 0.0
+fullgml; aspect of history; bs; 0.5001434224928861; 0.00010870207146922174
+fullgml; aspect of history; te; 0.5; 0.0
+fullgml; aspect of history; zh; 0.5001140684410647; 0.0004514958968455389
+fullgml; aspect of history; mk; 0.5; 0.0
+fullgml; aspect of history; hu; 0.500323631840796; 0.0009088116705394042
+fullgml; aspect of history; ko; 0.5; 0.0
+fullgml; aspect of history; war; 0.5083749076863997; 0.008356271556815856
+fullgml; historical language; id; 0.5007192028836913; 0.0005215690476968818
+fullgml; historical language; fr; 0.5002363305190084; 0.00012651472117967735
+fullgml; historical language; mr; 0.5; 0.0
+fullgml; historical language; tr; 0.5010071430105483; 0.0011799677289302916
+fullgml; historical language; lv; 0.507316639299398; 0.010662729293594155
+fullgml; historical language; el; 0.5; 0.0
+fullgml; historical language; es; 0.500626305225543; 0.000511917939711021
+fullgml; historical language; pl; 0.5017044077905135; 0.0021866846237705855
+fullgml; historical language; vi; 0.5030193452380952; 0.004913668202897886
+fullgml; historical language; de; 0.5002302259740197; 0.00016285406380163282
+fullgml; historical language; ml; 0.5; 0.0
+fullgml; historical language; sh; 0.5015657046843057; 0.0010960888889267213
+fullgml; historical language; nl; 0.5003754844859334; 0.0002505499533466401
+fullgml; historical language; pt; 0.5019244413189561; 0.0037111327919401157
+fullgml; historical language; ro; 0.5037324028745082; 0.005142809411116739
+fullgml; historical language; ja; 0.5; 0.0
+fullgml; historical language; simple; 0.5017464044349006; 0.001240178959631255
+fullgml; historical language; it; 0.5003830468673519; 0.0002245486875087558
+fullgml; historical language; he; 0.5; 0.0
+fullgml; historical language; da; 0.5020529183146817; 0.0012977843557745554
+fullgml; historical language; en; 0.5000807972893927; 3.781762230422946e-05
+fullgml; historical language; sr; 0.5; 0.0
+fullgml; historical language; sv; 0.5002995195730655; 0.00023736622737410195
+fullgml; historical language; ckb; 0.5; 0.0
+fullgml; historical language; ru; 0.5; 0.0
+fullgml; historical language; hi; 0.5; 0.0
+fullgml; historical language; arz; 0.5; 0.0
+fullgml; historical language; bs; 0.5049466449629227; 0.005156623246203193
+fullgml; historical language; te; 0.5; 0.0
+fullgml; historical language; zh; 0.5; 0.0
+fullgml; historical language; mk; 0.5; 0.0
+fullgml; historical language; hu; 0.5008258834838242; 0.0007369273792012499
+fullgml; historical language; ko; 0.5; 0.0
+fullgml; fussballligaGML; id; 0.5003114412343708; 7.866390087287176e-05
+fullgml; fussballligaGML; fr; 0.5000470756345144; 9.277993607956254e-06
+fullgml; fussballligaGML; mr; 0.5011882605225844; 0.0007881003134894614
+fullgml; fussballligaGML; lv; 0.5005286440817448; 0.00015764032115511917
+fullgml; fussballligaGML; el; 0.5001912721723764; 6.759505998650663e-05
+fullgml; fussballligaGML; es; 0.5000164249298545; 8.640123631693987e-06
+fullgml; fussballligaGML; pl; 0.5000397432450712; 1.7801966888588076e-05
+fullgml; fussballligaGML; vi; 0.5001777158448278; 6.975409305822662e-05
+fullgml; fussballligaGML; de; 0.5000298018353373; 1.2347589597443602e-05
+fullgml; fussballligaGML; ml; 0.504871877597979; 0.004146172633324399
+fullgml; fussballligaGML; sh; 0.5006003434742979; 0.00044079526328870335
+fullgml; fussballligaGML; nl; 0.5000658936795882; 1.2784800622089418e-05
+fullgml; fussballligaGML; pt; 0.5000359726793586; 1.4538732211192298e-05
+fullgml; fussballligaGML; ro; 0.5005788659465759; 5.2930742788014e-05
+fullgml; fussballligaGML; ja; 0.5000653133406439; 2.242613398987149e-05
+fullgml; fussballligaGML; simple; 0.5003053650372432; 0.000195236651034685
+fullgml; fussballligaGML; it; 0.5000377988217446; 1.1651071037254974e-05
+fullgml; fussballligaGML; he; 0.5001941932758903; 7.099788961050128e-05
+fullgml; fussballligaGML; da; 0.5002724178632858; 8.956657581540962e-05
+fullgml; fussballligaGML; en; 0.5000124836410476; 4.088233311204323e-06
+fullgml; fussballligaGML; sr; 0.500262614694466; 0.00010201234034702464
+fullgml; fussballligaGML; sv; 0.5001098531743576; 3.386472788062494e-05
+fullgml; fussballligaGML; ckb; 0.5028248027872597; 0.002751443443800318
+fullgml; fussballligaGML; ru; 0.5000364037745682; 1.5925049276855085e-05
+fullgml; fussballligaGML; hi; 0.5039628555231397; 0.003768404957405817
+fullgml; fussballligaGML; arz; 0.5029474165649337; 0.0017832706662947468
+fullgml; fussballligaGML; bs; 0.5005963552476345; 0.00018544527111838548
+fullgml; fussballligaGML; te; 0.5; 0.0
+fullgml; fussballligaGML; zh; 0.5000920758582624; 3.423579909215111e-05
+fullgml; fussballligaGML; mk; 0.5005503489870685; 0.0004258819252690595
+fullgml; fussballligaGML; hu; 0.5001106831695001; 3.96649232925906e-05
+fullgml; fussballligaGML; ko; 0.5002237537849478; 4.09564461088858e-05
+fullgml; group or class of chemical substances; id; 0.5004514182995862; 0.00023412051489694974
+fullgml; group or class of chemical substances; fr; 0.500111908065027; 7.09265266170924e-05
+fullgml; group or class of chemical substances; mr; 0.5; 0.0
+fullgml; group or class of chemical substances; tr; 0.5004013786297729; 0.00026685554912294534
+fullgml; group or class of chemical substances; lv; 0.5014032867513519; 0.0012479903885799924
+fullgml; group or class of chemical substances; el; 0.5; 0.0
+fullgml; group or class of chemical substances; es; 0.5002095817776531; 0.0001166045627989298
+fullgml; group or class of chemical substances; pl; 0.5001981175688622; 0.00011303625733455456
+fullgml; group or class of chemical substances; vi; 0.5004347050962301; 0.00029295882736412606
+fullgml; group or class of chemical substances; de; 0.5000811142623193; 4.572795484511942e-05
+fullgml; group or class of chemical substances; ml; 0.5; 0.0
+fullgml; group or class of chemical substances; sh; 0.5001396198986502; 6.268252526801696e-05
+fullgml; group or class of chemical substances; nl; 0.5002221931617572; 0.00014067119986261852
+fullgml; group or class of chemical substances; si; 0.5; 0.0
+fullgml; group or class of chemical substances; pt; 0.500251901264327; 0.00015147276755691157
+fullgml; group or class of chemical substances; ro; 0.5004720840649979; 0.00027848706533101426
+fullgml; group or class of chemical substances; ja; 0.5005277719388775; 0.0009352586172835403
+fullgml; group or class of chemical substances; simple; 0.5007086833230319; 0.0006146059550396972
+fullgml; group or class of chemical substances; it; 0.5001483087352416; 6.822935453149555e-05
+fullgml; group or class of chemical substances; ceb; 0.5419090909090909; 0.040340731967174095
+fullgml; group or class of chemical substances; he; 0.5019291819291819; 0.0031620395708432283
+fullgml; group or class of chemical substances; da; 0.50047441720113; 0.00032186757812548763
+fullgml; group or class of chemical substances; en; 0.5000336147275654; 1.4331212617462758e-05
+fullgml; group or class of chemical substances; sr; 0.5001942512382364; 0.00011032924659512937
+fullgml; group or class of chemical substances; sv; 0.5003269446390632; 0.0002121447973419483
+fullgml; group or class of chemical substances; ckb; 0.5; 0.0
+fullgml; group or class of chemical substances; ru; 0.5; 0.0
+fullgml; group or class of chemical substances; hi; 0.5; 0.0
+fullgml; group or class of chemical substances; arz; 0.5; 0.0
+fullgml; group or class of chemical substances; bs; 0.5004920674822143; 0.0003466314687448081
+fullgml; group or class of chemical substances; te; 0.5; 0.0
+fullgml; group or class of chemical substances; zh; 0.5; 0.0
+fullgml; group or class of chemical substances; mk; 0.5; 0.0
+fullgml; group or class of chemical substances; hu; 0.5005331259180978; 0.0004474462595406202
+fullgml; group or class of chemical substances; ko; 0.5; 0.0
+fullgml; group or class of chemical substances; war; 0.5210820512820513; 0.01835283054658102
+fullgml; clinical sign; id; 0.5016986304230077; 0.0011458038641059742
+fullgml; clinical sign; fr; 0.5002598276495203; 0.00015631152262371225
+fullgml; clinical sign; mr; 0.5; 0.0
+fullgml; clinical sign; tr; 0.50164993547608; 0.0017578796969018329
+fullgml; clinical sign; lv; 0.5131433667781493; 0.01678346932090928
+fullgml; clinical sign; el; 0.5; 0.0
+fullgml; clinical sign; es; 0.5003502437010707; 0.00018820491466123448
+fullgml; clinical sign; pl; 0.500322531413413; 0.00021744229925883062
+fullgml; clinical sign; vi; 0.502; 0.006000000000000005
+fullgml; clinical sign; de; 0.5001429707725532; 0.00010576686486214027
+fullgml; clinical sign; ml; 0.5; 0.0
+fullgml; clinical sign; sh; 0.5020669715863646; 0.0007322800721294838
+fullgml; clinical sign; nl; 0.5006742585046522; 0.0005146908318778836
+fullgml; clinical sign; si; 0.5; 0.0
+fullgml; clinical sign; pt; 0.500414236038158; 0.00020313767987201816
+fullgml; clinical sign; ro; 0.5026332846010946; 0.002541135360872113
+fullgml; clinical sign; ja; 0.5; 0.0
+fullgml; clinical sign; simple; 0.5013003996573228; 0.0009114543033920151
+fullgml; clinical sign; it; 0.5001983918544467; 0.000120353246998
+fullgml; clinical sign; he; 0.5; 0.0
+fullgml; clinical sign; da; 0.5012269435355915; 0.0011385612937703546
+fullgml; clinical sign; en; 0.5000729000666012; 2.599809961952542e-05
+fullgml; clinical sign; sr; 0.500983392863271; 0.0007722409647664606
+fullgml; clinical sign; sv; 0.5007310289286881; 0.0004903052775222333
+fullgml; clinical sign; ckb; 0.5; 0.0
+fullgml; clinical sign; ru; 0.5; 0.0
+fullgml; clinical sign; hi; 0.5; 0.0
+fullgml; clinical sign; arz; 0.5; 0.0
+fullgml; clinical sign; bs; 0.5015276992675768; 0.0014061847674647434
+fullgml; clinical sign; te; 0.5; 0.0
+fullgml; clinical sign; zh; 0.5; 0.0
+fullgml; clinical sign; mk; 0.5; 0.0
+fullgml; clinical sign; hu; 0.5017522368930379; 0.0021697174922446676
+fullgml; clinical sign; ko; 0.5; 0.0
+fullgml; clinical sign; war; 0.735; 0.24954959426935558
+fullgml; war; id; 0.50007407827707; 4.166549536530663e-05
+fullgml; war; fr; 0.5000229370848231; 1.1244387011846379e-05
+fullgml; war; mr; 0.5; 0.0
+fullgml; war; tr; 0.5002519397736014; 0.0004089495415310065
+fullgml; war; lv; 0.5004816559392231; 0.0004608811069051192
+fullgml; war; el; 0.5; 0.0
+fullgml; war; es; 0.5000244754980864; 1.3057422988790204e-05
+fullgml; war; pl; 0.5000418886565223; 2.78773428143849e-05
+fullgml; war; vi; 0.5; 0.0
+fullgml; war; de; 0.5000238881458735; 1.59762479671859e-05
+fullgml; war; ml; 0.5; 0.0
+fullgml; war; sh; 0.5000856769252434; 4.8325487416561514e-05
+fullgml; war; nl; 0.5000470811511737; 2.3171969064953488e-05
+fullgml; war; si; 0.5; 0.0
+fullgml; war; pt; 0.5000505482395162; 2.4876809387223338e-05
+fullgml; war; ro; 0.5002926975311361; 0.00033897134906071293
+fullgml; war; ja; 0.5; 0.0
+fullgml; war; simple; 0.5002384600723743; 0.00015589982174931782
+fullgml; war; it; 0.5000279912532494; 1.019062993041387e-05
+fullgml; war; ceb; 0.5168688387635756; 0.022622059118335584
+fullgml; war; he; 0.5; 0.0
+fullgml; war; da; 0.5001164198977274; 4.031470989933272e-05
+fullgml; war; en; 0.5000098875521025; 3.9304336803026846e-06
+fullgml; war; sr; 0.5001850104492113; 0.0003507285983077447
+fullgml; war; sv; 0.5000625783524825; 3.365991438954688e-05
+fullgml; war; ckb; 0.5; 0.0
+fullgml; war; ru; 0.5; 0.0
+fullgml; war; hi; 0.5; 0.0
+fullgml; war; arz; 0.5; 0.0
+fullgml; war; bs; 0.5002864067542254; 0.00017851290644393288
+fullgml; war; te; 0.5; 0.0
+fullgml; war; zh; 0.5; 0.0
+fullgml; war; mk; 0.5; 0.0
+fullgml; war; hu; 0.5002958103692143; 0.0008742046846829055
+fullgml; war; ko; 0.5; 0.0
+fullgml; war; war; 0.5058775546808246; 0.006383567977451362
+fullgml; krankheitGML; id; 0.50021825999134; 4.997819959989728e-05
+fullgml; krankheitGML; fr; 0.5000697358670092; 1.0312251100887555e-05
+fullgml; krankheitGML; mr; 0.501954680582657; 0.0008604757314845908
+fullgml; krankheitGML; lv; 0.5006277886736278; 0.0001778403051999974
+fullgml; krankheitGML; el; 0.5004537968897084; 9.084291470933746e-05
+fullgml; krankheitGML; es; 0.5001165603118539; 1.6675547621455004e-05
+fullgml; krankheitGML; pl; 0.50012138748635; 2.0666865015555256e-05
+fullgml; krankheitGML; vi; 0.5002801247187394; 5.202337785511806e-05
+fullgml; krankheitGML; de; 0.5000600373495948; 1.019664648742355e-05
+fullgml; krankheitGML; ml; 0.5006915586114473; 0.00019605855748096055
+fullgml; krankheitGML; sh; 0.5003205096869217; 6.280081923701381e-05
+fullgml; krankheitGML; nl; 0.5001248502573238; 2.8348668710949875e-05
+fullgml; krankheitGML; si; 0.5023581415416567; 0.0007810642632418486
+fullgml; krankheitGML; pt; 0.5002284649384383; 2.039596319141214e-05
+fullgml; krankheitGML; ro; 0.5002708697532559; 7.325551592074526e-05
+fullgml; krankheitGML; ja; 0.5000903004667099; 1.3648562046222228e-05
+fullgml; krankheitGML; simple; 0.5003667687725752; 8.448732708840536e-05
+fullgml; krankheitGML; it; 0.5001859570727958; 1.487694975658959e-05
+fullgml; krankheitGML; ceb; 0.5100444810666785; 0.010486045460756866
+fullgml; krankheitGML; he; 0.5002038705907089; 3.28413243645765e-05
+fullgml; krankheitGML; da; 0.5002510459270649; 6.705593141738636e-05
+fullgml; krankheitGML; en; 0.5000672660073027; 4.444951383714716e-06
+fullgml; krankheitGML; sr; 0.500249248584366; 4.0537158968847785e-05
+fullgml; krankheitGML; sv; 0.5002785901865602; 3.3774998057242225e-05
+fullgml; krankheitGML; ckb; 0.5016964336796532; 0.0006678175816605148
+fullgml; krankheitGML; ru; 0.50017731785347; 1.723506772102056e-05
+fullgml; krankheitGML; hi; 0.5004929557877443; 0.00013226924586925762
+fullgml; krankheitGML; arz; 0.5017390733449586; 0.0009568201873422443
+fullgml; krankheitGML; bs; 0.5005377864622966; 0.00014174597681528733
+fullgml; krankheitGML; te; 0.5007691757227061; 0.0004631247364760122
+fullgml; krankheitGML; zh; 0.5002306576171405; 2.2294779538636103e-05
+fullgml; krankheitGML; mk; 0.500814539293327; 0.0001618532763613017
+fullgml; krankheitGML; hu; 0.5002489165245764; 6.1034519877887625e-05
+fullgml; krankheitGML; ko; 0.5003028213026305; 4.822484624230206e-05
+fullgml; krankheitGML; war; 0.5026084489257157; 0.00303204711967335
+fullgml; mathematical concept; id; 0.5016999812807774; 0.0015974985974977769
+fullgml; mathematical concept; fr; 0.5002213849123835; 0.00015502440249494186
+fullgml; mathematical concept; mr; 0.5; 0.0
+fullgml; mathematical concept; tr; 0.501544001154165; 0.0013071680171641332
+fullgml; mathematical concept; lv; 0.5092129987129987; 0.011144808390068829
+fullgml; mathematical concept; el; 0.5; 0.0
+fullgml; mathematical concept; es; 0.500612541373783; 0.0005044175650425499
+fullgml; mathematical concept; pl; 0.5006192496966138; 0.0004576629839926573
+fullgml; mathematical concept; vi; 0.5; 0.0
+fullgml; mathematical concept; de; 0.5002338886987377; 0.00015635522628591687
+fullgml; mathematical concept; ml; 0.5; 0.0
+fullgml; mathematical concept; sh; 0.505647838439553; 0.004926908417643343
+fullgml; mathematical concept; nl; 0.5005007534224515; 0.0003558768066857109
+fullgml; mathematical concept; si; 0.5; 0.0
+fullgml; mathematical concept; pt; 0.5005945529415012; 0.0004972793810755567
+fullgml; mathematical concept; ro; 0.5034122547078342; 0.0030287253445469573
+fullgml; mathematical concept; ja; 0.5; 0.0
+fullgml; mathematical concept; simple; 0.5029540874309089; 0.002541405075648066
+fullgml; mathematical concept; it; 0.500363446668554; 0.00022608511330017076
+fullgml; mathematical concept; he; 0.5019696969696971; 0.005095506582060674
+fullgml; mathematical concept; da; 0.5021848878033331; 0.0021045828751477197
+fullgml; mathematical concept; en; 0.5000882387610237; 5.069847631379389e-05
+fullgml; mathematical concept; sr; 0.5027256379395222; 0.002900744953055413
+fullgml; mathematical concept; sv; 0.5006050348897333; 0.0005378987278195337
+fullgml; mathematical concept; ckb; 0.5; 0.0
+fullgml; mathematical concept; ru; 0.5; 0.0
+fullgml; mathematical concept; hi; 0.5; 0.0
+fullgml; mathematical concept; arz; 0.5; 0.0
+fullgml; mathematical concept; bs; 0.5031098857718749; 0.002491738251592874
+fullgml; mathematical concept; te; 0.5; 0.0
+fullgml; mathematical concept; zh; 0.5; 0.0
+fullgml; mathematical concept; mk; 0.5; 0.0
+fullgml; mathematical concept; hu; 0.5024751500401461; 0.002771731591159683
+fullgml; mathematical concept; ko; 0.5; 0.0
+fullgml; mathematical concept; war; 0.5131926088617265; 0.014010471778121774
+fullgml; galaxy; id; 0.5110996923053007; 0.0011129865262575328
+fullgml; galaxy; fr; 0.5032952753751385; 4.71699897990777e-05
+fullgml; galaxy; tr; 0.500242222458006; 3.169139172457655e-05
+fullgml; galaxy; lv; 0.5; 0.0
+fullgml; galaxy; el; 0.5062361235732659; 0.00040173271940965963
+fullgml; galaxy; es; 0.5023927160286065; 0.0003982984850447197
+fullgml; galaxy; pl; 0.5003925005638041; 6.891679101829056e-05
+fullgml; galaxy; vi; 0.5029780143060026; 0.0003384869544785391
+fullgml; galaxy; de; 0.5002886472280406; 2.9186597447784728e-05
+fullgml; galaxy; ml; 0.5; 0.0
+fullgml; galaxy; sh; 0.5007129831811344; 3.726931282778648e-05
+fullgml; galaxy; nl; 0.5006453257643332; 3.230863678645242e-05
+fullgml; galaxy; pt; 0.500583990030865; 7.93765592395521e-05
+fullgml; galaxy; ro; 0.51883567108545; 0.00030104753231000747
+fullgml; galaxy; ja; 0.503040054602222; 0.0005850879877453412
+fullgml; galaxy; simple; 0.5096355635167727; 0.007042978617993346
+fullgml; galaxy; it; 0.5018592058396782; 0.0003365167877540668
+fullgml; galaxy; he; 0.5039621022589587; 0.0012381961114742688
+fullgml; galaxy; da; 0.5093536635525001; 0.007968950681290412
+fullgml; galaxy; en; 0.5010970309813291; 4.6225778135545845e-05
+fullgml; galaxy; sr; 0.5002931893786277; 3.4992911513958496e-05
+fullgml; galaxy; sv; 0.5041794581705674; 0.0010186197652309514
+fullgml; galaxy; ckb; 0.5; 0.0
+fullgml; galaxy; ru; 0.5004013610958767; 5.771162932981383e-05
+fullgml; galaxy; hi; 0.5; 0.0
+fullgml; galaxy; bs; 0.5010210439047392; 2.4682069317296943e-05
+fullgml; galaxy; zh; 0.5005226072724541; 0.0001056228371067417
+fullgml; galaxy; mk; 0.5016018798651283; 0.00011111426861208095
+fullgml; galaxy; hu; 0.5094264570866163; 0.0006573253874826931
+fullgml; galaxy; ko; 0.5046008876583452; 0.0005197760596364778
+fullgml; language; id; 0.5003026575736297; 8.091969876692235e-05
+fullgml; language; fr; 0.5; 0.0
+fullgml; language; mr; 0.5; 0.0
+fullgml; language; tr; 0.5004985988962383; 0.00014881136328082244
+fullgml; language; lv; 0.500943982110232; 0.00042540901762278774
+fullgml; language; el; 0.5; 0.0
+fullgml; language; es; 0.5022168070271461; 0.0023407295614795583
+fullgml; language; pl; 0.5; 0.0
+fullgml; language; vi; 0.5004729560573554; 0.0007759375304122544
+fullgml; language; de; 0.524610294117647; 0.023865126855818104
+fullgml; language; ml; 0.5; 0.0
+fullgml; language; sh; 0.5004785350235196; 0.00021089658316245474
+fullgml; language; nl; 0.5029653256132004; 0.003138971007200369
+fullgml; language; si; 0.5; 0.0
+fullgml; language; pt; 0.5; 0.0
+fullgml; language; ro; 0.5012020718831447; 0.0004960449718380483
+fullgml; language; ja; 0.5; 0.0
+fullgml; language; simple; 0.5005226474635756; 0.00019208457731566476
+fullgml; language; it; 0.5; 0.0
+fullgml; language; ceb; 0.5021889427045934; 0.0015814615507924105
+fullgml; language; he; 0.5; 0.0
+fullgml; language; da; 0.5003559440715671; 0.00016909633437860034
+fullgml; language; en; 0.5002457575792536; 0.00017746248349833135
+fullgml; language; sr; 0.5005263157894737; 0.0020832179100066586
+fullgml; language; sv; 0.5; 0.0
+fullgml; language; ckb; 0.5; 0.0
+fullgml; language; ru; 0.5; 0.0
+fullgml; language; hi; 0.5; 0.0
+fullgml; language; arz; 0.5; 0.0
+fullgml; language; bs; 0.501166824715098; 0.0005755697617279448
+fullgml; language; te; 0.5; 0.0
+fullgml; language; zh; 0.5; 0.0
+fullgml; language; mk; 0.5; 0.0
+fullgml; language; hu; 0.5005212262162393; 0.0001486942977235087
+fullgml; language; ko; 0.5; 0.0
+fullgml; language; war; 0.5024657965940438; 0.0017546857578936525
+fullgml; komponistGML; id; 0.5008732014828903; 0.0004639142316080358
+fullgml; komponistGML; fr; 0.50008190744504; 5.085159804798525e-05
+fullgml; komponistGML; mr; 0.5070212111306818; 0.005555851881969802
+fullgml; komponistGML; lv; 0.5006830418684571; 0.0005369300493486843
+fullgml; komponistGML; el; 0.5011557119464016; 0.00043908101501715394
+fullgml; komponistGML; es; 0.5001666390400473; 0.0001000287892028662
+fullgml; komponistGML; pl; 0.5002559440574327; 0.00017136425738168963
+fullgml; komponistGML; vi; 0.5004890281666432; 0.0002853762335195133
+fullgml; komponistGML; de; 0.5001148459403023; 7.819319923144216e-05
+fullgml; komponistGML; ml; 0.5035982036919491; 0.0019064845968581863
+fullgml; komponistGML; sh; 0.5006751388477036; 0.0003563969317005369
+fullgml; komponistGML; nl; 0.5002228018763838; 0.00015516452170801545
+fullgml; komponistGML; si; 0.6149999999999999; 0.12626031311012445
+fullgml; komponistGML; pt; 0.500309194279223; 0.00013957050411867738
+fullgml; komponistGML; ro; 0.5010964329363995; 0.0003780188726587772
+fullgml; komponistGML; ja; 0.5001403104336984; 7.791753587462413e-05
+fullgml; komponistGML; simple; 0.5006546075041995; 0.00039604544734152014
+fullgml; komponistGML; it; 0.5001869122962953; 7.928518271393935e-05
+fullgml; komponistGML; ceb; 0.5044465591529811; 0.004089907226297445
+fullgml; komponistGML; he; 0.5004750074858362; 0.0002107521333472108
+fullgml; komponistGML; da; 0.5003787410433166; 0.00021207867512607737
+fullgml; komponistGML; en; 0.5000688124743362; 4.173786084473157e-05
+fullgml; komponistGML; sr; 0.500500737081008; 0.000344156063912403
+fullgml; komponistGML; sv; 0.5003185633749161; 0.00020685229214419812
+fullgml; komponistGML; ckb; 0.5020102381712258; 0.00105254918235343
+fullgml; komponistGML; ru; 0.5001620601499482; 9.798591025991979e-05
+fullgml; komponistGML; hi; 0.5075300178952089; 0.007013144143104226
+fullgml; komponistGML; arz; 0.5031670895953068; 0.0018982071303869
+fullgml; komponistGML; bs; 0.5018049446581087; 0.0006792032986207843
+fullgml; komponistGML; te; 0.6316666666666666; 0.15687043486053492
+fullgml; komponistGML; zh; 0.5006928885122299; 0.00022586418985946064
+fullgml; komponistGML; mk; 0.5014690004296831; 0.0007549628646792842
+fullgml; komponistGML; hu; 0.5003105902853071; 0.00016240892795979728
+fullgml; komponistGML; ko; 0.5008622691868155; 0.00029068448589796795
+fullgml; komponistGML; war; 0.506881580648826; 0.006052659107033108
