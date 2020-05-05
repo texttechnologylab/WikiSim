@@ -1,1 +1,25 @@
-Similarity_file, n_pairs, max, mean, median
+Similarity_file, type, missing_files, n_pairs, max, mean, std, median
+deltaCON_intersection_personalized_rw_affinities_lowmem.csv, gml, 0, 1397, 1.0, 0.5020052045025247, 0.364059560493236, 0.37947668750716534
+deltaCON_intersection_personalized_rw_affinities_lowmem.csv, fullgml, 10, 872, 1.0, 0.5547153184509138, 0.32301029922134866, 0.48006126413722994
+deltaCON_intersection_shortest_path_affinities.csv, gml, 0, 1397, 1.0, 0.424365007597753, 0.40392365116095685, 0.2612038749637414
+deltaCON_intersection_shortest_path_affinities.csv, fullgml, 0, 1209, 1.0, 0.35056834645466356, 0.3967047099462921, 0.1374203627757835
+deltaCON_personalized_rw_affinities.csv, gml, 0, 1482, 1.0, 0.29126581068666174, 0.3274784367192027, 0.1455556705244318
+deltaCON_personalized_rw_affinities.csv, fullgml, 25, 0, nan, nan, nan, nan
+deltaCON_shortest_path_affinities.csv, gml, 0, 1482, 1.0, 0.25107686332864987, 0.35448710895409746, 0.06693673783882825
+deltaCON_shortest_path_affinities.csv, fullgml, 25, 0, nan, nan, nan, nan
+otherSim_ged_similarity.csv, gml, 0, 1482, 1.0, 0.5906495681494196, 0.09235142688779245, 0.562824227822021
+otherSim_ged_similarity.csv, fullgml, 0, 1541, 1.0, 0.5438462552990562, 0.07521036505487, 0.5135135135135135
+otherSim_intersection_edge_jaccard_similarity.csv, gml, 0, 1397, 1.0, 0.0941687247504927, 0.18704600230253532, 0.0
+otherSim_intersection_edge_jaccard_similarity.csv, fullgml, 0, 1454, 1.0, 0.15604522580999924, 0.20714595849295767, 0.0
+otherSim_intersection_ged_similarity.csv, gml, 0, 1397, 1.0, 0.8136160348256335, 0.1454762451846495, 0.75
+otherSim_intersection_ged_similarity.csv, fullgml, 0, 1454, 1.0, 0.8142411666627969, 0.13133975545205834, 0.7825055948305248
+otherSim_intersection_rw_kernel.csv, gml, 0, 1482, 1.0, 0.14732488625795953, 0.25160618205257673, 0.0417023195575152
+otherSim_intersection_rw_kernel.csv, fullgml, 18, 425, 1.0, 0.06312961176201512, 0.16615404047804572, 0.007874015748031496
+otherSim_intersection_rw_kernel_10iter.csv, gml, 0, 1482, 0.9754798169523939, 0.02594934176580381, 0.10869230277037255, 0.0
+otherSim_intersection_rw_kernel_10iter.csv, fullgml, 16, 508, 0.25, 0.008830299872163532, 0.02922121222282796, 0.0008189469331174467
+otherSim_intersection_vertex_jaccard_similarity.csv, gml, 0, 1397, 1.0, 0.937007874015748, 0.24294879717388207, 1.0
+otherSim_intersection_vertex_jaccard_similarity.csv, fullgml, 0, 1454, 1.0, 0.969050894085282, 0.1731798451258044, 1.0
+otherSim_vertex_edge_jaccard_similarity.csv, gml, 0, 1482, 0.9789338461923403, 0.13309623540109258, 0.14749239458494043, 0.09073392888421791
+otherSim_vertex_edge_jaccard_similarity.csv, fullgml, 0, 1541, 0.6570655361298968, 0.05240995353697053, 0.07173330746929989, 0.024229074889867842
+otherSim_vertex_jaccard_similarity.csv, gml, 0, 1482, 1.0, 0.23218442332378758, 0.2340249623089973, 0.16252117665177884
+otherSim_vertex_jaccard_similarity.csv, fullgml, 0, 1541, 1.0, 0.07962771787220346, 0.10428548074592524, 0.04605678233438486
