@@ -44,7 +44,7 @@ def er_similarities(similarity, repetitions, root_in, output_folder, types):
 
     with open(os.path.join(output_folder, 'ER_similarities_' + similarity.__name__ + '.csv'), 'w') as f:
         f.write('Root path: ' + root_in + '\n' + 'Sample Size: ' + str(repetitions) + '\n\n')
-        f.write('type; dataset; language; mean; std\n')
+        f.write('type; dataset; language; mean; std; ' + '; '.join([f'rep{i}' for i in range(repetitions)]) + '\n')
 
         for type in types:
             datasets = os.listdir(os.path.join(root_in, type))
@@ -61,29 +61,45 @@ def er_similarities(similarity, repetitions, root_in, output_folder, types):
                         for i in range(repetitions):
                             erg = make_ER_simulation(g)
                             similarity_score[i] = similarity(erg, g)
-                        f.write(f'{type}; {d}; {lang}; {np.mean(similarity_score)}; {np.std(similarity_score)}\n')
+                        f.write(f'{type}; {d}; {lang}; {np.mean(similarity_score)}; {np.std(similarity_score)}; ')
+                        f.write('; '.join([str(s) for s in similarity_score]))
+                        f.write('\n')
                     else:
                         f.write(f'{type}; {d}; {lang}; nan; graph is empty\n')
                     f.flush()
 
 
-def deltacon_rw(G1, G2):
+def deltacon_rw(G1, G2, onMemoryError=np.nan):
     '''Wrapper function for deltacon with personalized random walk similarities'''
-    return deltaCon(G1, G2, affinities=personalized_rw_affinities)
+    try:
+        sim = deltaCon(G1, G2, affinities=personalized_rw_affinities)
+    except MemoryError as e:
+        print(e)
+        sim = onMemoryError
+    return sim
 
 
-def deltacon_sp(G1, G2):
+def deltacon_sp(G1, G2, onMemoryError=np.nan):
     '''Wrapper function for deltacon with shortest path similarities'''
-    return deltaCon(G1, G2, affinities=shortest_path_affinities)
+    try:
+        sim = deltaCon(G1, G2, affinities=shortest_path_affinities)
+    except MemoryError as e:
+        print(e)
+        sim = onMemoryError
+    return sim
 
-def intersection_rw_kernel_10iter(G1, G2):
-    return intersection_rw_kernel_kiter(G1, G2, k=10)
-
+def intersection_rw_kernel_10iter(G1, G2, onMemoryError=np.nan):
+    try:
+        sim = intersection_rw_kernel_kiter(G1, G2, k=10)
+    except MemoryError as e:
+        print(e)
+        sim = onMemoryError
+    return sim
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
-        dataset_root = os.path.join('..', '..', 'graphs')
-        dataset_output = os.path.join('..', '..', 'output')
+        dataset_root = os.path.join('..', '..', 'graphsReduced')
+        dataset_output = os.path.join('.')
     elif len(sys.argv) == 3:
         dataset_root = sys.argv[1]
         dataset_output = sys.argv[2]
@@ -99,9 +115,8 @@ if __name__ == '__main__':
                     vertex_edge_jaccard_similarity, vertex_jaccard_similarity,
                     intersection_rw_kernel,
                     deltacon_rw, deltacon_sp]
-    # similarities = [deltacon_rw, deltacon_sp]
 
     # create this many er graphs per instance
-    repetitions = 100
+    repetitions = 10
 
     element_run = Parallel(n_jobs=-1)(delayed(er_similarities)(similarity, repetitions, dataset_root, dataset_output, types) for similarity in similarities)

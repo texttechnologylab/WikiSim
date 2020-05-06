@@ -5,7 +5,12 @@ from similaritymeasures.deltacon import *
 from similaritymeasures.othersim import main_otherSim, intersection_rw_kernel_kiter
 
 def intersection_rw_kernel_10iter(g1, g2):
-    return intersection_rw_kernel_kiter(g1, g2, k=10)
+    try:
+        return intersection_rw_kernel_kiter(g1, g2, k=10)
+    except MemoryError as e:
+        print(e)
+        return np.nan
+
 
 similarity = intersection_rw_kernel_10iter
 
@@ -23,7 +28,7 @@ def run_experiment(dataset_root, dataset_output, gml_types):
             print('load', toc - tic)
 
             # compute the union of all language graphs, for comparison
-            unaligned_graphs['union'] = union(unaligned_graphs)
+            # unaligned_graphs['union'] = union(unaligned_graphs)
 
             print(similarity.__name__)
             # it is important to compute this function on unaligned graphs, as otherwise the

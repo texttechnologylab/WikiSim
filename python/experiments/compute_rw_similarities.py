@@ -23,7 +23,7 @@ def run_experiment(dataset_root, dataset_output, gml_types):
             print('union', toc - tic)
 
             # compute the union of all language graphs, for comparison
-            graphs['union'] = union(graphs)
+            # graphs['union'] = union(graphs)
 
             tic = time.time()
             affinities = {lang: personalized_rw_affinities(graphs[lang], verbose=lang) for lang in graphs.keys()}
@@ -32,7 +32,7 @@ def run_experiment(dataset_root, dataset_output, gml_types):
 
             print('Writing to', out_folder)
 
-            print('personalized_rw_affinities')
+            print(personalized_rw_affinities.__name__)
             main_deltaCon_cached(affinities, name=personalized_rw_affinities.__name__, output_folder=out_folder)
 
 

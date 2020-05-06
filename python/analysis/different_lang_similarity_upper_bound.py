@@ -54,8 +54,6 @@ def compute_sampled_statistics(similarity_file, similarity_root, type, sample_si
     if output_file is not None:
         output_file.write(result + '\n')
 
-    # if len(kernel) > 0:
-    #     plot_it(kernel, '_Kernel')
 
 
 # similarity_folder = os.path.join('/', 'home', 'pascal', 'Documents', 'Uni_synced', 'frankfurt', 'experimental_results', 'WikiSimNew', 'outputComplete', 'oecdTopics')
@@ -72,10 +70,10 @@ similarity_files = ['deltaCON_intersection_personalized_rw_affinities_lowmem.csv
                     'otherSim_intersection_ged_similarity.csv',
                     'otherSim_intersection_rw_kernel.csv',
                     'otherSim_intersection_rw_kernel_10iter.csv',
-                    'otherSim_intersection_rw_kernel_unnormalized.csv',
+                    # 'otherSim_intersection_rw_kernel_unnormalized.csv',
                     'otherSim_intersection_vertex_jaccard_similarity.csv',
                     'otherSim_vertex_edge_jaccard_similarity.csv',
-                    'otherSim_vertex_jaccard_similarity.csv', ]
+                    'otherSim_vertex_jaccard_similarity.csv',]
 
 sample_size = 0.1
 output_file = os.path.join(similarity_folder, 'SampledSimilaritiesSec231.csv')

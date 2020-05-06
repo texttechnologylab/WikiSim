@@ -18,7 +18,7 @@ def run_experiment(dataset_root, dataset_output, gml_types):
             toc = time.time()
             print('load', toc - tic)
 
-            print('ged_similarity')
+            print(vertex_jaccard_similarity.__name__)
             # it is important to compute this function on unaligned graphs, as otherwise the
             # vertex set similarity will always be 1.0
             main_otherSim_intersection(unaligned_graphs, similarity=vertex_jaccard_similarity, output_folder=out_folder)

@@ -19,9 +19,9 @@ def run_experiment(dataset_root, dataset_output, gml_types):
             print('load', toc - tic)
 
             # compute the union of all language graphs, for comparison
-            unaligned_graphs['union'] = union(unaligned_graphs)
+            # unaligned_graphs['union'] = union(unaligned_graphs)
 
-            print('ged_similarity')
+            print(ged_similarity.__name__)
             # it is important to compute this function on unaligned graphs, as otherwise the
             # vertex set similarity will always be 1.0
             main_otherSim(unaligned_graphs, similarity=ged_similarity, output_folder=out_folder)

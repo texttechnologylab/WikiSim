@@ -20,7 +20,7 @@ def run_experiment(dataset_root, dataset_output, gml_types):
 
             print('Writing to', out_folder)
 
-            print('personalized_rw_affinities')
+            print(shortest_path_affinities.__name__)
             tic = time.time()
             main_deltaCon_intersection(unaligned_graphs, affinities=shortest_path_affinities, output_folder=out_folder)
             toc = time.time()

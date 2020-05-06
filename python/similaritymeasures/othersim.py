@@ -220,7 +220,7 @@ def edge_jaccard_similarity(G1: igraph.Graph, G2: igraph.Graph):
     return e_jaccard
 
 
-def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
+def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity, onMemoryError=np.nan, fake_same=False):
     """
     Nice and general similarity computation for all pairs of graphs in the graphs dict.
     :param graphs:
@@ -236,14 +236,22 @@ def main_otherSim(graphs, output_folder='../output/gml/fussballligaGML', similar
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
             tic = time.time()
-            sim = similarity(graphs[l1], graphs[l2])
+            if fake_same and (l1 == l2):
+                sim = 1.0
+            else:
+                try:
+                    sim = similarity(graphs[l1], graphs[l2])
+                except MemoryError as e:
+                    print(e)
+                    print('while computing', l1, l2, similarity.__name__, 'similarities')
+                    sim=onMemoryError
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
             out_csv.flush()
 
 
-def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity):
+def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballligaGML', similarity=vertex_edge_jaccard_similarity, onMemoryError=np.nan):
     """
     Compute specified similarity on pairs of graphs in graphs dict. However, before computing the similarity of a pair
     of graphs, compute the induced graphs on the vertex set intersection before proceeding.
@@ -261,7 +269,12 @@ def main_otherSim_intersection(graphs, output_folder='../output/gml/fussballliga
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
             g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
             tic = time.time()
-            sim = similarity(g1, g2)
+            try:
+                sim = similarity(graphs[l1], graphs[l2])
+            except MemoryError as e:
+                print(e)
+                print('while computing', l1, l2, similarity.__name__, 'similarities')
+                sim = onMemoryError
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')

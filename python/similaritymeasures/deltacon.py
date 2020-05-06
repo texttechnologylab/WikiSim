@@ -283,7 +283,7 @@ def load_all_graphs(data_folder):
     return graphs
 
 
-def main_deltaCon(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
+def main_deltaCon(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities, onMemoryError=np.nan):
     """
     Generic, rather agnostic variant of deltacon. computes a similarity score based on the affinity
     function provided for each pair of graphs in the graphs dict.
@@ -300,14 +300,19 @@ def main_deltaCon(graphs, output_folder='../output/gml/fussballligaGML', affinit
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
             tic = time.time()
-            sim = deltaCon(graphs[l1], graphs[l2], affinities=affinities)
+            try:
+                sim = deltaCon(graphs[l1], graphs[l2], affinities=affinities)
+            except MemoryError as e:
+                print(e)
+                print('while computing', l1, l2, affinities.__name__, 'affinities for deltacon')
+                sim = onMemoryError
             toc = time.time()
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
             out_csv.flush()
 
 
-def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities):
+def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities, onMemoryError=np.nan, fake_same=False):
     """
     Intersection variant of deltacon: For each pair of graphs, compute the induced subgraphs on the vertex set
     intersection and then proceed with the affinity computation.
@@ -324,19 +329,29 @@ def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballliga
         out_csv.write('Language1, Language2, SimilarityScore, Time\n')
 
         for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
-            g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
-            if g1.vcount() != 0:
+            if fake_same and (l1 == l2):
                 tic = time.time()
-                sim = deltaCon(g1, g2, affinities=affinities)
+                sim = 1.0
                 toc = time.time()
             else:
-                sim = 0.0 # no vertex overlap!
+                g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
+                if g1.vcount() != 0:
+                    tic = time.time()
+                    try:
+                        sim = deltaCon(g1, g2, affinities=affinities)
+                    except MemoryError as e:
+                        print(e)
+                        print('while computing', l1, l2, affinities.__name__, 'affinities for deltacon')
+                        sim = onMemoryError
+                    toc = time.time()
+                else:
+                    sim = 0.0 # no vertex overlap!
             print(l1, l2, sim, toc-tic)
             out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
             out_csv.flush()
 
 
-def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussballligaGML'):
+def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussballligaGML', onMemoryError=np.nan):
     """
     Intersection variant of deltacon: For each pair of graphs, compute the induced subgraphs on the vertex set
     intersection and then proceed with the affinity computation.
@@ -355,7 +370,12 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
             g1, g2 = restrict_to_intersection(graphs[l1], graphs[l2])
             if g1.vcount() != 0:
                 tic = time.time()
-                sim1, sim2 = deltaCon_rw_lowmem(g1, g2)
+                try:
+                    sim1, sim2 = deltaCon_rw_lowmem(g1, g2)
+                except MemoryError as e:
+                    print(e)
+                    print('while computing', l1, l2, 'personalized rw', 'affinities for deltacon')
+                    sim = onMemoryError
                 toc = time.time()
             else:
                 sim1 = 0.0 # no vertex overlap!
@@ -365,7 +385,7 @@ def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussb
             out_csv.flush()
 
 
-def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML'):
+def main_deltaCon_cached(affinities, name, output_folder='../output/gml/fussballligaGML', onMemoryError=np.nan):
     """
     Faster variant of DeltaCon that precomputes affinities for all graphs, instead of recomputing them for each pair.
     May be used for union, but not for intersection, as here graphs change based on the current pair.
