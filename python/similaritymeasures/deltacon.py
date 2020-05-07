@@ -351,6 +351,47 @@ def main_deltaCon_intersection(graphs, output_folder='../output/gml/fussballliga
             out_csv.flush()
 
 
+
+def main_deltaCon_union(graphs, output_folder='../output/gml/fussballligaGML', affinities=personalized_rw_affinities, onMemoryError=np.nan, fake_same=False):
+    """
+    Pairwise union variant of deltacon: For each pair of graphs, compute the union of the vertex sets
+    and then proceed with the affinity computation on the two graphs that both have the union as vertex set,
+    but different edge sets.
+
+    :param graphs:
+    :param output_folder:
+    :param affinities:
+    :return:
+    """
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    with open(os.path.join(output_folder, f'deltaCON_intersection_{affinities.__name__}.csv'), 'w') as out_csv:
+        out_csv.write('Language1, Language2, SimilarityScore, Time\n')
+
+        for l1, l2 in itertools.combinations_with_replacement(graphs.keys(), 2):
+            if fake_same and (l1 == l2):
+                tic = time.time()
+                sim = 1.0
+                toc = time.time()
+            else:
+                union = vertex_set_union({l1: graphs[l1], l2: graphs[l2]})
+                if union[l1].vcount() != 0:
+                    tic = time.time()
+                    try:
+                        sim = deltaCon(union[l1], union[l2], affinities=affinities)
+                    except MemoryError as e:
+                        print(e)
+                        print('while computing', l1, l2, affinities.__name__, 'affinities for deltacon')
+                        sim = onMemoryError
+                    toc = time.time()
+                else:
+                    sim = 0.0 # no vertex overlap!
+            print(l1, l2, sim, toc-tic)
+            out_csv.write(f'{l1}, {l2}, {sim}, {toc-tic}\n')
+            out_csv.flush()
+
+
 def main_deltaCon_intersection_lowmem(graphs, output_folder='../output/gml/fussballligaGML', onMemoryError=np.nan):
     """
     Intersection variant of deltacon: For each pair of graphs, compute the induced subgraphs on the vertex set
