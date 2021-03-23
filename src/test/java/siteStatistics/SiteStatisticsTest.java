@@ -17,7 +17,7 @@ public class SiteStatisticsTest {
 	
 	@Test
 	public void testSetPageStatistic() throws UnsupportedEncodingException{
-		PageStatistics pageStatistics = new PageStatistics("de","Thomas_Steinherr");
+		PageStatistics pageStatistics = new PageStatistics("de","Thomas_Steinherr", null);
 		assertEquals(7, pageStatistics.getCategories().size());
 		assertEquals(0, pageStatistics.getImages().size());
 		assertEquals(20, pageStatistics.getLinks().size());
@@ -28,14 +28,14 @@ public class SiteStatisticsTest {
 		assertEquals(1, pageStatistics.getDepthOfTOC());
 		assertEquals(0, pageStatistics.getNumberOfTables());
 
-		PageStatistics pageStatisticsFussball = new PageStatistics("de","Fußball-Weltmeisterschaft");
+		PageStatistics pageStatisticsFussball = new PageStatistics("de","Fußball-Weltmeisterschaft", null);
 		assertEquals(13, pageStatisticsFussball.getNumberOfTables());
 
-		PageStatistics pageStatistics3 = new PageStatistics("en","1992_Federal_Express_International");
+		PageStatistics pageStatistics3 = new PageStatistics("en","1992_Federal_Express_International", null);
 		assertEquals(3, pageStatistics3.getNumberOfItemize());
 		
 
-		PageStatistics pageStatistics4 = new PageStatistics("en","AF+BG theorem");
+		PageStatistics pageStatistics4 = new PageStatistics("en","AF+BG theorem", null);
 		assertEquals(3, pageStatistics4.getNumberOfItemize());
 		assertEquals(4, pageStatistics4.getBreadthOfTOC());
 		assertEquals(4, pageStatistics4.getCategories().size());
