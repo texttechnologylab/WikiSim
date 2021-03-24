@@ -92,7 +92,7 @@ public class SiteStatistics {
 								if(inVertices){
 									String vertex = string.split("¤")[0];
 									if(wikipediaTitles.containsKey(vertex)){
-										PageStatistics currentPage = new PageStatistics(language,wikipediaTitles.get(vertex));
+										PageStatistics currentPage = new PageStatistics(language,wikipediaTitles.get(vertex), null);
 										if(currentPage.getPageId() > 0){
 											StringBuilder sb = new StringBuilder();
 											sb.append("[SV1¤");

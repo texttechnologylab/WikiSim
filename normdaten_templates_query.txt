@@ -1,0 +1,6 @@
+SELECT *
+WHERE
+{
+  ?article schema:about wd:Q3907614 .
+  ?article ?property ?value .
+}

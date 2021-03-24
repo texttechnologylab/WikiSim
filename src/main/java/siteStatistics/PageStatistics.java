@@ -5,6 +5,8 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.rmi.UnknownHostException;
 import java.util.HashSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
@@ -26,10 +28,19 @@ public  class PageStatistics{
 	private long pageId;
 	private int numberOfTables = 0;
 	private int numberOfItemize = 0;
+	private int numberOfNormdata = 0;
+	private int numberOfReferences = 0;
 	String apiOutput;
+	Pattern normdatenPattern = null;
 
-	public PageStatistics(String language,String title){
-		System.out.println(language+"\t"+title);
+	public PageStatistics(String language,String title, NormdatenTemplate normdatenTemplate){
+		if (normdatenTemplate != null) {
+			// compile pattern based on language specific template name
+			String normdatenTemplateName = normdatenTemplate.getNormdatenTemplate(language);
+			normdatenPattern = Pattern.compile("\\{\\{" + normdatenTemplateName + "(.*?)}}");
+		}
+
+		//System.out.println(language+"\t"+title);
 		title =  UrlEscapers.urlPathSegmentEscaper().escape(title).replace("+", "%2B").replace("&", "%26");
 		initPageSizeAndId(language, title);
 		//check, if page exists
@@ -37,6 +48,22 @@ public  class PageStatistics{
 			initPageStatistic(language, title);
 			initSections(language, title);
 		}
+	}
+
+	public int getNumberOfReferences() {
+		return numberOfReferences;
+	}
+
+	public void setNumberOfReferences(int numberOfReferences) {
+		this.numberOfReferences = numberOfReferences;
+	}
+
+	public int getNumberOfNormdata() {
+		return numberOfNormdata;
+	}
+
+	public void setNumberOfNormdata(int numberOfNormdata) {
+		this.numberOfNormdata = numberOfNormdata;
 	}
 
 	public HashSet<String> getLinks() {
@@ -263,6 +290,23 @@ public  class PageStatistics{
 				String wikitext = doc.select("api > parse > wikitext").first().text();
 				setNumberOfTables(StringUtils.countMatches(wikitext, "wikitable"));
 				setNumberOfItemize(StringUtils.countMatches(wikitext, "*"));
+
+				// count Normdaten
+				// {{Normdaten|TYP=p|GND=119545373|LCCN=n/94/109915|NDL=001183709|VIAF=12584821}}
+				if (normdatenPattern != null) {
+					Matcher matcher = normdatenPattern.matcher(wikitext);
+					while (matcher.find()) {
+						String normdatenString = matcher.group();
+						// count elements, they are separated by "|", subtract 2 for first "{{Normdaten" and "TYP"
+						int normdatenCount = normdatenString.split("\\|").length - 2;
+						setNumberOfNormdata(normdatenCount);
+					}
+				}
+
+				// count References
+				// <ref
+				setNumberOfReferences(StringUtils.countMatches(wikitext, "<ref"));
+
 			}catch(NullPointerException e){
 				e.printStackTrace();
 			}
